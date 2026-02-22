@@ -1,0 +1,756 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "07236397-3ba4-47af-9809-3faac3a2aa49")
+	(paper "A3")
+	(title_block
+		(title "Project Architecture")
+		(date "2025-01-12")
+		(rev "${REVISION}")
+		(company "${COMPANY}")
+	)
+	(lib_symbols)
+	(arc
+		(start 364.51 218.42)
+		(mid 363.6149 218.0451)
+		(end 363.24 217.15)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 038c48e8-3b23-48e4-9863-81818c34fa20)
+	)
+	(arc
+		(start 212.11 196.83)
+		(mid 211.2149 196.4551)
+		(end 210.84 195.56)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 09c92931-fa34-4e53-a96e-44e1ad554157)
+	)
+	(arc
+		(start 245.11 102.87)
+		(mid 244.7351 103.7651)
+		(end 243.84 104.14)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 13e3bc56-4a98-40ef-8c39-3b21620a792f)
+	)
+	(arc
+		(start 133.33 123.21)
+		(mid 134.2251 123.5849)
+		(end 134.6 124.48)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 19c30b2f-1391-4be0-8a5f-17a3226c0876)
+	)
+	(arc
+		(start 134.6 92.73)
+		(mid 134.2251 93.6251)
+		(end 133.33 94)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 32d6cf91-6373-4ea9-8e86-5eeae1771f68)
+	)
+	(arc
+		(start 360.7 205.72)
+		(mid 362.4902 206.4698)
+		(end 363.24 208.26)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 47b86453-82c3-4ec2-bbf6-0e727516a352)
+	)
+	(arc
+		(start 134.6 83.84)
+		(mid 135.3439 82.0439)
+		(end 137.14 81.3)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 5a9116de-1b49-4c97-93e0-feb96ef1f6ab)
+	)
+	(arc
+		(start 134.6 121.94)
+		(mid 134.2251 122.8351)
+		(end 133.33 123.21)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 5b059745-d833-4f9d-9745-ec7a90904541)
+	)
+	(arc
+		(start 134.6 113.05)
+		(mid 135.3439 111.2539)
+		(end 137.14 110.51)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 62bb3cd5-23b6-4c8e-a8f2-a293aca5d83b)
+	)
+	(arc
+		(start 133.33 94)
+		(mid 134.2251 94.3749)
+		(end 134.6 95.27)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 6830cf07-76be-4df2-9c40-eec6a0ac464f)
+	)
+	(arc
+		(start 243.84 104.14)
+		(mid 244.7351 104.5149)
+		(end 245.11 105.41)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 787eda22-1bf9-4d1b-96b2-11995bb2af0f)
+	)
+	(arc
+		(start 247.65 119.38)
+		(mid 245.8598 118.6302)
+		(end 245.11 116.84)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 7c454724-851d-42c5-8823-df570c1fc5eb)
+	)
+	(arc
+		(start 137.14 135.91)
+		(mid 135.3498 135.1602)
+		(end 134.6 133.37)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 94ad6bc3-4505-4c4a-89fc-83d0c51dd562)
+	)
+	(arc
+		(start 210.84 206.99)
+		(mid 210.0961 208.7861)
+		(end 208.3 209.53)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid ad1193fc-05fe-48a0-8a1b-812f3f915002)
+	)
+	(arc
+		(start 137.14 106.7)
+		(mid 135.3498 105.9502)
+		(end 134.6 104.16)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid b3f34c04-123a-4105-9499-4cc1d0841b6b)
+	)
+	(arc
+		(start 363.24 228.58)
+		(mid 362.4961 230.3761)
+		(end 360.7 231.12)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid bb96e3d5-b8eb-40c9-8302-f13ceee2e416)
+	)
+	(arc
+		(start 210.84 198.1)
+		(mid 211.2149 197.2049)
+		(end 212.11 196.83)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid c8a22695-2598-461d-b62b-507aafa97af8)
+	)
+	(arc
+		(start 363.24 219.69)
+		(mid 363.6149 218.7949)
+		(end 364.51 218.42)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid f32d8010-9469-4d51-9f17-7653134e8aa9)
+	)
+	(arc
+		(start 208.3 184.13)
+		(mid 210.0902 184.8798)
+		(end 210.84 186.67)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid faeedb18-f449-44d8-8aae-dfaa65d905fd)
+	)
+	(arc
+		(start 245.11 91.44)
+		(mid 245.8539 89.6439)
+		(end 247.65 88.9)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid fda911f3-adb3-4abb-981f-a877a93c831b)
+	)
+	(text "Page 8"
+		(exclude_from_sim no)
+		(at 203.2 205.74 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(bold yes)
+				(color 100 70 50 1)
+			)
+			(justify right bottom)
+			(href "#8")
+		)
+		(uuid "1a19be72-905c-4256-b655-137336d5cb5f")
+	)
+	(text "Page 5"
+		(exclude_from_sim no)
+		(at 173.99 101.6 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(bold yes)
+				(color 100 70 50 1)
+			)
+			(justify right bottom)
+			(href "#5")
+		)
+		(uuid "b60ecde0-2a85-4071-a728-47148cd80779")
+	)
+	(text "Page 6"
+		(exclude_from_sim no)
+		(at 173.99 130.81 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(bold yes)
+				(color 100 70 50 1)
+			)
+			(justify right bottom)
+			(href "#6")
+		)
+		(uuid "c4ffa47c-7d20-4f9b-8b2e-cdd38fed0cf3")
+	)
+	(text "Page 7"
+		(exclude_from_sim no)
+		(at 355.6 227.33 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(bold yes)
+				(color 100 70 50 1)
+			)
+			(justify right bottom)
+			(href "#7")
+		)
+		(uuid "cfa68ec2-eb5d-4fe1-b988-e6d8ff6b1659")
+	)
+	(text "Page 4"
+		(exclude_from_sim no)
+		(at 285.75 113.03 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(bold yes)
+				(color 20 60 40 1)
+			)
+			(justify right bottom)
+			(href "#4")
+		)
+		(uuid "f04f874a-d252-4474-87f2-c34bbb094a4c")
+	)
+	(text_box "Description"
+		(exclude_from_sim no)
+		(at 111.145 120.63 0)
+		(size 26.015 5.1)
+		(margins 1.4287 1.4287 1.4287 1.4287)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "631cc992-1e6e-4a87-a84d-c4d64535fb2a")
+	)
+	(text_box "Description"
+		(exclude_from_sim no)
+		(at 226.06 101.6 0)
+		(size 17.145 5.08)
+		(margins 1.4287 1.4287 1.4287 1.4287)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify right top)
+		)
+		(uuid "971f0c48-6726-412d-badf-cee82cbffedd")
+	)
+	(text_box "Description"
+		(exclude_from_sim no)
+		(at 111.145 91.42 0)
+		(size 26.015 5.1)
+		(margins 1.4287 1.4287 1.4287 1.4287)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "97bb5e92-ab26-4907-9b80-08d49465fc86")
+	)
+	(text_box "[${#}] ${TITLE}"
+		(exclude_from_sim no)
+		(at 144.78 21.59 0)
+		(size 130.81 12.7)
+		(margins 5.9999 5.9999 5.9999 5.9999)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 8 8)
+				(thickness 1.2)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+		)
+		(uuid "f4789478-c68e-4cee-9edd-5d11b744f94d")
+	)
+	(polyline
+		(pts
+			(xy 134.62 104.14) (xy 134.62 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b85ae34-9568-4e79-ac77-6fc6aae1f440")
+	)
+	(polyline
+		(pts
+			(xy 363.22 208.28) (xy 363.22 217.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ce4b513-360b-4bf7-86c8-9c432df6c1ee")
+	)
+	(polyline
+		(pts
+			(xy 245.11 105.41) (xy 245.11 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b678fb1-fee7-4461-95f7-7f383f478fdc")
+	)
+	(polyline
+		(pts
+			(xy 134.62 121.92) (xy 134.62 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c7de816-3d34-497f-b0c8-22f80559d2d8")
+	)
+	(polyline
+		(pts
+			(xy 245.11 102.87) (xy 245.11 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "903e49b2-1b5d-4317-a33b-adfda1594a88")
+	)
+	(polyline
+		(pts
+			(xy 134.62 133.35) (xy 134.62 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9543d363-0f36-4c41-97bc-b97723f48818")
+	)
+	(polyline
+		(pts
+			(xy 134.62 92.71) (xy 134.62 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1d057ac-a252-4ab6-872b-14ee4b112d5f")
+	)
+	(polyline
+		(pts
+			(xy 210.82 186.69) (xy 210.82 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c35d8caa-9b88-4949-97cf-fc4d76e0e396")
+	)
+	(polyline
+		(pts
+			(xy 363.22 219.71) (xy 363.22 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c443d3f3-0a2b-4a6f-959d-49bb4d313dd9")
+	)
+	(polyline
+		(pts
+			(xy 210.82 198.12) (xy 210.82 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e620bb3d-19ef-4a5a-b046-a2a39067631c")
+	)
+	(sheet
+		(at 320.04 208.28)
+		(size 36.83 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 200 0 0.5020)
+		)
+		(uuid "35ce4035-3b3b-4514-9c4f-75699da381c4")
+		(property "Sheetname" "Holes, Fiducials"
+			(at 320.04 207.2509 0)
+			(effects
+				(font
+					(size 1.905 1.905)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Section E - TItle E.kicad_sch"
+			(at 320.04 229.1846 0)
+			(effects
+				(font
+					(face "Arial")
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Cellule_de_force_V2"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 138.43 111.76)
+		(size 36.83 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 200 0 0.5020)
+		)
+		(uuid "d6110ee2-516c-48c1-b80a-d0f1701ed49f")
+		(property "Sheetname" "Converteur_3.3VD"
+			(at 138.43 110.7309 0)
+			(effects
+				(font
+					(size 1.905 1.905)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Section B - TItle B.kicad_sch"
+			(at 138.43 132.6646 0)
+			(effects
+				(font
+					(face "Arial")
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Cellule_de_force_V2"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 167.64 186.69)
+		(size 36.83 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 200 0 0.5020)
+		)
+		(uuid "ddd4b387-4aa4-48c3-b079-ffb0beb645d3")
+		(property "Sheetname" "Connecteur"
+			(at 167.64 185.6609 0)
+			(effects
+				(font
+					(size 1.905 1.905)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Section D - TItle D.kicad_sch"
+			(at 167.64 207.5946 0)
+			(effects
+				(font
+					(face "Arial")
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Cellule_de_force_V2"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 138.43 82.55)
+		(size 36.83 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 200 0 0.5020)
+		)
+		(uuid "e744f3ce-03a6-44a6-8792-1447ef232b9a")
+		(property "Sheetname" "Converteur_5VA"
+			(at 138.43 81.5209 0)
+			(effects
+				(font
+					(size 1.905 1.905)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Section C - TItle C.kicad_sch"
+			(at 138.43 103.4546 0)
+			(effects
+				(font
+					(face "Arial")
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Cellule_de_force_V2"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 250.19 93.98)
+		(size 36.83 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 128 255 128 0.5000)
+		)
+		(uuid "f06537ee-772d-44d3-8c50-e0ba41038c9c")
+		(property "Sheetname" "AD7910_Weight_sensor"
+			(at 250.19 92.9509 0)
+			(effects
+				(font
+					(size 1.905 1.905)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Section A - Title A.kicad_sch"
+			(at 250.19 114.8846 0)
+			(effects
+				(font
+					(face "Arial")
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Cellule_de_force_V2"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e"
+					(page "4")
+				)
+			)
+		)
+	)
+)
