@@ -1,0 +1,11 @@
+Row,Quantity Per PCB,References,Value,Datasheet,Footprint,Description,Manufacturer,Manufacturer Part Number,Supplier Part Number
+1,2,C11 C12,22pf,~,C_0603_1608Metric,Unpolarized capacitor,,,
+2,4,C7 C8 C9 C10,0.01µF,~,C_0603_1608Metric,Unpolarized capacitor,,,
+3,4,C1 C3 C5 C6,0.1µF,~,C_0603_1608Metric,Unpolarized capacitor,,,
+4,2,C2 C4,10µF,~,C_0603_1608Metric,Unpolarized capacitor,,,
+5,2,D1 D2,LED,~,LED_0603_1608Metric,Light emitting diode,,,
+6,9,R1 R2 R3 R4 R5 R6 R7 R10 R11,100Ω,~,R_0603_1608Metric,Resistor,,,
+7,1,R8,100kΩ,~,R_0603_1608Metric,Resistor,,,
+8,1,U1,AD7190WBRUZ,,SOP65P640X120-24N,,Analog Devices,,
+9,1,U2,LT3042xMSE,https://www.analog.com/media/en/technical-documentation/data-sheets/3042fb.pdf,MSOP-10-1EP_3x3mm_P0.5mm_EP2.2x3.1mm_Mask1.83x1.89mm_ThermalVias,"200mA, Adjustable, Ultralow Noise, Ultrahigh PSRR RF Linear Regulator, MSOP-10",,,
+10,1,Y1,ABC2-4.9152MHZ-4-T,https://abracon.com/Resonators/abc2.pdf,ABC210000MHZ4,LOW FREQUENCY CERAMIC SURFACE MOUNT MICROPROCESSOR CRYSTAL,,,

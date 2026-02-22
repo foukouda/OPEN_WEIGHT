@@ -1,0 +1,1400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/github/workspace/Cellule_de_force_V2.kicad_sch</source>
+    <date>Date1</date>
+    <tool>Eeschema 9.0.7+1</tool>
+    <textvar name="ASSEMBLY_NOTES"/>
+    <textvar name="BOARD_NAME">AD7190</textvar>
+    <textvar name="COMPANY">OPEN_TRUST_LAB</textvar>
+    <textvar name="DESIGNER">SIEBERT DIMITRY</textvar>
+    <textvar name="FABRICATION_NOTES"/>
+    <textvar name="GIT_HASH_PCB">f2c7d09</textvar>
+    <textvar name="GIT_HASH_SCH">f2c7d09</textvar>
+    <textvar name="GIT_URL">https://github.com/nguyen-v/KDT_Hierarchical_KiBot</textvar>
+    <textvar name="PROJECT_NAME">OPEN_WEIGHT</textvar>
+    <textvar name="RELEASE_BODY_1.0.0"/>
+    <textvar name="RELEASE_BODY_1.0.1"/>
+    <textvar name="RELEASE_BODY_1.0.2"/>
+    <textvar name="RELEASE_BODY_1.1.0"/>
+    <textvar name="RELEASE_BODY_UNRELEASED">Version Unreleased not found.</textvar>
+    <textvar name="RELEASE_DATE">22-Feb-2026</textvar>
+    <textvar name="RELEASE_DATE_NUM">2026-02-22</textvar>
+    <textvar name="RELEASE_TITLE_1.0.0"/>
+    <textvar name="RELEASE_TITLE_1.0.1"/>
+    <textvar name="RELEASE_TITLE_1.0.2"/>
+    <textvar name="RELEASE_TITLE_1.1.0"/>
+    <textvar name="RELEASE_TITLE_UNRELEASED">Version Unreleased not found.</textvar>
+    <textvar name="REVISION">+ (Unreleased)</textvar>
+    <textvar name="SHEET_NAME_1">Cover Page</textvar>
+    <textvar name="SHEET_NAME_10">Revision History</textvar>
+    <textvar name="SHEET_NAME_11">......................................</textvar>
+    <textvar name="SHEET_NAME_12">......................................</textvar>
+    <textvar name="SHEET_NAME_13">......................................</textvar>
+    <textvar name="SHEET_NAME_14">......................................</textvar>
+    <textvar name="SHEET_NAME_15">......................................</textvar>
+    <textvar name="SHEET_NAME_16">......................................</textvar>
+    <textvar name="SHEET_NAME_17">......................................</textvar>
+    <textvar name="SHEET_NAME_18">......................................</textvar>
+    <textvar name="SHEET_NAME_19">......................................</textvar>
+    <textvar name="SHEET_NAME_2">Block Diagram</textvar>
+    <textvar name="SHEET_NAME_20">......................................</textvar>
+    <textvar name="SHEET_NAME_21">......................................</textvar>
+    <textvar name="SHEET_NAME_22">......................................</textvar>
+    <textvar name="SHEET_NAME_23">......................................</textvar>
+    <textvar name="SHEET_NAME_24">......................................</textvar>
+    <textvar name="SHEET_NAME_25">......................................</textvar>
+    <textvar name="SHEET_NAME_26">......................................</textvar>
+    <textvar name="SHEET_NAME_27">......................................</textvar>
+    <textvar name="SHEET_NAME_28">......................................</textvar>
+    <textvar name="SHEET_NAME_29">......................................</textvar>
+    <textvar name="SHEET_NAME_3">Project Architecture</textvar>
+    <textvar name="SHEET_NAME_30">......................................</textvar>
+    <textvar name="SHEET_NAME_31">......................................</textvar>
+    <textvar name="SHEET_NAME_32">......................................</textvar>
+    <textvar name="SHEET_NAME_33">......................................</textvar>
+    <textvar name="SHEET_NAME_34">......................................</textvar>
+    <textvar name="SHEET_NAME_35">......................................</textvar>
+    <textvar name="SHEET_NAME_36">......................................</textvar>
+    <textvar name="SHEET_NAME_37">......................................</textvar>
+    <textvar name="SHEET_NAME_38">......................................</textvar>
+    <textvar name="SHEET_NAME_39">......................................</textvar>
+    <textvar name="SHEET_NAME_4">AD7910_Weight_sensor</textvar>
+    <textvar name="SHEET_NAME_40">......................................</textvar>
+    <textvar name="SHEET_NAME_5">Converteur_5VA</textvar>
+    <textvar name="SHEET_NAME_6">Converteur_3.3VD</textvar>
+    <textvar name="SHEET_NAME_7">Holes, Fiducials</textvar>
+    <textvar name="SHEET_NAME_8">Connecteur</textvar>
+    <textvar name="SHEET_NAME_9">Power - Sequencing</textvar>
+    <textvar name="VARIANT">DRAFT</textvar>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company>OPEN_TRUST_LAB</company>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
+        <source>Cellule_de_force_V2.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Block Diagram/" tstamps="/82da9dbf-ba38-4d08-ba35-a220fa2963b1/">
+      <title_block>
+        <title>Block Diagram</title>
+        <company>OPEN_TRUST_LAB</company>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
+        <source>Block Diagram.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/Project Architecture/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/">
+      <title_block>
+        <title>Project Architecture</title>
+        <company>OPEN_TRUST_LAB</company>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
+        <source>Project Architecture.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/">
+      <title_block>
+        <title>Sheet Title A</title>
+        <company>OPEN_TRUST_LAB</company>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
+        <source>Section A - Title A.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/Project Architecture/Converteur_5VA/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/">
+      <title_block>
+        <title>Sheet Title B</title>
+        <company>OPEN_TRUST_LAB</company>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
+        <source>Section C - TItle C.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="6" name="/Project Architecture/Converteur_3.3VD/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/">
+      <title_block>
+        <title>Sheet Title B</title>
+        <company>OPEN_TRUST_LAB</company>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
+        <source>Section B - TItle B.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="7" name="/Project Architecture/Holes, Fiducials/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/35ce4035-3b3b-4514-9c4f-75699da381c4/">
+      <title_block>
+        <title>Sheet Title B</title>
+        <company>OPEN_TRUST_LAB</company>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
+        <source>Section E - TItle E.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="8" name="/Project Architecture/Connecteur/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/ddd4b387-4aa4-48c3-b079-ffb0beb645d3/">
+      <title_block>
+        <title>Sheet Title B</title>
+        <company>OPEN_TRUST_LAB</company>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
+        <source>Section D - TItle D.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="9" name="/Power - Sequencing/" tstamps="/5fb05893-0da3-4f58-a52b-cb6d6f4cb80b/">
+      <title_block>
+        <title>Power - Sequencing</title>
+        <company>OPEN_TRUST_LAB</company>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
+        <source>Power - Sequencing.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="10" name="/Revision History/" tstamps="/6e125bd6-2f99-4e5d-b3ea-4899f4540739/">
+      <title_block>
+        <title>Revision History</title>
+        <company>OPEN_TRUST_LAB</company>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
+        <source>Revision History.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>0.1µF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>bc7e0189-e01d-4272-89bc-c9d5a18f04a5</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>10µF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>ba3de14f-5710-4805-a04f-6473d45ee45c</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>0.1µF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>78dca899-1f51-462b-9973-3d7d43a75357</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>10µF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>1bcd8bbe-ab8a-4890-9838-b0adfa1dab77</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>0.1µF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>d84c03b7-81f3-49c6-a9dc-7f36fbc33a08</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>0.1µF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>c0fa3d78-8f50-47cc-aabd-72166403d6a6</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>0.01µF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>b1effa4f-3c55-4a0f-be26-75f7af9f118e</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>0.01µF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>f78f5878-86f0-4a56-b0fb-f3b0b441d424</tstamps>
+    </comp>
+    <comp ref="C9">
+      <value>0.01µF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>9d237034-8a48-4a12-816a-9ada9f4bd1a5</tstamps>
+    </comp>
+    <comp ref="C10">
+      <value>0.01µF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>a849aab0-3b7f-4f40-8dec-3a22dbde4121</tstamps>
+    </comp>
+    <comp ref="C11">
+      <value>22pf</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>47c369ca-5718-4ffc-a1f9-f160f2d17804</tstamps>
+    </comp>
+    <comp ref="C12">
+      <value>22pf</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>892d0db1-98f3-4c01-8f2d-03c436e9e59a</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Light emitting diode</description>
+      <fields>
+        <field name="Sim.Pins">1=K 2=A</field>
+        <field name="Footprint">LED_SMD:LED_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Light emitting diode</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sim.Pins" value="1=K 2=A"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>c83422ed-3524-4786-b4e4-0bee65282a6c</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Light emitting diode</description>
+      <fields>
+        <field name="Sim.Pins">1=K 2=A</field>
+        <field name="Footprint">LED_SMD:LED_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Light emitting diode</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sim.Pins" value="1=K 2=A"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>fb10bf53-5660-4d23-8edf-6395c9f0fecf</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>100Ω</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>85458860-4a50-4437-92d0-0a02cd353eae</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>100Ω</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>df09fed5-983b-486f-bfea-dc742f1a1536</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>100Ω</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>8beddbd4-18b4-4966-9757-b6686044be39</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>100Ω</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>94be9b0a-a12b-4da7-a312-3db68c90aa35</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>100Ω</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>164fc1e7-3724-4715-92b5-e63d023bc4fe</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>100Ω</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>1a877220-8ce4-4a5c-ae9f-447ddd5ca488</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>100Ω</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>c0921913-ef7f-434a-8f67-9ae2ab739f98</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>100kΩ</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>fe57d27e-f480-494a-9f33-607cdc712c16</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>100Ω</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>1fea64b4-fe8c-4217-8bbc-828339b7f1eb</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>100Ω</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>e02b5e7d-5c8e-4cf9-9e8d-dc3951796614</tstamps>
+    </comp>
+    <comp ref="TP1">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <description>test point</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>c3bead9d-985d-43fa-9d75-139045c8fc6c</tstamps>
+    </comp>
+    <comp ref="TP2">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <description>test point</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>40723b3b-8178-4098-8945-83ea11f61f73</tstamps>
+    </comp>
+    <comp ref="TP3">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <description>test point</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>4ddb453e-e75f-4098-99d1-555f9a178c04</tstamps>
+    </comp>
+    <comp ref="TP4">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <description>test point</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>f3459d99-fa64-443a-88a8-f0132486f52d</tstamps>
+    </comp>
+    <comp ref="TP5">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <description>test point</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>aefc3b4e-2bda-4791-b2d9-7f6195f10e10</tstamps>
+    </comp>
+    <comp ref="TP6">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <description>test point</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>91574808-d6b8-494f-bb54-226ff5a24c69</tstamps>
+    </comp>
+    <comp ref="TP7">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <description>test point</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>b10d6763-bd38-486b-876a-0cdb5e74bd50</tstamps>
+    </comp>
+    <comp ref="TP8">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <description>test point</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>5d1201ea-0465-497d-8e20-2759eb9839ee</tstamps>
+    </comp>
+    <comp ref="TP9">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <description>test point</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>2b0e1991-1280-42e6-89d5-fee6fcf3ae46</tstamps>
+    </comp>
+    <comp ref="TP10">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <description>test point</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>cc971d9a-29b1-4380-ad13-cb962dff5758</tstamps>
+    </comp>
+    <comp ref="TP11">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <description>test point</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>c90da454-d7b0-4c8f-a942-88a4839531dc</tstamps>
+    </comp>
+    <comp ref="TP12">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <description>test point</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>e7daa4f8-4896-431c-b46e-0a7e4621aafd</tstamps>
+    </comp>
+    <comp ref="TP13">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <description>test point</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>af650a62-857f-4b18-8440-9d193bf15a97</tstamps>
+    </comp>
+    <comp ref="TP14">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <description>test point</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>189fbace-50d9-4883-ae65-4d9b4d8ad3b2</tstamps>
+    </comp>
+    <comp ref="TP15">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <description>test point</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>d4e7c315-f6f7-44dc-91cf-d87b4c23aafd</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>AD7190WBRUZ</value>
+      <footprint>AD7190WBRUZ:SOP65P640X120-24N</footprint>
+      <fields>
+        <field name="MF">Analog Devices</field>
+        <field name="Description_1">4.8 kHz Ultralow Noise 24-Bit Sigma-Delta ADC with PGA</field>
+        <field name="Package">TSSOP-24 Analog Devices</field>
+        <field name="Price">None</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/AD7190WBRUZ/Analog+Devices/view-part/?ref=eda</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/AD7190WBRUZ/Analog+Devices/view-part/?ref=snap</field>
+        <field name="MP">AD7190WBRUZ</field>
+        <field name="Availability">In Stock</field>
+        <field name="MANUFACTURER">Analog Devices</field>
+        <field name="Footprint">AD7190WBRUZ:SOP65P640X120-24N</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="AD7190WBRUZ" part="AD7190WBRUZ" description=""/>
+      <property name="MF" value="Analog Devices"/>
+      <property name="Description_1" value="4.8 kHz Ultralow Noise 24-Bit Sigma-Delta ADC with PGA"/>
+      <property name="Package" value="TSSOP-24 Analog Devices"/>
+      <property name="Price" value="None"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/AD7190WBRUZ/Analog+Devices/view-part/?ref=eda"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/AD7190WBRUZ/Analog+Devices/view-part/?ref=snap"/>
+      <property name="MP" value="AD7190WBRUZ"/>
+      <property name="Availability" value="In Stock"/>
+      <property name="MANUFACTURER" value="Analog Devices"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>a25dae19-7f32-411c-b4a3-b9de6282b7e9</tstamps>
+    </comp>
+    <comp ref="Y1">
+      <value>ABC2-4.9152MHZ-4-T</value>
+      <footprint>ABC210000MHZ4</footprint>
+      <datasheet>https://abracon.com/Resonators/abc2.pdf</datasheet>
+      <description>LOW FREQUENCY CERAMIC SURFACE MOUNT MICROPROCESSOR CRYSTAL</description>
+      <fields>
+        <field name="Height">2</field>
+        <field name="Manufacturer_Name">ABRACON</field>
+        <field name="Manufacturer_Part_Number">ABC2-4.9152MHZ-4-T</field>
+        <field name="Mouser Part Number">815-ABC2-4.915M-4-T</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/ABRACON/ABC2-4.9152MHZ-4-T?qs=S%252BYRV53T2BpAvrVLkV2d2A%3D%3D</field>
+        <field name="Arrow Part Number">ABC2-4.9152MHZ-4-T</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/abc2-4.9152mhz-4-t/abracon</field>
+        <field name="Footprint">ABC210000MHZ4</field>
+        <field name="Datasheet">https://abracon.com/Resonators/abc2.pdf</field>
+        <field name="Description">LOW FREQUENCY CERAMIC SURFACE MOUNT MICROPROCESSOR CRYSTAL</field>
+      </fields>
+      <libsource lib="ABC2-4_9152MHZ-4-T" part="ABC2-4.9152MHZ-4-T" description="LOW FREQUENCY CERAMIC SURFACE MOUNT MICROPROCESSOR CRYSTAL"/>
+      <property name="Height" value="2"/>
+      <property name="Manufacturer_Name" value="ABRACON"/>
+      <property name="Manufacturer_Part_Number" value="ABC2-4.9152MHZ-4-T"/>
+      <property name="Mouser Part Number" value="815-ABC2-4.915M-4-T"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/ABRACON/ABC2-4.9152MHZ-4-T?qs=S%252BYRV53T2BpAvrVLkV2d2A%3D%3D"/>
+      <property name="Arrow Part Number" value="ABC2-4.9152MHZ-4-T"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/abc2-4.9152mhz-4-t/abracon"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>9956f2cc-6791-4015-a386-27951f30106b</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>LT3042xMSE</value>
+      <footprint>Package_SO:MSOP-10-1EP_3x3mm_P0.5mm_EP2.2x3.1mm_Mask1.83x1.89mm_ThermalVias</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/3042fb.pdf</datasheet>
+      <description>200mA, Adjustable, Ultralow Noise, Ultrahigh PSRR RF Linear Regulator, MSOP-10</description>
+      <fields>
+        <field name="Footprint">Package_SO:MSOP-10-1EP_3x3mm_P0.5mm_EP2.2x3.1mm_Mask1.83x1.89mm_ThermalVias</field>
+        <field name="Datasheet">https://www.analog.com/media/en/technical-documentation/data-sheets/3042fb.pdf</field>
+        <field name="Description">200mA, Adjustable, Ultralow Noise, Ultrahigh PSRR RF Linear Regulator, MSOP-10</field>
+      </fields>
+      <libsource lib="Regulator_Linear" part="LT3042xMSE" description="200mA, Adjustable, Ultralow Noise, Ultrahigh PSRR RF Linear Regulator, MSOP-10"/>
+      <property name="Sheetname" value="Converteur_5VA"/>
+      <property name="Sheetfile" value="Section C - TItle C.kicad_sch"/>
+      <property name="ki_keywords" value="linear voltage regulator low-noise"/>
+      <property name="ki_fp_filters" value="MSOP*1EP*3x3mm*P0.5mm*"/>
+      <sheetpath names="/Project Architecture/Converteur_5VA/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>0d0f29bc-b028-4c63-a610-9f8989515cd8</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="ABC2-4_9152MHZ-4-T" part="ABC2-4.9152MHZ-4-T">
+      <description>LOW FREQUENCY CERAMIC SURFACE MOUNT MICROPROCESSOR CRYSTAL</description>
+      <docs>https://abracon.com/Resonators/abc2.pdf</docs>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">ABC2-4.9152MHZ-4-T</field>
+        <field name="Footprint">ABC210000MHZ4</field>
+        <field name="Datasheet">https://abracon.com/Resonators/abc2.pdf</field>
+        <field name="Description">LOW FREQUENCY CERAMIC SURFACE MOUNT MICROPROCESSOR CRYSTAL</field>
+        <field name="Height">2</field>
+        <field name="Manufacturer_Name">ABRACON</field>
+        <field name="Manufacturer_Part_Number">ABC2-4.9152MHZ-4-T</field>
+        <field name="Mouser Part Number">815-ABC2-4.915M-4-T</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/ABRACON/ABC2-4.9152MHZ-4-T?qs=S%252BYRV53T2BpAvrVLkV2d2A%3D%3D</field>
+        <field name="Arrow Part Number">ABC2-4.9152MHZ-4-T</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/abc2-4.9152mhz-4-t/abracon</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="AD7190WBRUZ" part="AD7190WBRUZ">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AD7190WBRUZ</field>
+        <field name="Footprint">AD7190WBRUZ:SOP65P640X120-24N</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+        <field name="MF">Analog Devices</field>
+        <field name="Description_1">4.8 kHz Ultralow Noise 24-Bit Sigma-Delta ADC with PGA</field>
+        <field name="Package">TSSOP-24 Analog Devices</field>
+        <field name="Price">None</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/AD7190WBRUZ/Analog+Devices/view-part/?ref=eda</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/AD7190WBRUZ/Analog+Devices/view-part/?ref=snap</field>
+        <field name="MP">AD7190WBRUZ</field>
+        <field name="Availability">In Stock</field>
+        <field name="MANUFACTURER">Analog Devices</field>
+      </fields>
+      <pins>
+        <pin num="1" name="MCLK1" type="input"/>
+        <pin num="2" name="MCLK2" type="input"/>
+        <pin num="3" name="SCLK" type="input"/>
+        <pin num="4" name="~{CS}" type="input"/>
+        <pin num="5" name="P3" type="output"/>
+        <pin num="6" name="P2" type="output"/>
+        <pin num="7" name="P1/REFIN2(+)" type="bidirectional"/>
+        <pin num="8" name="P0/REFIN2(-)" type="bidirectional"/>
+        <pin num="10" name="AINCOM" type="input"/>
+        <pin num="11" name="AIN1" type="input"/>
+        <pin num="12" name="AIN2" type="input"/>
+        <pin num="13" name="AIN3" type="input"/>
+        <pin num="14" name="AIN4" type="input"/>
+        <pin num="15" name="REFIN1(+)" type="input"/>
+        <pin num="16" name="REFIN1(-)" type="input"/>
+        <pin num="17" name="BPDSW" type="bidirectional"/>
+        <pin num="18" name="AGND" type="power_in"/>
+        <pin num="19" name="DGND" type="power_in"/>
+        <pin num="20" name="AVDD" type="power_in"/>
+        <pin num="21" name="DVDD" type="power_in"/>
+        <pin num="22" name="~{SYNC}" type="input"/>
+        <pin num="23" name="DOUT/~{RDY}" type="bidirectional"/>
+        <pin num="24" name="DIN" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="TestPoint">
+      <description>test point</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">test point</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Light emitting diode</field>
+        <field name="Sim.Pins">1=K 2=A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Linear" part="LT3042xMSE">
+      <description>200mA, Adjustable, Ultralow Noise, Ultrahigh PSRR RF Linear Regulator, MSOP-10</description>
+      <docs>https://www.analog.com/media/en/technical-documentation/data-sheets/3042fb.pdf</docs>
+      <footprints>
+        <fp>MSOP*1EP*3x3mm*P0.5mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LT3042xMSE</field>
+        <field name="Footprint">Package_SO:MSOP-10-1EP_3x3mm_P0.5mm_EP1.68x1.88mm</field>
+        <field name="Datasheet">https://www.analog.com/media/en/technical-documentation/data-sheets/3042fb.pdf</field>
+        <field name="Description">200mA, Adjustable, Ultralow Noise, Ultrahigh PSRR RF Linear Regulator, MSOP-10</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="IN" type="passive"/>
+        <pin num="3" name="EN/UV" type="input"/>
+        <pin num="4" name="PG" type="open_collector"/>
+        <pin num="5" name="ILIM" type="passive"/>
+        <pin num="6" name="PGFB" type="input"/>
+        <pin num="7" name="SET" type="passive"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="OUTS" type="input"/>
+        <pin num="10" name="OUT" type="power_out"/>
+        <pin num="11" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>/usr/share/kicad/symbols//Connector.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/symbols//Device.kicad_sym</uri>
+    </library>
+    <library logical="Regulator_Linear">
+      <uri>/usr/share/kicad/symbols//Regulator_Linear.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3.3V" class="Default">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="TP6" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="21" pinfunction="DVDD" pintype="power_in"/>
+    </net>
+    <net code="2" name="CS" class="Default">
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="TP9" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="3" name="DIN" class="Default">
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="TP12" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="4" name="DOUT" class="Default">
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="TP13" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="5" name="GND" class="Default">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="TP7" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="TP8" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="18" pinfunction="AGND" pintype="power_in"/>
+      <node ref="U1" pin="19" pinfunction="DGND" pintype="power_in"/>
+    </net>
+    <net code="6" name="IN-OUT+" class="Default">
+      <node ref="R1" pin="1" pintype="passive"/>
+    </net>
+    <net code="7" name="IN-OUT-" class="Default">
+      <node ref="R2" pin="1" pintype="passive"/>
+    </net>
+    <net code="8" name="IN-SENSE+" class="Default">
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="TP1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="TP5" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="15" pinfunction="REFIN1(+)" pintype="input"/>
+      <node ref="U1" pin="20" pinfunction="AVDD" pintype="power_in"/>
+    </net>
+    <net code="9" name="IN-SENSE-" class="Default">
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="TP2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="16" pinfunction="REFIN1(-)" pintype="input"/>
+    </net>
+    <net code="10" name="MCLK1" class="Default">
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="TP14" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="MCLK1" pintype="input"/>
+      <node ref="Y1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="Y1" pin="4" pinfunction="4" pintype="passive"/>
+    </net>
+    <net code="11" name="MCLK2" class="Default">
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="TP15" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="MCLK2" pintype="input"/>
+      <node ref="Y1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="Y1" pin="3" pinfunction="3" pintype="passive"/>
+    </net>
+    <net code="12" name="Net-(D1-A)" class="Default">
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+    </net>
+    <net code="13" name="Net-(D2-A)" class="Default">
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R11" pin="2" pintype="passive"/>
+    </net>
+    <net code="14" name="Net-(U1-DIN)" class="Default">
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="U1" pin="24" pinfunction="DIN" pintype="input"/>
+    </net>
+    <net code="15" name="Net-(U1-DOUT/~{RDY})" class="Default">
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="U1" pin="23" pinfunction="DOUT/~{RDY}" pintype="bidirectional"/>
+    </net>
+    <net code="16" name="Net-(U1-P2)" class="Default">
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="P2" pintype="output"/>
+    </net>
+    <net code="17" name="Net-(U1-P3)" class="Default">
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="P3" pintype="output"/>
+    </net>
+    <net code="18" name="Net-(U1-SCLK)" class="Default">
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="SCLK" pintype="input"/>
+    </net>
+    <net code="19" name="Net-(U1-~{CS})" class="Default">
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="~{CS}" pintype="input"/>
+    </net>
+    <net code="20" name="Net-(U1-~{SYNC})" class="Default">
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="U1" pin="22" pinfunction="~{SYNC}" pintype="input"/>
+    </net>
+    <net code="21" name="Net-(U2-GND-Pad11)" class="Default">
+      <node ref="U2" pin="11" pinfunction="GND" pintype="passive"/>
+      <node ref="U2" pin="8" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="22" name="Net-(U2-IN-Pad1)" class="Default">
+      <node ref="U2" pin="1" pinfunction="IN" pintype="power_in"/>
+      <node ref="U2" pin="2" pinfunction="IN" pintype="passive"/>
+    </net>
+    <net code="23" name="OUT+" class="Default">
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="TP3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="13" pinfunction="AIN3" pintype="input"/>
+    </net>
+    <net code="24" name="OUT-" class="Default">
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="TP4" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="14" pinfunction="AIN4" pintype="input"/>
+      <node ref="U1" pin="17" pinfunction="BPDSW" pintype="bidirectional"/>
+    </net>
+    <net code="25" name="SCLK" class="Default">
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="TP10" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="26" name="SYNC" class="Default">
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="TP11" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="27" name="unconnected-(U1-AIN1-Pad11)" class="Default">
+      <node ref="U1" pin="11" pinfunction="AIN1" pintype="input+no_connect"/>
+    </net>
+    <net code="28" name="unconnected-(U1-AIN2-Pad12)" class="Default">
+      <node ref="U1" pin="12" pinfunction="AIN2" pintype="input+no_connect"/>
+    </net>
+    <net code="29" name="unconnected-(U1-AINCOM-Pad10)" class="Default">
+      <node ref="U1" pin="10" pinfunction="AINCOM" pintype="input+no_connect"/>
+    </net>
+    <net code="30" name="unconnected-(U1-P0/REFIN2(-)-Pad8)" class="Default">
+      <node ref="U1" pin="8" pinfunction="P0/REFIN2(-)" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="31" name="unconnected-(U1-P1/REFIN2(+)-Pad7)" class="Default">
+      <node ref="U1" pin="7" pinfunction="P1/REFIN2(+)" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="32" name="unconnected-(U2-EN/UV-Pad3)" class="Default">
+      <node ref="U2" pin="3" pinfunction="EN/UV" pintype="input"/>
+    </net>
+    <net code="33" name="unconnected-(U2-ILIM-Pad5)" class="Default">
+      <node ref="U2" pin="5" pinfunction="ILIM" pintype="passive"/>
+    </net>
+    <net code="34" name="unconnected-(U2-OUT-Pad10)" class="Default">
+      <node ref="U2" pin="10" pinfunction="OUT" pintype="power_out"/>
+    </net>
+    <net code="35" name="unconnected-(U2-OUTS-Pad9)" class="Default">
+      <node ref="U2" pin="9" pinfunction="OUTS" pintype="input"/>
+    </net>
+    <net code="36" name="unconnected-(U2-PG-Pad4)" class="Default">
+      <node ref="U2" pin="4" pinfunction="PG" pintype="open_collector"/>
+    </net>
+    <net code="37" name="unconnected-(U2-PGFB-Pad6)" class="Default">
+      <node ref="U2" pin="6" pinfunction="PGFB" pintype="input"/>
+    </net>
+    <net code="38" name="unconnected-(U2-SET-Pad7)" class="Default">
+      <node ref="U2" pin="7" pinfunction="SET" pintype="passive"/>
+    </net>
+  </nets>
+</export>
