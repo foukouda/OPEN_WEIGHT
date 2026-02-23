@@ -593,7 +593,7 @@
 			(color 255 200 0 0.5020)
 		)
 		(uuid "d6110ee2-516c-48c1-b80a-d0f1701ed49f")
-		(property "Sheetname" "Converteur_3.3VD"
+		(property "Sheetname" "Converteur_3.3V a 6V"
 			(at 138.43 110.7309 0)
 			(effects
 				(font
