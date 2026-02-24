@@ -1283,8 +1283,242 @@
       <sheetpath names="/Project Architecture/LT3042_6V_5VA/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
       <tstamps>0d0f29bc-b028-4c63-a610-9f8989515cd8</tstamps>
     </comp>
+    <comp ref="IC2">
+      <value>TPS61086DRCR</value>
+      <footprint>TPS16412DRCR</footprint>
+      <datasheet>https://www.ti.com/lit/gpn/TPS61086</datasheet>
+      <description>Switching Voltage Regulators 18.5V PFM/PWM Step- Up DC-DC Converter</description>
+      <fields>
+        <field name="Height">1</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">TPS61086DRCR</field>
+        <field name="Mouser Part Number">595-TPS61086DRCR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS61086DRCR?qs=6805eV47HhZDU1cIiHcRxg%3D%3D</field>
+        <field name="Arrow Part Number">TPS61086DRCR</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/tps61086drcr/texas-instruments?region=nac</field>
+        <field name="Footprint">TPS16412DRCR</field>
+        <field name="Datasheet">https://www.ti.com/lit/gpn/TPS61086</field>
+        <field name="Description">Switching Voltage Regulators 18.5V PFM/PWM Step- Up DC-DC Converter</field>
+      </fields>
+      <libsource lib="" part="TPS61086DRCR_1" description="Switching Voltage Regulators 18.5V PFM/PWM Step- Up DC-DC Converter"/>
+      <property name="Height" value="1"/>
+      <property name="Manufacturer_Name" value="Texas Instruments"/>
+      <property name="Manufacturer_Part_Number" value="TPS61086DRCR"/>
+      <property name="Mouser Part Number" value="595-TPS61086DRCR"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS61086DRCR?qs=6805eV47HhZDU1cIiHcRxg%3D%3D"/>
+      <property name="Arrow Part Number" value="TPS61086DRCR"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/tps61086drcr/texas-instruments?region=nac"/>
+      <property name="Sheetname" value="TPS61086_3.3V_to_6V"/>
+      <property name="Sheetfile" value="Section B - TItle B.kicad_sch"/>
+      <sheetpath names="/Project Architecture/TPS61086_3.3V_to_6V/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
+      <tstamps>7ffb5ff3-2277-43db-b951-fb72f555067d</tstamps>
+    </comp>
+    <comp ref="R15">
+      <value>18kΩ</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="TPS61086_3.3V_to_6V"/>
+      <property name="Sheetfile" value="Section B - TItle B.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/TPS61086_3.3V_to_6V/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
+      <tstamps>99f42ed9-7a5e-4e33-ac8d-e98dfbc0e1bc</tstamps>
+    </comp>
+    <comp ref="R17">
+      <value>69.8kΩ</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="TPS61086_3.3V_to_6V"/>
+      <property name="Sheetfile" value="Section B - TItle B.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/TPS61086_3.3V_to_6V/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
+      <tstamps>ee7a97e3-a489-423f-a37d-66fad1d1b7a4</tstamps>
+    </comp>
+    <comp ref="FID1">
+      <value>Fiducial</value>
+      <footprint>Fiducial:Fiducial_1.5mm_Mask3mm</footprint>
+      <datasheet>~</datasheet>
+      <description>Fiducial Marker</description>
+      <fields>
+        <field name="Footprint">Fiducial:Fiducial_1.5mm_Mask3mm</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Fiducial Marker</field>
+      </fields>
+      <libsource lib="Mechanical" part="Fiducial" description="Fiducial Marker"/>
+      <property name="Sheetname" value="Holes, Fiducials"/>
+      <property name="Sheetfile" value="Section E - TItle E.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="fiducial marker"/>
+      <property name="ki_fp_filters" value="Fiducial*"/>
+      <sheetpath names="/Project Architecture/Holes, Fiducials/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/35ce4035-3b3b-4514-9c4f-75699da381c4/"/>
+      <tstamps>e425a324-9b39-448d-8620-80542b639241</tstamps>
+    </comp>
+    <comp ref="FID2">
+      <value>Fiducial</value>
+      <footprint>Fiducial:Fiducial_1.5mm_Mask3mm</footprint>
+      <datasheet>~</datasheet>
+      <description>Fiducial Marker</description>
+      <fields>
+        <field name="Footprint">Fiducial:Fiducial_1.5mm_Mask3mm</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Fiducial Marker</field>
+      </fields>
+      <libsource lib="Mechanical" part="Fiducial" description="Fiducial Marker"/>
+      <property name="Sheetname" value="Holes, Fiducials"/>
+      <property name="Sheetfile" value="Section E - TItle E.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="fiducial marker"/>
+      <property name="ki_fp_filters" value="Fiducial*"/>
+      <sheetpath names="/Project Architecture/Holes, Fiducials/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/35ce4035-3b3b-4514-9c4f-75699da381c4/"/>
+      <tstamps>0a3a16e3-4334-49f9-a05b-b5231312a789</tstamps>
+    </comp>
+    <comp ref="FID3">
+      <value>Fiducial</value>
+      <footprint>Fiducial:Fiducial_1.5mm_Mask3mm</footprint>
+      <datasheet>~</datasheet>
+      <description>Fiducial Marker</description>
+      <fields>
+        <field name="Footprint">Fiducial:Fiducial_1.5mm_Mask3mm</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Fiducial Marker</field>
+      </fields>
+      <libsource lib="Mechanical" part="Fiducial" description="Fiducial Marker"/>
+      <property name="Sheetname" value="Holes, Fiducials"/>
+      <property name="Sheetfile" value="Section E - TItle E.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="fiducial marker"/>
+      <property name="ki_fp_filters" value="Fiducial*"/>
+      <sheetpath names="/Project Architecture/Holes, Fiducials/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/35ce4035-3b3b-4514-9c4f-75699da381c4/"/>
+      <tstamps>430791c2-b449-4fd1-bbb3-b745456fe603</tstamps>
+    </comp>
+    <comp ref="H1">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad_Via</footprint>
+      <datasheet>~</datasheet>
+      <description>Mounting Hole with connection</description>
+      <fields>
+        <field name="Footprint">MountingHole:MountingHole_3.2mm_M3_Pad_Via</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Mounting Hole with connection</field>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value="Holes, Fiducials"/>
+      <property name="Sheetfile" value="Section E - TItle E.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*Pad*"/>
+      <sheetpath names="/Project Architecture/Holes, Fiducials/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/35ce4035-3b3b-4514-9c4f-75699da381c4/"/>
+      <tstamps>3509be99-9701-4e2f-b963-23ff7ab34093</tstamps>
+    </comp>
+    <comp ref="H2">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad_Via</footprint>
+      <datasheet>~</datasheet>
+      <description>Mounting Hole with connection</description>
+      <fields>
+        <field name="Footprint">MountingHole:MountingHole_3.2mm_M3_Pad_Via</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Mounting Hole with connection</field>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value="Holes, Fiducials"/>
+      <property name="Sheetfile" value="Section E - TItle E.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*Pad*"/>
+      <sheetpath names="/Project Architecture/Holes, Fiducials/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/35ce4035-3b3b-4514-9c4f-75699da381c4/"/>
+      <tstamps>48a2b0a1-09f7-41d2-b774-0babb80a6486</tstamps>
+    </comp>
+    <comp ref="H3">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad_Via</footprint>
+      <datasheet>~</datasheet>
+      <description>Mounting Hole with connection</description>
+      <fields>
+        <field name="Footprint">MountingHole:MountingHole_3.2mm_M3_Pad_Via</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Mounting Hole with connection</field>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value="Holes, Fiducials"/>
+      <property name="Sheetfile" value="Section E - TItle E.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*Pad*"/>
+      <sheetpath names="/Project Architecture/Holes, Fiducials/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/35ce4035-3b3b-4514-9c4f-75699da381c4/"/>
+      <tstamps>a5918d1f-e00f-46bf-aafa-fca2c3ca0aef</tstamps>
+    </comp>
+    <comp ref="H4">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad_Via</footprint>
+      <datasheet>~</datasheet>
+      <description>Mounting Hole with connection</description>
+      <fields>
+        <field name="Footprint">MountingHole:MountingHole_3.2mm_M3_Pad_Via</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Mounting Hole with connection</field>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value="Holes, Fiducials"/>
+      <property name="Sheetfile" value="Section E - TItle E.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*Pad*"/>
+      <sheetpath names="/Project Architecture/Holes, Fiducials/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/35ce4035-3b3b-4514-9c4f-75699da381c4/"/>
+      <tstamps>1f537a38-a588-4685-9d16-1fb3b91d2f53</tstamps>
+    </comp>
   </components>
   <libparts>
+    <libpart lib="" part="TPS61086DRCR_1">
+      <description>Switching Voltage Regulators 18.5V PFM/PWM Step- Up DC-DC Converter</description>
+      <docs>https://www.ti.com/lit/gpn/TPS61086</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">TPS61086DRCR</field>
+        <field name="Footprint">TPS16412DRCR</field>
+        <field name="Datasheet">https://www.ti.com/lit/gpn/TPS61086</field>
+        <field name="Description">Switching Voltage Regulators 18.5V PFM/PWM Step- Up DC-DC Converter</field>
+        <field name="Height">1</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">TPS61086DRCR</field>
+        <field name="Mouser Part Number">595-TPS61086DRCR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS61086DRCR?qs=6805eV47HhZDU1cIiHcRxg%3D%3D</field>
+        <field name="Arrow Part Number">TPS61086DRCR</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/tps61086drcr/texas-instruments?region=nac</field>
+      </fields>
+      <pins>
+        <pin num="1" name="COMP" type="passive"/>
+        <pin num="2" name="FB" type="passive"/>
+        <pin num="3" name="EN" type="passive"/>
+        <pin num="4" name="AGND" type="passive"/>
+        <pin num="5" name="PGND" type="passive"/>
+        <pin num="6" name="SW_1" type="passive"/>
+        <pin num="7" name="SW_2" type="passive"/>
+        <pin num="8" name="IN" type="passive"/>
+        <pin num="9" name="MODE" type="passive"/>
+        <pin num="10" name="SS" type="passive"/>
+        <pin num="11" name="EP" type="passive"/>
+        <pin num="12" name="EP_2" type="passive"/>
+        <pin num="13" name="EP_3" type="passive"/>
+        <pin num="14" name="EP_4" type="passive"/>
+        <pin num="15" name="EP_5" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="ABC2-4_9152MHZ-4-T" part="ABC2-4.9152MHZ-4-T">
       <description>LOW FREQUENCY CERAMIC SURFACE MOUNT MICROPROCESSOR CRYSTAL</description>
       <docs>https://abracon.com/Resonators/abc2.pdf</docs>
@@ -1427,6 +1661,37 @@
         <pin num="2" name="" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="Mechanical" part="Fiducial">
+      <description>Fiducial Marker</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Fiducial*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">FID</field>
+        <field name="Value">Fiducial</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Fiducial Marker</field>
+      </fields>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole_Pad">
+      <description>Mounting Hole with connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*Pad*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole_Pad</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Mounting Hole with connection</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+      </pins>
+    </libpart>
     <libpart lib="Regulator_Linear" part="LT3042xMSE">
       <description>200mA, Adjustable, Ultralow Noise, Ultrahigh PSRR RF Linear Regulator, MSOP-10</description>
       <docs>https://www.analog.com/media/en/technical-documentation/data-sheets/3042fb.pdf</docs>
@@ -1484,6 +1749,9 @@
     <library logical="Device">
       <uri>/usr/share/kicad/symbols//Device.kicad_sym</uri>
     </library>
+    <library logical="Mechanical">
+      <uri>/usr/share/kicad/symbols//Mechanical.kicad_sym</uri>
+    </library>
     <library logical="Regulator_Linear">
       <uri>/usr/share/kicad/symbols//Regulator_Linear.kicad_sym</uri>
     </library>
@@ -1492,6 +1760,7 @@
     <net code="1" name="+3.3V_IN" class="Default">
       <node ref="C1" pin="1" pintype="passive"/>
       <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="IC2" pin="8" pinfunction="IN" pintype="passive"/>
       <node ref="R8" pin="1" pintype="passive"/>
       <node ref="TP6" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="21" pinfunction="DVDD" pintype="power_in"/>
@@ -1513,31 +1782,36 @@
       <node ref="U2" pin="2" pinfunction="IN" pintype="passive"/>
       <node ref="U2" pin="3" pinfunction="EN/UV" pintype="input"/>
     </net>
-    <net code="4" name="/Project Architecture/LT3042_6V_5VA/PGFB" class="Default">
+    <net code="4" name="+6V_OUT" class="Default">
+      <node ref="IC2" pin="6" pinfunction="SW_1" pintype="passive"/>
+      <node ref="IC2" pin="7" pinfunction="SW_2" pintype="passive"/>
+      <node ref="R17" pin="2" pintype="passive"/>
+    </net>
+    <net code="5" name="/Project Architecture/LT3042_6V_5VA/PGFB" class="Default">
       <node ref="R12" pin="1" pintype="passive"/>
       <node ref="R13" pin="2" pintype="passive"/>
       <node ref="TP18" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U2" pin="6" pinfunction="PGFB" pintype="input"/>
     </net>
-    <net code="5" name="/Project Architecture/LT3042_6V_5VA/SET" class="Default">
+    <net code="6" name="/Project Architecture/LT3042_6V_5VA/SET" class="Default">
       <node ref="C14" pin="1" pinfunction="+" pintype="passive"/>
       <node ref="R9" pin="2" pintype="passive"/>
       <node ref="TP17" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U2" pin="7" pinfunction="SET" pintype="passive"/>
     </net>
-    <net code="6" name="CS" class="Default">
+    <net code="7" name="CS" class="Default">
       <node ref="R6" pin="1" pintype="passive"/>
       <node ref="TP9" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="7" name="DIN" class="Default">
+    <net code="8" name="DIN" class="Default">
       <node ref="R3" pin="1" pintype="passive"/>
       <node ref="TP12" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="8" name="DOUT" class="Default">
+    <net code="9" name="DOUT" class="Default">
       <node ref="R7" pin="1" pintype="passive"/>
       <node ref="TP13" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="9" name="GND" class="Default">
+    <net code="10" name="GND" class="Default">
       <node ref="C1" pin="2" pintype="passive"/>
       <node ref="C10" pin="1" pintype="passive"/>
       <node ref="C11" pin="2" pintype="passive"/>
@@ -1555,7 +1829,20 @@
       <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="D4" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="H1" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H2" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H3" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H4" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="IC2" pin="11" pinfunction="EP" pintype="passive"/>
+      <node ref="IC2" pin="12" pinfunction="EP_2" pintype="passive"/>
+      <node ref="IC2" pin="13" pinfunction="EP_3" pintype="passive"/>
+      <node ref="IC2" pin="14" pinfunction="EP_4" pintype="passive"/>
+      <node ref="IC2" pin="15" pinfunction="EP_5" pintype="passive"/>
+      <node ref="IC2" pin="4" pinfunction="AGND" pintype="passive"/>
+      <node ref="IC2" pin="5" pinfunction="PGND" pintype="passive"/>
+      <node ref="IC2" pin="9" pinfunction="MODE" pintype="passive"/>
       <node ref="R13" pin="1" pintype="passive"/>
+      <node ref="R15" pin="1" pintype="passive"/>
       <node ref="R9" pin="1" pintype="passive"/>
       <node ref="TP7" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="18" pinfunction="AGND" pintype="power_in"/>
@@ -1564,13 +1851,13 @@
       <node ref="U2" pin="5" pinfunction="ILIM" pintype="passive"/>
       <node ref="U2" pin="8" pinfunction="GND" pintype="power_in"/>
     </net>
-    <net code="10" name="IN-OUT+" class="Default">
+    <net code="11" name="IN-OUT+" class="Default">
       <node ref="R1" pin="1" pintype="passive"/>
     </net>
-    <net code="11" name="IN-OUT-" class="Default">
+    <net code="12" name="IN-OUT-" class="Default">
       <node ref="R2" pin="1" pintype="passive"/>
     </net>
-    <net code="12" name="IN-SENSE+" class="Default">
+    <net code="13" name="IN-SENSE+" class="Default">
       <node ref="C3" pin="2" pintype="passive"/>
       <node ref="C4" pin="2" pintype="passive"/>
       <node ref="C5" pin="1" pintype="passive"/>
@@ -1580,79 +1867,84 @@
       <node ref="U1" pin="15" pinfunction="REFIN1(+)" pintype="input"/>
       <node ref="U1" pin="20" pinfunction="AVDD" pintype="power_in"/>
     </net>
-    <net code="13" name="IN-SENSE-" class="Default">
+    <net code="14" name="IN-SENSE-" class="Default">
       <node ref="C5" pin="2" pintype="passive"/>
       <node ref="C9" pin="1" pintype="passive"/>
       <node ref="TP2" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="16" pinfunction="REFIN1(-)" pintype="input"/>
     </net>
-    <net code="14" name="MCLK1" class="Default">
+    <net code="15" name="MCLK1" class="Default">
       <node ref="C12" pin="1" pintype="passive"/>
       <node ref="TP14" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="1" pinfunction="MCLK1" pintype="input"/>
       <node ref="Y1" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="Y1" pin="4" pinfunction="4" pintype="passive"/>
     </net>
-    <net code="15" name="MCLK2" class="Default">
+    <net code="16" name="MCLK2" class="Default">
       <node ref="C11" pin="1" pintype="passive"/>
       <node ref="TP15" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="2" pinfunction="MCLK2" pintype="input"/>
       <node ref="Y1" pin="2" pinfunction="2" pintype="passive"/>
       <node ref="Y1" pin="3" pinfunction="3" pintype="passive"/>
     </net>
-    <net code="16" name="Net-(D1-A)" class="Default">
+    <net code="17" name="Net-(D1-A)" class="Default">
       <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="R10" pin="2" pintype="passive"/>
     </net>
-    <net code="17" name="Net-(D2-A)" class="Default">
+    <net code="18" name="Net-(D2-A)" class="Default">
       <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="R11" pin="2" pintype="passive"/>
     </net>
-    <net code="18" name="Net-(D4-A)" class="Default">
+    <net code="19" name="Net-(D4-A)" class="Default">
       <node ref="D4" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="R16" pin="1" pintype="passive"/>
     </net>
-    <net code="19" name="Net-(U1-DIN)" class="Default">
+    <net code="20" name="Net-(IC2-FB)" class="Default">
+      <node ref="IC2" pin="2" pinfunction="FB" pintype="passive"/>
+      <node ref="R15" pin="2" pintype="passive"/>
+      <node ref="R17" pin="1" pintype="passive"/>
+    </net>
+    <net code="21" name="Net-(U1-DIN)" class="Default">
       <node ref="R3" pin="2" pintype="passive"/>
       <node ref="U1" pin="24" pinfunction="DIN" pintype="input"/>
     </net>
-    <net code="20" name="Net-(U1-DOUT/~{RDY})" class="Default">
+    <net code="22" name="Net-(U1-DOUT/~{RDY})" class="Default">
       <node ref="R7" pin="2" pintype="passive"/>
       <node ref="U1" pin="23" pinfunction="DOUT/~{RDY}" pintype="bidirectional"/>
     </net>
-    <net code="21" name="Net-(U1-P2)" class="Default">
+    <net code="23" name="Net-(U1-P2)" class="Default">
       <node ref="R11" pin="1" pintype="passive"/>
       <node ref="U1" pin="6" pinfunction="P2" pintype="output"/>
     </net>
-    <net code="22" name="Net-(U1-P3)" class="Default">
+    <net code="24" name="Net-(U1-P3)" class="Default">
       <node ref="R10" pin="1" pintype="passive"/>
       <node ref="U1" pin="5" pinfunction="P3" pintype="output"/>
     </net>
-    <net code="23" name="Net-(U1-SCLK)" class="Default">
+    <net code="25" name="Net-(U1-SCLK)" class="Default">
       <node ref="R5" pin="2" pintype="passive"/>
       <node ref="U1" pin="3" pinfunction="SCLK" pintype="input"/>
     </net>
-    <net code="24" name="Net-(U1-~{CS})" class="Default">
+    <net code="26" name="Net-(U1-~{CS})" class="Default">
       <node ref="R6" pin="2" pintype="passive"/>
       <node ref="R8" pin="2" pintype="passive"/>
       <node ref="U1" pin="4" pinfunction="~{CS}" pintype="input"/>
     </net>
-    <net code="25" name="Net-(U1-~{SYNC})" class="Default">
+    <net code="27" name="Net-(U1-~{SYNC})" class="Default">
       <node ref="R4" pin="2" pintype="passive"/>
       <node ref="U1" pin="22" pinfunction="~{SYNC}" pintype="input"/>
     </net>
-    <net code="26" name="Net-(U2-PG)" class="Default">
+    <net code="28" name="Net-(U2-PG)" class="Default">
       <node ref="R14" pin="2" pintype="passive"/>
       <node ref="U2" pin="4" pinfunction="PG" pintype="open_collector"/>
     </net>
-    <net code="27" name="OUT+" class="Default">
+    <net code="29" name="OUT+" class="Default">
       <node ref="C10" pin="2" pintype="passive"/>
       <node ref="C6" pin="1" pintype="passive"/>
       <node ref="R1" pin="2" pintype="passive"/>
       <node ref="TP3" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="13" pinfunction="AIN3" pintype="input"/>
     </net>
-    <net code="28" name="OUT-" class="Default">
+    <net code="30" name="OUT-" class="Default">
       <node ref="C6" pin="2" pintype="passive"/>
       <node ref="C8" pin="1" pintype="passive"/>
       <node ref="R2" pin="2" pintype="passive"/>
@@ -1660,27 +1952,36 @@
       <node ref="U1" pin="14" pinfunction="AIN4" pintype="input"/>
       <node ref="U1" pin="17" pinfunction="BPDSW" pintype="bidirectional"/>
     </net>
-    <net code="29" name="SCLK" class="Default">
+    <net code="31" name="SCLK" class="Default">
       <node ref="R5" pin="1" pintype="passive"/>
       <node ref="TP10" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="30" name="SYNC" class="Default">
+    <net code="32" name="SYNC" class="Default">
       <node ref="R4" pin="1" pintype="passive"/>
       <node ref="TP11" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="31" name="unconnected-(U1-AIN1-Pad11)" class="Default">
+    <net code="33" name="unconnected-(IC2-COMP-Pad1)" class="Default">
+      <node ref="IC2" pin="1" pinfunction="COMP" pintype="passive"/>
+    </net>
+    <net code="34" name="unconnected-(IC2-EN-Pad3)" class="Default">
+      <node ref="IC2" pin="3" pinfunction="EN" pintype="passive"/>
+    </net>
+    <net code="35" name="unconnected-(IC2-SS-Pad10)" class="Default">
+      <node ref="IC2" pin="10" pinfunction="SS" pintype="passive"/>
+    </net>
+    <net code="36" name="unconnected-(U1-AIN1-Pad11)" class="Default">
       <node ref="U1" pin="11" pinfunction="AIN1" pintype="input+no_connect"/>
     </net>
-    <net code="32" name="unconnected-(U1-AIN2-Pad12)" class="Default">
+    <net code="37" name="unconnected-(U1-AIN2-Pad12)" class="Default">
       <node ref="U1" pin="12" pinfunction="AIN2" pintype="input+no_connect"/>
     </net>
-    <net code="33" name="unconnected-(U1-AINCOM-Pad10)" class="Default">
+    <net code="38" name="unconnected-(U1-AINCOM-Pad10)" class="Default">
       <node ref="U1" pin="10" pinfunction="AINCOM" pintype="input+no_connect"/>
     </net>
-    <net code="34" name="unconnected-(U1-P0/REFIN2(-)-Pad8)" class="Default">
+    <net code="39" name="unconnected-(U1-P0/REFIN2(-)-Pad8)" class="Default">
       <node ref="U1" pin="8" pinfunction="P0/REFIN2(-)" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="35" name="unconnected-(U1-P1/REFIN2(+)-Pad7)" class="Default">
+    <net code="40" name="unconnected-(U1-P1/REFIN2(+)-Pad7)" class="Default">
       <node ref="U1" pin="7" pinfunction="P1/REFIN2(+)" pintype="bidirectional+no_connect"/>
     </net>
   </nets>
