@@ -12,19 +12,6 @@
 	)
 	(lib_symbols)
 	(rectangle
-		(start 139.7 125.73)
-		(end 224.79 205.74)
-		(stroke
-			(width 1)
-			(type default)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 1d862d27-55c8-43d9-a1e0-027d1852f163)
-	)
-	(rectangle
 		(start 317.5 39.37)
 		(end 373.38 240.03)
 		(stroke
@@ -64,32 +51,6 @@
 		(uuid 8b07e48f-2db7-43ad-80d6-e91fd34b7137)
 	)
 	(rectangle
-		(start 229.87 186.69)
-		(end 312.42 205.74)
-		(stroke
-			(width 1)
-			(type default)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 8fb364d8-7e61-4713-a5cf-4e5bf9a0422c)
-	)
-	(rectangle
-		(start 229.87 125.73)
-		(end 312.42 181.61)
-		(stroke
-			(width 1)
-			(type default)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 91e86061-3695-4d86-a73e-d25af3bfe9b8)
-	)
-	(rectangle
 		(start 139.7 210.82)
 		(end 224.79 240.03)
 		(stroke
@@ -117,7 +78,7 @@
 	)
 	(rectangle
 		(start 139.7 39.37)
-		(end 312.42 120.65)
+		(end 312.42 205.74)
 		(stroke
 			(width 1)
 			(type default)
@@ -377,7 +338,7 @@
 	)
 	(text_box "Block Description"
 		(exclude_from_sim no)
-		(at 142.24 109.22 0)
+		(at 142.24 192.405 0)
 		(size 167.64 9.525)
 		(margins 1.9049 1.9049 1.9049 1.9049)
 		(stroke
@@ -398,54 +359,6 @@
 			(justify bottom)
 		)
 		(uuid "96ca24d3-fb87-492b-b46b-2ff8e6f8597a")
-	)
-	(text_box "Block Description"
-		(exclude_from_sim no)
-		(at 231.775 170.815 0)
-		(size 78.74 9.525)
-		(margins 1.9049 1.9049 1.9049 1.9049)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-			(justify bottom)
-		)
-		(uuid "9cf3d12e-f9c3-4c34-8081-b16b6bc5d5dd")
-	)
-	(text_box "Block Description"
-		(exclude_from_sim no)
-		(at 231.14 194.31 0)
-		(size 80.01 9.525)
-		(margins 1.9049 1.9049 1.9049 1.9049)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-			(justify bottom)
-		)
-		(uuid "a0355043-f06f-4f70-9556-f7b249e99a87")
 	)
 	(text_box "Block Description"
 		(exclude_from_sim no)
@@ -493,29 +406,5 @@
 			(justify left top)
 		)
 		(uuid "b30fc753-248d-41ea-b0ab-815ff2704544")
-	)
-	(text_box "Block Description"
-		(exclude_from_sim no)
-		(at 140.97 194.31 0)
-		(size 82.55 9.525)
-		(margins 1.9049 1.9049 1.9049 1.9049)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-			(justify bottom)
-		)
-		(uuid "d975f102-c262-465d-91fc-7f6c552cfb8d")
 	)
 )

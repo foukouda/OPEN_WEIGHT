@@ -25,9 +25,9 @@
 		(uuid 038c48e8-3b23-48e4-9863-81818c34fa20)
 	)
 	(arc
-		(start 212.11 196.83)
-		(mid 211.2149 196.4551)
-		(end 210.84 195.56)
+		(start 238.78 212.07)
+		(mid 237.8849 211.6951)
+		(end 237.51 210.8)
 		(stroke
 			(width 0)
 			(type default)
@@ -38,9 +38,9 @@
 		(uuid 09c92931-fa34-4e53-a96e-44e1ad554157)
 	)
 	(arc
-		(start 245.11 102.87)
-		(mid 244.7351 103.7651)
-		(end 243.84 104.14)
+		(start 291.465 105.41)
+		(mid 291.8399 104.5149)
+		(end 292.735 104.14)
 		(stroke
 			(width 0)
 			(type default)
@@ -142,9 +142,9 @@
 		(uuid 6830cf07-76be-4df2-9c40-eec6a0ac464f)
 	)
 	(arc
-		(start 243.84 104.14)
-		(mid 244.7351 104.5149)
-		(end 245.11 105.41)
+		(start 292.735 104.14)
+		(mid 291.8399 103.7651)
+		(end 291.465 102.87)
 		(stroke
 			(width 0)
 			(type default)
@@ -155,9 +155,9 @@
 		(uuid 787eda22-1bf9-4d1b-96b2-11995bb2af0f)
 	)
 	(arc
-		(start 247.65 119.38)
-		(mid 245.8598 118.6302)
-		(end 245.11 116.84)
+		(start 288.925 88.9)
+		(mid 290.7152 89.6498)
+		(end 291.465 91.44)
 		(stroke
 			(width 0)
 			(type default)
@@ -181,9 +181,9 @@
 		(uuid 94ad6bc3-4505-4c4a-89fc-83d0c51dd562)
 	)
 	(arc
-		(start 210.84 206.99)
-		(mid 210.0961 208.7861)
-		(end 208.3 209.53)
+		(start 237.51 222.23)
+		(mid 236.7661 224.0261)
+		(end 234.97 224.77)
 		(stroke
 			(width 0)
 			(type default)
@@ -220,9 +220,9 @@
 		(uuid bb96e3d5-b8eb-40c9-8302-f13ceee2e416)
 	)
 	(arc
-		(start 210.84 198.1)
-		(mid 211.2149 197.2049)
-		(end 212.11 196.83)
+		(start 237.51 213.34)
+		(mid 237.8849 212.4449)
+		(end 238.78 212.07)
 		(stroke
 			(width 0)
 			(type default)
@@ -246,9 +246,9 @@
 		(uuid f32d8010-9469-4d51-9f17-7653134e8aa9)
 	)
 	(arc
-		(start 208.3 184.13)
-		(mid 210.0902 184.8798)
-		(end 210.84 186.67)
+		(start 234.97 199.37)
+		(mid 236.7602 200.1198)
+		(end 237.51 201.91)
 		(stroke
 			(width 0)
 			(type default)
@@ -259,9 +259,9 @@
 		(uuid faeedb18-f449-44d8-8aae-dfaa65d905fd)
 	)
 	(arc
-		(start 245.11 91.44)
-		(mid 245.8539 89.6439)
-		(end 247.65 88.9)
+		(start 291.465 116.84)
+		(mid 290.7211 118.6361)
+		(end 288.925 119.38)
 		(stroke
 			(width 0)
 			(type default)
@@ -273,7 +273,7 @@
 	)
 	(text "Page 8"
 		(exclude_from_sim no)
-		(at 203.2 205.74 0)
+		(at 229.87 220.98 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -366,8 +366,8 @@
 	)
 	(text_box "Description"
 		(exclude_from_sim no)
-		(at 226.06 101.6 0)
-		(size 17.145 5.08)
+		(at 310.515 106.68 0)
+		(size -17.145 -5.08)
 		(margins 1.4287 1.4287 1.4287 1.4287)
 		(stroke
 			(width -0.0001)
@@ -455,7 +455,7 @@
 	)
 	(polyline
 		(pts
-			(xy 245.11 105.41) (xy 245.11 116.84)
+			(xy 291.465 102.87) (xy 291.465 91.44)
 		)
 		(stroke
 			(width 0)
@@ -475,7 +475,7 @@
 	)
 	(polyline
 		(pts
-			(xy 245.11 102.87) (xy 245.11 91.44)
+			(xy 291.465 105.41) (xy 291.465 116.84)
 		)
 		(stroke
 			(width 0)
@@ -505,7 +505,7 @@
 	)
 	(polyline
 		(pts
-			(xy 210.82 186.69) (xy 210.82 195.58)
+			(xy 237.49 201.93) (xy 237.49 210.82)
 		)
 		(stroke
 			(width 0)
@@ -525,7 +525,7 @@
 	)
 	(polyline
 		(pts
-			(xy 210.82 198.12) (xy 210.82 207.01)
+			(xy 237.49 213.36) (xy 237.49 222.25)
 		)
 		(stroke
 			(width 0)
@@ -593,7 +593,7 @@
 			(color 255 200 0 0.5020)
 		)
 		(uuid "d6110ee2-516c-48c1-b80a-d0f1701ed49f")
-		(property "Sheetname" "Converteur_3.3V a 6V"
+		(property "Sheetname" "TPS61086_3.3V_to_6V"
 			(at 138.43 110.7309 0)
 			(effects
 				(font
@@ -622,7 +622,7 @@
 		)
 	)
 	(sheet
-		(at 167.64 186.69)
+		(at 194.31 201.93)
 		(size 36.83 20.32)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -638,7 +638,7 @@
 		)
 		(uuid "ddd4b387-4aa4-48c3-b079-ffb0beb645d3")
 		(property "Sheetname" "Connecteur"
-			(at 167.64 185.6609 0)
+			(at 194.31 200.9009 0)
 			(effects
 				(font
 					(size 1.905 1.905)
@@ -648,7 +648,7 @@
 			)
 		)
 		(property "Sheetfile" "Section D - TItle D.kicad_sch"
-			(at 167.64 207.5946 0)
+			(at 194.31 222.8346 0)
 			(effects
 				(font
 					(face "Arial")
@@ -681,7 +681,7 @@
 			(color 255 200 0 0.5020)
 		)
 		(uuid "e744f3ce-03a6-44a6-8792-1447ef232b9a")
-		(property "Sheetname" "Converteur_5VA"
+		(property "Sheetname" "LT3042_6V_5VA"
 			(at 138.43 81.5209 0)
 			(effects
 				(font
