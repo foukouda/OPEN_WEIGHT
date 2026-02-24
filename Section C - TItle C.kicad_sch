@@ -1448,19 +1448,6 @@
 		(uuid 1d9edcfe-b949-46c5-adca-40f822b4bd2a)
 	)
 	(rectangle
-		(start 139.7 210.82)
-		(end 224.79 240.03)
-		(stroke
-			(width 1)
-			(type default)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid d99cdb64-d2e4-4f1f-8584-4020073b6248)
-	)
-	(rectangle
 		(start 45.72 39.37)
 		(end 134.62 240.03)
 		(stroke
@@ -1485,19 +1472,6 @@
 			(type none)
 		)
 		(uuid ed78b7e7-9d87-4eba-bb13-ab88d26954ef)
-	)
-	(rectangle
-		(start 229.87 210.82)
-		(end 312.42 240.03)
-		(stroke
-			(width 1)
-			(type default)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid f026768c-915f-4378-b3f2-b0a2f2a348b8)
 	)
 	(text "Flexible I/O worked examples"
 		(exclude_from_sim no)
@@ -1568,7 +1542,7 @@
 	)
 	(text_box "DESIGN NOTE:\n\nRef Condo for SET PIN (important pour les vibrations P16)\nKYOCERA AVX TAJA225K016RNJ (2.2 µF, 16 VDC, condensateur tantale solide SMD moulé, 1206 / 3216 (A case), ±10%, ESR 6.5 Ω)."
 		(exclude_from_sim no)
-		(at 48.26 168.91 0)
+		(at 63.5 143.51 0)
 		(size 54.61 15.24)
 		(margins 1.3525 1.3525 1.3525 1.3525)
 		(stroke
@@ -1588,30 +1562,6 @@
 			(justify left top)
 		)
 		(uuid "2b4a60df-b325-464b-b3a8-1ab8bc97edc3")
-	)
-	(text_box "Block Description"
-		(exclude_from_sim no)
-		(at 140.97 228.6 0)
-		(size 82.55 9.525)
-		(margins 1.9049 1.9049 1.9049 1.9049)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-			(justify bottom)
-		)
-		(uuid "5050590c-bc0b-438f-ac65-a11e5219903d")
 	)
 	(text_box "[${#}] ${TITLE}"
 		(exclude_from_sim no)
@@ -1638,7 +1588,7 @@
 	)
 	(text_box "VOUT ≈ ISET × RSET\nISET ≈ 100 µA\n\nDonc :\nRSET ≈ VOUT / ISET\nRSET ≈ 5.0 V / 100 µA = 50 kΩ\n(=> valeur standard recommandée : 49.9 kΩ)"
 		(exclude_from_sim no)
-		(at 48.26 185.42 0)
+		(at 62.23 185.42 0)
 		(size 54.61 17.78)
 		(margins 1.3525 1.3525 1.3525 1.3525)
 		(stroke
@@ -1658,30 +1608,6 @@
 			(justify left top)
 		)
 		(uuid "7118d66d-27ed-4a42-9d0f-29873dd1133d")
-	)
-	(text_box "Block Description"
-		(exclude_from_sim no)
-		(at 231.14 228.6 0)
-		(size 80.01 9.525)
-		(margins 1.9049 1.9049 1.9049 1.9049)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-			(justify bottom)
-		)
-		(uuid "7283beb6-c696-4e44-ac80-edfae78c644b")
 	)
 	(text_box "Convertisseur 5VA"
 		(exclude_from_sim no)
@@ -1733,7 +1659,7 @@
 	)
 	(text_box "VOUT(PG_THRESHOLD) ≈ 0.3 V × (1 + RPG2/RPG1)\nPGFB_THRESHOLD ≈ 0.3 V\n\nDonc :\nRPG2 ≈ RPG1 × (VOUT(PG)/0.3 V − 1)\n\nExemple (PG OK à ~4.8 V) :\nChoix RPG1 = 49.9 kΩ\nRPG2 ≈ 49.9 kΩ × (4.8/0.3 − 1) ≈ 748.5 kΩ\n(=> valeur standard recommandée : 750 kΩ)"
 		(exclude_from_sim no)
-		(at 48.26 204.47 0)
+		(at 62.23 204.47 0)
 		(size 54.61 24.13)
 		(margins 1.3525 1.3525 1.3525 1.3525)
 		(stroke
@@ -1756,7 +1682,7 @@
 	)
 	(text_box "IN (pins 1-2) : entrée d'alimentation du LT3042 (6V), à découpler avec CIN.\n\nEN/UV (pin 3) : active/désactive le régulateur et permet un seuil UVLO (souvent relié à IN pour \"toujours ON\").\n\nPG (pin 4) : sortie Power-Good open-collector (nécessite une résistance pull-up).\n\nILIM (pin 5) : programmation/monitoring de la limite de courant (souvent à GND si non utilisé).\n\nPGFB (pin 6) : entrée qui fixe le seuil de Power-Good via un pont diviseur depuis VOUT.\n\nSET (pin 7) : règle la tension de sortie via RSET (et CSET réduit le bruit/soft-start).\n\nGND (pin 8) : masse de référence du circuit.\n\nOUTS (pin 9) : sense Kelvin de la sortie (à relier au + de COUT / point de charge).\n\nOUT (pin 10) : sortie régulée (5V), à découpler avec COUT.\n\nEPAD (pad exposé) : masse + dissipation thermique (à souder sur plan GND)."
 		(exclude_from_sim no)
-		(at 46.99 40.64 0)
+		(at 52.07 91.44 0)
 		(size 78.74 45.72)
 		(margins 1.3525 1.3525 1.3525 1.3525)
 		(stroke
@@ -1776,6 +1702,31 @@
 			(justify left top)
 		)
 		(uuid "b30fc753-248d-41ea-b0ab-815ff2704544")
+	)
+	(text_box "About\n\nThe LT®3042 is a high performance low dropout linear regulator featuring LTC's ultralow noise and ultrahigh PSRR architecture for powering noise sensitive RF applications. Designed as a precision current reference followed by a high performance voltage buffer, the LT3042 can be easily paralleled to further reduce noise, increase output current and spread heat on the PCB. The device supplies 200mA at a typical 350mV dropout voltage. Operating quiescent current is nominally 2mA and drops to <<1µA in shutdown. The LT3042's wide output voltage range (0V to 15V) while maintaining unitygain operation provides virtually constant output noise, PSRR, bandwidth and load regulation, independent of the programmed output voltage. Additionally, the regulator features programmable current limit, fast start-up capability and programmable power good to indicate output voltage regulation. The LT3042 is stable with a minimum 4.7µF ceramic output capacitor. Built-in protection includes reverse battery protection, reverse current protection, internal current limit with foldback and thermal limit with hysteresis. The LT3042 is available in thermally enhanced 10-Lead MSOP and 3mm × 3mm DFN package"
+		(exclude_from_sim no)
+		(at 139.7 210.82 0)
+		(size 172.72 29.21)
+		(margins 1.4525 1.4525 1.4525 1.4525)
+		(stroke
+			(width 1)
+			(type solid)
+			(color 0 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.524 1.524)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 255 1)
+			)
+			(justify left top)
+		)
+		(uuid "c9760e54-3f5f-4212-8aef-6246585803f1")
 	)
 	(junction
 		(at 261.62 115.57)
@@ -2304,7 +2255,7 @@
 		(uuid "fa232299-e557-4f8f-8d4d-b4368e97d6e0")
 	)
 	(image
-		(at 90.17 113.03)
+		(at 90.17 64.77)
 		(scale 0.318221)
 		(uuid "d6283b86-daf3-4dbc-9939-f816e8ba2755")
 		(data "iVBORw0KGgoAAAANSUhEUgAAA/MAAAI+CAIAAAB/n80qAAAAA3NCSVQICAjb4U/gAAAACXBIWXMA"
@@ -3913,7 +3864,7 @@
 	)
 	(hierarchical_label "SET"
 		(shape input)
-		(at 340.36 80.01 180)
+		(at 340.36 135.89 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3924,7 +3875,7 @@
 	)
 	(hierarchical_label "PGFB"
 		(shape input)
-		(at 340.36 86.36 180)
+		(at 340.36 142.24 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4030,7 +3981,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 340.36 80.01 270)
+		(at 340.36 135.89 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4039,7 +3990,7 @@
 		(fields_autoplaced yes)
 		(uuid "0f63a031-fa5e-4d2e-87f8-edb872853fb9")
 		(property "Reference" "TP17"
-			(at 345.44 78.7399 90)
+			(at 345.44 134.6199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4048,7 +3999,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 345.44 81.2799 90)
+			(at 345.44 137.1599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4057,7 +4008,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 340.36 85.09 0)
+			(at 340.36 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4066,7 +4017,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 340.36 85.09 0)
+			(at 340.36 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4075,7 +4026,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 340.36 80.01 0)
+			(at 340.36 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4097,7 +4048,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 339.09 64.77 270)
+		(at 339.09 120.65 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4106,7 +4057,7 @@
 		(fields_autoplaced yes)
 		(uuid "167b239b-3992-4ace-a153-1f81f8a94171")
 		(property "Reference" "TP8"
-			(at 344.17 63.4999 90)
+			(at 344.17 119.3799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4115,7 +4066,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 344.17 66.0399 90)
+			(at 344.17 121.9199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4124,7 +4075,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 339.09 69.85 0)
+			(at 339.09 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4133,7 +4084,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 339.09 69.85 0)
+			(at 339.09 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4142,7 +4093,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 339.09 64.77 0)
+			(at 339.09 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4231,7 +4182,7 @@
 	)
 	(symbol
 		(lib_id "power:+6V")
-		(at 339.09 71.12 0)
+		(at 339.09 127 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4239,7 +4190,7 @@
 		(dnp no)
 		(uuid "227d8566-e5d0-48f2-8271-014c5ca1a37e")
 		(property "Reference" "#PWR021"
-			(at 339.09 74.93 0)
+			(at 339.09 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4248,7 +4199,7 @@
 			)
 		)
 		(property "Value" "+6V_IN"
-			(at 331.47 67.818 0)
+			(at 331.47 123.698 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4257,7 +4208,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 339.09 71.12 0)
+			(at 339.09 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4266,7 +4217,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 339.09 71.12 0)
+			(at 339.09 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4275,7 +4226,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+6V\""
-			(at 339.09 71.12 0)
+			(at 339.09 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4297,7 +4248,7 @@
 	)
 	(symbol
 		(lib_id "power:+5VA")
-		(at 339.09 64.77 0)
+		(at 339.09 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4305,7 +4256,7 @@
 		(dnp no)
 		(uuid "30c68fc1-cd04-438b-a9a5-a1f3c83b2b03")
 		(property "Reference" "#PWR017"
-			(at 339.09 68.58 0)
+			(at 339.09 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4314,7 +4265,7 @@
 			)
 		)
 		(property "Value" "+5VA_OUT"
-			(at 338.328 60.96 0)
+			(at 338.328 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4323,7 +4274,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 339.09 64.77 0)
+			(at 339.09 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4332,7 +4283,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 339.09 64.77 0)
+			(at 339.09 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4341,7 +4292,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5VA\""
-			(at 339.09 64.77 0)
+			(at 339.09 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4363,7 +4314,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 340.36 86.36 270)
+		(at 340.36 142.24 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4372,7 +4323,7 @@
 		(fields_autoplaced yes)
 		(uuid "43188445-259b-4434-95b1-6454793a4713")
 		(property "Reference" "TP18"
-			(at 345.44 85.0899 90)
+			(at 345.44 140.9699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4381,7 +4332,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 345.44 87.6299 90)
+			(at 345.44 143.5099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4390,7 +4341,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 340.36 91.44 0)
+			(at 340.36 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4399,7 +4350,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 340.36 91.44 0)
+			(at 340.36 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4408,7 +4359,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 340.36 86.36 0)
+			(at 340.36 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4513,7 +4464,7 @@
 			)
 		)
 		(property "Value" "620Ω"
-			(at 270.256 119.888 90)
+			(at 267.97 119.38 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4848,7 +4799,7 @@
 		(dnp no)
 		(uuid "9c8d38d2-1cec-4d6b-a9d7-0a01b7b4d300")
 		(property "Reference" "D4"
-			(at 266.446 122.682 0)
+			(at 265.938 125.476 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5319,7 +5270,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 339.09 71.12 270)
+		(at 339.09 127 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5328,7 +5279,7 @@
 		(fields_autoplaced yes)
 		(uuid "ed4b7272-85a8-4261-a887-339fbf56c530")
 		(property "Reference" "TP16"
-			(at 344.17 69.8499 90)
+			(at 344.17 125.7299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5337,7 +5288,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 344.17 72.3899 90)
+			(at 344.17 128.2699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5346,7 +5297,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 339.09 76.2 0)
+			(at 339.09 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5355,7 +5306,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 339.09 76.2 0)
+			(at 339.09 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5364,7 +5315,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 339.09 71.12 0)
+			(at 339.09 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
