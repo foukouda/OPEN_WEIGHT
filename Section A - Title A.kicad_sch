@@ -1873,14 +1873,14 @@
 		)
 		(uuid "8309e8c8-3dde-481d-8ee6-655f19126354")
 	)
-	(text_box "[${#}] ${TITLE}"
+	(text_box "[${#}] AD7910_Weight_sensor"
 		(exclude_from_sim no)
-		(at 115.57 15.24 0)
-		(size 72.39 12.7)
+		(at 92.71 15.24 0)
+		(size 113.03 12.7)
 		(margins 4.4999 4.4999 4.4999 4.4999)
 		(stroke
 			(width -0.0001)
-			(type default)
+			(type solid)
 		)
 		(fill
 			(type none)

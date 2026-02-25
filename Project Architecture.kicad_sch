@@ -237,14 +237,14 @@
 		)
 		(uuid "f04f874a-d252-4474-87f2-c34bbb094a4c")
 	)
-	(text_box "Description"
+	(text_box "This schematic is a TPS61086-based 3.3 V → 6 V boost supply with inductor/Schottky power stage, feedback divider for VOUT, decoupling + soft-start/compensation, and test points (+3.3V_IN, +6V_OUT, FB, GND)."
 		(exclude_from_sim no)
-		(at 108.605 120.63 0)
-		(size 26.015 5.1)
+		(at 66.04 113.01 0)
+		(size 64.77 12.72)
 		(margins 1.4287 1.4287 1.4287 1.4287)
 		(stroke
 			(width -0.0001)
-			(type default)
+			(type solid)
 		)
 		(fill
 			(type none)
