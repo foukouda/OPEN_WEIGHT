@@ -1976,6 +1976,16 @@
 	)
 	(wire
 		(pts
+			(xy 250.19 123.19) (xy 247.65 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d5a56ed-3493-4853-bf05-c67370ff3936")
+	)
+	(wire
+		(pts
 			(xy 215.9 123.19) (xy 214.63 123.19)
 		)
 		(stroke
@@ -2033,6 +2043,16 @@
 			(type default)
 		)
 		(uuid "7b345709-bf48-4445-b56f-3d21f5828272")
+	)
+	(wire
+		(pts
+			(xy 334.01 142.24) (xy 340.36 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "841534b6-2a63-450c-a733-95b8a0c7055c")
 	)
 	(wire
 		(pts
@@ -2163,6 +2183,16 @@
 			(type default)
 		)
 		(uuid "c804f115-137e-4a3b-9ed6-d0214abc9021")
+	)
+	(wire
+		(pts
+			(xy 334.01 135.89) (xy 340.36 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbac12c0-6d4b-4ba9-a1d2-a2c68ef2c2fe")
 	)
 	(wire
 		(pts
@@ -3840,49 +3870,45 @@
 			"QBYgswcAAAAAkAX/D7O2LLgyqRnYAAAAAElFTkSuQmCC"
 		)
 	)
-	(hierarchical_label "PGFB"
-		(shape input)
-		(at 247.65 123.19 0)
+	(label "SET"
+		(at 208.28 123.19 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify left bottom)
 		)
-		(uuid "161d10f2-a239-4740-ad67-4093c7110677")
+		(uuid "719b7006-9a55-489a-bd20-3412f0cbfe3b")
 	)
-	(hierarchical_label "SET"
-		(shape input)
-		(at 209.55 123.19 270)
+	(label "SET"
+		(at 334.01 135.89 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left bottom)
 		)
-		(uuid "964720fe-2ccd-4f91-9ebe-527f48a64044")
+		(uuid "867214b0-ca68-4ee1-85d7-8cc9076fb07c")
 	)
-	(hierarchical_label "SET"
-		(shape input)
-		(at 340.36 135.89 180)
+	(label "PGFB"
+		(at 250.19 123.19 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left bottom)
 		)
-		(uuid "bd5cf6cd-5ac0-4e21-9506-ae2d25ee5a9e")
+		(uuid "afe6e79d-4c19-4ba5-b775-910e3b81af25")
 	)
-	(hierarchical_label "PGFB"
-		(shape input)
-		(at 340.36 142.24 180)
+	(label "PGFB"
+		(at 334.01 142.24 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left bottom)
 		)
-		(uuid "cf7f543d-b379-4429-a08f-d1c91b415e3c")
+		(uuid "e1ef917c-ceab-4854-8bf2-87905016ab34")
 	)
 	(symbol
 		(lib_id "Regulator_Linear:LT3042xMSE")
