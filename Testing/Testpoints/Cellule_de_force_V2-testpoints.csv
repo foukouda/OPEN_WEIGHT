@@ -1,0 +1,19 @@
+Testpoint Ref.,Net,Net Class,X,Y,Side,Pad Type,Value,Footprint
+TP1,,,-64.0000,106.0000,top,SMT,TestPoint,TestPoint_Pad_D2.0mm
+TP2,,,-64.0000,106.0000,top,SMT,TestPoint,TestPoint_Pad_D2.0mm
+TP3,OUT+,Default,93.3000,21.9000,top,SMT,TestPoint,TestPoint_Pad_D2.0mm
+TP4,OUT-,Default,93.3000,18.8000,top,SMT,TestPoint,TestPoint_Pad_D2.0mm
+TP5,,,-64.0000,106.0000,top,SMT,TestPoint,TestPoint_Pad_D2.0mm
+TP6,+3.3V_IN,Default,92.3000,-28.0000,top,SMT,TestPoint,TestPoint_Pad_D2.0mm
+TP7,,,-64.0000,106.0000,top,SMT,TestPoint,TestPoint_Pad_D2.0mm
+TP8,+5VA_OUT,Default,89.3000,-1.3000,top,SMT,TestPoint,TestPoint_Pad_D2.0mm
+TP14,MCLK1,Default,78.7000,0.3000,top,SMT,TestPoint,TestPoint_Pad_D2.0mm
+TP15,MCLK2,Default,83.8000,0.3000,top,SMT,TestPoint,TestPoint_Pad_D2.0mm
+TP16,+6V_IN,Default,79.8000,-5.1700,top,SMT,TestPoint,TestPoint_Pad_D2.0mm
+TP17,/Project Architecture/LT3042_6V_5VA/SET,Default,93.5000,-7.6000,top,SMT,TestPoint,TestPoint_Pad_D2.0mm
+TP18,/Project Architecture/LT3042_6V_5VA/PGFB,Default,92.2000,-11.6000,top,SMT,TestPoint,TestPoint_Pad_D2.0mm
+TP19,/Project Architecture/TPS61086_3.3V_to_6V/FB,Default,86.8000,-16.2000,top,SMT,TestPoint,TestPoint_Pad_D2.0mm
+TP20,+6V_OUT,Default,75.4000,-28.1000,top,SMT,TestPoint,TestPoint_Pad_D2.0mm
+TP21,,,-64.0000,106.0000,top,SMT,TestPoint,TestPoint_Pad_D2.0mm
+TP22,,,-64.0000,106.0000,top,SMT,TestPoint,TestPoint_Pad_D2.0mm
+TP23,,,-64.0000,106.0000,top,SMT,TestPoint,TestPoint_Pad_D2.0mm
