@@ -8826,15 +8826,15 @@
 			(uuid "0af8436f-273b-446c-ae90-73ff048db57e")
 		)
 		(embedded_fonts no)
-		(model "ABC2-4.9152MHZ-4-T.stp"
+		(model "${KICAD_FOOTPRINT}/LIB_ABC2-4.9152MHZ-4-T/ABC2-4.9152MHZ-4-T/ABC2-4.9152MHZ-4-T.STEP"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 1)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -90 -0 -0)
 			)
 		)
 	)
