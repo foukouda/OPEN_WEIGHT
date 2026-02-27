@@ -1,6 +1,6 @@
 (export (version "E")
   (design
-    (source "/tmp/tmp-kibot-net_sch_print-slib6s9i/Cellule_de_force_V2.kicad_sch")
+    (source "/tmp/tmp-kibot-net_sch_print-g_c7r_w3/Cellule_de_force_V2.kicad_sch")
     (date "Date")
     (tool "Eeschema 9.0.7+1")
     (textvar (name "ASSEMBLY_NOTES"))
@@ -8,7 +8,7 @@
     (textvar (name "COMPANY") "OPEN_TRUST_LAB")
     (textvar (name "DESIGNER") "SIEBERT DIMITRY")
     (textvar (name "FABRICATION_NOTES"))
-    (textvar (name "GIT_HASH_PCB") "3f546e2")
+    (textvar (name "GIT_HASH_PCB") "0bfb00e")
     (textvar (name "GIT_HASH_SCH") "f2c7d09")
     (textvar (name "GIT_URL") "https://github.com/nguyen-v/KDT_Hierarchical_KiBot")
     (textvar (name "PROJECT_NAME") "OPEN_WEIGHT")

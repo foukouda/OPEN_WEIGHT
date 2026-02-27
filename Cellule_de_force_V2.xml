@@ -9,7 +9,7 @@
     <textvar name="COMPANY">OPEN_TRUST_LAB</textvar>
     <textvar name="DESIGNER">SIEBERT DIMITRY</textvar>
     <textvar name="FABRICATION_NOTES"/>
-    <textvar name="GIT_HASH_PCB">3f546e2</textvar>
+    <textvar name="GIT_HASH_PCB">0bfb00e</textvar>
     <textvar name="GIT_HASH_SCH">f2c7d09</textvar>
     <textvar name="GIT_URL">https://github.com/nguyen-v/KDT_Hierarchical_KiBot</textvar>
     <textvar name="PROJECT_NAME">OPEN_WEIGHT</textvar>
