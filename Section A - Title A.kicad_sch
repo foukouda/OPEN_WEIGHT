@@ -2471,50 +2471,6 @@
 		)
 		(uuid "f2f10041-45cc-486f-98c4-cf6e1124fec2")
 	)
-	(global_label "DIN"
-		(shape input)
-		(at 246.38 110.49 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "01b98ec8-f822-4cd8-9d2c-3ec4452a8ba9")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 240.1895 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SCLK"
-		(shape input)
-		(at 246.38 100.33 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "078f9f34-e872-480f-ad7c-e253aa9422c2")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 238.6172 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "SENSE+"
 		(shape input)
 		(at 71.12 76.2 180)
@@ -2528,28 +2484,6 @@
 		(uuid "0cdba08c-50b8-4b35-96b0-89abb2fc949c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 60.5149 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SYNC"
-		(shape input)
-		(at 246.38 105.41 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "10a7db25-24bf-4494-aaee-06ea998b3a14")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 238.4962 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2594,28 +2528,6 @@
 		(uuid "17c27baf-d942-41da-ae75-a8e989fb6d63")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 62.9338 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "CS"
-		(shape input)
-		(at 246.38 95.25 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "19b2765f-4a14-4fc2-be36-705e077bd97c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 240.9153 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2757,28 +2669,6 @@
 			)
 		)
 	)
-	(global_label "DOUT"
-		(shape input)
-		(at 246.38 115.57 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "484b2a7a-cc97-49ac-a224-7b62dde92218")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 238.4962 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "OUT-"
 		(shape input)
 		(at 71.12 91.44 180)
@@ -2891,7 +2781,7 @@
 	)
 	(global_label "MCLK2"
 		(shape input)
-		(at 246.38 125.73 180)
+		(at 246.38 87.63 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2901,7 +2791,7 @@
 		)
 		(uuid "87b24702-3933-4301-af51-4ebf3c1ca42a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 237.1658 125.73 0)
+			(at 237.1658 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3089,7 +2979,7 @@
 	)
 	(global_label "MCLK1"
 		(shape input)
-		(at 246.38 120.65 180)
+		(at 246.38 82.55 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3099,7 +2989,7 @@
 		)
 		(uuid "d11b41ef-796b-4caa-99d4-bb2f7cb3efd7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 237.1658 120.65 0)
+			(at 237.1658 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3332,7 +3222,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 246.38 120.65 270)
+		(at 246.38 82.55 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3341,7 +3231,7 @@
 		(fields_autoplaced yes)
 		(uuid "189fbace-50d9-4883-ae65-4d9b4d8ad3b2")
 		(property "Reference" "TP14"
-			(at 251.46 119.3799 90)
+			(at 251.46 81.2799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3350,7 +3240,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 251.46 121.9199 90)
+			(at 251.46 83.8199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3359,7 +3249,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 246.38 125.73 0)
+			(at 246.38 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3368,7 +3258,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 246.38 125.73 0)
+			(at 246.38 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3377,7 +3267,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 246.38 120.65 0)
+			(at 246.38 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3661,73 +3551,6 @@
 			(project "Cellule_de_force_V2"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
 					(reference "R10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 246.38 95.25 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2b0e1991-1280-42e6-89d5-fee6fcf3ae46")
-		(property "Reference" "TP9"
-			(at 251.46 93.9799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 251.46 96.5199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 246.38 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 246.38 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 246.38 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6f7cbf7a-4a71-448e-82be-811f424a43cd")
-		)
-		(instances
-			(project "Cellule_de_force_V2"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
-					(reference "TP9")
 					(unit 1)
 				)
 			)
@@ -4962,7 +4785,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ABC210000MHZ4"
+		(property "Footprint" "ABC2-4.9152MHZ-4-T:ABC210000MHZ4"
 			(at 96.52 213.03 0)
 			(effects
 				(font
@@ -5710,73 +5533,6 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 246.38 115.57 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "af650a62-857f-4b18-8440-9d193bf15a97")
-		(property "Reference" "TP13"
-			(at 251.46 114.2999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 251.46 116.8399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 246.38 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 246.38 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 246.38 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0185f113-b685-40cf-8e15-e3c20fc7ebd7")
-		)
-		(instances
-			(project "Cellule_de_force_V2"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
-					(reference "TP13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
 		(at 246.38 76.2 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6330,141 +6086,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 246.38 105.41 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c90da454-d7b0-4c8f-a942-88a4839531dc")
-		(property "Reference" "TP11"
-			(at 251.46 104.1399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 251.46 106.6799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 246.38 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 246.38 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 246.38 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f274abe2-973f-4b85-8c3f-56e81234722a")
-		)
-		(instances
-			(project "Cellule_de_force_V2"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
-					(reference "TP11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 246.38 100.33 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cc971d9a-29b1-4380-ad13-cb962dff5758")
-		(property "Reference" "TP10"
-			(at 251.46 99.0599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 251.46 101.5999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 246.38 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 246.38 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 246.38 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "24671a12-33b9-4c0e-88a7-d4dfbef20204")
-		)
-		(instances
-			(project "Cellule_de_force_V2"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
-					(reference "TP10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 246.38 125.73 270)
+		(at 246.38 87.63 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6473,7 +6095,7 @@
 		(fields_autoplaced yes)
 		(uuid "d4e7c315-f6f7-44dc-91cf-d87b4c23aafd")
 		(property "Reference" "TP15"
-			(at 251.46 124.4599 90)
+			(at 251.46 86.3599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6482,7 +6104,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 251.46 126.9999 90)
+			(at 251.46 88.8999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6491,7 +6113,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 246.38 130.81 0)
+			(at 246.38 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6500,7 +6122,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 246.38 130.81 0)
+			(at 246.38 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6509,7 +6131,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 246.38 125.73 0)
+			(at 246.38 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6727,73 +6349,6 @@
 			(project "Cellule_de_force_V2"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
 					(reference "R11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 246.38 110.49 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e7daa4f8-4896-431c-b46e-0a7e4621aafd")
-		(property "Reference" "TP12"
-			(at 251.46 109.2199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 251.46 111.7599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 246.38 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 246.38 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 246.38 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4ae17602-e555-4c6a-b71f-0453e791d396")
-		)
-		(instances
-			(project "Cellule_de_force_V2"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
-					(reference "TP12")
 					(unit 1)
 				)
 			)
