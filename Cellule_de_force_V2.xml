@@ -60,12 +60,12 @@
 
 10)	DESIGN GEOMETRY MINIMUM FEATURE SIZES:
 
-	BOARD SIZE				26.901 × 68.100 mm
+	BOARD SIZE				57.000 × 50.750 mm
 	BOARD THICKNESS		1.660 mm
 	TRACE WIDTH			0.200 mm
 	TRACE TO TRACE		0.200 mm
 	MIN. HOLE (PTH)			0.200 mm
-	MIN. HOLE (NPTH)		N/A mm
+	MIN. HOLE (NPTH)		1.200 mm
 	ANNULAR RING			0.150 mm
 	COPPER TO HOLE		0.254 mm
 	COPPER TO EDGE		0.250 mm
@@ -74,7 +74,7 @@
 11)	REFER TO IMPEDANCE TABLE FOR IMPEDANCE CONTROL REQUIREMENTS.
 
 12)	CONFIRM SPACE WIDTHS AND SPACINGS.</textvar>
-    <textvar name="GIT_HASH_PCB">0bfb00e</textvar>
+    <textvar name="GIT_HASH_PCB">4497626</textvar>
     <textvar name="GIT_HASH_SCH">f2c7d09</textvar>
     <textvar name="GIT_URL">https://github.com/nguyen-v/KDT_Hierarchical_KiBot</textvar>
     <textvar name="PROJECT_NAME">OPEN_WEIGHT</textvar>
@@ -83,8 +83,8 @@
     <textvar name="RELEASE_BODY_1.0.2"/>
     <textvar name="RELEASE_BODY_1.1.0"/>
     <textvar name="RELEASE_BODY_UNRELEASED">Version Unreleased not found.</textvar>
-    <textvar name="RELEASE_DATE">27-Feb-2026</textvar>
-    <textvar name="RELEASE_DATE_NUM">2026-02-27</textvar>
+    <textvar name="RELEASE_DATE">10-Mar-2026</textvar>
+    <textvar name="RELEASE_DATE_NUM">2026-03-10</textvar>
     <textvar name="RELEASE_TITLE_1.0.0"/>
     <textvar name="RELEASE_TITLE_1.0.1"/>
     <textvar name="RELEASE_TITLE_1.0.2"/>
@@ -495,7 +495,7 @@
       <tstamps>a849aab0-3b7f-4f40-8dec-3a22dbde4121</tstamps>
     </comp>
     <comp ref="C11">
-      <value>22pf</value>
+      <value>0.1µF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <description>Unpolarized capacitor</description>
@@ -510,10 +510,10 @@
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
       <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
-      <tstamps>47c369ca-5718-4ffc-a1f9-f160f2d17804</tstamps>
+      <tstamps>d96f1164-087b-4513-8058-3942ae0da894</tstamps>
     </comp>
     <comp ref="C12">
-      <value>22pf</value>
+      <value>10µF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <description>Unpolarized capacitor</description>
@@ -528,30 +528,82 @@
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
       <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
-      <tstamps>892d0db1-98f3-4c01-8f2d-03c436e9e59a</tstamps>
+      <tstamps>6e73b034-8a49-4e44-be0e-3250ecb44857</tstamps>
     </comp>
-    <comp ref="D1">
-      <value>LED</value>
-      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+    <comp ref="C23">
+      <value>0.1µF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
-      <description>Light emitting diode</description>
+      <description>Unpolarized capacitor</description>
       <fields>
-        <field name="Sim.Pins">1=K 2=A</field>
-        <field name="Footprint">LED_SMD:LED_0603_1608Metric</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet">~</field>
-        <field name="Description">Light emitting diode</field>
+        <field name="Description">Unpolarized capacitor</field>
       </fields>
-      <libsource lib="Device" part="LED" description="Light emitting diode"/>
-      <property name="Sim.Pins" value="1=K 2=A"/>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Sheetname" value="AD7910_Weight_sensor"/>
       <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
-      <property name="ki_keywords" value="LED diode"/>
-      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
       <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
-      <tstamps>c83422ed-3524-4786-b4e4-0bee65282a6c</tstamps>
+      <tstamps>5ac78062-f9d7-43b7-9508-58a0cdf7920f</tstamps>
+    </comp>
+    <comp ref="C24">
+      <value>18pf</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>6b613679-3c0d-4a96-986b-27b377e91f1b</tstamps>
+    </comp>
+    <comp ref="C25">
+      <value>18pf</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>c5dc4260-8e22-47b2-96d1-153bf913d096</tstamps>
+    </comp>
+    <comp ref="C26">
+      <value>0.1µF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>fde0962f-b2d7-4fc1-9a2b-0a421a96dcc5</tstamps>
     </comp>
     <comp ref="D2">
-      <value>LED</value>
+      <value>RED</value>
       <footprint>LED_SMD:LED_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <description>Light emitting diode</description>
@@ -569,6 +621,24 @@
       <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
       <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
       <tstamps>fb10bf53-5660-4d23-8edf-6395c9f0fecf</tstamps>
+    </comp>
+    <comp ref="Q1">
+      <value>SI2303CDS-T1-GE3</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-3</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/csd25480f3.pdf</datasheet>
+      <description>-1.7A Id, -20V Vds, P-Channel MOSFET, 159mOhm Ron,max @ 4.5Vgs, 0.70nC Qg,typ @ 4.5Vgs, PicoStar 0.73x0.64mm max, 0.69x0.60mm nom</description>
+      <fields>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-3</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/csd25480f3.pdf</field>
+        <field name="Description">-1.7A Id, -20V Vds, P-Channel MOSFET, 159mOhm Ron,max @ 4.5Vgs, 0.70nC Qg,typ @ 4.5Vgs, PicoStar 0.73x0.64mm max, 0.69x0.60mm nom</field>
+      </fields>
+      <libsource lib="Transistor_FET" part="CSD25480F3" description="-1.7A Id, -20V Vds, P-Channel MOSFET, 159mOhm Ron,max @ 4.5Vgs, 0.70nC Qg,typ @ 4.5Vgs, PicoStar 0.73x0.64mm max, 0.69x0.60mm nom"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="Texas PMOS single"/>
+      <property name="ki_fp_filters" value="*PicoStar*DFN?3*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>d474076b-57e5-47f8-85b5-e944a1f45678</tstamps>
     </comp>
     <comp ref="R1">
       <value>100Ω</value>
@@ -606,60 +676,6 @@
       <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
       <tstamps>df09fed5-983b-486f-bfea-dc742f1a1536</tstamps>
     </comp>
-    <comp ref="R3">
-      <value>100Ω</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
-      <datasheet>~</datasheet>
-      <description>Resistor</description>
-      <fields>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet">~</field>
-        <field name="Description">Resistor</field>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Sheetname" value="AD7910_Weight_sensor"/>
-      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
-      <tstamps>8beddbd4-18b4-4966-9757-b6686044be39</tstamps>
-    </comp>
-    <comp ref="R4">
-      <value>100Ω</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
-      <datasheet>~</datasheet>
-      <description>Resistor</description>
-      <fields>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet">~</field>
-        <field name="Description">Resistor</field>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Sheetname" value="AD7910_Weight_sensor"/>
-      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
-      <tstamps>94be9b0a-a12b-4da7-a312-3db68c90aa35</tstamps>
-    </comp>
-    <comp ref="R5">
-      <value>100Ω</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
-      <datasheet>~</datasheet>
-      <description>Resistor</description>
-      <fields>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet">~</field>
-        <field name="Description">Resistor</field>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Sheetname" value="AD7910_Weight_sensor"/>
-      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
-      <tstamps>164fc1e7-3724-4715-92b5-e63d023bc4fe</tstamps>
-    </comp>
     <comp ref="R6">
       <value>100Ω</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
@@ -677,24 +693,6 @@
       <property name="ki_fp_filters" value="R_*"/>
       <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
       <tstamps>1a877220-8ce4-4a5c-ae9f-447ddd5ca488</tstamps>
-    </comp>
-    <comp ref="R7">
-      <value>100Ω</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
-      <datasheet>~</datasheet>
-      <description>Resistor</description>
-      <fields>
-        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet">~</field>
-        <field name="Description">Resistor</field>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Sheetname" value="AD7910_Weight_sensor"/>
-      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
-      <tstamps>c0921913-ef7f-434a-8f67-9ae2ab739f98</tstamps>
     </comp>
     <comp ref="R8">
       <value>100kΩ</value>
@@ -715,7 +713,7 @@
       <tstamps>fe57d27e-f480-494a-9f33-607cdc712c16</tstamps>
     </comp>
     <comp ref="R10">
-      <value>100Ω</value>
+      <value>1kΩ</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor</description>
@@ -730,7 +728,7 @@
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
       <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
-      <tstamps>1fea64b4-fe8c-4217-8bbc-828339b7f1eb</tstamps>
+      <tstamps>2dce3dfd-3c63-4787-9d4e-3f6318c9a9a7</tstamps>
     </comp>
     <comp ref="R11">
       <value>100Ω</value>
@@ -749,6 +747,24 @@
       <property name="ki_fp_filters" value="R_*"/>
       <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
       <tstamps>e02b5e7d-5c8e-4cf9-9e8d-dc3951796614</tstamps>
+    </comp>
+    <comp ref="RN1">
+      <value>RP_100Ω</value>
+      <footprint>Resistor_SMD:R_Array_Concave_4x0603</footprint>
+      <datasheet>~</datasheet>
+      <description>4 resistor network, parallel topology</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_Array_Concave_4x0603</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">4 resistor network, parallel topology</field>
+      </fields>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="R network parallel topology isolated"/>
+      <property name="ki_fp_filters" value="DIP* SOIC* R*Array*Concave* R*Array*Convex* MSOP*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>1e167057-30d6-486a-a6e6-e9cb1cfae52b</tstamps>
     </comp>
     <comp ref="TP1">
       <value>TestPoint</value>
@@ -942,37 +958,47 @@
       <property name="Sheetname" value="AD7910_Weight_sensor"/>
       <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
       <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
-      <tstamps>a25dae19-7f32-411c-b4a3-b9de6282b7e9</tstamps>
+      <tstamps>c27021e1-b0f5-45eb-be2e-54ba5e74957f</tstamps>
     </comp>
-    <comp ref="Y1">
-      <value>ABC2-4.9152MHZ-4-T</value>
-      <footprint>ABC2-4.9152MHZ-4-T:ABC210000MHZ4</footprint>
-      <datasheet>https://abracon.com/Resonators/abc2.pdf</datasheet>
-      <description>LOW FREQUENCY CERAMIC SURFACE MOUNT MICROPROCESSOR CRYSTAL</description>
+    <comp ref="Y2">
+      <value>CSTCR4M91G53-R0</value>
+      <footprint>CSTCR4M91G53-R0:OSC_CSTCR4M91G53-R0</footprint>
       <fields>
-        <field name="Height">2</field>
-        <field name="Manufacturer_Name">ABRACON</field>
-        <field name="Manufacturer_Part_Number">ABC2-4.9152MHZ-4-T</field>
-        <field name="Mouser Part Number">815-ABC2-4.915M-4-T</field>
-        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/ABRACON/ABC2-4.9152MHZ-4-T?qs=S%252BYRV53T2BpAvrVLkV2d2A%3D%3D</field>
-        <field name="Arrow Part Number">ABC2-4.9152MHZ-4-T</field>
-        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/abc2-4.9152mhz-4-t/abracon</field>
-        <field name="Footprint">ABC2-4.9152MHZ-4-T:ABC210000MHZ4</field>
-        <field name="Datasheet">https://abracon.com/Resonators/abc2.pdf</field>
-        <field name="Description">LOW FREQUENCY CERAMIC SURFACE MOUNT MICROPROCESSOR CRYSTAL</field>
+        <field name="MF">Murata Electronics</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">1.2mm</field>
+        <field name="Package">SMD-3 Murata</field>
+        <field name="Price">None</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/CSTCR4M91G53-R0/Murata+Electronics+North+America/view-part/?ref=eda</field>
+        <field name="STANDARD">Manufacturer Recomendations</field>
+        <field name="PARTREV">JGC42-8797</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/CSTCR4M91G53-R0/Murata+Electronics+North+America/view-part/?ref=snap</field>
+        <field name="MP">CSTCR4M91G53-R0</field>
+        <field name="Purchase-URL">https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=50325&amp;manufacturer=Murata Electronics&amp;part_name=CSTCR4M91G53-R0&amp;search_term=cstcr4m91g53-r0</field>
+        <field name="Description_1">4.91 MHz Ceramic Resonator Built in Capacitor 15 pF ±0.2% 60 Ohms -20°C ~ 80°C Surface Mount</field>
+        <field name="Availability">In Stock</field>
+        <field name="MANUFACTURER">Murata</field>
+        <field name="Footprint">CSTCR4M91G53-R0:OSC_CSTCR4M91G53-R0</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
       </fields>
-      <libsource lib="ABC2-4_9152MHZ-4-T" part="ABC2-4.9152MHZ-4-T" description="LOW FREQUENCY CERAMIC SURFACE MOUNT MICROPROCESSOR CRYSTAL"/>
-      <property name="Height" value="2"/>
-      <property name="Manufacturer_Name" value="ABRACON"/>
-      <property name="Manufacturer_Part_Number" value="ABC2-4.9152MHZ-4-T"/>
-      <property name="Mouser Part Number" value="815-ABC2-4.915M-4-T"/>
-      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/ABRACON/ABC2-4.9152MHZ-4-T?qs=S%252BYRV53T2BpAvrVLkV2d2A%3D%3D"/>
-      <property name="Arrow Part Number" value="ABC2-4.9152MHZ-4-T"/>
-      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/abc2-4.9152mhz-4-t/abracon"/>
+      <libsource lib="CSTCR4M91G53-R0" part="CSTCR4M91G53-R0" description=""/>
+      <property name="MF" value="Murata Electronics"/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value="1.2mm"/>
+      <property name="Package" value="SMD-3 Murata"/>
+      <property name="Price" value="None"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/CSTCR4M91G53-R0/Murata+Electronics+North+America/view-part/?ref=eda"/>
+      <property name="STANDARD" value="Manufacturer Recomendations"/>
+      <property name="PARTREV" value="JGC42-8797"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/CSTCR4M91G53-R0/Murata+Electronics+North+America/view-part/?ref=snap"/>
+      <property name="MP" value="CSTCR4M91G53-R0"/>
+      <property name="Purchase-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=50325&amp;manufacturer=Murata Electronics&amp;part_name=CSTCR4M91G53-R0&amp;search_term=cstcr4m91g53-r0"/>
+      <property name="Description_1" value="4.91 MHz Ceramic Resonator Built in Capacitor 15 pF ±0.2% 60 Ohms -20°C ~ 80°C Surface Mount"/>
+      <property name="Availability" value="In Stock"/>
+      <property name="MANUFACTURER" value="Murata"/>
       <property name="Sheetname" value="AD7910_Weight_sensor"/>
       <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
       <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
-      <tstamps>9956f2cc-6791-4015-a386-27951f30106b</tstamps>
+      <tstamps>89f3aae3-86b6-4450-9633-a9b0d47a2e06</tstamps>
     </comp>
     <comp ref="C13">
       <value>4.7µF</value>
@@ -1384,6 +1410,26 @@
       <sheetpath names="/Project Architecture/TPS61086_3.3V_to_6V/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
       <tstamps>c52ddfae-12d0-40a3-bca2-16843282ad18</tstamps>
     </comp>
+    <comp ref="D1">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Light emitting diode</description>
+      <fields>
+        <field name="Sim.Pins">1=K 2=A</field>
+        <field name="Footprint">LED_SMD:LED_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Light emitting diode</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sim.Pins" value="1=K 2=A"/>
+      <property name="Sheetname" value="TPS61086_3.3V_to_6V"/>
+      <property name="Sheetfile" value="Section B - TItle B.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
+      <sheetpath names="/Project Architecture/TPS61086_3.3V_to_6V/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
+      <tstamps>8577a8d2-2ba7-4131-ac62-360357cc8340</tstamps>
+    </comp>
     <comp ref="D3">
       <value>PMEG2010AEH</value>
       <footprint>Diode_SMD:D_SOD-123F</footprint>
@@ -1404,7 +1450,7 @@
     </comp>
     <comp ref="IC2">
       <value>TPS61086DRCR</value>
-      <footprint>TPS16412DRCR</footprint>
+      <footprint>TPS61086DRCR:TPS16412DRCR</footprint>
       <datasheet>https://www.ti.com/lit/gpn/TPS61086</datasheet>
       <description>Switching Voltage Regulators 18.5V PFM/PWM Step- Up DC-DC Converter</description>
       <fields>
@@ -1415,7 +1461,7 @@
         <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS61086DRCR?qs=6805eV47HhZDU1cIiHcRxg%3D%3D</field>
         <field name="Arrow Part Number">TPS61086DRCR</field>
         <field name="Arrow Price/Stock">https://www.arrow.com/en/products/tps61086drcr/texas-instruments?region=nac</field>
-        <field name="Footprint">TPS16412DRCR</field>
+        <field name="Footprint">TPS61086DRCR:TPS16412DRCR</field>
         <field name="Datasheet">https://www.ti.com/lit/gpn/TPS61086</field>
         <field name="Description">Switching Voltage Regulators 18.5V PFM/PWM Step- Up DC-DC Converter</field>
       </fields>
@@ -1461,6 +1507,24 @@
       <property name="Sheetfile" value="Section B - TItle B.kicad_sch"/>
       <sheetpath names="/Project Architecture/TPS61086_3.3V_to_6V/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
       <tstamps>517dbfe2-8c3c-4798-bb0e-49dc49a3daec</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>100Ω</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="TPS61086_3.3V_to_6V"/>
+      <property name="Sheetfile" value="Section B - TItle B.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/TPS61086_3.3V_to_6V/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
+      <tstamps>62e6ee74-9999-444a-8b4f-735f49d774fa</tstamps>
     </comp>
     <comp ref="R15">
       <value>18kΩ</value>
@@ -1778,116 +1842,115 @@
       <sheetpath names="/Project Architecture/Holes, Fiducials/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/35ce4035-3b3b-4514-9c4f-75699da381c4/"/>
       <tstamps>1f537a38-a588-4685-9d16-1fb3b91d2f53</tstamps>
     </comp>
-    <comp ref="J1">
-      <value>Conn_01x02_Pin</value>
-      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
-      <datasheet>~</datasheet>
-      <description>Generic connector, single row, 01x02, script generated</description>
+    <comp ref="H5">
+      <value>WE-SHC_THT-FRAME</value>
+      <footprint>WE-SHC_THT-FRAME:WE-SHC_THT-FRAME_36503205</footprint>
       <fields>
-        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</field>
-        <field name="Datasheet">~</field>
-        <field name="Description">Generic connector, single row, 01x02, script generated</field>
+        <field name="MF">Wurth Electronics</field>
+        <field name="Description_1">Frame THT; 20 x 20 x 3 mm; Base material = tinplate</field>
+        <field name="Package">None</field>
+        <field name="Price">None</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/36503205S/Wurth+Electronics/view-part/?ref=snap</field>
+        <field name="MP">36503205S</field>
+        <field name="Purchase-URL">https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=13768814&amp;manufacturer=Wurth Electronics&amp;part_name=36503205S&amp;search_term=36503205s</field>
+        <field name="Availability">In Stock</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/36503205S/Wurth+Electronics/view-part/?ref=eda</field>
+        <field name="Footprint">WE-SHC_THT-FRAME:WE-SHC_THT-FRAME_36503205</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
       </fields>
-      <libsource lib="Connector" part="Conn_01x02_Pin" description="Generic connector, single row, 01x02, script generated"/>
+      <libsource lib="WE-SHC_THT-FRAME" part="WE-SHC_THT-FRAME" description=""/>
+      <property name="MF" value="Wurth Electronics"/>
+      <property name="Description_1" value="Frame THT; 20 x 20 x 3 mm; Base material = tinplate"/>
+      <property name="Package" value="None"/>
+      <property name="Price" value="None"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/36503205S/Wurth+Electronics/view-part/?ref=snap"/>
+      <property name="MP" value="36503205S"/>
+      <property name="Purchase-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=13768814&amp;manufacturer=Wurth Electronics&amp;part_name=36503205S&amp;search_term=36503205s"/>
+      <property name="Availability" value="In Stock"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/36503205S/Wurth+Electronics/view-part/?ref=eda"/>
       <property name="Sheetname" value="Connecteur"/>
       <property name="Sheetfile" value="Section D - TItle D.kicad_sch"/>
-      <property name="ki_keywords" value="connector"/>
-      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
       <sheetpath names="/Project Architecture/Connecteur/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/ddd4b387-4aa4-48c3-b079-ffb0beb645d3/"/>
-      <tstamps>dbb84616-8935-45d8-b85f-86728d76a5c1</tstamps>
+      <tstamps>3774c777-80ba-47ad-bb78-4340273550f8</tstamps>
     </comp>
-    <comp ref="J2">
-      <value>Conn_01x02_Pin</value>
-      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+    <comp ref="J1">
+      <value>Conn_01x07_Pin</value>
+      <footprint>Connector_JST:JST_XH_B7B-XH-AM_1x07_P2.50mm_Vertical</footprint>
       <datasheet>~</datasheet>
-      <description>Generic connector, single row, 01x02, script generated</description>
+      <description>Generic connector, single row, 01x07, script generated</description>
       <fields>
-        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Footprint">Connector_JST:JST_XH_B7B-XH-AM_1x07_P2.50mm_Vertical</field>
         <field name="Datasheet">~</field>
-        <field name="Description">Generic connector, single row, 01x02, script generated</field>
+        <field name="Description">Generic connector, single row, 01x07, script generated</field>
       </fields>
-      <libsource lib="Connector" part="Conn_01x02_Pin" description="Generic connector, single row, 01x02, script generated"/>
+      <libsource lib="Connector" part="Conn_01x07_Pin" description="Generic connector, single row, 01x07, script generated"/>
       <property name="Sheetname" value="Connecteur"/>
       <property name="Sheetfile" value="Section D - TItle D.kicad_sch"/>
       <property name="ki_keywords" value="connector"/>
       <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
       <sheetpath names="/Project Architecture/Connecteur/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/ddd4b387-4aa4-48c3-b079-ffb0beb645d3/"/>
-      <tstamps>f0b0a02f-3915-46cb-ba78-7c59d1705d90</tstamps>
+      <tstamps>32b264dd-4e5d-408b-9b24-2380b4a41f18</tstamps>
     </comp>
     <comp ref="J3">
-      <value>Conn_01x02_Pin</value>
-      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
-      <datasheet>~</datasheet>
-      <description>Generic connector, single row, 01x02, script generated</description>
+      <value>691408720004B</value>
+      <footprint>691408720004B:691408720004B</footprint>
       <fields>
-        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</field>
-        <field name="Datasheet">~</field>
-        <field name="Description">Generic connector, single row, 01x02, script generated</field>
+        <field name="MF">Würth Elektronik</field>
+        <field name="Description_1">4 Position Wire to Board Terminal Block 45° (135°) Angle with Board 0.197 (5.00mm) Through Hole</field>
+        <field name="Package">None</field>
+        <field name="Price">None</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/691408720004B/W%25C3%25BCrth+Elektronik+Midcom/view-part/?ref=snap</field>
+        <field name="MP">691408720004B</field>
+        <field name="Availability">In Stock</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/691408720004B/W%25C3%25BCrth+Elektronik+Midcom/view-part/?ref=eda</field>
+        <field name="Footprint">691408720004B:691408720004B</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
       </fields>
-      <libsource lib="Connector" part="Conn_01x02_Pin" description="Generic connector, single row, 01x02, script generated"/>
+      <libsource lib="691408720004B" part="691408720004B" description=""/>
+      <property name="MF" value="Würth Elektronik"/>
+      <property name="Description_1" value="4 Position Wire to Board Terminal Block 45° (135°) Angle with Board 0.197 (5.00mm) Through Hole"/>
+      <property name="Package" value="None"/>
+      <property name="Price" value="None"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/691408720004B/W%25C3%25BCrth+Elektronik+Midcom/view-part/?ref=snap"/>
+      <property name="MP" value="691408720004B"/>
+      <property name="Availability" value="In Stock"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/691408720004B/W%25C3%25BCrth+Elektronik+Midcom/view-part/?ref=eda"/>
       <property name="Sheetname" value="Connecteur"/>
       <property name="Sheetfile" value="Section D - TItle D.kicad_sch"/>
-      <property name="ki_keywords" value="connector"/>
-      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
       <sheetpath names="/Project Architecture/Connecteur/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/ddd4b387-4aa4-48c3-b079-ffb0beb645d3/"/>
-      <tstamps>4df262d4-2783-4224-9cf3-7e52983d6d30</tstamps>
-    </comp>
-    <comp ref="J4">
-      <value>Conn_01x02_Pin</value>
-      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
-      <datasheet>~</datasheet>
-      <description>Generic connector, single row, 01x02, script generated</description>
-      <fields>
-        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</field>
-        <field name="Datasheet">~</field>
-        <field name="Description">Generic connector, single row, 01x02, script generated</field>
-      </fields>
-      <libsource lib="Connector" part="Conn_01x02_Pin" description="Generic connector, single row, 01x02, script generated"/>
-      <property name="Sheetname" value="Connecteur"/>
-      <property name="Sheetfile" value="Section D - TItle D.kicad_sch"/>
-      <property name="ki_keywords" value="connector"/>
-      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
-      <sheetpath names="/Project Architecture/Connecteur/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/ddd4b387-4aa4-48c3-b079-ffb0beb645d3/"/>
-      <tstamps>a47c350e-da68-4711-a8a2-ee811602fca4</tstamps>
-    </comp>
-    <comp ref="J5">
-      <value>Conn_01x04_Socket</value>
-      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical</footprint>
-      <datasheet>~</datasheet>
-      <description>Generic connector, single row, 01x04, script generated</description>
-      <fields>
-        <field name="Footprint">Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical</field>
-        <field name="Datasheet">~</field>
-        <field name="Description">Generic connector, single row, 01x04, script generated</field>
-      </fields>
-      <libsource lib="Connector" part="Conn_01x04_Socket" description="Generic connector, single row, 01x04, script generated"/>
-      <property name="Sheetname" value="Connecteur"/>
-      <property name="Sheetfile" value="Section D - TItle D.kicad_sch"/>
-      <property name="ki_keywords" value="connector"/>
-      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
-      <sheetpath names="/Project Architecture/Connecteur/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/ddd4b387-4aa4-48c3-b079-ffb0beb645d3/"/>
-      <tstamps>182d275a-0ed9-4fcf-9de8-d05992507037</tstamps>
-    </comp>
-    <comp ref="J6">
-      <value>Conn_01x05_Pin</value>
-      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical</footprint>
-      <datasheet>~</datasheet>
-      <description>Generic connector, single row, 01x05, script generated</description>
-      <fields>
-        <field name="Footprint">Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical</field>
-        <field name="Datasheet">~</field>
-        <field name="Description">Generic connector, single row, 01x05, script generated</field>
-      </fields>
-      <libsource lib="Connector" part="Conn_01x05_Pin" description="Generic connector, single row, 01x05, script generated"/>
-      <property name="Sheetname" value="Connecteur"/>
-      <property name="Sheetfile" value="Section D - TItle D.kicad_sch"/>
-      <property name="ki_keywords" value="connector"/>
-      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
-      <sheetpath names="/Project Architecture/Connecteur/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/ddd4b387-4aa4-48c3-b079-ffb0beb645d3/"/>
-      <tstamps>30cb0d15-074d-4586-adc2-0770f62e7052</tstamps>
+      <tstamps>c11c2249-bf66-4425-a48a-e24bd0b25835</tstamps>
     </comp>
   </components>
   <libparts>
+    <libpart lib="691408720004B" part="691408720004B">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">691408720004B</field>
+        <field name="Footprint">691408720004B:691408720004B</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+        <field name="MF">Würth Elektronik</field>
+        <field name="Description_1">4 Position Wire to Board Terminal Block 45° (135°) Angle with Board 0.197 (5.00mm) Through Hole</field>
+        <field name="Package">None</field>
+        <field name="Price">None</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/691408720004B/W%25C3%25BCrth+Elektronik+Midcom/view-part/?ref=snap</field>
+        <field name="MP">691408720004B</field>
+        <field name="Availability">In Stock</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/691408720004B/W%25C3%25BCrth+Elektronik+Midcom/view-part/?ref=eda</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+        <pin num="3" name="" type="passive"/>
+        <pin num="4" name="" type="passive"/>
+        <pin num="A1" name="" type="passive"/>
+        <pin num="A2" name="" type="passive"/>
+        <pin num="A3" name="" type="passive"/>
+        <pin num="A4" name="" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="7447785004" part="7447785004">
       <description>WE-PD Robust SMT Shielded Power Inductor Size 6033; L = 4.7 H ; IR = 2.65 A; Isat = 2.5 A; RDC = 78 m</description>
       <docs>https://www.we-online.com/catalog/datasheet/7447785004.pdf</docs>
@@ -1910,33 +1973,9 @@
         <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="ABC2-4_9152MHZ-4-T" part="ABC2-4.9152MHZ-4-T">
-      <description>LOW FREQUENCY CERAMIC SURFACE MOUNT MICROPROCESSOR CRYSTAL</description>
-      <docs>https://abracon.com/Resonators/abc2.pdf</docs>
-      <fields>
-        <field name="Reference">Y</field>
-        <field name="Value">ABC2-4.9152MHZ-4-T</field>
-        <field name="Footprint">ABC210000MHZ4</field>
-        <field name="Datasheet">https://abracon.com/Resonators/abc2.pdf</field>
-        <field name="Description">LOW FREQUENCY CERAMIC SURFACE MOUNT MICROPROCESSOR CRYSTAL</field>
-        <field name="Height">2</field>
-        <field name="Manufacturer_Name">ABRACON</field>
-        <field name="Manufacturer_Part_Number">ABC2-4.9152MHZ-4-T</field>
-        <field name="Mouser Part Number">815-ABC2-4.915M-4-T</field>
-        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/ABRACON/ABC2-4.9152MHZ-4-T?qs=S%252BYRV53T2BpAvrVLkV2d2A%3D%3D</field>
-        <field name="Arrow Part Number">ABC2-4.9152MHZ-4-T</field>
-        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/abc2-4.9152mhz-4-t/abracon</field>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="passive"/>
-        <pin num="2" name="2" type="passive"/>
-        <pin num="3" name="3" type="passive"/>
-        <pin num="4" name="4" type="passive"/>
-      </pins>
-    </libpart>
     <libpart lib="AD7190WBRUZ" part="AD7190WBRUZ">
       <fields>
-        <field name="Reference">U</field>
+        <field name="Reference">U1</field>
         <field name="Value">AD7190WBRUZ</field>
         <field name="Footprint">AD7190WBRUZ:SOP65P640X120-24N</field>
         <field name="Datasheet"/>
@@ -1960,6 +1999,7 @@
         <pin num="6" name="P2" type="output"/>
         <pin num="7" name="P1/REFIN2(+)" type="bidirectional"/>
         <pin num="8" name="P0/REFIN2(-)" type="bidirectional"/>
+        <pin num="9" name="NC" type="bidirectional"/>
         <pin num="10" name="AINCOM" type="input"/>
         <pin num="11" name="AIN1" type="input"/>
         <pin num="12" name="AIN2" type="input"/>
@@ -1977,56 +2017,45 @@
         <pin num="24" name="DIN" type="input"/>
       </pins>
     </libpart>
-    <libpart lib="Connector" part="Conn_01x02_Pin">
-      <description>Generic connector, single row, 01x02, script generated</description>
-      <docs>~</docs>
-      <footprints>
-        <fp>Connector*:*_1x??_*</fp>
-      </footprints>
+    <libpart lib="CSTCR4M91G53-R0" part="CSTCR4M91G53-R0">
       <fields>
-        <field name="Reference">J</field>
-        <field name="Value">Conn_01x02_Pin</field>
-        <field name="Footprint"/>
-        <field name="Datasheet">~</field>
-        <field name="Description">Generic connector, single row, 01x02, script generated</field>
+        <field name="Reference">Y</field>
+        <field name="Value">CSTCR4M91G53-R0</field>
+        <field name="Footprint">CSTCR4M91G53-R0:OSC_CSTCR4M91G53-R0</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+        <field name="MF">Murata Electronics</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">1.2mm</field>
+        <field name="Package">SMD-3 Murata</field>
+        <field name="Price">None</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/CSTCR4M91G53-R0/Murata+Electronics+North+America/view-part/?ref=eda</field>
+        <field name="STANDARD">Manufacturer Recomendations</field>
+        <field name="PARTREV">JGC42-8797</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/CSTCR4M91G53-R0/Murata+Electronics+North+America/view-part/?ref=snap</field>
+        <field name="MP">CSTCR4M91G53-R0</field>
+        <field name="Purchase-URL">https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=50325&amp;manufacturer=Murata Electronics&amp;part_name=CSTCR4M91G53-R0&amp;search_term=cstcr4m91g53-r0</field>
+        <field name="Description_1">4.91 MHz Ceramic Resonator Built in Capacitor 15 pF ±0.2% 60 Ohms -20°C ~ 80°C Surface Mount</field>
+        <field name="Availability">In Stock</field>
+        <field name="MANUFACTURER">Murata</field>
       </fields>
       <pins>
-        <pin num="1" name="Pin_1" type="passive"/>
-        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="1" name="" type="input"/>
+        <pin num="2" name="" type="power_in"/>
+        <pin num="3" name="" type="output"/>
       </pins>
     </libpart>
-    <libpart lib="Connector" part="Conn_01x04_Socket">
-      <description>Generic connector, single row, 01x04, script generated</description>
+    <libpart lib="Connector" part="Conn_01x07_Pin">
+      <description>Generic connector, single row, 01x07, script generated</description>
       <docs>~</docs>
       <footprints>
         <fp>Connector*:*_1x??_*</fp>
       </footprints>
       <fields>
         <field name="Reference">J</field>
-        <field name="Value">Conn_01x04_Socket</field>
+        <field name="Value">Conn_01x07_Pin</field>
         <field name="Footprint"/>
         <field name="Datasheet">~</field>
-        <field name="Description">Generic connector, single row, 01x04, script generated</field>
-      </fields>
-      <pins>
-        <pin num="1" name="Pin_1" type="passive"/>
-        <pin num="2" name="Pin_2" type="passive"/>
-        <pin num="3" name="Pin_3" type="passive"/>
-        <pin num="4" name="Pin_4" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="Connector" part="Conn_01x05_Pin">
-      <description>Generic connector, single row, 01x05, script generated</description>
-      <docs>~</docs>
-      <footprints>
-        <fp>Connector*:*_1x??_*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">J</field>
-        <field name="Value">Conn_01x05_Pin</field>
-        <field name="Footprint"/>
-        <field name="Datasheet">~</field>
-        <field name="Description">Generic connector, single row, 01x05, script generated</field>
+        <field name="Description">Generic connector, single row, 01x07, script generated</field>
       </fields>
       <pins>
         <pin num="1" name="Pin_1" type="passive"/>
@@ -2034,6 +2063,8 @@
         <pin num="3" name="Pin_3" type="passive"/>
         <pin num="4" name="Pin_4" type="passive"/>
         <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Connector" part="TestPoint">
@@ -2109,6 +2140,34 @@
       <pins>
         <pin num="1" name="" type="passive"/>
         <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Pack04">
+      <description>4 resistor network, parallel topology</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>DIP*</fp>
+        <fp>SOIC*</fp>
+        <fp>R*Array*Concave*</fp>
+        <fp>R*Array*Convex*</fp>
+        <fp>MSOP*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">RN</field>
+        <field name="Value">R_Pack04</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">4 resistor network, parallel topology</field>
+      </fields>
+      <pins>
+        <pin num="1" name="R1.1" type="passive"/>
+        <pin num="2" name="R2.1" type="passive"/>
+        <pin num="3" name="R3.1" type="passive"/>
+        <pin num="4" name="R4.1" type="passive"/>
+        <pin num="5" name="R4.2" type="passive"/>
+        <pin num="6" name="R3.2" type="passive"/>
+        <pin num="7" name="R2.2" type="passive"/>
+        <pin num="8" name="R1.2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Diode" part="PMEG2010AEH">
@@ -2244,6 +2303,61 @@
         <pin num="15" name="EP_5" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="Transistor_FET" part="CSD25480F3">
+      <description>-1.7A Id, -20V Vds, P-Channel MOSFET, 159mOhm Ron,max @ 4.5Vgs, 0.70nC Qg,typ @ 4.5Vgs, PicoStar 0.73x0.64mm max, 0.69x0.60mm nom</description>
+      <docs>https://www.ti.com/lit/ds/symlink/csd25480f3.pdf</docs>
+      <footprints>
+        <fp>*PicoStar*DFN?3*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">CSD25480F3</field>
+        <field name="Footprint">Package_DFN_QFN:Texas_PicoStar_DFN-3_0.69x0.60mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/csd25480f3.pdf</field>
+        <field name="Description">-1.7A Id, -20V Vds, P-Channel MOSFET, 159mOhm Ron,max @ 4.5Vgs, 0.70nC Qg,typ @ 4.5Vgs, PicoStar 0.73x0.64mm max, 0.69x0.60mm nom</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="WE-SHC_THT-FRAME" part="WE-SHC_THT-FRAME">
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">WE-SHC_THT-FRAME</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+        <field name="MF">Wurth Electronics</field>
+        <field name="Description_1">Frame THT; 20 x 20 x 3 mm; Base material = tinplate</field>
+        <field name="Package">None</field>
+        <field name="Price">None</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/36503205S/Wurth+Electronics/view-part/?ref=snap</field>
+        <field name="MP">36503205S</field>
+        <field name="Purchase-URL">https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=13768814&amp;manufacturer=Wurth Electronics&amp;part_name=36503205S&amp;search_term=36503205s</field>
+        <field name="Availability">In Stock</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/36503205S/Wurth+Electronics/view-part/?ref=eda</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="power_in"/>
+        <pin num="2" name="" type="power_in"/>
+        <pin num="3" name="" type="power_in"/>
+        <pin num="4" name="" type="power_in"/>
+        <pin num="5" name="" type="power_in"/>
+        <pin num="6" name="" type="power_in"/>
+        <pin num="7" name="" type="power_in"/>
+        <pin num="9" name="" type="power_in"/>
+        <pin num="10" name="" type="power_in"/>
+        <pin num="11" name="" type="power_in"/>
+        <pin num="12" name="" type="power_in"/>
+        <pin num="13" name="" type="power_in"/>
+        <pin num="14" name="" type="power_in"/>
+        <pin num="15" name="" type="power_in"/>
+        <pin num="16" name="" type="power_in"/>
+        <pin num="17" name="" type="power_in"/>
+      </pins>
+    </libpart>
   </libparts>
   <libraries>
     <library logical="Connector">
@@ -2261,82 +2375,90 @@
     <library logical="Regulator_Linear">
       <uri>/usr/share/kicad/symbols//Regulator_Linear.kicad_sym</uri>
     </library>
+    <library logical="Transistor_FET">
+      <uri>/usr/share/kicad/symbols//Transistor_FET.kicad_sym</uri>
+    </library>
   </libraries>
   <nets>
-    <net code="1" name="+3.3V_IN" class="Default">
+    <net code="1" name="+3.3V" class="Default">
       <node ref="C1" pin="1" pintype="passive"/>
       <node ref="C2" pin="1" pintype="passive"/>
       <node ref="C21" pin="1" pintype="passive"/>
       <node ref="C22" pin="1" pintype="passive"/>
       <node ref="IC2" pin="3" pinfunction="EN" pintype="passive"/>
       <node ref="IC2" pin="8" pinfunction="IN" pintype="passive"/>
-      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
-      <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive"/>
-      <node ref="J3" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J1" pin="7" pinfunction="Pin_7" pintype="passive"/>
       <node ref="L1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
       <node ref="R8" pin="1" pintype="passive"/>
-      <node ref="TP21" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="TP6" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="21" pinfunction="DVDD" pintype="power_in"/>
     </net>
-    <net code="2" name="+5VA_OUT" class="Default">
+    <net code="2" name="+3.3V_IN" class="Default">
+      <node ref="TP21" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="3" name="+5VA" class="Default">
+      <node ref="C12" pin="1" pintype="passive"/>
       <node ref="C13" pin="1" pintype="passive"/>
       <node ref="C15" pin="1" pintype="passive"/>
-      <node ref="J4" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="C26" pin="1" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="Q1" pin="2" pinfunction="S" pintype="passive"/>
       <node ref="R12" pin="2" pintype="passive"/>
       <node ref="R16" pin="2" pintype="passive"/>
+      <node ref="TP5" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="TP8" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="20" pinfunction="AVDD" pintype="power_in"/>
       <node ref="U2" pin="10" pinfunction="OUT" pintype="power_out"/>
       <node ref="U2" pin="9" pinfunction="OUTS" pintype="input"/>
     </net>
-    <net code="3" name="+6V_IN" class="Default">
+    <net code="4" name="+6V" class="Default">
       <node ref="C16" pin="1" pintype="passive"/>
-      <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="C19" pin="1" pintype="passive"/>
+      <node ref="C20" pin="1" pintype="passive"/>
+      <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="R14" pin="1" pintype="passive"/>
+      <node ref="R17" pin="2" pintype="passive"/>
       <node ref="TP16" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U2" pin="1" pinfunction="IN" pintype="power_in"/>
       <node ref="U2" pin="2" pinfunction="IN" pintype="passive"/>
       <node ref="U2" pin="3" pinfunction="EN/UV" pintype="input"/>
     </net>
-    <net code="4" name="+6V_OUT" class="Default">
-      <node ref="C19" pin="1" pintype="passive"/>
-      <node ref="C20" pin="1" pintype="passive"/>
-      <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
-      <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
-      <node ref="R17" pin="2" pintype="passive"/>
+    <net code="5" name="+6V_OUT" class="Default">
       <node ref="TP20" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="5" name="/Project Architecture/LT3042_6V_5VA/PGFB" class="Default">
+    <net code="6" name="/Project Architecture/LT3042_6V_5VA/PGFB" class="Default">
       <node ref="R12" pin="1" pintype="passive"/>
       <node ref="R13" pin="2" pintype="passive"/>
       <node ref="TP18" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U2" pin="6" pinfunction="PGFB" pintype="input"/>
     </net>
-    <net code="6" name="/Project Architecture/LT3042_6V_5VA/SET" class="Default">
+    <net code="7" name="/Project Architecture/LT3042_6V_5VA/SET" class="Default">
       <node ref="C14" pin="1" pinfunction="+" pintype="passive"/>
       <node ref="R9" pin="2" pintype="passive"/>
       <node ref="TP17" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U2" pin="7" pinfunction="SET" pintype="passive"/>
     </net>
-    <net code="7" name="/Project Architecture/TPS61086_3.3V_to_6V/FB" class="Default">
+    <net code="8" name="/Project Architecture/TPS61086_3.3V_to_6V/FB" class="Default">
       <node ref="IC2" pin="2" pinfunction="FB" pintype="passive"/>
       <node ref="R15" pin="2" pintype="passive"/>
       <node ref="R17" pin="1" pintype="passive"/>
       <node ref="TP19" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="8" name="CS" class="Default">
-      <node ref="J6" pin="5" pinfunction="Pin_5" pintype="passive"/>
+    <net code="9" name="CS" class="Default">
+      <node ref="J1" pin="6" pinfunction="Pin_6" pintype="passive"/>
       <node ref="R6" pin="1" pintype="passive"/>
     </net>
-    <net code="9" name="DIN" class="Default">
-      <node ref="J6" pin="3" pinfunction="Pin_3" pintype="passive"/>
-      <node ref="R3" pin="1" pintype="passive"/>
+    <net code="10" name="DIN" class="Default">
+      <node ref="J1" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="RN1" pin="5" pinfunction="R4.2" pintype="passive"/>
     </net>
-    <net code="10" name="DOUT" class="Default">
-      <node ref="J6" pin="2" pinfunction="Pin_2" pintype="passive"/>
-      <node ref="R7" pin="1" pintype="passive"/>
+    <net code="11" name="DOUT" class="Default">
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="RN1" pin="6" pinfunction="R3.2" pintype="passive"/>
     </net>
-    <net code="11" name="GND" class="Default">
+    <net code="12" name="GND" class="Default">
       <node ref="C1" pin="2" pintype="passive"/>
       <node ref="C10" pin="1" pintype="passive"/>
       <node ref="C11" pin="2" pintype="passive"/>
@@ -2352,6 +2474,10 @@
       <node ref="C20" pin="2" pintype="passive"/>
       <node ref="C21" pin="2" pintype="passive"/>
       <node ref="C22" pin="2" pintype="passive"/>
+      <node ref="C23" pin="2" pintype="passive"/>
+      <node ref="C24" pin="2" pintype="passive"/>
+      <node ref="C25" pin="2" pintype="passive"/>
+      <node ref="C26" pin="2" pintype="passive"/>
       <node ref="C3" pin="1" pintype="passive"/>
       <node ref="C4" pin="1" pintype="passive"/>
       <node ref="C7" pin="1" pintype="passive"/>
@@ -2364,6 +2490,22 @@
       <node ref="H2" pin="1" pinfunction="1" pintype="input"/>
       <node ref="H3" pin="1" pinfunction="1" pintype="input"/>
       <node ref="H4" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H5" pin="1" pintype="power_in"/>
+      <node ref="H5" pin="10" pintype="power_in"/>
+      <node ref="H5" pin="11" pintype="power_in"/>
+      <node ref="H5" pin="12" pintype="power_in"/>
+      <node ref="H5" pin="13" pintype="power_in"/>
+      <node ref="H5" pin="14" pintype="power_in"/>
+      <node ref="H5" pin="15" pintype="power_in"/>
+      <node ref="H5" pin="16" pintype="power_in"/>
+      <node ref="H5" pin="17" pintype="power_in"/>
+      <node ref="H5" pin="2" pintype="power_in"/>
+      <node ref="H5" pin="3" pintype="power_in"/>
+      <node ref="H5" pin="4" pintype="power_in"/>
+      <node ref="H5" pin="5" pintype="power_in"/>
+      <node ref="H5" pin="6" pintype="power_in"/>
+      <node ref="H5" pin="7" pintype="power_in"/>
+      <node ref="H5" pin="9" pintype="power_in"/>
       <node ref="IC2" pin="11" pinfunction="EP" pintype="passive"/>
       <node ref="IC2" pin="12" pinfunction="EP_2" pintype="passive"/>
       <node ref="IC2" pin="13" pinfunction="EP_3" pintype="passive"/>
@@ -2372,7 +2514,7 @@
       <node ref="IC2" pin="4" pinfunction="AGND" pintype="passive"/>
       <node ref="IC2" pin="5" pinfunction="PGND" pintype="passive"/>
       <node ref="IC2" pin="9" pinfunction="MODE" pintype="passive"/>
-      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
       <node ref="R13" pin="1" pintype="passive"/>
       <node ref="R15" pin="1" pintype="passive"/>
       <node ref="R9" pin="1" pintype="passive"/>
@@ -2381,122 +2523,113 @@
       <node ref="TP7" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="18" pinfunction="AGND" pintype="power_in"/>
       <node ref="U1" pin="19" pinfunction="DGND" pintype="power_in"/>
+      <node ref="U1" pin="9" pinfunction="NC" pintype="bidirectional"/>
       <node ref="U2" pin="11" pinfunction="GND" pintype="passive"/>
       <node ref="U2" pin="5" pinfunction="ILIM" pintype="passive"/>
       <node ref="U2" pin="8" pinfunction="GND" pintype="power_in"/>
+      <node ref="Y2" pin="2" pintype="power_in"/>
     </net>
-    <net code="12" name="IN-OUT+" class="Default">
-      <node ref="J5" pin="4" pinfunction="Pin_4" pintype="passive"/>
+    <net code="13" name="IN-OUT+" class="Default">
+      <node ref="J3" pin="3" pintype="passive"/>
+      <node ref="J3" pin="A3" pintype="passive"/>
       <node ref="R1" pin="1" pintype="passive"/>
     </net>
-    <net code="13" name="IN-OUT-" class="Default">
-      <node ref="J5" pin="3" pinfunction="Pin_3" pintype="passive"/>
+    <net code="14" name="IN-OUT-" class="Default">
+      <node ref="J3" pin="4" pintype="passive"/>
+      <node ref="J3" pin="A4" pintype="passive"/>
       <node ref="R2" pin="1" pintype="passive"/>
     </net>
-    <net code="14" name="IN-SENSE+" class="Default">
-      <node ref="C3" pin="2" pintype="passive"/>
-      <node ref="C4" pin="2" pintype="passive"/>
-      <node ref="C5" pin="1" pintype="passive"/>
-      <node ref="C7" pin="2" pintype="passive"/>
-      <node ref="J4" pin="1" pinfunction="Pin_1" pintype="passive"/>
-      <node ref="J5" pin="2" pinfunction="Pin_2" pintype="passive"/>
-      <node ref="TP1" pin="1" pinfunction="1" pintype="passive"/>
-      <node ref="TP5" pin="1" pinfunction="1" pintype="passive"/>
-      <node ref="U1" pin="15" pinfunction="REFIN1(+)" pintype="input"/>
-      <node ref="U1" pin="20" pinfunction="AVDD" pintype="power_in"/>
+    <net code="15" name="IN-SENSE+" class="Default">
+      <node ref="J3" pin="2" pintype="passive"/>
+      <node ref="J3" pin="A2" pintype="passive"/>
     </net>
-    <net code="15" name="IN-SENSE-" class="Default">
-      <node ref="C5" pin="2" pintype="passive"/>
-      <node ref="C9" pin="1" pintype="passive"/>
-      <node ref="J5" pin="1" pinfunction="Pin_1" pintype="passive"/>
-      <node ref="TP2" pin="1" pinfunction="1" pintype="passive"/>
-      <node ref="U1" pin="16" pinfunction="REFIN1(-)" pintype="input"/>
+    <net code="16" name="IN-SENSE-" class="Default">
+      <node ref="J3" pin="1" pintype="passive"/>
+      <node ref="J3" pin="A1" pintype="passive"/>
     </net>
-    <net code="16" name="MCLK1" class="Default">
-      <node ref="C12" pin="1" pintype="passive"/>
+    <net code="17" name="MCLK1" class="Default">
+      <node ref="C25" pin="1" pintype="passive"/>
       <node ref="TP14" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="1" pinfunction="MCLK1" pintype="input"/>
-      <node ref="Y1" pin="1" pinfunction="1" pintype="passive"/>
-      <node ref="Y1" pin="4" pinfunction="4" pintype="passive"/>
+      <node ref="Y2" pin="1" pintype="input"/>
     </net>
-    <net code="17" name="MCLK2" class="Default">
-      <node ref="C11" pin="1" pintype="passive"/>
+    <net code="18" name="MCLK2" class="Default">
+      <node ref="C24" pin="1" pintype="passive"/>
       <node ref="TP15" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="2" pinfunction="MCLK2" pintype="input"/>
-      <node ref="Y1" pin="2" pinfunction="2" pintype="passive"/>
-      <node ref="Y1" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="Y2" pin="3" pintype="output"/>
     </net>
-    <net code="18" name="Net-(C17-Pad1)" class="Default">
+    <net code="19" name="Net-(C17-Pad1)" class="Default">
       <node ref="C17" pin="1" pintype="passive"/>
       <node ref="R18" pin="1" pintype="passive"/>
     </net>
-    <net code="19" name="Net-(D1-A)" class="Default">
+    <net code="20" name="Net-(D1-A)" class="Default">
       <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
-      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
     </net>
-    <net code="20" name="Net-(D2-A)" class="Default">
+    <net code="21" name="Net-(D2-A)" class="Default">
       <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="R11" pin="2" pintype="passive"/>
     </net>
-    <net code="21" name="Net-(D3-A)" class="Default">
+    <net code="22" name="Net-(D3-A)" class="Default">
       <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="IC2" pin="6" pinfunction="SW_1" pintype="passive"/>
       <node ref="IC2" pin="7" pinfunction="SW_2" pintype="passive"/>
       <node ref="L1" pin="2" pinfunction="2" pintype="passive"/>
     </net>
-    <net code="22" name="Net-(D4-A)" class="Default">
+    <net code="23" name="Net-(D4-A)" class="Default">
       <node ref="D4" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="R16" pin="1" pintype="passive"/>
     </net>
-    <net code="23" name="Net-(IC2-COMP)" class="Default">
+    <net code="24" name="Net-(IC2-COMP)" class="Default">
       <node ref="IC2" pin="1" pinfunction="COMP" pintype="passive"/>
       <node ref="R18" pin="2" pintype="passive"/>
     </net>
-    <net code="24" name="Net-(IC2-SS)" class="Default">
+    <net code="25" name="Net-(IC2-SS)" class="Default">
       <node ref="C18" pin="1" pintype="passive"/>
       <node ref="IC2" pin="10" pinfunction="SS" pintype="passive"/>
     </net>
-    <net code="25" name="Net-(U1-DIN)" class="Default">
-      <node ref="R3" pin="2" pintype="passive"/>
-      <node ref="U1" pin="24" pinfunction="DIN" pintype="input"/>
+    <net code="26" name="Net-(Q1-G)" class="Default">
+      <node ref="Q1" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R10" pin="2" pintype="passive"/>
     </net>
-    <net code="26" name="Net-(U1-DOUT/~{RDY})" class="Default">
-      <node ref="R7" pin="2" pintype="passive"/>
+    <net code="27" name="Net-(RN1-R1.1)" class="Default">
+      <node ref="RN1" pin="1" pinfunction="R1.1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="SCLK" pintype="input"/>
+    </net>
+    <net code="28" name="Net-(RN1-R2.1)" class="Default">
+      <node ref="RN1" pin="2" pinfunction="R2.1" pintype="passive"/>
+      <node ref="U1" pin="22" pinfunction="~{SYNC}" pintype="input"/>
+    </net>
+    <net code="29" name="Net-(RN1-R3.1)" class="Default">
+      <node ref="RN1" pin="3" pinfunction="R3.1" pintype="passive"/>
       <node ref="U1" pin="23" pinfunction="DOUT/~{RDY}" pintype="bidirectional"/>
     </net>
-    <net code="27" name="Net-(U1-P2)" class="Default">
+    <net code="30" name="Net-(RN1-R4.1)" class="Default">
+      <node ref="RN1" pin="4" pinfunction="R4.1" pintype="passive"/>
+      <node ref="U1" pin="24" pinfunction="DIN" pintype="input"/>
+    </net>
+    <net code="31" name="Net-(U1-P2)" class="Default">
       <node ref="R11" pin="1" pintype="passive"/>
       <node ref="U1" pin="6" pinfunction="P2" pintype="output"/>
     </net>
-    <net code="28" name="Net-(U1-P3)" class="Default">
-      <node ref="R10" pin="1" pintype="passive"/>
-      <node ref="U1" pin="5" pinfunction="P3" pintype="output"/>
-    </net>
-    <net code="29" name="Net-(U1-SCLK)" class="Default">
-      <node ref="R5" pin="2" pintype="passive"/>
-      <node ref="U1" pin="3" pinfunction="SCLK" pintype="input"/>
-    </net>
-    <net code="30" name="Net-(U1-~{CS})" class="Default">
+    <net code="32" name="Net-(U1-~{CS})" class="Default">
       <node ref="R6" pin="2" pintype="passive"/>
       <node ref="R8" pin="2" pintype="passive"/>
       <node ref="U1" pin="4" pinfunction="~{CS}" pintype="input"/>
     </net>
-    <net code="31" name="Net-(U1-~{SYNC})" class="Default">
-      <node ref="R4" pin="2" pintype="passive"/>
-      <node ref="U1" pin="22" pinfunction="~{SYNC}" pintype="input"/>
-    </net>
-    <net code="32" name="Net-(U2-PG)" class="Default">
+    <net code="33" name="Net-(U2-PG)" class="Default">
       <node ref="R14" pin="2" pintype="passive"/>
       <node ref="U2" pin="4" pinfunction="PG" pintype="open_collector"/>
     </net>
-    <net code="33" name="OUT+" class="Default">
+    <net code="34" name="OUT+" class="Default">
       <node ref="C10" pin="2" pintype="passive"/>
       <node ref="C6" pin="1" pintype="passive"/>
       <node ref="R1" pin="2" pintype="passive"/>
       <node ref="TP3" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="13" pinfunction="AIN3" pintype="input"/>
     </net>
-    <net code="34" name="OUT-" class="Default">
+    <net code="35" name="OUT-" class="Default">
       <node ref="C6" pin="2" pintype="passive"/>
       <node ref="C8" pin="1" pintype="passive"/>
       <node ref="R2" pin="2" pintype="passive"/>
@@ -2504,27 +2637,46 @@
       <node ref="U1" pin="14" pinfunction="AIN4" pintype="input"/>
       <node ref="U1" pin="17" pinfunction="BPDSW" pintype="bidirectional"/>
     </net>
-    <net code="35" name="SCLK" class="Default">
-      <node ref="J6" pin="4" pinfunction="Pin_4" pintype="passive"/>
-      <node ref="R5" pin="1" pintype="passive"/>
+    <net code="36" name="P3" class="Default">
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="P3" pintype="output"/>
     </net>
-    <net code="36" name="SYNC" class="Default">
-      <node ref="J6" pin="1" pinfunction="Pin_1" pintype="passive"/>
-      <node ref="R4" pin="1" pintype="passive"/>
+    <net code="37" name="SCLK" class="Default">
+      <node ref="J1" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="RN1" pin="8" pinfunction="R1.2" pintype="passive"/>
     </net>
-    <net code="37" name="unconnected-(U1-AIN1-Pad11)" class="Default">
+    <net code="38" name="SENSE+" class="Default">
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="C23" pin="1" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="Q1" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="TP1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="15" pinfunction="REFIN1(+)" pintype="input"/>
+    </net>
+    <net code="39" name="SENSE-" class="Default">
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="TP2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="16" pinfunction="REFIN1(-)" pintype="input"/>
+    </net>
+    <net code="40" name="SYNC" class="Default">
+      <node ref="J1" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="RN1" pin="7" pinfunction="R2.2" pintype="passive"/>
+    </net>
+    <net code="41" name="unconnected-(U1-AIN1-Pad11)" class="Default">
       <node ref="U1" pin="11" pinfunction="AIN1" pintype="input+no_connect"/>
     </net>
-    <net code="38" name="unconnected-(U1-AIN2-Pad12)" class="Default">
+    <net code="42" name="unconnected-(U1-AIN2-Pad12)" class="Default">
       <node ref="U1" pin="12" pinfunction="AIN2" pintype="input+no_connect"/>
     </net>
-    <net code="39" name="unconnected-(U1-AINCOM-Pad10)" class="Default">
+    <net code="43" name="unconnected-(U1-AINCOM-Pad10)" class="Default">
       <node ref="U1" pin="10" pinfunction="AINCOM" pintype="input+no_connect"/>
     </net>
-    <net code="40" name="unconnected-(U1-P0/REFIN2(-)-Pad8)" class="Default">
+    <net code="44" name="unconnected-(U1-P0/REFIN2(-)-Pad8)" class="Default">
       <node ref="U1" pin="8" pinfunction="P0/REFIN2(-)" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="41" name="unconnected-(U1-P1/REFIN2(+)-Pad7)" class="Default">
+    <net code="45" name="unconnected-(U1-P1/REFIN2(+)-Pad7)" class="Default">
       <node ref="U1" pin="7" pinfunction="P1/REFIN2(+)" pintype="bidirectional+no_connect"/>
     </net>
   </nets>
