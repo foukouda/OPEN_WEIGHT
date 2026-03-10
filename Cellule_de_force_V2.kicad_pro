@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.6,
-          "height": 1.7,
-          "width": 1.7
+          "drill": 1.2,
+          "height": 1.8,
+          "width": 1.8
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -945,6 +945,132 @@
           "label": "Config",
           "name": "Config",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description_1",
+          "name": "Description_1",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Height",
+          "name": "Height",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MANUFACTURER",
+          "name": "MANUFACTURER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MAXIMUM_PACKAGE_HEIGHT",
+          "name": "MAXIMUM_PACKAGE_HEIGHT",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MF",
+          "name": "MF",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MP",
+          "name": "MP",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Name",
+          "name": "Manufacturer_Name",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Part_Number",
+          "name": "Manufacturer_Part_Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Part Number",
+          "name": "Mouser Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Price/Stock",
+          "name": "Mouser Price/Stock",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PARTREV",
+          "name": "PARTREV",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Package",
+          "name": "Package",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Price",
+          "name": "Price",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Purchase-URL",
+          "name": "Purchase-URL",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "STANDARD",
+          "name": "STANDARD",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SnapEDA_Link",
+          "name": "SnapEDA_Link",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Arrow Part Number",
+          "name": "Arrow Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Arrow Price/Stock",
+          "name": "Arrow Price/Stock",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Availability",
+          "name": "Availability",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Check_prices",
+          "name": "Check_prices",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -1041,7 +1167,7 @@
     "BOARD_NAME": "AD7190",
     "COMPANY": "OPEN_TRUST_LAB",
     "DESIGNER": "SIEBERT DIMITRY",
-    "FABRICATION_NOTES": "FABRICATION NOTES (UNLESS OTHERWISE SPECIFIED)\n\n1)\tFABRICATE PER IPC-6012A CLASS 2.\n\n2)\tOUTLINE DEFINED IN SEPARATE GERBER FILE WITH\n\t\"Edge_Cuts.GBR\" SUFFIX.\n\n\tDIMENSIONS OF CIRCUMSIZED RECTANGLE SHOWN ON THIS\n\tDRAWING FOR REFERENCE ONLY.\n\n3)\tSEE SEPARATE DRILL FILES WITH \".DRL\" SUFFIX \n\tFOR HOLE LOCATIONS.\n\n\tSELECTED HOLE LOCATIONS SHOWN ON THIS DRAWING \n\tFOR REFERENCE ONLY.\n\n4)\tSURFACE FINISH: IMMERSION GOLD\n\n5)\tSOLDERMASK ON BOTH SIDES OF THE BOARD SHALL \n\tBE LPI, COLOR BLACK.\n\n6)\tSILK SCREEN LEGEND TO BE APPLIED PER LAYER \n\tSTACKUP USING YELLOW NON-CONDUCTIVE EPOXY INK.\n\n7)\tALL VIAS ARE TENTED ON BOTH SIDES UNLESS \n\tSOLDERMASK OPENED IN GERBER.\n\n8)\tVENDOR SHOULD FOLLOW ROHS COMPLIANT PROCESS \n\tAND Pb FREE FOR MANUFACTURING\n\n9)\tPCB MATERIAL REQUIREMENTS:\n\n\tA.\tFLAMMABILITY RATING MUST MEET OR EXCEED \n\t\tUL94V-0 REQUIREMENTS.\n\tB.\tTg 170 C OR EQUIVALENT.\n\tC.\tEQUIVALENT MATERIAL SHALL BE RoHS COMPLIANT, \n\t\tHALOGEN FREE AND APPROVED BY OPEN_TRUST_LAB.\n\n10)\tDESIGN GEOMETRY MINIMUM FEATURE SIZES:\n\n\tBOARD SIZE\t\t\t\t26.901 \u00d7 68.100 mm\n\tBOARD THICKNESS\t\t1.660 mm\n\tTRACE WIDTH\t\t\t0.200 mm\n\tTRACE TO TRACE\t\t0.200 mm\n\tMIN. HOLE (PTH)\t\t\t0.200 mm\n\tMIN. HOLE (NPTH)\t\tN/A mm\n\tANNULAR RING\t\t\t0.150 mm\n\tCOPPER TO HOLE\t\t0.254 mm\n\tCOPPER TO EDGE\t\t0.250 mm\n\tHOLE TO HOLE\t\t\t0.254 mm\n\n11)\tREFER TO IMPEDANCE TABLE FOR IMPEDANCE CONTROL REQUIREMENTS.\n\n12)\tCONFIRM SPACE WIDTHS AND SPACINGS.",
+    "FABRICATION_NOTES": "FABRICATION NOTES (UNLESS OTHERWISE SPECIFIED)\n\n1)\tFABRICATE PER IPC-6012A CLASS 2.\n\n2)\tOUTLINE DEFINED IN SEPARATE GERBER FILE WITH\n\t\"Edge_Cuts.GBR\" SUFFIX.\n\n\tDIMENSIONS OF CIRCUMSIZED RECTANGLE SHOWN ON THIS\n\tDRAWING FOR REFERENCE ONLY.\n\n3)\tSEE SEPARATE DRILL FILES WITH \".DRL\" SUFFIX \n\tFOR HOLE LOCATIONS.\n\n\tSELECTED HOLE LOCATIONS SHOWN ON THIS DRAWING \n\tFOR REFERENCE ONLY.\n\n4)\tSURFACE FINISH: IMMERSION GOLD\n\n5)\tSOLDERMASK ON BOTH SIDES OF THE BOARD SHALL \n\tBE LPI, COLOR BLACK.\n\n6)\tSILK SCREEN LEGEND TO BE APPLIED PER LAYER \n\tSTACKUP USING YELLOW NON-CONDUCTIVE EPOXY INK.\n\n7)\tALL VIAS ARE TENTED ON BOTH SIDES UNLESS \n\tSOLDERMASK OPENED IN GERBER.\n\n8)\tVENDOR SHOULD FOLLOW ROHS COMPLIANT PROCESS \n\tAND Pb FREE FOR MANUFACTURING\n\n9)\tPCB MATERIAL REQUIREMENTS:\n\n\tA.\tFLAMMABILITY RATING MUST MEET OR EXCEED \n\t\tUL94V-0 REQUIREMENTS.\n\tB.\tTg 170 C OR EQUIVALENT.\n\tC.\tEQUIVALENT MATERIAL SHALL BE RoHS COMPLIANT, \n\t\tHALOGEN FREE AND APPROVED BY OPEN_TRUST_LAB.\n\n10)\tDESIGN GEOMETRY MINIMUM FEATURE SIZES:\n\n\tBOARD SIZE\t\t\t\t26.901 × 68.100 mm\n\tBOARD THICKNESS\t\t1.660 mm\n\tTRACE WIDTH\t\t\t0.200 mm\n\tTRACE TO TRACE\t\t0.200 mm\n\tMIN. HOLE (PTH)\t\t\t0.200 mm\n\tMIN. HOLE (NPTH)\t\tN/A mm\n\tANNULAR RING\t\t\t0.150 mm\n\tCOPPER TO HOLE\t\t0.254 mm\n\tCOPPER TO EDGE\t\t0.250 mm\n\tHOLE TO HOLE\t\t\t0.254 mm\n\n11)\tREFER TO IMPEDANCE TABLE FOR IMPEDANCE CONTROL REQUIREMENTS.\n\n12)\tCONFIRM SPACE WIDTHS AND SPACINGS.",
     "GIT_HASH_PCB": "0bfb00e",
     "GIT_HASH_SCH": "f2c7d09",
     "GIT_URL": "https://github.com/nguyen-v/KDT_Hierarchical_KiBot",
