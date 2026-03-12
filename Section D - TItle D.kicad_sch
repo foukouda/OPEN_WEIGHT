@@ -2140,7 +2140,7 @@
 		)
 		(uuid "f4f84251-203e-4ca5-91b5-2b815acb2a7e")
 	)
-	(label "CS"
+	(label "SCLK"
 		(at 190.5 114.3 0)
 		(effects
 			(font
@@ -2148,7 +2148,17 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "06300f87-a6ad-4fb9-949f-fc7e3c598afd")
+		(uuid "28307e1e-fe46-4e3e-8550-01a6e817afcf")
+	)
+	(label "CS"
+		(at 190.5 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "461c5a20-02b1-4036-ad04-a1f150eb482c")
 	)
 	(label "IN-SENSE-"
 		(at 214.63 102.87 0)
@@ -2160,6 +2170,16 @@
 		)
 		(uuid "4a89fec0-9a9a-4d80-a4cd-c500c4ebe0df")
 	)
+	(label "DOUT"
+		(at 190.5 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "73aaabf5-3f9e-42e3-991f-2dd5a3f4d65b")
+	)
 	(label "SYNC"
 		(at 190.5 111.76 0)
 		(effects
@@ -2168,27 +2188,17 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "4dd82f8c-3ef7-4861-bdaf-7c8e045553fa")
-	)
-	(label "DOUT"
-		(at 190.5 104.14 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9d0a3c9c-b67e-466e-a446-ce460d0569e1")
+		(uuid "8e999a6d-4c33-4c22-8c68-5b084d636878")
 	)
 	(label "DIN"
-		(at 190.5 109.22 0)
+		(at 190.5 106.68 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "b9353d46-1cc1-4058-a561-c3ea8debfa89")
+		(uuid "a8f6d545-d6f1-4795-aa3a-6fcfdc696126")
 	)
 	(label "IN-SENSE+"
 		(at 214.63 105.41 0)
@@ -2219,16 +2229,6 @@
 			(justify left bottom)
 		)
 		(uuid "f43d659c-6202-49f5-8bae-795164603c30")
-	)
-	(label "SCLK"
-		(at 190.5 106.68 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "fd8a5be0-b931-4dbb-827e-02af86c5f297")
 	)
 	(global_label "{LOAD-CELL}"
 		(shape input)
@@ -2271,72 +2271,6 @@
 				)
 				(justify left)
 				(hide yes)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 190.5 116.84 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2de778cb-eba1-493d-b85e-79e25a35ecf9")
-		(property "Reference" "#PWR033"
-			(at 190.5 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 194.31 120.904 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 190.5 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 190.5 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 190.5 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "214667f1-e29e-455d-a89f-e3fa87caec65")
-		)
-		(instances
-			(project "Cellule_de_force_V2"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/ddd4b387-4aa4-48c3-b079-ffb0beb645d3"
-					(reference "#PWR033")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -2692,17 +2626,16 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 190.5 101.6 180)
+		(lib_id "power:+3.3V")
+		(at 190.5 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ae971a51-b8a3-4c9e-b1e0-b31934daec48")
-		(property "Reference" "#PWR032"
-			(at 190.5 95.25 0)
+		(uuid "a6099c96-f1c5-49ad-b81c-c237c82f04ab")
+		(property "Reference" "#PWR029"
+			(at 190.5 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2710,13 +2643,13 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 190.5 96.52 0)
+		(property "Value" "+3.3V"
+			(at 186.69 97.536 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -2737,7 +2670,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 190.5 101.6 0)
 			(effects
 				(font
@@ -2747,12 +2680,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "78955bbe-0f21-4cb5-97ee-92cc58bdc4df")
+			(uuid "92d860bc-4568-4e4e-b75b-9e0b5c8bb353")
 		)
 		(instances
 			(project "Cellule_de_force_V2"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/ddd4b387-4aa4-48c3-b079-ffb0beb645d3"
-					(reference "#PWR032")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -2922,6 +2855,73 @@
 			(project ""
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/ddd4b387-4aa4-48c3-b079-ffb0beb645d3"
 					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 190.5 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d5621762-8d0a-4fc9-b018-3fd43587f67c")
+		(property "Reference" "#PWR030"
+			(at 190.5 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 190.5 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 190.5 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 190.5 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3ca338af-2407-49e9-9220-84059a640951")
+		)
+		(instances
+			(project "Cellule_de_force_V2"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/ddd4b387-4aa4-48c3-b079-ffb0beb645d3"
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
