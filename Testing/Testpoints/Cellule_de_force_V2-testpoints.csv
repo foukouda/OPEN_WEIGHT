@@ -1,18 +1,19 @@
 Testpoint Ref.,Net,Net Class,X,Y,Side,Pad Type,Value,Footprint
 TP1,,,-64.0000,106.0000,top,SMT,TestPoint,TestPoint_Pad_D1.5mm
-TP2,,,-64.0000,106.0000,top,SMT,TestPoint,TestPoint_Pad_D1.5mm
+TP2,MCLK1,Default,87.6414,10.3000,bottom,SMT,TestPoint,TestPoint_Pad_D1.5mm
 TP3,,,-64.0000,106.0000,top,SMT,TestPoint,TestPoint_Pad_D1.5mm
-TP4,,,-64.0000,106.0000,top,SMT,TestPoint,TestPoint_Pad_D1.5mm
-TP5,,,-64.0000,106.0000,top,SMT,TestPoint,TestPoint_Pad_D1.5mm
+TP4,+3.3V,Default,74.2700,1.0000,top,SMT,TestPoint,TestPoint_Pad_D1.5mm
+TP5,+5VA,Default,58.8600,27.9600,top,SMT,TestPoint,TestPoint_Pad_D1.5mm
 TP6,,,-64.0000,106.0000,top,SMT,TestPoint,TestPoint_Pad_D1.5mm
 TP7,,,-64.0000,106.0000,top,SMT,TestPoint,TestPoint_Pad_D1.5mm
 TP8,,,-64.0000,106.0000,top,SMT,TestPoint,TestPoint_Pad_D1.5mm
 TP9,,,-64.0000,106.0000,top,SMT,TestPoint,TestPoint_Pad_D1.5mm
 TP10,,,-64.0000,106.0000,top,SMT,TestPoint,TestPoint_Pad_D1.5mm
-TP11,,,-64.0000,106.0000,top,SMT,TestPoint,TestPoint_Pad_D1.5mm
-TP12,,,-64.0000,106.0000,top,SMT,TestPoint,TestPoint_Pad_D1.5mm
-TP13,,,-64.0000,106.0000,top,SMT,TestPoint,TestPoint_Pad_D1.5mm
-TP14,,,-64.0000,106.0000,top,SMT,TestPoint,TestPoint_Pad_D1.5mm
-TP15,,,-64.0000,106.0000,top,SMT,TestPoint,TestPoint_Pad_D1.5mm
-TP16,,,-64.0000,106.0000,top,SMT,TestPoint,TestPoint_Pad_D1.5mm
-TP17,,,-64.0000,106.0000,top,SMT,TestPoint,TestPoint_Pad_D1.5mm
+TP11,+6V,Default,59.4900,16.9600,top,SMT,TestPoint,TestPoint_Pad_D1.5mm
+TP12,/Project Architecture/LT3042_6V_5VA/SET,Default,64.1000,28.0800,top,SMT,TestPoint,TestPoint_Pad_D1.5mm
+TP13,/Project Architecture/LT3042_6V_5VA/PGFB,Default,69.5800,24.0700,top,SMT,TestPoint,TestPoint_Pad_D1.5mm
+TP14,/Project Architecture/TPS61086_3.3V_to_6V/FB,Default,65.5300,14.4700,bottom,SMT,TestPoint,TestPoint_Pad_D1.5mm
+TP15,/Project Architecture/TPS61086_3.3V_to_6V/SS,Default,66.8600,8.1000,bottom,SMT,TestPoint,TestPoint_Pad_D1.5mm
+TP16,/Project Architecture/TPS61086_3.3V_to_6V/COMP,Default,69.0200,11.6100,bottom,SMT,TestPoint,TestPoint_Pad_D1.5mm
+TP17,/Project Architecture/LT3042_6V_5VA/PG,Default,65.8700,17.4000,top,SMT,TestPoint,TestPoint_Pad_D1.5mm
+TP18,P3,Default,91.4700,14.9500,bottom,SMT,TestPoint,TestPoint_Pad_D1.5mm

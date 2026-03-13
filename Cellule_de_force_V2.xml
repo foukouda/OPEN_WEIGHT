@@ -74,7 +74,7 @@
 11)	REFER TO IMPEDANCE TABLE FOR IMPEDANCE CONTROL REQUIREMENTS.
 
 12)	CONFIRM SPACE WIDTHS AND SPACINGS.</textvar>
-    <textvar name="GIT_HASH_PCB">cb53e0c</textvar>
+    <textvar name="GIT_HASH_PCB">c0f26a3</textvar>
     <textvar name="GIT_HASH_SCH">f2c7d09</textvar>
     <textvar name="GIT_URL">https://github.com/nguyen-v/KDT_Hierarchical_KiBot</textvar>
     <textvar name="PROJECT_NAME">OPEN_WEIGHT</textvar>
@@ -83,8 +83,8 @@
     <textvar name="RELEASE_BODY_1.0.2"/>
     <textvar name="RELEASE_BODY_1.1.0"/>
     <textvar name="RELEASE_BODY_UNRELEASED">Version Unreleased not found.</textvar>
-    <textvar name="RELEASE_DATE">12-Mar-2026</textvar>
-    <textvar name="RELEASE_DATE_NUM">2026-03-12</textvar>
+    <textvar name="RELEASE_DATE">13-Mar-2026</textvar>
+    <textvar name="RELEASE_DATE_NUM">2026-03-13</textvar>
     <textvar name="RELEASE_TITLE_1.0.0"/>
     <textvar name="RELEASE_TITLE_1.0.1"/>
     <textvar name="RELEASE_TITLE_1.0.2"/>
@@ -927,6 +927,24 @@
       <property name="ki_fp_filters" value="Pin* Test*"/>
       <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
       <tstamps>48f9628a-6d92-4bb4-963e-62558b1d9087</tstamps>
+    </comp>
+    <comp ref="TP18">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <description>test point</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="AD7910_Weight_sensor"/>
+      <property name="Sheetfile" value="Section A - Title A.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Project Architecture/AD7910_Weight_sensor/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>758ba430-3b1d-40b4-879f-bf5c0b72995b</tstamps>
     </comp>
     <comp ref="U1">
       <value>AD7190WBRUZ</value>
@@ -2616,6 +2634,7 @@
     </net>
     <net code="34" name="P3" class="Default">
       <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="TP18" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="5" pinfunction="P3" pintype="output"/>
     </net>
     <net code="35" name="SCLK" class="Default">

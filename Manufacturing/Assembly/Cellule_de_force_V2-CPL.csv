@@ -29,12 +29,6 @@ Ref,Val,Package,PosX,PosY,Rot,Side
 "D2","RED","LED_0603_1608Metric",68.0500,-7.4500,90.0000,top
 "D3","PMEG2010AEH","D_SOD-123F",59.6500,9.0500,-90.0000,top
 "D4","LED","LED_0603_1608Metric",69.5500,-7.4500,90.0000,top
-"FID1","Fiducial","Fiducial_1.5mm_Mask3mm",141.9850,26.1600,0.0000,top
-"FID2","Fiducial","Fiducial_1.5mm_Mask3mm",141.9850,21.6100,0.0000,top
-"FID3","Fiducial","Fiducial_1.5mm_Mask3mm",146.5350,26.1600,0.0000,top
-"FID4","Fiducial","Fiducial_1.5mm_Mask3mm",146.5350,21.6100,0.0000,top
-"FID5","Fiducial","Fiducial_1.5mm_Mask3mm",151.0850,26.1600,0.0000,top
-"FID6","Fiducial","Fiducial_1.5mm_Mask3mm",151.0850,21.6100,0.0000,top
 "H5","WE-SHC_THT-FRAME","WE-SHC_THT-FRAME_36503205",84.5000,16.0000,0.0000,top
 "IC2","TPS61086DRCR","TPS16412DRCR",63.5500,9.5000,-90.0000,top
 "J1","Conn_01x07_Pin","JST_XH_B7B-XH-AM_1x07_P2.50mm_Vertical",77.1000,-5.3750,0.0000,top
