@@ -14,12 +14,15 @@
 
 <p align="center" width="100%">
   <a href="https://github.com/foukouda/OPEN_WEIGHT/actions/workflows/ci.yaml">
-    <img alt="CI Badge" src="https://github.com/foukouda/OPEN_WEIGHT/actions/workflows/ci.yaml/badge.svg?branch=dev">
+    <img alt="CI" src="https://github.com/foukouda/OPEN_WEIGHT/actions/workflows/ci.yaml/badge.svg?branch=dev">
   </a>
   <a href="LICENSE">
     <img alt="License: CERN-OHL-P v2" src="https://img.shields.io/badge/License-CERN--OHL--P%20v2-blue">
   </a>
-  <img alt="KiCad 9" src="https://img.shields.io/badge/KiCad-9-green">
+  <a href="https://github.com/foukouda/OPEN_WEIGHT/releases">
+    <img alt="Latest Release" src="https://img.shields.io/github/v/release/foukouda/OPEN_WEIGHT?include_prereleases&label=latest">
+  </a>
+  <img alt="KiCad 9" src="https://img.shields.io/badge/KiCad-9-brightgreen">
   <img alt="Status" src="https://img.shields.io/badge/Status-In%20Development-orange">
 </p>
 
@@ -41,22 +44,18 @@
 
 **OPEN_WEIGHT** is an open-hardware measurement board developed as part of **OPEN THRUST LAB**, a community-driven project focused on building open-source test benches for drone motor characterization.
 
-This board is designed around the **Analog Devices AD7190**, a high-resolution 24-bit ADC well suited for precision bridge-sensor and load-cell measurements. Within the Open Thrust Lab ecosystem, OPEN_WEIGHT is intended to serve as the dedicated **force / thrust measurement interface**, enabling accurate acquisition from load cells for bench instrumentation and performance analysis.
+This board is designed around the **Analog Devices AD7190**, a high-resolution 24-bit sigma-delta ADC optimized for precision bridge-sensor and load-cell measurements. Within the Open Thrust Lab ecosystem, OPEN_WEIGHT serves as the dedicated **force / thrust measurement interface**, enabling accurate acquisition from load cells for bench instrumentation and motor performance analysis.
+
+The board requires only a **3.3 V input** from the host system. An onboard TPS61086 boost converter steps this up to 6 V, which is then regulated down to a clean +5 V analog supply by an LT3042 ultralow-noise LDO. This two-stage architecture deliberately trades a small efficiency cost for a significantly cleaner AVDD rail, which directly reduces the measurement noise floor. No external 5 V supply is needed.
 
 The repository is structured as a full hardware project rather than a simple PCB dump. It includes:
-- KiCad source files for schematic and PCB layout
+- KiCad 9 source files for schematic and PCB layout
 - manufacturing and assembly outputs
 - generated schematic and fabrication documentation
 - validation reports and test artifacts
 - 3D views and project visuals
 - automated output generation through **KiBot**
 - CI integration for reproducible deliverables
-
-The board currently relies on a mixed power architecture combining:
-- **TPS61086** for boost conversion (3.3 V → 6 V)
-- **LT3042** for low-noise linear regulation (6 V → 5 V AVDD)
-
-This approach provides the supply flexibility required while keeping the analog rail clean for precision measurement. The boost stage allows operation from a standard 3.3 V system rail. The LT3042 then strips the switching noise, delivering a low-noise 5 V analog supply directly to the AD7190 AVDD. This two-stage architecture is a deliberate trade-off: an efficiency cost at the regulator is accepted in exchange for a much cleaner analog measurement floor.
 
 OPEN_WEIGHT is meant to be:
 - reproducible
@@ -69,24 +68,21 @@ OPEN_WEIGHT is meant to be:
 
 ## PROJECT CONTEXT
 
-OPEN THRUST LAB is presented as an open-source drone motor test-bench initiative covering hardware, firmware, sensors, data, and analysis. Inside this larger architecture, **OPEN-WEIGHT** is the sub-project dedicated to **precision thrust measurement**, and is described as an open-source load-cell amplifier / measurement PCB designed for integration into the bench.
+OPEN THRUST LAB is an open-source drone motor test-bench initiative covering hardware, firmware, sensors, data, and analysis. Inside this larger architecture, **OPEN-WEIGHT** is the sub-project dedicated to **precision thrust measurement** — an open-source load-cell amplifier and measurement PCB designed for integration into the bench.
 
-In the broader bench roadmap, this board contributes to the measurement chain used to characterize motor performance through reliable sensor acquisition and documented hardware design.
+In the broader bench roadmap, this board contributes to the measurement chain used to characterize motor performance through reliable sensor acquisition and fully documented hardware design.
 
 ***
 
 ## DESIGN GOALS
 
-The main objectives of this board are:
-
-- provide a precise measurement front-end for load-cell based sensing
-- support force / thrust instrumentation in a modular test-bench architecture
-- expose a clean and reusable KiCad project structure
-- automate hardware deliverables with KiBot and CI
-- make fabrication and assembly easier through generated outputs
-- support future revisions, validation, and characterization work
-
-This repository is therefore both a hardware design project and a documentation baseline for future board iterations.
+- Provide a precise measurement front-end for load-cell based force sensing
+- Operate entirely from a 3.3 V host rail — no external analog supply required
+- Support thrust instrumentation in a modular test-bench architecture
+- Expose a clean and reusable KiCad 9 project structure
+- Automate hardware deliverables with KiBot and CI
+- Make fabrication and assembly easier through fully generated outputs
+- Support future revisions, validation, and characterization work
 
 ***
 
@@ -97,142 +93,175 @@ This repository is therefore both a hardware design project and a documentation 
 | Parameter | Value |
 | --- | --- |
 | Input voltage (VIN) | 3.3 V (from host system) |
-| Boost output (TPS61086) | 6 V |
-| Analog supply (LT3042 AVDD) | 5 V (low-noise) |
+| Boost output — TPS61086 | 6 V |
+| Analog supply — LT3042 (AVDD) | 5 V, ultralow-noise |
 | Digital supply (DVDD) | 3.3 V (from host) |
-| ADC resolution | 24-bit |
+| ADC | AD7190, 24-bit sigma-delta |
 | PGA gain range | 1 – 128 |
-| Digital interface | SPI (MOSI, MISO, SCLK, CS) |
-| Crystal frequency | 4.9152 MHz |
-| Voltage reference | Internal (2.5 V) |
-| Sensor type | Wheatstone bridge / load cell (4-wire) |
+| Voltage reference | Internal, 2.5 V |
+| Digital interface | SPI — Mode 3 (CPOL=1, CPHA=1), max 5 MHz |
+| Additional SPI signal | SYNC — filter reset / multi-device synchronization |
+| Crystal frequency | 4.9152 MHz (external) |
+| Load cell excitation control | Onboard P-MOS drive gate (active-low enable) |
+| Sensor type | 4-wire Wheatstone bridge |
 
 ### Power budget
 
-The power chain is: **3.3 V system rail → TPS61086 (boost) → LT3042 (LDO) → AD7190 (AVDD)**
+Power chain: **+3.3 V (host) → TPS61086 → +6 V → LT3042 → +5VA → AD7190**
 
-| Stage | Rail | Current | Power |
+| Stage | Input rail | Typical current | Typical power |
 | --- | --- | --- | --- |
-| AD7190 analog | 5 V (AVDD) | ~4 mA | ~20 mW |
-| Crystal + misc | 5 V | ~1 mA | ~5 mW |
-| LT3042 quiescent | 6 V input | ~2 mA | ~12 mW |
-| **LT3042 total input** | **6 V** | **~7 mA** | **~42 mW** |
-| AD7190 digital | 3.3 V (DVDD) | ~1 mA | ~3.3 mW |
-| TPS61086 total input (η ≈ 87%) | **3.3 V** | **~15 mA** | **~50 mW** |
-| **Board total** | **3.3 V** | **~16 mA** | **~53 mW** |
+| AD7190 analog (AVDD, gain=128, ODR=10 Hz) | +5VA | ~4 mA | ~20 mW |
+| Crystal + RC filters + misc analog | +5VA | ~1 mA | ~5 mW |
+| Load cell excitation (4-wire bridge, ~350 Ω) | +5VA | ~14 mA | ~70 mW |
+| LT3042 quiescent | +6V | ~2 mA | ~12 mW |
+| **LT3042 total input load** | **+6V** | **~21 mA** | **~126 mW** |
+| AD7190 digital (DVDD) | +3.3V | ~1 mA | ~3.3 mW |
+| TPS61086 input (η ≈ 85–90 % at this load) | **+3.3V** | **~45–50 mA** | **~148–165 mW** |
+| **Board total estimated** | **+3.3V** | **~46–51 mA** | **~151–168 mW** |
 
-> These are estimated typical values. Actual consumption depends on PGA gain, output data rate (ODR), and SPI activity. Measure at your operating point during validation.
+> **Note:** Load cell excitation current depends on bridge resistance. The estimate above assumes a 350 Ω full bridge at 5 V excitation (~14 mA). A 1000 Ω bridge draws ~5 mA instead, reducing total board consumption significantly. TPS61086 efficiency is estimated from the datasheet curve at Vin=3.3 V, Vout=6 V. Always measure at your specific operating point using the **+3.3V_IN** test point on Page 6.
 
 ### Physical specifications
 
 | Parameter | Value |
 | --- | --- |
-| Project Name | OPEN_WEIGHT |
-| Board Name | AD7190 |
-| Parent Project | OPEN THRUST LAB |
-| Primary Function | Precision load-cell / force measurement |
-| Main ADC | AD7190 |
-| Boost Converter | TPS61086 |
-| Low-Noise Regulator | LT3042 |
-| CAD Tool | KiCad 9 |
-| Automation Tooling | KiBot + GitHub Actions |
+| Project name | OPEN_WEIGHT |
+| Board name | AD7190 |
+| Parent project | OPEN THRUST LAB |
+| CAD tool | KiCad 9 |
+| Automation tooling | KiBot + GitHub Actions |
 | Dimensions | 57.0 × 50.75 mm |
-| Repository Status | In active development |
-| Hardware License | CERN-OHL-P v2 |
+| Mounting holes | 4× M3, connected to GND |
+| Fiducials | 3× top copper, 3× bottom copper |
+| Repository status | In active development |
+| Hardware licence | CERN-OHL-P v2 |
 
 ***
 
 ## SCHEMATIC ARCHITECTURE
 
-The board is organized into four hierarchical sheets:
+The project is organized into six hierarchical KiCad sheets:
 
-| Sheet | Section | Description |
+| Page | Section | Description |
 | --- | --- | --- |
-| Page 4 | `AD7910_Weight_sensor` | AD7190 24-bit ADC front-end for the load cell (Wheatstone bridge). SPI interface, 4.9152 MHz crystal, 5 V / 3.3 V power decoupling, RC input filtering on SENSE/OUT lines, test points. |
-| Page 5 | `LT3042_6V_5VA` | Low-noise 5 V analog supply. Takes +6V_IN from the boost stage and regulates it to +5VA_OUT via SET resistor programming. Input/output decoupling, test points (VIN, VOUT, GND, SET, PGFB). |
-| Page 6 | `TPS61086_3.3V_to_6V` | TPS61086-based 3.3 V → 6 V boost supply. Inductor/Schottky power stage, feedback divider for VOUT, soft-start/compensation, decoupling. Test points: +3.3V_IN, +6V_OUT, FB, GND. |
-| Page 8 | `Connecteur` | Connector sheet: load cell interface, SPI header, power supply inputs, debug/test access. |
+| 4 | `AD7910_Weight_sensor` | AD7190 24-bit sigma-delta ADC front-end for Wheatstone bridge acquisition. Differential inputs on SENSE± and OUT± lines with RC input filtering. SPI interface (CS, DIN, DOUT, SCLK, SYNC). External 4.9152 MHz crystal. Dual-supply decoupling (+5VA analog / +3.3V digital). P-MOS drive gate for load cell excitation control. Test points on all critical analog and digital nodes. |
+| 5 | `LT3042_6V_5VA` | Low-noise 5 V analog supply for ADC front-end (AVDD). LT3042 ultralow-noise LDO (PSRR > 75 dB). Input: +6V from boost stage. Output: +5VA regulated via RSET = 50 kΩ (ISET = 100 µA). Solid tantalum capacitor on SET pin for noise suppression. Power-Good monitoring via PGFB divider. Test points: VIN, VOUT, SET, PGFB, PG. |
+| 6 | `TPS61086_3.3V_to_6V` | 3.3 V to 6 V synchronous boost converter supplying the LT3042 stage. TPS61086 switching at 1.2 MHz fixed frequency (PWM/PFM selectable via MODE pin). Integrated 2.5 A / 0.13 Ω power switch. Output voltage set via FB resistor divider. Input/output decoupling, soft-start, and loop compensation network. Test points: +3.3V_IN, +6V_OUT, FB, COMP. |
+| 7 | `Holes, Fiducials` | Mechanical references for PCB fabrication and assembly. Four GND-connected mounting holes (H1–H4, M3). Three fiducial markers on top copper (FID1–FID3) and three on bottom copper (FID4–FID6) for pick-and-place alignment. |
+| 8 | `Connecteur` | External interface connectors for load cell and host communication. Load cell 4-wire bridge connector (N-SENSE+, N-SENSE−, N-OUT+, N-OUT−). SPI host header (SS, DIN, DOUT, SCLK, SYNC, +3.3V, GND). PCB frame connector (WE-SMCJTHT) for chassis ground bonding. |
 
 ***
 
 ## LOAD CELL CONNECTION
 
-The board accepts a standard **4-wire Wheatstone bridge** load cell.
+The board accepts any standard **4-wire Wheatstone bridge** load cell.
 
-### Connector pinout
+### Bridge connector pinout
 
 | Pin | Signal | Description |
 | --- | --- | --- |
-| 1 | EXC+ | Bridge excitation positive (5 V AVDD) |
-| 2 | EXC− | Bridge excitation negative (GND) |
-| 3 | SIG+ | Bridge signal positive (to AIN1+) |
-| 4 | SIG− | Bridge signal negative (to AIN1−) |
+| 1 | EXC+ / N-OUT+ | Bridge excitation positive — driven from +5VA via P-MOS gate |
+| 2 | EXC− / N-OUT− | Bridge excitation negative — GND reference |
+| 3 | SIG+ / N-SENSE+ | Bridge signal positive — routed to AD7190 differential input |
+| 4 | SIG− / N-SENSE− | Bridge signal negative — routed to AD7190 differential input |
 
-> ⚠️ Check the schematic (Page 8 — Connecteur) for the exact physical connector footprint and reference on the PCB. Some load cell cables use different color conventions — always verify with a multimeter before powering up.
+> ⚠️ Load cell cable colors vary by manufacturer. Always verify EXC± and SIG± with a multimeter **before** powering the board.
 
-### Compatible load cell types
+> ⚠️ The load cell excitation is switched by a **P-MOS drive gate** on Page 4. This gate must be asserted by the host (active-low) before any measurement. Do not enable excitation during internal calibration.
 
-- Any strain-gauge / Wheatstone bridge load cell with a **differential output in the range 0–20 mV/V** at rated excitation
-- Typical resistance: **120 Ω to 1000 Ω** full bridge
-- With PGA gain 128 and 5 V excitation: full-scale differential input ≈ ±19.5 mV
+### Compatible load cell characteristics
 
-### SPI header pinout
+- Differential output: **0 – 20 mV/V** at rated excitation
+- Bridge resistance: **120 Ω to 1000 Ω** full bridge
+- With PGA gain 128 and AVDD = 5 V: full-scale differential input ≈ ±19.53 mV
 
-| Pin | Signal | Direction |
+### SPI host header pinout
+
+| Pin | Signal | Direction | Notes |
+| --- | --- | --- | --- |
+| 1 | +3.3V | Power in | Host supply to board DVDD |
+| 2 | SS (CS̄) | Input | Active low — enables SPI communication |
+| 3 | DIN (MOSI) | Input | Serial data to AD7190 |
+| 4 | DOUT (MISO) | Output | Serial data from AD7190 |
+| 5 | SCLK | Input | SPI clock, max 5 MHz |
+| 6 | SYNC | Input | Active low — resets the digital filter and output shift register. Use to synchronize multiple AD7190 devices, or to force a clean filter restart after any configuration change. |
+| 7 | DRDȲ | Output | Active low — asserted when a conversion result is ready. Always poll before reading data. |
+| 8 | GND | — | Common ground |
+
+> ⚠️ SPI Mode 3 only (CPOL=1, CPHA=1). Data is valid on the falling edge of SCLK.
+
+***
+
+## STARTUP SEQUENCE
+
+After 3.3 V is applied, allow the following stages to complete before issuing any SPI command:
+
+| Stage | Duration | Indicator |
 | --- | --- | --- |
-| 1 | SCLK | Input (from host) |
-| 2 | MOSI (DIN) | Input (from host) |
-| 3 | MISO (DOUT) | Output (to host) |
-| 4 | CS̄ (active low) | Input (from host) |
-| 5 | DRDȲ | Output (to host, active low) |
-| 6 | GND | — |
+| TPS61086 boost startup | ~1–3 ms | +6V_OUT reaches 6 V |
+| LT3042 LDO settling | ~1–2 ms after +6V stable | PG pin goes high |
+| Crystal stabilization | ~2–5 ms | — |
+| **Minimum safe delay** | **≥ 20 ms** from power-on | All rails stable |
 
-> ⚠️ The AD7190 SPI is **CPOL = 1, CPHA = 1** (Mode 3). Make sure your host controller is configured accordingly.
+After the delay, the recommended initialization sequence is:
+
+```
+1. Issue AD7190 serial reset: assert CS̄, write 40+ bytes of 0xFF on DIN
+2. Write CONF register (gain, reference, chop settings)
+3. Write MODE register (filter, ODR)
+4. Run internal zero-scale calibration — wait for DRDȲ
+5. Run internal full-scale calibration — wait for DRDȲ
+6. Enable P-MOS drive gate (load cell excitation)
+7. Run system calibration with known reference weight
+8. Enter continuous conversion mode
+```
 
 ***
 
 ## CALIBRATION
 
-The AD7190 supports two distinct levels of calibration. Both are required for accurate measurements.
+Two levels of calibration are required. Both must be repeated after every power cycle.
 
-### 1. Internal calibration (register-level)
+### 1. Internal calibration
 
-Compensates the ADC's own offset and gain errors. Must be performed after every power-on, after changing the PGA gain, or after changing the filter/ODR settings.
-
-The AD7190 performs this entirely internally — no external weights needed.
+Corrects the ADC's own offset and gain. Requires no external weights. Must be re-run after any change to PGA gain or ODR.
 
 ```
-1. Write MODE register: set MD[2:0] = 0b001  → Internal zero-scale calibration
-   Wait for DRDY to go low.
-2. Write MODE register: set MD[2:0] = 0b010  → Internal full-scale calibration
-   Wait for DRDY to go low.
+Write MODE register: MD[2:0] = 0b001  (internal zero-scale)
+→ Wait for DRDȲ to go low
+
+Write MODE register: MD[2:0] = 0b010  (internal full-scale)
+→ Wait for DRDȲ to go low
+
+Results are saved in the ZERO and FULLSCALE registers.
+Read them back to cache for faster subsequent startups.
 ```
 
-Results are stored in the `ZERO` and `FULLSCALE` registers. You can read them back to verify or save them for faster startup.
+### 2. System calibration
 
-### 2. System calibration (physical weights)
-
-Maps the ADC's digital output to real force/mass units. Required once per hardware setup, and any time the mechanical configuration changes (load cell swap, mounting changes, new wiring).
+Maps ADC output codes to physical units. Repeat any time the mechanical setup changes.
 
 ```
-1. Apply zero load (tare). Read N samples, average → raw_zero
-2. Apply known reference weight W_ref. Read N samples, average → raw_full
-3. Scale factor = W_ref / (raw_full − raw_zero)
-4. For any measurement: weight = (raw_code − raw_zero) × scale_factor
+1. Remove all load → average ≥16 samples → raw_zero
+2. Apply known weight W_ref → average ≥16 samples → raw_full
+3. scale_factor = W_ref / (raw_full − raw_zero)
+4. weight = (raw_code − raw_zero) × scale_factor
 ```
 
-> **Tip:** Perform system calibration at the same temperature as your intended measurements. Thermal drift in both the load cell and the AD7190 gain can affect accuracy at extremes.
+### Recommended register configuration
 
-### Key registers for your configuration
+| Register | Field | Value | Reason |
+| --- | --- | --- | --- |
+| `CONF` | GAIN[2:0] | `0b111` (128×) | Maximizes resolution for low-sensitivity load cells |
+| `CONF` | REF_SEL | `0b0` | Internal 2.5 V reference — no external ref required |
+| `CONF` | CHOP | `1` | Reduces offset and drift |
+| `MODE` | SINC | `0b11` (SINC4) | Best 50/60 Hz rejection |
+| `MODE` | FS[9:0] | `0x00A` | ODR ≈ 10 Hz — rejects mains interference |
 
-| Register | Recommended setting | Purpose |
-| --- | --- | --- |
-| `CONF` — GAIN[2:0] | `0b111` (128×) | Maximizes resolution for low-output load cells |
-| `CONF` — REF_SEL | `0b0` (internal 2.5 V ref) | No external reference required |
-| `MODE` — SINC | `0b11` (SINC4) | Best noise rejection (50/60 Hz) |
-| `MODE` — FS[9:0] | `0x0A` (10 Hz ODR) | Rejects 50/60 Hz mains noise |
+> ⚠️ After any change to GAIN, ODR, or filter settings, the sigma-delta pipeline resets. Always re-run internal calibration before taking measurements.
 
-> ⚠️ After any change to `CONF` or `MODE` (especially ODR or gain), always re-run internal calibration. The sigma-delta filter settling time resets.
+> ⚠️ At gain 128 with internal 2.5 V reference: full-scale input range = **±19.53 mV**. Verify your load cell sensitivity (mV/V) is compatible at your excitation voltage.
 
 ***
 
@@ -240,62 +269,63 @@ Maps the ADC's digital output to real force/mass units. Required once per hardwa
 
 ### Prerequisites
 
-- **KiCad 9** (for schematic and PCB sources)
-- **KiBot** (for automated output generation)
-- **Docker** (recommended for reproducible CI runs)
-- A Debian/Ubuntu environment or equivalent for the helper script
+- **KiCad 9** (not backwards-compatible with KiCad 8 or earlier)
+- **KiBot** for automated output generation
+- **Docker** recommended for reproducible local CI runs
+- Debian/Ubuntu or equivalent environment
 
-### Quickstart — generate outputs locally
-
-The project includes a helper script for launching KiBot locally:
+### Generate outputs locally
 
 ```bash
+# Default configuration
 ./kibot_launch.sh
-```
 
-For a specific variant:
-
-```bash
+# Specific variant
 ./kibot_launch.sh --variant CHECKED
 ```
 
-Available variants:
+| Variant | Outputs | ERC/DRC | Typical use |
+| --- | --- | --- | --- |
+| `DRAFT` | Schematic only | — | Early design work |
+| `PRELIMINARY` | Schematic + PCB | — | Layout iterations |
+| `CHECKED` | Full | ✓ enforced | Design review, PR validation |
+| `RELEASED` | Full | ✓ enforced | Tagged version releases |
 
-| Variant | Description |
-| --- | --- |
-| `DRAFT` | Schematic in progress, minimal outputs |
-| `PRELIMINARY` | Schematic + PCB outputs, no ERC/DRC |
-| `CHECKED` | Full outputs with ERC/DRC validation |
-| `RELEASED` | Release-oriented outputs for tagged versions |
-
-### Quickstart — use a manufactured board
-
-1. Power the board with **3.3 V** on the VIN pin (max 500 mA capable supply recommended)
-2. Connect your load cell to the 4-pin bridge connector (see [Load Cell Connection](#load-cell-connection))
-3. Connect the SPI header to your host microcontroller (see [SPI pinout](#spi-header-pinout))
-4. On your host, configure SPI: **Mode 3** (CPOL=1, CPHA=1), max clock **5 MHz**
-5. Run internal calibration (see [Calibration](#calibration))
-6. Perform system calibration with a known reference weight
-7. Poll `DRDȲ` (active low) before each read — do not read data while DRDȲ is high
-
-### Minimal read example (pseudocode)
+### Use a manufactured board
 
 ```c
-// 1. Internal calibration
-ad7190_write_mode(MODE_INTERNAL_ZERO_CAL);
+// --- After ≥20 ms from 3.3V power-on ---
+
+// 1. Reset
+ad7190_reset();                            // 40× 0xFF on DIN
+
+// 2. Configure
+ad7190_write_reg(REG_CONF,
+    CONF_GAIN_128 | CONF_CHOP | CONF_REF_INT);
+ad7190_write_reg(REG_MODE,
+    MODE_SINC4 | MODE_FS_10HZ);
+
+// 3. Internal calibration
+ad7190_write_reg(REG_MODE, MODE_INT_ZERO_CAL);
 while (drdy_is_high());
-ad7190_write_mode(MODE_INTERNAL_FULL_CAL);
+ad7190_write_reg(REG_MODE, MODE_INT_FULL_CAL);
 while (drdy_is_high());
 
-// 2. Continuous conversion, gain=128, SINC4, 10 Hz
-ad7190_write_conf(CONF_GAIN_128 | CONF_REF_INT);
-ad7190_write_mode(MODE_CONT | MODE_SINC4 | MODE_FS_10HZ);
+// 4. Enable load cell excitation
+gpio_set(DRIVE_GATE_PIN, LOW);             // P-MOS: active low
 
-// 3. Read loop
+// 5. System calibration
+uint32_t raw_zero = ad7190_average(16);    // No load
+apply_reference_weight();
+uint32_t raw_full = ad7190_average(16);
+float scale = W_ref / (float)(raw_full - raw_zero);
+
+// 6. Continuous measurement
+ad7190_write_reg(REG_MODE, MODE_CONTINUOUS);
 while (1) {
-    while (drdy_is_high());       // Wait for conversion ready
+    while (drdy_is_high());
     uint32_t raw = ad7190_read_data();
-    float weight = (raw - raw_zero) * scale_factor;
+    float weight = (raw - raw_zero) * scale;
 }
 ```
 
@@ -303,33 +333,23 @@ while (1) {
 
 ## REPOSITORY CONTENT
 
-This repository contains both source design files and generated outputs required to review, manufacture, assemble, and validate the board.
-
-The content includes:
-- schematic sources
-- PCB layout sources
-- project architecture and supporting documentation sheets
-- manufacturing deliverables
-- assembly files
-- 3D exports and renders
-- validation reports
-- test-point documentation
-- CI / automation resources
-
-Several documentation-oriented KiCad sheets are also present in the project, including:
-- block diagram
-- project architecture
-- power sequencing
-- revision history
-
-This makes the repository suitable not only for fabrication, but also for design review and future scaling inside the Open Thrust Lab ecosystem.
+| Content | Description |
+| --- | --- |
+| Schematic sources | KiCad hierarchical schematic — 8 sheets |
+| PCB layout | KiCad PCB with all production layers |
+| Manufacturing | Gerbers, drill tables, BoM, pick-and-place files |
+| Validation | ERC/DRC reports, test-point tables |
+| 3D exports | STEP files and rendered views |
+| Documentation sheets | Block diagram, architecture, power sequencing, revision history |
+| CI resources | GitHub Actions workflows, KiBot YAML configurations |
+| Computations | Design notes, filter and power budget calculations |
 
 ***
 
 ## DIRECTORY STRUCTURE
 
     .
-    ├─ Computations       # Design notes, formulas, and miscellaneous calculations
+    ├─ Computations       # Design notes, formulas, and power budget calculations
     ├─ HTML               # Generated HTML pages and web outputs
     ├─ Images             # Pictures, renders, and visual assets
     │
@@ -349,18 +369,17 @@ This makes the repository suitable not only for fabrication, but also for design
     │
     ├─ Logos              # Project logos and branding assets
     │
-    ├─ Manufacturing      # Assembly and fabrication documents
-    │  ├─ Assembly        # Assembly outputs (BoM, position files, notes)
-    │  │
-    │  └─ Fabrication     # Fabrication outputs (ZIP packages, notes)
-    │     ├─ Drill Tables # CSV drill tables
-    │     └─ Gerbers      # Gerber files
+    ├─ Manufacturing
+    │  ├─ Assembly        # BoM, position files, assembly notes
+    │  └─ Fabrication     # Gerbers, drill tables, fabrication notes
+    │     ├─ Drill Tables
+    │     └─ Gerbers
     │
     ├─ Report             # ERC / DRC reports and validation outputs
     ├─ Schematic          # Exported schematic PDFs
     ├─ Templates          # Drawing sheets and title block templates
     ├─ Testing
-    │  └─ Testpoints      # Test point tables and test documentation
+    │  └─ Testpoints      # Test point tables and documentation
     │
     └─ Variants           # Outputs for project / assembly variants
 
@@ -368,37 +387,15 @@ This makes the repository suitable not only for fabrication, but also for design
 
 ## DEVELOPMENT WORKFLOW
 
-This project is built around a reproducible hardware workflow based on **KiCad 9**, **KiBot**, and **GitHub Actions**.
+This project uses a reproducible hardware workflow based on **KiCad 9**, **KiBot**, and **GitHub Actions**.
 
-The repository CI already supports automated output generation and release-oriented packaging. The current workflow references:
-- a main KiBot configuration file
-- KiCad 9 based generation
-- automatic variant handling
-- generated outputs committed back to the repository
-- release packaging on semantic version tags
+The CI pipeline generates outputs automatically on every push to `dev`. On semantic version tags (e.g. `v1.0.0`), it packages a full release artifact.
 
-This structure makes the project easier to maintain across early design work, internal review, and release packaging.
-
-***
-
-## GENERATED OUTPUTS
-
-Depending on the selected variant and KiBot configuration, the project can generate:
-
-- schematic PDFs
-- fabrication notes
-- Gerber files
-- drill tables
-- assembly documentation
-- BoM exports
-- position / placement files
-- 3D exports
-- HTML pages
-- ERC / DRC reports
-- test-point tables
-- release artifacts
-
-This automation is especially useful for keeping design files and manufacturing deliverables synchronized over time.
+**Branch convention:**
+- `dev` — main development branch, all work branches off here
+- Feature branches: `feat/description`
+- Fix branches: `fix/description`
+- Releases are tagged on `main` after merging from `dev`
 
 ***
 
@@ -406,46 +403,51 @@ This automation is especially useful for keeping design files and manufacturing 
 
 | Symptom | Likely cause | Fix |
 | --- | --- | --- |
-| Output always reads 0 or full-scale | Load cell wiring error | Check EXC+/EXC−/SIG+/SIG− polarity |
-| Output is very noisy | SPI mode mismatch (CPOL/CPHA) | Set host to Mode 3 |
-| Readings drift over time | No internal calibration after power-on | Re-run zero/full-scale internal cal |
-| DRDY never goes low | Incorrect crystal frequency or missing crystal | Verify 4.9152 MHz crystal soldering |
-| SPI reads all 0xFF | CS̄ not driven low, or SCLK too fast | Reduce SCLK to ≤ 5 MHz, check CS̄ |
-| 50/60 Hz interference visible | ODR too high or wrong SINC setting | Use SINC4 + FS = 10 Hz |
-| Board draws more than expected | LT3042 or TPS61086 oscillating | Check PCB layout against datasheet, add bulk cap on VIN |
+| Output stuck at 0 or inverted | EXC± wiring error | Verify bridge polarity with multimeter |
+| Output always at full-scale | SIG+ / SIG− swapped | Swap the two signal wires |
+| Very noisy SPI readings | SPI mode mismatch | Set host to Mode 3 (CPOL=1, CPHA=1) |
+| Readings drift over time | No internal cal after power-on | Re-run zero-scale + full-scale internal calibration |
+| DRDȲ never goes low | Crystal not oscillating | Reflow 4.9152 MHz crystal; check load capacitors |
+| SPI reads 0xFF | CS̄ stuck high or SCLK too fast | Check CS̄ GPIO; reduce SCLK to ≤ 5 MHz |
+| 50/60 Hz interference | ODR too high or wrong filter | Use SINC4 + FS = 0x00A (10 Hz ODR) |
+| +5VA absent at power-on | TPS61086 not switching | Verify +3.3V_IN; check inductor L1 solder joints |
+| +5VA present but noisy | LT3042 SET pin cap issue | Reflow solid tantalum cap on SET pin (Page 5) |
+| No excitation on load cell | P-MOS drive gate inactive | Assert DRIVE_GATE control signal (active low) |
+| Offset drifts after warmup | Thermal settling | Allow 5–10 min warmup; re-tare before measurements |
 
 ***
 
 ## CONTRIBUTING
 
-Contributions are welcome — hardware corrections, documentation improvements, firmware examples, and test reports are all valuable.
+Contributions are welcome — hardware corrections, documentation improvements, firmware examples, and validation reports all add value to the project.
 
 ### Requirements
 
-- **KiCad 9** — the project is not backwards-compatible with earlier versions
-- Follow existing layer naming, reference designator conventions, and title block format
+- **KiCad 9** — not backwards-compatible with earlier versions
+- Respect existing layer naming, reference designator conventions, and title block format
+- All hardware contributions must pass ERC and DRC under the `CHECKED` variant
 
-### How to contribute
+### Workflow
 
-1. Fork the repository and create a branch from `dev`
-2. Make your changes (schematic, PCB, docs, or scripts)
-3. Run ERC/DRC with the `CHECKED` variant and fix any violations before submitting
-4. Open a Pull Request against `dev` with a clear description of what changed and why
+1. Fork the repository
+2. Create a branch off `dev`: `feat/your-description` or `fix/your-description`
+3. Make your changes
+4. Run `./kibot_launch.sh --variant CHECKED` — resolve all ERC/DRC violations
+5. Open a Pull Request against `dev` with a clear description of the change and its rationale
 
 ### Reporting issues
 
-Please use GitHub Issues. For hardware bugs, include:
-- Board revision (visible on silkscreen or from the revision history sheet)
-- Photos or annotated screenshots of the problem area
-- ERC/DRC report if applicable
+Open a GitHub Issue and include:
+- Board revision (from silkscreen or revision history sheet)
+- Photos or annotated screenshots of the affected area
+- Symptom and conditions under which it occurs
+- ERC/DRC report if design-related
 
 ***
 
 ## CHANGELOG
 
-See [CHANGELOG.md](CHANGELOG.md) for the board revision history.
-
-> `CHANGELOG.md` will track changes between PCB revisions (V1, V2, …) following [Keep a Changelog](https://keepachangelog.com/) conventions.
+See [CHANGELOG.md](CHANGELOG.md) for the full board revision history following [Keep a Changelog](https://keepachangelog.com/) conventions with semantic versioning.
 
 ***
 
@@ -455,4 +457,10 @@ Hardware design files in this repository are released under the **CERN Open Hard
 
 See [LICENSE](LICENSE) for the full licence text.
 
-> CERN-OHL-P v2 allows use, study, modification, and manufacture without requiring derivative works to remain open. Attribution is required.
+Under CERN-OHL-P v2:
+- You may use, study, modify, and manufacture this design freely
+- Derivative works do **not** need to remain open-source
+- Modified files must carry a notice identifying the changes made and their author
+- The original copyright and attribution notice must be preserved
+
+> For more on CERN-OHL licences: [ohwr.org/cern_ohl](https://ohwr.org/cern_ohl)
