@@ -74,7 +74,7 @@
 11)	REFER TO IMPEDANCE TABLE FOR IMPEDANCE CONTROL REQUIREMENTS.
 
 12)	CONFIRM SPACE WIDTHS AND SPACINGS.</textvar>
-    <textvar name="GIT_HASH_PCB">c0f26a3</textvar>
+    <textvar name="GIT_HASH_PCB">f27c8d3</textvar>
     <textvar name="GIT_HASH_SCH">f2c7d09</textvar>
     <textvar name="GIT_URL">https://github.com/nguyen-v/KDT_Hierarchical_KiBot</textvar>
     <textvar name="PROJECT_NAME">OPEN_WEIGHT</textvar>
@@ -83,8 +83,8 @@
     <textvar name="RELEASE_BODY_1.0.2"/>
     <textvar name="RELEASE_BODY_1.1.0"/>
     <textvar name="RELEASE_BODY_UNRELEASED">Version Unreleased not found.</textvar>
-    <textvar name="RELEASE_DATE">13-Mar-2026</textvar>
-    <textvar name="RELEASE_DATE_NUM">2026-03-13</textvar>
+    <textvar name="RELEASE_DATE">14-Mar-2026</textvar>
+    <textvar name="RELEASE_DATE_NUM">2026-03-14</textvar>
     <textvar name="RELEASE_TITLE_1.0.0"/>
     <textvar name="RELEASE_TITLE_1.0.1"/>
     <textvar name="RELEASE_TITLE_1.0.2"/>
@@ -2272,9 +2272,9 @@
       <description>Switching Voltage Regulators 18.5V PFM/PWM Step- Up DC-DC Converter</description>
       <docs>https://www.ti.com/lit/gpn/TPS61086</docs>
       <fields>
-        <field name="Reference">IC</field>
+        <field name="Reference">IC2</field>
         <field name="Value">TPS61086DRCR</field>
-        <field name="Footprint">TPS16412DRCR</field>
+        <field name="Footprint">TPS61086DRCR:TPS16412DRCR</field>
         <field name="Datasheet">https://www.ti.com/lit/gpn/TPS61086</field>
         <field name="Description">Switching Voltage Regulators 18.5V PFM/PWM Step- Up DC-DC Converter</field>
         <field name="Height">1</field>
