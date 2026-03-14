@@ -1,0 +1,12 @@
+Default	True	2.0	3
+CAN Bus	True	2.0	3
+Chassis	True	2.0	3
+GND	True	2.0	3
+High Power	True	2.0	3
+Kelvin Diff Pair	True	2.0	3
+Power 12V	True	2.0	3
+Power 3V3	True	2.0	3
+Power 5V	True	2.0	3
+Power A3V3	True	2.0	3
+RS422 Diff Pair	True	2.0	3
+False	True	False

@@ -237,10 +237,10 @@
 		)
 		(uuid "f04f874a-d252-4474-87f2-c34bbb094a4c")
 	)
-	(text_box "This schematic is a TPS61086-based 3.3 V → 6 V boost supply with inductor/Schottky power stage, feedback divider for VOUT, decoupling + soft-start/compensation, and test points (+3.3V_IN, +6V_OUT, FB, GND)."
+	(text_box "3.3 V to 6 V synchronous boost converter supplying the LT3042 LDO stage.\nTPS61086 switching at 1.2 MHz (fixed frequency, PWM/PFM selectable via MODE). Integrated 2.5 A / 0.13 Ω power switch. Output voltage set via FB resistor divider. Input/output decoupling, soft-start, and loop compensation network. Test points: +3.3V_IN, +6V_OUT, FB, COMP."
 		(exclude_from_sim no)
-		(at 66.04 113.01 0)
-		(size 64.77 12.72)
+		(at 73.66 113.01 0)
+		(size 57.15 12.72)
 		(margins 1.4287 1.4287 1.4287 1.4287)
 		(stroke
 			(width -0.0001)
@@ -251,7 +251,7 @@
 		)
 		(effects
 			(font
-				(size 1.905 1.905)
+				(size 1.27 1.27)
 				(thickness 0.381)
 				(bold yes)
 				(color 0 0 0 1)
@@ -260,10 +260,10 @@
 		)
 		(uuid "631cc992-1e6e-4a87-a84d-c4d64535fb2a")
 	)
-	(text_box "This schematic shows an AD7190 24-bit ADC front-end for a load cell (Wheatstone bridge), with SPI interface, a 4.9152 MHz crystal clock, power decoupling (5 V analog / 3.3 V digital), RC input filtering on SENSE/OUT lines, and test points for debugging."
+	(text_box "AD7190 24-bit sigma-delta ADC front-end for Wheatstone bridge acquisition.\nDifferential inputs on SENSE± and OUT± lines with RC input filtering. SPI interface (CS, DIN, DOUT, SCLK, SYNC). External 4.9152 MHz crystal clock. Dual-supply decoupling (+5VA analog / +3.3V digital). P-MOS drive gate for load cell excitation control. Test points on all critical analog and digital nodes."
 		(exclude_from_sim no)
 		(at 279.4 109.22 0)
-		(size 53.34 5.08)
+		(size 45.72 5.08)
 		(margins 1.4287 1.4287 1.4287 1.4287)
 		(stroke
 			(width -0.0001)
@@ -274,7 +274,7 @@
 		)
 		(effects
 			(font
-				(size 1.905 1.905)
+				(size 1.27 1.27)
 				(thickness 0.381)
 				(bold yes)
 				(color 0 0 0 1)
@@ -283,9 +283,9 @@
 		)
 		(uuid "971f0c48-6726-412d-badf-cee82cbffedd")
 	)
-	(text_box "This schematic is a low-noise 5 V analog supply built around the LT3042 LDO, taking +6V_IN and regulating it to +5VA_OUT, with SET resistor programming, input/output decoupling capacitors, and test points (VIN, VOUT, GND, SET, PGFB) for validation/debug."
+	(text_box "Low-noise 5 V analog supply for ADC front-end (AVDD).\nLT3042 ultralow-noise LDO regulator (PSRR > 75 dB). Input: +6V from boost stage. Output: +5VA regulated via RSET = 50 kΩ (ISET = 100 µA). Solid tantalum capacitor on SET pin for noise suppression. Power-Good monitoring via PGFB divider. Test points: VIN, VOUT, SET, PGFB, PG."
 		(exclude_from_sim no)
-		(at 176.53 74.91 0)
+		(at 176.53 82.53 0)
 		(size 58.42 5.1)
 		(margins 1.4287 1.4287 1.4287 1.4287)
 		(stroke
@@ -297,7 +297,7 @@
 		)
 		(effects
 			(font
-				(size 1.905 1.905)
+				(size 1.27 1.27)
 				(thickness 0.381)
 				(bold yes)
 				(color 0 0 0 1)
@@ -355,7 +355,7 @@
 		)
 		(stroke
 			(width 0)
-			(type dot)
+			(type solid)
 		)
 		(uuid "1ac6a449-9b78-4137-972f-6d459cb5e1cc")
 	)
@@ -365,19 +365,9 @@
 		)
 		(stroke
 			(width 0)
-			(type dot)
+			(type solid)
 		)
 		(uuid "1c421dc5-c2b6-4b0d-bbb4-a2f7fde61a54")
-	)
-	(wire
-		(pts
-			(xy 217.17 132.08) (xy 217.17 151.13)
-		)
-		(stroke
-			(width 0)
-			(type dot)
-		)
-		(uuid "2f7341da-9174-487e-9f6b-fd9dfb1739d4")
 	)
 	(polyline
 		(pts
@@ -516,7 +506,7 @@
 			(type solid)
 		)
 		(fill
-			(color 255 200 0 0.5020)
+			(color 157 191 255 1.0000)
 		)
 		(uuid "d6110ee2-516c-48c1-b80a-d0f1701ed49f")
 		(property "Sheetname" "TPS61086_3.3V_to_6V"
@@ -604,7 +594,7 @@
 			(type solid)
 		)
 		(fill
-			(color 255 200 0 0.5020)
+			(color 157 191 255 1.0000)
 		)
 		(uuid "e744f3ce-03a6-44a6-8792-1447ef232b9a")
 		(property "Sheetname" "LT3042_6V_5VA"

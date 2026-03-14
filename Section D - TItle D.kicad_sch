@@ -2297,6 +2297,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_B7B-XH-AM_1x07_P2.50mm_Vertical"
@@ -2358,7 +2359,7 @@
 	)
 	(symbol
 		(lib_id "WE-SHC_THT-FRAME:WE-SHC_THT-FRAME")
-		(at 224.79 148.59 0)
+		(at 267.97 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2367,7 +2368,7 @@
 		(fields_autoplaced yes)
 		(uuid "3774c777-80ba-47ad-bb78-4340273550f8")
 		(property "Reference" "H5"
-			(at 238.76 149.8599 0)
+			(at 281.94 106.6799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2376,7 +2377,7 @@
 			)
 		)
 		(property "Value" "WE-SHC_THT-FRAME"
-			(at 238.76 152.3999 0)
+			(at 281.94 109.2199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2385,7 +2386,7 @@
 			)
 		)
 		(property "Footprint" "WE-SHC_THT-FRAME:WE-SHC_THT-FRAME_36503205"
-			(at 224.79 148.59 0)
+			(at 267.97 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2394,7 +2395,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 224.79 148.59 0)
+			(at 267.97 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2403,7 +2404,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 224.79 148.59 0)
+			(at 267.97 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2412,7 +2413,7 @@
 			)
 		)
 		(property "MF" "Wurth Electronics"
-			(at 224.79 148.59 0)
+			(at 267.97 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2422,7 +2423,7 @@
 			)
 		)
 		(property "Description_1" "Frame THT; 20 x 20 x 3 mm; Base material = tinplate"
-			(at 224.79 148.59 0)
+			(at 267.97 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2432,7 +2433,7 @@
 			)
 		)
 		(property "Package" "None"
-			(at 224.79 148.59 0)
+			(at 267.97 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2442,7 +2443,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 224.79 148.59 0)
+			(at 267.97 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2452,7 +2453,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/36503205S/Wurth+Electronics/view-part/?ref=snap"
-			(at 224.79 148.59 0)
+			(at 267.97 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2462,7 +2463,7 @@
 			)
 		)
 		(property "MP" "36503205S"
-			(at 224.79 148.59 0)
+			(at 267.97 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2472,7 +2473,7 @@
 			)
 		)
 		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=13768814&manufacturer=Wurth Electronics&part_name=36503205S&search_term=36503205s"
-			(at 224.79 148.59 0)
+			(at 267.97 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2482,7 +2483,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 224.79 148.59 0)
+			(at 267.97 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2492,7 +2493,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/36503205S/Wurth+Electronics/view-part/?ref=eda"
-			(at 224.79 148.59 0)
+			(at 267.97 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2560,7 +2561,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 214.63 146.05 0)
+		(at 257.81 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2569,7 +2570,7 @@
 		(fields_autoplaced yes)
 		(uuid "50d9ba79-0afe-447b-a079-ebe51ab65f29")
 		(property "Reference" "#PWR031"
-			(at 214.63 152.4 0)
+			(at 257.81 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2578,7 +2579,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 214.63 151.13 0)
+			(at 257.81 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2587,7 +2588,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 214.63 146.05 0)
+			(at 257.81 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2596,7 +2597,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 214.63 146.05 0)
+			(at 257.81 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2605,7 +2606,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 214.63 146.05 0)
+			(at 257.81 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2717,6 +2718,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "691408720004B:691408720004B"

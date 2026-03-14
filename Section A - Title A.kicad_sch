@@ -3089,7 +3089,7 @@
 		(uuid "5ed2da38-8291-4381-a1be-2c72e3636d98")
 	)
 	(junction
-		(at 100.33 125.73)
+		(at 99.06 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "66313a06-762a-4f60-9a06-945865c28c8a")
@@ -3167,7 +3167,7 @@
 		(uuid "a24a04ad-196b-4d5f-ab8a-9f6c4b4c5acf")
 	)
 	(junction
-		(at 113.03 113.03)
+		(at 111.76 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ac096d3a-a798-41df-9a7f-8e7d23ec5e58")
@@ -3185,7 +3185,7 @@
 		(uuid "d724cef6-f7d6-4be3-b534-997d3fab8302")
 	)
 	(junction
-		(at 87.63 113.03)
+		(at 86.36 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d8a81f88-fcb1-4d47-8312-67fec9557b35")
@@ -3478,7 +3478,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 113.03) (xy 113.03 113.03)
+			(xy 114.3 113.03) (xy 111.76 113.03)
 		)
 		(stroke
 			(width 0)
@@ -3589,7 +3589,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 125.73) (xy 100.33 125.73)
+			(xy 111.76 125.73) (xy 99.06 125.73)
 		)
 		(stroke
 			(width 0)
@@ -3610,7 +3610,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 120.65) (xy 113.03 125.73)
+			(xy 111.76 120.65) (xy 111.76 125.73)
 		)
 		(stroke
 			(width 0)
@@ -3690,7 +3690,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 120.65) (xy 87.63 125.73)
+			(xy 86.36 120.65) (xy 86.36 125.73)
 		)
 		(stroke
 			(width 0)
@@ -3751,7 +3751,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 72.39) (xy 133.35 72.39)
+			(xy 130.81 72.39) (xy 132.08 72.39)
 		)
 		(stroke
 			(width 0)
@@ -3821,7 +3821,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 113.03) (xy 87.63 113.03)
+			(xy 82.55 113.03) (xy 86.36 113.03)
 		)
 		(stroke
 			(width 0)
@@ -3862,7 +3862,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 72.39) (xy 146.05 72.39)
+			(xy 139.7 72.39) (xy 146.05 72.39)
 		)
 		(stroke
 			(width 0)
@@ -3892,7 +3892,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 125.73) (xy 100.33 125.73)
+			(xy 86.36 125.73) (xy 99.06 125.73)
 		)
 		(stroke
 			(width 0)
@@ -4250,7 +4250,7 @@
 	)
 	(global_label "MCLK1"
 		(shape input)
-		(at 83.82 113.03 180)
+		(at 82.55 113.03 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4260,7 +4260,7 @@
 		)
 		(uuid "33d0276f-33ec-4d4b-8c6b-a6e3e2de402b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 74.6058 113.03 0)
+			(at 73.3358 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4536,7 +4536,7 @@
 	)
 	(global_label "MCLK2"
 		(shape input)
-		(at 119.38 113.03 0)
+		(at 114.3 113.03 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4546,7 +4546,7 @@
 		)
 		(uuid "b911b739-7da5-429b-b80c-dba812fa5e6f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 128.5942 113.03 0)
+			(at 123.5142 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5905,7 +5905,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 113.03 116.84 0)
+		(at 111.76 116.84 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5913,7 +5913,7 @@
 		(dnp no)
 		(uuid "6b613679-3c0d-4a96-986b-27b377e91f1b")
 		(property "Reference" "C24"
-			(at 113.284 118.872 0)
+			(at 112.014 118.872 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5922,7 +5922,7 @@
 			)
 		)
 		(property "Value" "18pf"
-			(at 115.57 116.84 0)
+			(at 114.3 116.84 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -5931,7 +5931,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 113.9952 120.65 0)
+			(at 112.7252 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5940,7 +5940,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 113.03 116.84 0)
+			(at 111.76 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5949,7 +5949,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 113.03 116.84 0)
+			(at 111.76 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6448,7 +6448,7 @@
 	)
 	(symbol
 		(lib_id "CSTCR4M91G53-R0:CSTCR4M91G53-R0")
-		(at 100.33 115.57 0)
+		(at 99.06 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6457,7 +6457,7 @@
 		(fields_autoplaced yes)
 		(uuid "89f3aae3-86b6-4450-9633-a9b0d47a2e06")
 		(property "Reference" "Y2"
-			(at 100.33 105.41 0)
+			(at 99.06 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6465,7 +6465,7 @@
 			)
 		)
 		(property "Value" "CSTCR4M91G53-R0"
-			(at 100.33 107.95 0)
+			(at 99.06 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6473,7 +6473,7 @@
 			)
 		)
 		(property "Footprint" "CSTCR4M91G53-R0:OSC_CSTCR4M91G53-R0"
-			(at 100.33 115.57 0)
+			(at 99.06 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6483,7 +6483,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.33 115.57 0)
+			(at 99.06 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6492,7 +6492,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 100.33 115.57 0)
+			(at 99.06 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6501,7 +6501,7 @@
 			)
 		)
 		(property "MF" "Murata Electronics"
-			(at 100.33 115.57 0)
+			(at 99.06 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6511,7 +6511,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "1.2mm"
-			(at 100.33 115.57 0)
+			(at 99.06 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6521,7 +6521,7 @@
 			)
 		)
 		(property "Package" "SMD-3 Murata"
-			(at 100.33 115.57 0)
+			(at 99.06 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6531,7 +6531,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 100.33 115.57 0)
+			(at 99.06 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6541,7 +6541,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/CSTCR4M91G53-R0/Murata+Electronics+North+America/view-part/?ref=eda"
-			(at 100.33 115.57 0)
+			(at 99.06 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6551,7 +6551,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recomendations"
-			(at 100.33 115.57 0)
+			(at 99.06 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6561,7 +6561,7 @@
 			)
 		)
 		(property "PARTREV" "JGC42-8797"
-			(at 100.33 115.57 0)
+			(at 99.06 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6571,7 +6571,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/CSTCR4M91G53-R0/Murata+Electronics+North+America/view-part/?ref=snap"
-			(at 100.33 115.57 0)
+			(at 99.06 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6581,7 +6581,7 @@
 			)
 		)
 		(property "MP" "CSTCR4M91G53-R0"
-			(at 100.33 115.57 0)
+			(at 99.06 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6591,7 +6591,7 @@
 			)
 		)
 		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=50325&manufacturer=Murata Electronics&part_name=CSTCR4M91G53-R0&search_term=cstcr4m91g53-r0"
-			(at 100.33 115.57 0)
+			(at 99.06 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6601,7 +6601,7 @@
 			)
 		)
 		(property "Description_1" "4.91 MHz Ceramic Resonator Built in Capacitor 15 pF ±0.2% 60 Ohms -20°C ~ 80°C Surface Mount"
-			(at 100.33 115.57 0)
+			(at 99.06 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6611,7 +6611,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 100.33 115.57 0)
+			(at 99.06 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6621,7 +6621,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Murata"
-			(at 100.33 115.57 0)
+			(at 99.06 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7194,7 +7194,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 100.33 125.73 0)
+		(at 99.06 125.73 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7203,7 +7203,7 @@
 		(fields_autoplaced yes)
 		(uuid "bd452cf5-061c-430b-9e28-53fef801e015")
 		(property "Reference" "#PWR013"
-			(at 100.33 132.08 0)
+			(at 99.06 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7212,7 +7212,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 100.33 130.81 0)
+			(at 99.06 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7221,7 +7221,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 100.33 125.73 0)
+			(at 99.06 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7230,7 +7230,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.33 125.73 0)
+			(at 99.06 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7239,7 +7239,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 100.33 125.73 0)
+			(at 99.06 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7555,7 +7555,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 87.63 116.84 0)
+		(at 86.36 116.84 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7563,7 +7563,7 @@
 		(dnp no)
 		(uuid "c5dc4260-8e22-47b2-96d1-153bf913d096")
 		(property "Reference" "C25"
-			(at 83.312 119.126 0)
+			(at 82.042 119.126 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7572,7 +7572,7 @@
 			)
 		)
 		(property "Value" "18pf"
-			(at 81.28 116.586 0)
+			(at 80.01 116.586 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -7581,7 +7581,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 88.5952 120.65 0)
+			(at 87.3252 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7590,7 +7590,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 87.63 116.84 0)
+			(at 86.36 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7599,7 +7599,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 87.63 116.84 0)
+			(at 86.36 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8376,7 +8376,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 137.16 72.39 180)
+		(at 135.89 72.39 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8384,7 +8384,7 @@
 		(dnp no)
 		(uuid "fb10bf53-5660-4d23-8edf-6395c9f0fecf")
 		(property "Reference" "D2"
-			(at 134.112 70.612 0)
+			(at 132.842 70.612 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8392,7 +8392,7 @@
 			)
 		)
 		(property "Value" "RED"
-			(at 137.414 74.93 0)
+			(at 136.144 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8400,7 +8400,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 137.16 72.39 0)
+			(at 135.89 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8409,7 +8409,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 137.16 72.39 0)
+			(at 135.89 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8418,7 +8418,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 137.16 72.39 0)
+			(at 135.89 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8427,7 +8427,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 137.16 72.39 0)
+			(at 135.89 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)

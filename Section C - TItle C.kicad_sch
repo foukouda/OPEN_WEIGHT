@@ -1680,7 +1680,7 @@
 		)
 		(uuid "ae1a013d-3590-4c80-ad47-079b9f06a6af")
 	)
-	(text_box "IN (pins 1-2) : entrée d'alimentation du LT3042 (6V), à découpler avec CIN.\n\nEN/UV (pin 3) : active/désactive le régulateur et permet un seuil UVLO (souvent relié à IN pour \"toujours ON\").\n\nPG (pin 4) : sortie Power-Good open-collector (nécessite une résistance pull-up).\n\nILIM (pin 5) : programmation/monitoring de la limite de courant (souvent à GND si non utilisé).\n\nPGFB (pin 6) : entrée qui fixe le seuil de Power-Good via un pont diviseur depuis VOUT.\n\nSET (pin 7) : règle la tension de sortie via RSET (et CSET réduit le bruit/soft-start).\n\nGND (pin 8) : masse de référence du circuit.\n\nOUTS (pin 9) : sense Kelvin de la sortie (à relier au + de COUT / point de charge).\n\nOUT (pin 10) : sortie régulée (5V), à découpler avec COUT.\n\nEPAD (pad exposé) : masse + dissipation thermique (à souder sur plan GND)."
+	(text_box "IN (pins 1-2): LT3042 power input (6V), to be decoupled with CIN.\n\nEN/UV (pin 3): enables/disables the regulator and allows an UVLO threshold (often tied to IN for \"always ON\").\n\nPG (pin 4): open-collector Power-Good output (requires a pull-up resistor).\n\nILIM (pin 5): current limit programming/monitoring (often tied to GND if unused).\n\nPGFB (pin 6): input that sets the Power-Good threshold via a resistor divider from VOUT.\n\nSET (pin 7): sets the output voltage via RSET (and CSET reduces noise / provides soft-start).\n\nGND (pin 8): circuit ground reference.\n\nOUTS (pin 9): Kelvin output sense (to be connected to the + of COUT / load point).\n\nOUT (pin 10): regulated output (5V), to be decoupled with COUT.\n\nEPAD (exposed pad): ground + thermal dissipation (to be soldered to the GND plane)."
 		(exclude_from_sim no)
 		(at 52.07 91.44 0)
 		(size 78.74 45.72)
@@ -2026,6 +2026,16 @@
 	)
 	(wire
 		(pts
+			(xy 337.82 129.54) (xy 340.36 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61587c36-3c5a-4747-9878-2fe1c6b38b61")
+	)
+	(wire
+		(pts
 			(xy 261.62 115.57) (xy 267.97 115.57)
 		)
 		(stroke
@@ -2163,6 +2173,16 @@
 			(type default)
 		)
 		(uuid "b4a208d4-9a6e-4f85-b137-d8f4f8bf6083")
+	)
+	(wire
+		(pts
+			(xy 337.82 123.19) (xy 340.36 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b509204d-cab6-46da-8621-bb60d96a4d3f")
 	)
 	(wire
 		(pts
@@ -3942,7 +3962,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 339.09 127 270)
+		(at 340.36 129.54 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3951,7 +3971,7 @@
 		(fields_autoplaced yes)
 		(uuid "0c0c2d22-54ce-4890-9a5d-1807a650667d")
 		(property "Reference" "TP11"
-			(at 344.17 125.7299 90)
+			(at 345.44 128.2699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3961,7 +3981,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 344.17 128.2699 90)
+			(at 345.44 130.8099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3971,7 +3991,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 339.09 132.08 0)
+			(at 340.36 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3980,7 +4000,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 339.09 132.08 0)
+			(at 340.36 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3989,7 +4009,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 339.09 127 0)
+			(at 340.36 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4106,7 +4126,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 339.09 120.65 270)
+		(at 340.36 123.19 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4115,7 +4135,7 @@
 		(fields_autoplaced yes)
 		(uuid "0d99bfcd-89b6-4139-a8af-a4f8c7e0a16c")
 		(property "Reference" "TP10"
-			(at 344.17 119.3799 90)
+			(at 345.44 121.9199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4125,7 +4145,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 344.17 121.9199 90)
+			(at 345.44 124.4599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4135,7 +4155,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 339.09 125.73 0)
+			(at 340.36 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4144,7 +4164,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 339.09 125.73 0)
+			(at 340.36 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4153,7 +4173,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 339.09 120.65 0)
+			(at 340.36 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4242,7 +4262,7 @@
 	)
 	(symbol
 		(lib_id "power:+6V")
-		(at 339.09 127 90)
+		(at 337.82 129.54 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4250,7 +4270,7 @@
 		(dnp no)
 		(uuid "227d8566-e5d0-48f2-8271-014c5ca1a37e")
 		(property "Reference" "#PWR021"
-			(at 342.9 127 0)
+			(at 341.63 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4259,7 +4279,7 @@
 			)
 		)
 		(property "Value" "+6V"
-			(at 337.312 125.476 90)
+			(at 336.042 128.016 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4268,7 +4288,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 339.09 127 0)
+			(at 337.82 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4277,7 +4297,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 339.09 127 0)
+			(at 337.82 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4286,7 +4306,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+6V\""
-			(at 339.09 127 0)
+			(at 337.82 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4308,7 +4328,7 @@
 	)
 	(symbol
 		(lib_id "power:+5VA")
-		(at 339.09 120.65 90)
+		(at 337.82 123.19 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4316,7 +4336,7 @@
 		(dnp no)
 		(uuid "30c68fc1-cd04-438b-a9a5-a1f3c83b2b03")
 		(property "Reference" "#PWR017"
-			(at 342.9 120.65 0)
+			(at 341.63 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4325,7 +4345,7 @@
 			)
 		)
 		(property "Value" "+5VA"
-			(at 339.09 119.126 90)
+			(at 337.82 121.666 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4334,7 +4354,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 339.09 120.65 0)
+			(at 337.82 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4343,7 +4363,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 339.09 120.65 0)
+			(at 337.82 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4352,7 +4372,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5VA\""
-			(at 339.09 120.65 0)
+			(at 337.82 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
