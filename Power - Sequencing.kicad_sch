@@ -1450,14 +1450,14 @@
 		)
 		(uuid "9dba9cf1-c429-45db-bb2a-868858aa5986")
 	)
-	(text_box "??"
+	(text_box "LT3042"
 		(exclude_from_sim no)
 		(at 31.75 54.483 0)
 		(size 24.13 7.62)
 		(margins 1.7145 1.7145 1.7145 1.7145)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 			(color 0 0 0 1)
 		)
 		(fill
@@ -1542,14 +1542,14 @@
 		)
 		(uuid "b149cc82-24c2-4523-8290-e7d9f9f6c81a")
 	)
-	(text_box "+V??"
+	(text_box "+5VA"
 		(exclude_from_sim no)
 		(at 15.24 54.483 0)
 		(size 16.51 7.62)
 		(margins 1.7145 1.7145 1.7145 1.7145)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 			(color 0 0 0 1)
 		)
 		(fill
