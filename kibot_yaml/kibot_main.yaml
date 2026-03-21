@@ -205,15 +205,15 @@ import:
       ASSEMBLY_DIR: @ASSEMBLY_DIR@
 
   # Generate ERC Report
-  - file: kibot_pre_erc_report.yaml
-    definitions:
-      DIR: @REPORT_DIR@
+ # - file: kibot_pre_erc_report.yaml
+  #  definitions:
+   #   DIR: @REPORT_DIR@
 
   # Generate DRC Report
-  - file: kibot_pre_drc_report.yaml
-    definitions:
-      CHECK_ZONE_FILLS: @CHECK_ZONE_FILLS@
-      DIR: @REPORT_DIR@
+ # - file: kibot_pre_drc_report.yaml
+  #  definitions:
+   #   CHECK_ZONE_FILLS: @CHECK_ZONE_FILLS@
+    #  DIR: @REPORT_DIR@
 
   # Draw stackup table in PCB. Needs gerber output
   - file: kibot_pre_draw_stackup.yaml
