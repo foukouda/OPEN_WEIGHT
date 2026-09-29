@@ -6478,25 +6478,40 @@
 			(type solid)
 			(color 214 64 180 1)
 		)
-		(fill
-			(type none)
-		)
 		(uuid "da69dbe7-f278-4601-8e07-b0459b9a85f8")
 	)
 	(polyline
 		(pts
-			(xy 122.000 67.000) (xy 119.600 68.080) (xy 119.600 65.920) (xy 122.000 67.000)
+			(xy 122 67) (xy 119.6 68.08) (xy 119.6 65.92) (xy 122 67)
 		)
 		(stroke
-			(width 0.1)
+			(width 0.35)
 			(type solid)
 			(color 214 64 180 1)
 		)
-		(fill
-			(type color)
+		(uuid "1c169b87-1bb6-426a-aca3-6e46abe4207b")
+	)
+	(polyline
+		(pts
+			(xy 121.36 67) (xy 119.92 67.648) (xy 119.92 66.352) (xy 121.36 67)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
 			(color 214 64 180 1)
 		)
-		(uuid "1c169b87-1bb6-426a-aca3-6e46abe4207b")
+		(uuid "8177abd9-5f70-452c-9817-53be41ea3500")
+	)
+	(polyline
+		(pts
+			(xy 120.8 67) (xy 120.2 67.27) (xy 120.2 66.73) (xy 120.8 67)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 214 64 180 1)
+		)
+		(uuid "b11d9812-886c-4905-9bca-192de5f52223")
 	)
 	(text "+3.3V"
 		(exclude_from_sim no)
@@ -6521,25 +6536,40 @@
 			(type solid)
 			(color 214 64 180 1)
 		)
-		(fill
-			(type none)
-		)
 		(uuid "6e31eef7-529d-40a9-bc66-f4fae691699c")
 	)
 	(polyline
 		(pts
-			(xy 212.000 67.000) (xy 209.600 68.080) (xy 209.600 65.920) (xy 212.000 67.000)
+			(xy 212 67) (xy 209.6 68.08) (xy 209.6 65.92) (xy 212 67)
 		)
 		(stroke
-			(width 0.1)
+			(width 0.35)
 			(type solid)
 			(color 214 64 180 1)
 		)
-		(fill
-			(type color)
+		(uuid "ce573fdb-24f0-4112-b289-de5033294d87")
+	)
+	(polyline
+		(pts
+			(xy 211.36 67) (xy 209.92 67.648) (xy 209.92 66.352) (xy 211.36 67)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
 			(color 214 64 180 1)
 		)
-		(uuid "ce573fdb-24f0-4112-b289-de5033294d87")
+		(uuid "bdd4eeb9-b077-47b9-8dad-2d293ce0199e")
+	)
+	(polyline
+		(pts
+			(xy 210.8 67) (xy 210.2 67.27) (xy 210.2 66.73) (xy 210.8 67)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 214 64 180 1)
+		)
+		(uuid "6fa1eb46-6611-4f21-ac79-1dc23cd93a93")
 	)
 	(text "+6V"
 		(exclude_from_sim no)
@@ -6564,25 +6594,40 @@
 			(type solid)
 			(color 214 64 180 1)
 		)
-		(fill
-			(type none)
-		)
 		(uuid "03fb5d32-d470-420e-bd7a-4a05910655db")
 	)
 	(polyline
 		(pts
-			(xy 300.000 67.000) (xy 297.600 68.080) (xy 297.600 65.920) (xy 300.000 67.000)
+			(xy 300 67) (xy 297.6 68.08) (xy 297.6 65.92) (xy 300 67)
 		)
 		(stroke
-			(width 0.1)
+			(width 0.35)
 			(type solid)
 			(color 214 64 180 1)
 		)
-		(fill
-			(type color)
+		(uuid "6b7cc578-9ae4-414f-872d-43123fc83cf1")
+	)
+	(polyline
+		(pts
+			(xy 299.36 67) (xy 297.92 67.648) (xy 297.92 66.352) (xy 299.36 67)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
 			(color 214 64 180 1)
 		)
-		(uuid "6b7cc578-9ae4-414f-872d-43123fc83cf1")
+		(uuid "87b2dc8b-98b9-4e94-a3e7-4a1301b3ba40")
+	)
+	(polyline
+		(pts
+			(xy 298.8 67) (xy 298.2 67.27) (xy 298.2 66.73) (xy 298.8 67)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 214 64 180 1)
+		)
+		(uuid "f3e54633-e1bd-430b-b610-89541ea07137")
 	)
 	(text "+5VA"
 		(exclude_from_sim no)
@@ -6607,25 +6652,40 @@
 			(type dash)
 			(color 214 64 180 1)
 		)
-		(fill
-			(type none)
-		)
 		(uuid "63420503-e1ec-40ae-93b3-edf5059298de")
 	)
 	(polyline
 		(pts
-			(xy 240.000 118.000) (xy 239.010 115.800) (xy 240.990 115.800) (xy 240.000 118.000)
+			(xy 240 118) (xy 239.01 115.8) (xy 240.99 115.8) (xy 240 118)
 		)
 		(stroke
-			(width 0.1)
+			(width 0.35)
 			(type solid)
 			(color 214 64 180 1)
 		)
-		(fill
-			(type color)
+		(uuid "2f1060b4-83e1-4b4a-8573-ca362e5cd40b")
+	)
+	(polyline
+		(pts
+			(xy 240 117.4133) (xy 239.406 116.0933) (xy 240.594 116.0933) (xy 240 117.4133)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
 			(color 214 64 180 1)
 		)
-		(uuid "2f1060b4-83e1-4b4a-8573-ca362e5cd40b")
+		(uuid "0aa4ace7-1859-4664-88fc-7a2b052c12c8")
+	)
+	(polyline
+		(pts
+			(xy 240 116.9) (xy 239.7525 116.35) (xy 240.2475 116.35) (xy 240 116.9)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 214 64 180 1)
+		)
+		(uuid "bd648512-814d-4269-a7f1-7c55e8349372")
 	)
 	(text "+3.3V -> AD7190 DVDD"
 		(exclude_from_sim no)
@@ -6902,25 +6962,40 @@
 			(type solid)
 			(color 21 128 61 1)
 		)
-		(fill
-			(type none)
-		)
 		(uuid "d78434b6-b8dc-4ece-9e9b-5c9b6cadceb5")
 	)
 	(polyline
 		(pts
-			(xy 122.000 133.000) (xy 119.800 133.990) (xy 119.800 132.010) (xy 122.000 133.000)
+			(xy 122 133) (xy 119.8 133.99) (xy 119.8 132.01) (xy 122 133)
 		)
 		(stroke
-			(width 0.1)
+			(width 0.35)
 			(type solid)
 			(color 21 128 61 1)
 		)
-		(fill
-			(type color)
+		(uuid "99469267-f023-4983-9920-9b0e668bca6d")
+	)
+	(polyline
+		(pts
+			(xy 121.4133 133) (xy 120.0933 133.594) (xy 120.0933 132.406) (xy 121.4133 133)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
 			(color 21 128 61 1)
 		)
-		(uuid "99469267-f023-4983-9920-9b0e668bca6d")
+		(uuid "91fecd36-dc37-4d99-bb61-23f72205a660")
+	)
+	(polyline
+		(pts
+			(xy 120.9 133) (xy 120.35 133.2475) (xy 120.35 132.7525) (xy 120.9 133)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 21 128 61 1)
+		)
+		(uuid "1cd186a6-34a6-4bd8-bc8a-f5f326309cd0")
 	)
 	(text "OUT+/-"
 		(exclude_from_sim no)
@@ -6945,25 +7020,40 @@
 			(type solid)
 			(color 21 128 61 1)
 		)
-		(fill
-			(type none)
-		)
 		(uuid "5f8b1bf7-e9f9-4c9f-a390-34259603ba29")
 	)
 	(polyline
 		(pts
-			(xy 122.000 171.000) (xy 119.800 171.990) (xy 119.800 170.010) (xy 122.000 171.000)
+			(xy 122 171) (xy 119.8 171.99) (xy 119.8 170.01) (xy 122 171)
 		)
 		(stroke
-			(width 0.1)
+			(width 0.35)
 			(type solid)
 			(color 21 128 61 1)
 		)
-		(fill
-			(type color)
+		(uuid "af115c42-fc6b-4334-8c9b-9899326269a6")
+	)
+	(polyline
+		(pts
+			(xy 121.4133 171) (xy 120.0933 171.594) (xy 120.0933 170.406) (xy 121.4133 171)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
 			(color 21 128 61 1)
 		)
-		(uuid "af115c42-fc6b-4334-8c9b-9899326269a6")
+		(uuid "029d3ebc-eb1d-463c-bb5c-cd539da57dc3")
+	)
+	(polyline
+		(pts
+			(xy 120.9 171) (xy 120.35 171.2475) (xy 120.35 170.7525) (xy 120.9 171)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 21 128 61 1)
+		)
+		(uuid "6fd60496-a4a6-4faf-9ee2-0e157a093a58")
 	)
 	(text "OUT+/-2"
 		(exclude_from_sim no)
@@ -7078,25 +7168,40 @@
 			(type solid)
 			(color 21 128 61 1)
 		)
-		(fill
-			(type none)
-		)
 		(uuid "7f1a9115-e15a-4f7e-86fa-c2507e9582e3")
 	)
 	(polyline
 		(pts
-			(xy 212.000 133.000) (xy 209.800 133.990) (xy 209.800 132.010) (xy 212.000 133.000)
+			(xy 212 133) (xy 209.8 133.99) (xy 209.8 132.01) (xy 212 133)
 		)
 		(stroke
-			(width 0.1)
+			(width 0.35)
 			(type solid)
 			(color 21 128 61 1)
 		)
-		(fill
-			(type color)
+		(uuid "22d19e15-a80a-4bc7-94e0-8497069f59e7")
+	)
+	(polyline
+		(pts
+			(xy 211.4133 133) (xy 210.0933 133.594) (xy 210.0933 132.406) (xy 211.4133 133)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
 			(color 21 128 61 1)
 		)
-		(uuid "22d19e15-a80a-4bc7-94e0-8497069f59e7")
+		(uuid "67a37508-9112-403c-b60a-fe25dc6a8e72")
+	)
+	(polyline
+		(pts
+			(xy 210.9 133) (xy 210.35 133.2475) (xy 210.35 132.7525) (xy 210.9 133)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 21 128 61 1)
+		)
+		(uuid "ebc58c7a-d58b-406d-8110-9ebaad027fa7")
 	)
 	(text "AIN1/2"
 		(exclude_from_sim no)
@@ -7121,25 +7226,40 @@
 			(type solid)
 			(color 21 128 61 1)
 		)
-		(fill
-			(type none)
-		)
 		(uuid "948a1bb0-663e-4b16-9222-9063769306fd")
 	)
 	(polyline
 		(pts
-			(xy 212.000 171.000) (xy 209.800 171.990) (xy 209.800 170.010) (xy 212.000 171.000)
+			(xy 212 171) (xy 209.8 171.99) (xy 209.8 170.01) (xy 212 171)
 		)
 		(stroke
-			(width 0.1)
+			(width 0.35)
 			(type solid)
 			(color 21 128 61 1)
 		)
-		(fill
-			(type color)
+		(uuid "28c428db-8f44-4ddd-b2fa-0a5bf8d14b27")
+	)
+	(polyline
+		(pts
+			(xy 211.4133 171) (xy 210.0933 171.594) (xy 210.0933 170.406) (xy 211.4133 171)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
 			(color 21 128 61 1)
 		)
-		(uuid "28c428db-8f44-4ddd-b2fa-0a5bf8d14b27")
+		(uuid "2e627cd1-ad1e-467e-aea2-067813825d66")
+	)
+	(polyline
+		(pts
+			(xy 210.9 171) (xy 210.35 171.2475) (xy 210.35 170.7525) (xy 210.9 171)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 21 128 61 1)
+		)
+		(uuid "e44c33c0-66de-4ff8-aa4b-ddb74310ab47")
 	)
 	(text "AIN3/4"
 		(exclude_from_sim no)
@@ -7227,25 +7347,40 @@
 			(type solid)
 			(color 230 126 34 1)
 		)
-		(fill
-			(type none)
-		)
 		(uuid "fa3bc547-06ac-418d-8df5-258c9a17d43a")
 	)
 	(polyline
 		(pts
-			(xy 244.000 180.000) (xy 244.990 182.200) (xy 243.010 182.200) (xy 244.000 180.000)
+			(xy 244 180) (xy 244.99 182.2) (xy 243.01 182.2) (xy 244 180)
 		)
 		(stroke
-			(width 0.1)
+			(width 0.35)
 			(type solid)
 			(color 230 126 34 1)
 		)
-		(fill
-			(type color)
+		(uuid "840af6a9-ef71-445d-bfc2-ddafeb5daea3")
+	)
+	(polyline
+		(pts
+			(xy 244 180.5867) (xy 244.594 181.9067) (xy 243.406 181.9067) (xy 244 180.5867)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
 			(color 230 126 34 1)
 		)
-		(uuid "840af6a9-ef71-445d-bfc2-ddafeb5daea3")
+		(uuid "ebd1f858-06fb-4067-8a06-06c75ab5937b")
+	)
+	(polyline
+		(pts
+			(xy 244 181.1) (xy 244.2475 181.65) (xy 243.7525 181.65) (xy 244 181.1)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 230 126 34 1)
+		)
+		(uuid "a46ba513-0911-4fe9-b09a-ac87cf9e9f74")
 	)
 	(text_box ""
 		(exclude_from_sim no)
@@ -7319,25 +7454,40 @@
 			(type solid)
 			(color 214 64 180 1)
 		)
-		(fill
-			(type none)
-		)
 		(uuid "e6d8cc0f-ef76-4ad2-bdeb-1f6ccd8523e2")
 	)
 	(polyline
 		(pts
-			(xy 340.000 122.000) (xy 338.920 119.600) (xy 341.080 119.600) (xy 340.000 122.000)
+			(xy 340 122) (xy 338.92 119.6) (xy 341.08 119.6) (xy 340 122)
 		)
 		(stroke
-			(width 0.1)
+			(width 0.35)
 			(type solid)
 			(color 214 64 180 1)
 		)
-		(fill
-			(type color)
+		(uuid "82e9d417-8856-44fc-ad8e-18203195ae2e")
+	)
+	(polyline
+		(pts
+			(xy 340 121.36) (xy 339.352 119.92) (xy 340.648 119.92) (xy 340 121.36)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
 			(color 214 64 180 1)
 		)
-		(uuid "82e9d417-8856-44fc-ad8e-18203195ae2e")
+		(uuid "0982fea9-d849-489d-b157-7e075376dd27")
+	)
+	(polyline
+		(pts
+			(xy 340 120.8) (xy 339.73 120.2) (xy 340.27 120.2) (xy 340 120.8)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 214 64 180 1)
+		)
+		(uuid "45a9c148-28a2-496b-8447-ee932a271b85")
 	)
 	(text "+5VA"
 		(exclude_from_sim no)
@@ -7362,25 +7512,40 @@
 			(type solid)
 			(color 40 90 200 1)
 		)
-		(fill
-			(type none)
-		)
 		(uuid "9d69e43e-54c0-4005-9706-78d360e8b2b2")
 	)
 	(polyline
 		(pts
-			(xy 300.000 133.000) (xy 298.000 133.900) (xy 298.000 132.100) (xy 300.000 133.000)
+			(xy 300 133) (xy 298 133.9) (xy 298 132.1) (xy 300 133)
 		)
 		(stroke
-			(width 0.1)
+			(width 0.35)
 			(type solid)
 			(color 40 90 200 1)
 		)
-		(fill
-			(type color)
+		(uuid "fd12f4f1-db5d-4140-aaa4-f3759ceb4ed1")
+	)
+	(polyline
+		(pts
+			(xy 299.4667 133) (xy 298.2667 133.54) (xy 298.2667 132.46) (xy 299.4667 133)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
 			(color 40 90 200 1)
 		)
-		(uuid "fd12f4f1-db5d-4140-aaa4-f3759ceb4ed1")
+		(uuid "8cdd5be5-c569-427a-812c-e671f75ab8a9")
+	)
+	(polyline
+		(pts
+			(xy 299 133) (xy 298.5 133.225) (xy 298.5 132.775) (xy 299 133)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 40 90 200 1)
+		)
+		(uuid "8585ef48-01c8-4b08-a836-58610a605c43")
 	)
 	(text "P3"
 		(exclude_from_sim no)
@@ -7405,9 +7570,6 @@
 			(type solid)
 			(color 214 64 180 1)
 		)
-		(fill
-			(type none)
-		)
 		(uuid "76e6bdd7-d26c-487a-b0f9-ace2c6f21011")
 	)
 	(polyline
@@ -7419,25 +7581,40 @@
 			(type solid)
 			(color 214 64 180 1)
 		)
-		(fill
-			(type none)
-		)
 		(uuid "63b64652-0c9b-41a2-a9dc-4f34e9123570")
 	)
 	(polyline
 		(pts
-			(xy 30.000 133.000) (xy 28.000 133.900) (xy 28.000 132.100) (xy 30.000 133.000)
+			(xy 30 133) (xy 28 133.9) (xy 28 132.1) (xy 30 133)
 		)
 		(stroke
-			(width 0.1)
+			(width 0.35)
 			(type solid)
 			(color 214 64 180 1)
 		)
-		(fill
-			(type color)
+		(uuid "c1c67d6e-fad3-4564-9d62-ffb5a3610da5")
+	)
+	(polyline
+		(pts
+			(xy 29.4667 133) (xy 28.2667 133.54) (xy 28.2667 132.46) (xy 29.4667 133)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
 			(color 214 64 180 1)
 		)
-		(uuid "c1c67d6e-fad3-4564-9d62-ffb5a3610da5")
+		(uuid "7a8e5736-66da-4d5e-ba9a-d905a4adc4a7")
+	)
+	(polyline
+		(pts
+			(xy 29 133) (xy 28.5 133.225) (xy 28.5 132.775) (xy 29 133)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 214 64 180 1)
+		)
+		(uuid "00544f77-c70a-425a-86ea-65a5bb6ac50d")
 	)
 	(polyline
 		(pts
@@ -7448,25 +7625,40 @@
 			(type solid)
 			(color 214 64 180 1)
 		)
-		(fill
-			(type none)
-		)
 		(uuid "84de79d7-a841-4c3e-9bd3-1fe10d566097")
 	)
 	(polyline
 		(pts
-			(xy 30.000 171.000) (xy 28.000 171.900) (xy 28.000 170.100) (xy 30.000 171.000)
+			(xy 30 171) (xy 28 171.9) (xy 28 170.1) (xy 30 171)
 		)
 		(stroke
-			(width 0.1)
+			(width 0.35)
 			(type solid)
 			(color 214 64 180 1)
 		)
-		(fill
-			(type color)
+		(uuid "1646e8fc-9508-4796-a891-e824b43460cf")
+	)
+	(polyline
+		(pts
+			(xy 29.4667 171) (xy 28.2667 171.54) (xy 28.2667 170.46) (xy 29.4667 171)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
 			(color 214 64 180 1)
 		)
-		(uuid "1646e8fc-9508-4796-a891-e824b43460cf")
+		(uuid "0da33550-ba45-4b15-b424-e3b37dfe7113")
+	)
+	(polyline
+		(pts
+			(xy 29 171) (xy 28.5 171.225) (xy 28.5 170.775) (xy 29 171)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 214 64 180 1)
+		)
+		(uuid "bca4c205-e6c6-43be-9104-bdd9838af336")
 	)
 	(text "EXC+ (SENSE+, switched by Q1) to both bridges  -  EXC- returns through AD7190 BPDSW"
 		(exclude_from_sim no)
@@ -7554,40 +7746,73 @@
 			(type solid)
 			(color 40 90 200 1)
 		)
-		(fill
-			(type none)
-		)
 		(uuid "447e1d94-13f0-4e40-8e70-d433b09b1f93")
 	)
 	(polyline
 		(pts
-			(xy 300.000 171.000) (xy 297.600 172.080) (xy 297.600 169.920) (xy 300.000 171.000)
+			(xy 300 171) (xy 297.6 172.08) (xy 297.6 169.92) (xy 300 171)
 		)
 		(stroke
-			(width 0.1)
+			(width 0.35)
 			(type solid)
-			(color 40 90 200 1)
-		)
-		(fill
-			(type color)
 			(color 40 90 200 1)
 		)
 		(uuid "9705abfd-d94f-4f5f-a75a-0f1d3697af52")
 	)
 	(polyline
 		(pts
-			(xy 276.000 171.000) (xy 278.400 169.920) (xy 278.400 172.080) (xy 276.000 171.000)
+			(xy 299.36 171) (xy 297.92 171.648) (xy 297.92 170.352) (xy 299.36 171)
 		)
 		(stroke
-			(width 0.1)
+			(width 0.35)
 			(type solid)
 			(color 40 90 200 1)
 		)
-		(fill
-			(type color)
+		(uuid "3b97763b-7eb2-4273-a70e-30ddcf21d6ca")
+	)
+	(polyline
+		(pts
+			(xy 298.8 171) (xy 298.2 171.27) (xy 298.2 170.73) (xy 298.8 171)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 40 90 200 1)
+		)
+		(uuid "545ddaff-fd3c-42ef-91eb-0133415e6289")
+	)
+	(polyline
+		(pts
+			(xy 276 171) (xy 278.4 169.92) (xy 278.4 172.08) (xy 276 171)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
 			(color 40 90 200 1)
 		)
 		(uuid "641d7978-95d1-484e-a9c6-36dd74e876fb")
+	)
+	(polyline
+		(pts
+			(xy 276.64 171) (xy 278.08 170.352) (xy 278.08 171.648) (xy 276.64 171)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 40 90 200 1)
+		)
+		(uuid "a7a9c1cf-c8dd-4011-8c68-48a2415a2a2d")
+	)
+	(polyline
+		(pts
+			(xy 277.2 171) (xy 277.8 170.73) (xy 277.8 171.27) (xy 277.2 171)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 40 90 200 1)
+		)
+		(uuid "c528d995-0880-4035-be70-a22c7c9183d1")
 	)
 	(text "SPI"
 		(exclude_from_sim no)
@@ -7639,9 +7864,6 @@
 			(type solid)
 			(color 214 64 180 1)
 		)
-		(fill
-			(type none)
-		)
 		(uuid "223efb5d-d7d8-4c6f-9427-0edba5af0de6")
 	)
 	(text "Power rail"
@@ -7665,9 +7887,6 @@
 			(width 0.8)
 			(type solid)
 			(color 21 128 61 1)
-		)
-		(fill
-			(type none)
 		)
 		(uuid "0e9f4742-7018-4bd3-a6dd-7fcc3969ab0b")
 	)
@@ -7693,9 +7912,6 @@
 			(type solid)
 			(color 40 90 200 1)
 		)
-		(fill
-			(type none)
-		)
 		(uuid "eb44b6a3-7e99-4e61-a485-f2bb5399b955")
 	)
 	(text "Digital / SPI"
@@ -7719,9 +7935,6 @@
 			(width 0.8)
 			(type solid)
 			(color 230 126 34 1)
-		)
-		(fill
-			(type none)
 		)
 		(uuid "8c25e5f7-ad73-4dce-8463-6799e42bf362")
 	)
@@ -7760,9 +7973,6 @@
 			(width 0.6)
 			(type solid)
 			(color 40 40 40 1)
-		)
-		(fill
-			(type none)
 		)
 		(uuid "75a730b2-ed45-4a48-bcb1-bb0f99f1afef")
 	)
@@ -7909,9 +8119,6 @@
 			(width 0.6)
 			(type solid)
 			(color 40 40 40 1)
-		)
-		(fill
-			(type none)
 		)
 		(uuid "02e5a2d0-77c5-4d5e-b409-bf9e3909936f")
 	)
