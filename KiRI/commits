@@ -1,4 +1,4 @@
-_local_|2026-03-18|root|Local changes not committed|False|True
-5ea05f0|2026-03-18|foukouda|[PCB FINAL]|False|True
-9529cc3|2026-03-16|foukouda|[PCB V4]|True|True
-f27c8d3|2026-03-14|foukouda|[PCB V3]|True|True
+_local_|2026-09-29|root|Local changes not committed|False|True
+df4ad06|2026-09-29|foukouda|Make schematic graphics parseable by KiBot (CI fix)|True|False
+b3867f9|2026-09-29|foukouda|Redesign Project Architecture sheet, update dates, refresh netlists|True|False
+9b921b5|2026-09-29|foukouda|Fill template pages: block diagram, power sequencing, notes, revision history|True|False

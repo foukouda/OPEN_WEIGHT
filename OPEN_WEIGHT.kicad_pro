@@ -608,7 +608,7 @@
       "include_excluded_from_bom": true,
       "name": "Default Editing",
       "sort_asc": true,
-      "sort_field": "Référence"
+      "sort_field": "R\u00e9f\u00e9rence"
     },
     "bus_aliases": {
       "LOAD-CELL": [
@@ -719,20 +719,20 @@
     ]
   ],
   "text_variables": {
-    "ASSEMBLY_NOTES": "",
+    "ASSEMBLY_NOTES": "ASSEMBLY NOTES (UNLESS OTHERWISE SPECIFIED)\n\n1)\tDO NOT POPULATE PARTS ARE MARKED WITH A RED CROSS.\n\n2)\tDO NOT POPULATE PARTS ARE NOT PRESENT IN THE BOM.\n\n3)\tIF CONFLICTING INFORMATION IS FOUND BETWEEN THE ASSEMBLY\n\tFILE AND BOM, BOM SHOULD BE USED AS THE MAIN SOURCE.\n\n4)\tCONFORMAL COATING IS NOT REQUIRED.\n\n5)\tDOT IDENTIFIES PIN #1 LOCATION AND DEVICE ORIENTATION\n\tWHEN VIEWED FROM THE TOP.",
     "BOARD_NAME": "AD7190",
     "COMPANY": "OPEN THRUST LAB",
     "DESIGNER": "SIEBERT DIMITRY",
-    "FABRICATION_NOTES": "",
-    "GIT_HASH_PCB": "local",
-    "GIT_HASH_SCH": "local",
+    "FABRICATION_NOTES": "FABRICATION NOTES (UNLESS OTHERWISE SPECIFIED)\n\n1)\tFABRICATE PER IPC-6012A CLASS 2.\n\n2)\tOUTLINE DEFINED IN SEPARATE GERBER FILE WITH\n\t\"Edge_Cuts.GBR\" SUFFIX.\n\n\tDIMENSIONS OF CIRCUMSIZED RECTANGLE SHOWN ON THIS\n\tDRAWING FOR REFERENCE ONLY.\n\n3)\tSEE SEPARATE DRILL FILES WITH \".DRL\" SUFFIX \n\tFOR HOLE LOCATIONS.\n\n\tSELECTED HOLE LOCATIONS SHOWN ON THIS DRAWING \n\tFOR REFERENCE ONLY.\n\n4)\tSURFACE FINISH: IMMERSION GOLD\n\n5)\tSOLDERMASK ON BOTH SIDES OF THE BOARD SHALL \n\tBE LPI, COLOR BLACK.\n\n6)\tSILK SCREEN LEGEND TO BE APPLIED PER LAYER \n\tSTACKUP USING YELLOW NON-CONDUCTIVE EPOXY INK.\n\n7)\tALL VIAS ARE TENTED ON BOTH SIDES UNLESS \n\tSOLDERMASK OPENED IN GERBER.\n\n8)\tVENDOR SHOULD FOLLOW ROHS COMPLIANT PROCESS \n\tAND Pb FREE FOR MANUFACTURING\n\n9)\tPCB MATERIAL REQUIREMENTS:\n\n\tA.\tFLAMMABILITY RATING MUST MEET OR EXCEED \n\t\tUL94V-0 REQUIREMENTS.\n\tB.\tTg 170 C OR EQUIVALENT.\n\tC.\tEQUIVALENT MATERIAL SHALL BE RoHS COMPLIANT, \n\t\tHALOGEN FREE AND APPROVED BY OPEN THRUST LAB.\n\n10)\tDESIGN GEOMETRY MINIMUM FEATURE SIZES:\n\n\tBOARD SIZE\t\t\t\t54.000 \u00d7 48.000 mm\n\tBOARD THICKNESS\t\t1.660 mm\n\tTRACE WIDTH\t\t\t0.200 mm\n\tTRACE TO TRACE\t\t0.200 mm\n\tMIN. HOLE (PTH)\t\t\t0.200 mm\n\tMIN. HOLE (NPTH)\t\t1.200 mm\n\tANNULAR RING\t\t\t0.150 mm\n\tCOPPER TO HOLE\t\t0.200 mm\n\tCOPPER TO EDGE\t\t0.200 mm\n\tHOLE TO HOLE\t\t\t0.250 mm\n\n11)\tREFER TO IMPEDANCE TABLE FOR IMPEDANCE CONTROL REQUIREMENTS.\n\n12)\tCONFIRM SPACE WIDTHS AND SPACINGS.",
+    "GIT_HASH_PCB": "7392646",
+    "GIT_HASH_SCH": "b3867f9",
     "GIT_URL": "https://github.com/foukouda/OPEN_WEIGHT",
     "PROJECT_NAME": "OPEN_WEIGHT",
     "RELEASE_BODY_UNRELEASED": "___________________________________\n\nAdded\n\n-   AD7190 front-end, 2 load-cell inputs\n\n-   +3.3V -> TPS61086 6 V -> LT3042 +5VA\n\n-   Self-contained libs and 3D models (lib/)\n\n-   JLCPCB 4-layer rules and stackup\n\n___________________________________\n\nChanged\n\n-   Renamed to OPEN_WEIGHT, KiCad 10\n\n___________________________________\n\nFixed\n\n-   Connectors not linked to ADC in schematic\n\n-   AD7190 solder-mask bridges",
     "RELEASE_DATE": "29-Sep-2026",
     "RELEASE_DATE_NUM": "2026-09-29",
     "RELEASE_TITLE_UNRELEASED": "Version Unreleased",
-    "REVISION": "(Unreleased)",
+    "REVISION": "+ (Unreleased)",
     "SHEET_NAME_1": "Cover Page",
     "SHEET_NAME_10": "Revision History",
     "SHEET_NAME_11": "......................................",
@@ -773,7 +773,7 @@
     "SHEET_NAME_7": "Holes, Fiducials",
     "SHEET_NAME_8": "Connectors",
     "SHEET_NAME_9": "Power - Sequencing",
-    "VARIANT": "LOCAL"
+    "VARIANT": "PRELIMINARY"
   },
   "tuning_profiles": {
     "meta": {

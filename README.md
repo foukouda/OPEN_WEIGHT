@@ -132,7 +132,7 @@ Power chain: **+3.3 V (host) → TPS61086 → +6 V → LT3042 → +5VA → AD719
 | Parent project | OPEN THRUST LAB |
 | CAD tool | KiCad 10 |
 | Automation tooling | KiBot + GitHub Actions |
-| Dimensions | 57.0 × 50.75 mm |
+| Dimensions | 54.0 × 48.0 mm |
 | Mounting holes | 4× M3, connected to GND |
 | Fiducials | Not fitted on this revision (FID1–FID6 excluded from board) |
 | Fabrication target | JLCPCB 4-layer, JLC04161H-7628, 1.6 mm (rules in `OPEN_WEIGHT.kicad_dru`) |
