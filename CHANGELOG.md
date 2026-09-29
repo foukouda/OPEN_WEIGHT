@@ -12,6 +12,7 @@ Keep entries short: the `[Unreleased]` section is printed on the schematic Revis
 -   +3.3V -> TPS61086 6 V -> LT3042 +5VA
 -   Self-contained libs and 3D models (lib/)
 -   JLCPCB 4-layer rules and stackup
+-   LTspice simulations (Simulation/LTspice)
 
 ### Changed
 

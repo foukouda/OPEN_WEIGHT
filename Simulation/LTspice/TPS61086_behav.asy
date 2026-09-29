@@ -1,0 +1,43 @@
+Version 4
+SymbolType CELL
+RECTANGLE Normal -96 -96 96 96
+TEXT 0 -80 Center 2 TPS61086
+TEXT 0 -56 Center 1 (behavioral)
+TEXT -88 -64 Left 1 IN
+TEXT -88 0 Left 1 EN
+TEXT -88 64 Left 1 MODE
+TEXT 88 -64 Right 1 SW
+TEXT 88 32 Right 1 FB
+TEXT -48 84 Center 1 COMP
+TEXT 0 84 Center 1 GND
+TEXT 48 84 Center 1 SS
+WINDOW 0 0 -112 Center 2
+WINDOW 3 0 128 Center 1
+SYMATTR Value TPS61086_BEHAV
+SYMATTR Prefix X
+SYMATTR ModelFile TPS61086_behav.sub
+SYMATTR Description Behavioral model of TI TPS61086 1.2 MHz boost (written for OPEN_WEIGHT, not a TI model)
+PIN -96 -64 NONE 0
+PINATTR PinName IN
+PINATTR SpiceOrder 1
+PIN -96 0 NONE 0
+PINATTR PinName EN
+PINATTR SpiceOrder 2
+PIN -96 64 NONE 0
+PINATTR PinName MODE
+PINATTR SpiceOrder 3
+PIN 96 -64 NONE 0
+PINATTR PinName SW
+PINATTR SpiceOrder 4
+PIN 96 32 NONE 0
+PINATTR PinName FB
+PINATTR SpiceOrder 5
+PIN -48 96 NONE 0
+PINATTR PinName COMP
+PINATTR SpiceOrder 6
+PIN 48 96 NONE 0
+PINATTR PinName SS
+PINATTR SpiceOrder 7
+PIN 0 96 NONE 0
+PINATTR PinName GND
+PINATTR SpiceOrder 8

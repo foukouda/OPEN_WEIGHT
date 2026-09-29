@@ -1,0 +1,55 @@
+* TPS61086 - BEHAVIORAL model written for the OPEN_WEIGHT project
+* ---------------------------------------------------------------------------
+* This is NOT a Texas Instruments model (TI does not provide an LTspice model).
+* It reproduces the documented behaviour of the TPS61086 (SLVSA05B) closely
+* enough to study start-up, output ripple and loop behaviour of the 3.3V->6V
+* stage:
+*   - fixed-frequency 1.2 MHz peak-current-mode PWM
+*   - gm error amplifier, gm = 107 uA/V, VREF = 1.238 V, external COMP network
+*   - 0.13 ohm integrated N-MOS switch, 2.6 A typ. current limit
+*   - soft-start : SS precharged to 0.3 V, then 10 uA ; the peak current limit
+*     ramps from 0 A (VSS = 0.3 V) to ILIM (VSS = 0.8 V)
+*   - MODE low  = Power Save Mode (pulse skipping at light load)
+*     MODE high = forced PWM
+*   - UVLO 2.3 V rising, EN threshold ~1.2 V
+* Parameters not given in the datasheet (current-sense gain Ri, COMP offset,
+* slope compensation, PFM minimum peak current) are engineering estimates.
+* ---------------------------------------------------------------------------
+* Pins: IN EN MODE SW FB COMP SS GND
+.subckt TPS61086_BEHAV IN EN MODE SW FB COMP SS GND
+.param fsw=1.2Meg Vref=1.238 gm=107u Ron=0.13 Ilim=2.6
+.param Ri=0.12 Voff=0.6 Sramp=0.3 Ipfm=0.25 Dmax=0.9
+* --- enable / UVLO ----------------------------------------------------------
+Bon on GND V=if(V(EN,GND)>1.2 & V(IN,GND)>2.3, 1, 0)
+Iq IN GND 75u
+* --- soft-start (fast precharge to 0.3 V, then 10 uA) ------------------------
+Bss GND SS I=if(V(on)>0.5, if(V(SS,GND)<0.3, 1m, 10u), -V(SS,GND)/1k)
+Rss SS GND 1G
+Dss SS ssc Dcl
+Vssc ssc GND 1.5
+* --- transconductance error amplifier ----------------------------------------
+Bea GND COMP I=if(V(on)>0.5, gm*(Vref-V(FB,GND)), -V(COMP,GND)/1k)
+Rea COMP GND 20Meg
+Dch COMP clh Dcl
+Vch clh GND {Voff+Ri*Ilim+0.1}
+Dcl cll COMP Dcl
+Vcl cll GND {Voff-0.1}
+.model Dcl D(Ron=10 Roff=1G Vfwd=0)
+* --- oscillator: saw-tooth ramp + set pulse ----------------------------------
+Vramp ramp GND PULSE(0 1 0 {1/fsw-4n} 2n 2n {1/fsw})
+Vclk clk GND PULSE(0 1 0 1n 1n 15n {1/fsw})
+* --- peak current command (COMP -> A), limited by soft-start -----------------
+Bic ic GND V=min(max((V(COMP,GND)-Voff)/Ri, 0), Ilim*limit((V(SS,GND)-0.3)/0.5, 0, 1))
+* Power Save Mode: skip the cycle when the command is below Ipfm,
+* otherwise use at least Ipfm as peak current
+Bpk ipk GND V=if(V(MODE,GND)>1.2, V(ic), max(V(ic), Ipfm))
+Bgo go GND V=if(V(on)>0.5 & (V(MODE,GND)>1.2 | V(ic)>Ipfm), 1, 0)
+* --- PWM latch ----------------------------------------------------------------
+Bset set GND V=if(V(clk)>0.5 & V(go)>0.5, 1, 0)
+Brst rst GND V=if(I(Vsns)+Sramp*V(ramp)>V(ipk) | V(ramp)>Dmax | V(on)<0.5, 1, 0)
+A1 set rst 0 0 0 qb q 0 SRFLOP Vhigh=1 Vlow=0 Trise=3n Tfall=3n
+* --- power switch (current sensed through Vsns) -------------------------------
+Vsns SW swi 0
+S1 swi GND q GND SWN
+.model SWN SW(Ron={Ron} Roff=20Meg Vt=0.5 Vh=0)
+.ends TPS61086_BEHAV
