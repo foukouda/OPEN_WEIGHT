@@ -148,7 +148,7 @@
                 font-size:14px;
                 margin-right: 10px;
                 color: var(--text-color-accent);">
-                <div style="margin-bottom: 5px;">Rev. (Unreleased)</div>
+                <div style="margin-bottom: 5px;">Rev. + (Unreleased)</div>
                 <div>Variant: PRELIMINARY</div>
             </div>
 <a href="https://github.com/foukouda/OPEN_WEIGHT" style="margin-right: 10px;">
@@ -357,6 +357,75 @@ The project is organized into five functional hierarchical sheets (under `Projec
 
 ***
 
+## SIMULATION (LTspice)
+
+The analog power chain and the ADC input filter are simulated with **LTspice 26** in [`Simulation/LTspice/`](Simulation/LTspice). Every component value comes from the KiCad netlist (reference designators are the same as on the schematic), so the schematics can be opened side by side with the KiCad sheets.
+
+| File | Analysis | What it checks |
+| --- | --- | --- |
+| `01_Power_Chain_Startup.asc` | `.tran` 25 ms, switching | +3.3V → TPS61086 → +6V → LT3042 → +5VA soft-start, inductor current |
+| `02_LT3042_Startup.asc` | `.tran` 1 s | +5VA rise, Power-Good, load-cell excitation turn-on (Q1) |
+| `03_Power_Ripple.asc` | `.tran` 4 ms, switching | Boost ripple on +6V and what remains on +5VA, input current |
+| `04_LT3042_PSRR.asc` | `.ac` 10 Hz – 10 MHz | LT3042 ripple rejection with the board's capacitors |
+| `05_AD7190_Input_Filter.asc` | `.ac` 10 Hz – 100 MHz | Differential / common-mode response of the AIN RC filter |
+
+**Models**
+
+- **LT3042**: official Analog Devices model shipped with LTspice.
+- **TPS61086**: TI does not provide an LTspice model, so `TPS61086_behav.sub` / `.asy` is a **behavioral model** written for this project from the datasheet (SLVSA05B): 1.2 MHz peak-current-mode PWM, gm = 107 µA/V error amplifier, VREF = 1.238 V, 0.13 Ω switch, 2.6 A current limit, 10 µA soft-start, Power Save Mode (MODE = GND, as on the board). The current-sense gain and slope compensation are not published and are estimated.
+- **D3**: PMEG2010AEH modelled with the LTspice PMEG2010EA (same 20 V / 1 A Nexperia MEGA Schottky family). **Q1**: approximate VDMOS model of the SI2303CDS.
+- Load on +5VA: AD7190 AVDD (4.5 mA) + one 350 Ω bridge + D4 LED. Ceramic capacitors use nominal values (no DC-bias derating).
+
+**Results**
+
+| Quantity | Simulated | Notes |
+| --- | --- | --- |
+| +6V output (TPS61086) | 6.037 V | FB divider R17/R15, 1.238 V × (1 + 69.8k/18k) |
+| +6V reaches 90 % | 1.1 ms | +6V is precharged to ≈ VIN − VF through L1/D3 before the boost starts |
+| +6V start-up overshoot | 6.35 V | well within the LT3042 20 V input rating |
+| Peak inductor current at start-up | 1.13 A | below the 2.5 A Isat of L1 |
+| +6V ripple, 20 MHz bandwidth | 0.7 mV pp | discontinuous conduction at 1.2 MHz, I(L1) peak ≈ 170 mA; the raw trace shows 35 mV single-sample spikes on the switching edges |
+| +5VA ripple, 20 MHz bandwidth | < 1 µV pp | 9 µV pp raw, at the numerical resolution of the simulation |
+| LT3042 PSRR at 1.2 MHz | 92 dB | ideal layout; real PSRR at MHz is limited by PCB coupling |
+| PG goes high | ≈ 5 ms | end of the LT3042 fast start-up (+5VA = 4.59 V) |
+| +5VA reaches 99 % / 99.9 % | 248 ms / 501 ms | then τ = RSET·CSET = 110 ms |
+| +5VA dip when Q1 turns on | 29 mV | 350 Ω bridge + SENSE± capacitors switched onto +5VA |
+| Bridge excitation V(SENSE+) − V(SENSE−) | 4.955 V | Q1 R<sub>DS(on)</sub> + BPDSW drop |
+| Input current from the host (+3.3V) | 66.5 mA | includes D1 (≈ 15 mA) and D4 (≈ 5 mA) LEDs |
+| Input filter −3 dB, differential | 2.76 kHz | 350 Ω bridge + 2 × 100 Ω, C28 + C27/C29 |
+| Input filter −3 dB, common-mode | 57.9 kHz | 175 Ω + 100 Ω, C27/C29 |
+| Differential attenuation at 1.2 MHz | −53 dB | boost switching frequency |
+
+<p align="center">
+  <img alt="Power chain start-up" src="../Images/Simulation/sim01_power_startup.png" width="80%">
+</p>
+<p align="center">
+  <img alt="LT3042 start-up and excitation turn-on" src="../Images/Simulation/sim02_ldo_startup.png" width="90%">
+</p>
+<p align="center">
+  <img alt="Steady-state ripple" src="../Images/Simulation/sim03_ripple.png" width="80%">
+</p>
+<p align="center">
+  <img alt="LT3042 PSRR" src="../Images/Simulation/sim04_psrr.png" width="80%">
+</p>
+<p align="center">
+  <img alt="AD7190 input filter" src="../Images/Simulation/sim05_input_filter.png" width="80%">
+</p>
+
+**Re-run the simulations** (Windows, LTspice installed in the default location):
+
+```bash
+cd Simulation/LTspice
+python run_simulations.py            # runs LTspice in batch mode, redraws Images/Simulation/*.png and results.md
+python run_simulations.py --no-run   # only redraw from the existing .raw files
+```
+
+Or open any `.asc` in LTspice and press *Run*. Simulations 01 and 03 switch at 1.2 MHz and take a few minutes.
+
+> The simulations validate the design intent (regulation, sequencing, filtering). They do not replace bench measurements: layout parasitics, capacitor DC-bias derating and the real TPS61086 control loop will change the ripple figures.
+
+***
+
 ## LOAD CELL CONNECTION
 
 The board accepts any standard **4-wire Wheatstone bridge** load cell.
@@ -402,13 +471,16 @@ J4 → AIN1/AIN2, J2 → AIN3/AIN4. Both channels measure **V(pin 2) − V(pin 1
 ## STARTUP SEQUENCE
 
 After 3.3 V is applied, allow the following stages to complete before issuing any SPI command
-(see schematic page 9, *Power - Sequencing*; values computed from the schematic):
+(see schematic page 9, *Power - Sequencing*; values from the [LTspice simulations](#simulation-ltspice)):
 
 | Stage | Duration | Indicator |
 | --- | --- | --- |
-| TPS61086 boost soft-start (C18) | ~10 ms | +6V reaches 6.04 V (TP11) |
-| LT3042 +5VA rise (RSET 50 kΩ × CSET 2.2 µF = τ 110 ms) | PG after ~285 ms, 99 % after ~520 ms | PG (TP17) goes high at 4.59 V |
+| TPS61086 boost start-up (C18 soft-start) | +6V at 90 % after ~1.1 ms, settled after ~2 ms (short 6.35 V overshoot) | +6V reaches 6.04 V (TP11) |
+| LT3042 fast start-up (2 mA into CSET while PGFB < 300 mV) | +5VA reaches 4.59 V after ~5 ms | PG (TP17) goes high at 4.59 V |
+| LT3042 final settling (RSET 50 kΩ × CSET 2.2 µF = τ 110 ms) | 99 % after ~250 ms, 99.9 % after ~500 ms | +5VA (TP10) |
 | **Minimum safe delay** | **≥ 600 ms** from power-on | +5VA settled |
+
+> PG goes high long before +5VA is settled: it only indicates the end of the fast start-up phase. Use the delay, not PG, before calibrating.
 
 > To start faster, reduce C14 (e.g. 0.47 µF → τ = 23.5 ms) at the cost of slightly higher low-frequency noise.
 
@@ -552,6 +624,7 @@ while (1) {
 | Documentation sheets | Block diagram, architecture, power sequencing, revision history |
 | CI resources | GitHub Actions workflows, KiBot YAML configurations |
 | Computations | Design notes, filter and power budget calculations |
+| Simulation | LTspice simulations of the power chain and ADC input filter |
 
 ***
 
@@ -587,6 +660,8 @@ while (1) {
     ├─ Mechanical         # Enclosure / support CAD (STEP; SolidWorks & STL kept local)
     ├─ Report             # ERC / DRC reports and validation outputs
     ├─ Schematic          # Exported schematic PDFs
+    ├─ Simulation
+    │  └─ LTspice         # LTspice schematics, TPS61086 behavioral model, run/plot script
     ├─ Templates          # Drawing sheets and title block templates
     ├─ Testing
     │  └─ Testpoints      # Test point tables and documentation
