@@ -8259,15 +8259,29 @@
 			"BEEQBEEQBEEQBEEQBEEQBEEQBEEQBPGI8/8DQMweG4AQ8EsAAAAASUVORK5CYII="
 		)
 	)
-	(label "IN-SENSE+"
+	(global_label "SENSE-"
+		(shape bidirectional)
 		(at 256.54 152.4 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify left)
 		)
 		(uuid "0408eab4-ae5e-4439-b5be-93eb79e7f775")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 266.5400 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 	)
 	(label "SCLK"
 		(at 190.5 114.3 0)
@@ -8279,25 +8293,53 @@
 		)
 		(uuid "28307e1e-fe46-4e3e-8550-01a6e817afcf")
 	)
-	(label "IN-SENSE+"
+	(global_label "SENSE-"
+		(shape bidirectional)
 		(at 256.54 132.08 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify left)
 		)
 		(uuid "2ea9ab56-8170-4fa6-a4a3-548a7605cf26")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 266.5400 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 	)
-	(label "IN-SENSE-"
+	(global_label "SENSE+"
+		(shape bidirectional)
 		(at 214.63 137.16 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify left)
 		)
 		(uuid "377c04de-35cc-4546-bf87-36e7b780cfde")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 224.6300 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 	)
 	(label "CS"
 		(at 190.5 104.14 0)
@@ -8319,15 +8361,29 @@
 		)
 		(uuid "73aaabf5-3f9e-42e3-991f-2dd5a3f4d65b")
 	)
-	(label "IN-SENSE-"
+	(global_label "SENSE+"
+		(shape bidirectional)
 		(at 214.63 157.48 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify left)
 		)
 		(uuid "80d8a4ed-8fdd-46db-9afa-8c6a4c09c620")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 224.6300 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 	)
 	(label "SYNC"
 		(at 190.5 111.76 0)
@@ -8339,15 +8395,29 @@
 		)
 		(uuid "8e999a6d-4c33-4c22-8c68-5b084d636878")
 	)
-	(label "IN-OUT+2"
+	(global_label "IN-OUT+2"
+		(shape bidirectional)
 		(at 214.63 132.08 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify left)
 		)
 		(uuid "a5ca427f-7600-4b27-92f7-6c8ff962481b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 224.6300 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 	)
 	(label "DIN"
 		(at 190.5 106.68 0)
@@ -8359,35 +8429,77 @@
 		)
 		(uuid "a8f6d545-d6f1-4795-aa3a-6fcfdc696126")
 	)
-	(label "IN-OUT+"
+	(global_label "IN-OUT+"
+		(shape bidirectional)
 		(at 214.63 152.4 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify left)
 		)
 		(uuid "b2d9f666-e35a-49a8-8dcb-54beb56fc941")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 224.6300 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 	)
-	(label "IN-OUT-2"
+	(global_label "IN-OUT-2"
+		(shape bidirectional)
 		(at 214.63 134.62 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify left)
 		)
 		(uuid "bc78e0e2-d507-49ec-8d92-3839b24378ef")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 224.6300 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 	)
-	(label "IN-OUT-"
+	(global_label "IN-OUT-"
+		(shape bidirectional)
 		(at 214.63 154.94 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify left)
 		)
 		(uuid "cae65ea5-84f3-4b10-bd9c-0b6c0de3b2a1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 224.6300 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 	)
 	(global_label "{SPI}"
 		(shape input)

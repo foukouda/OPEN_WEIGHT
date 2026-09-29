@@ -10350,25 +10350,53 @@
 			"BEEQBEEQBEEQBEEQBEEQBEEQBEEQBPGI8/8DQMweG4AQ8EsAAAAASUVORK5CYII="
 		)
 	)
-	(label "IN-SENSE+"
+	(global_label "SENSE+"
+		(shape bidirectional)
 		(at 259.08 45.72 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify left)
 		)
 		(uuid "0b983ef1-5082-4168-8aa3-674a25b17959")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 269.0800 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 	)
-	(label "IN-SENSE-"
+	(global_label "SENSE-"
+		(shape bidirectional)
 		(at 175.26 49.53 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify left)
 		)
 		(uuid "33e8118f-80fb-4ffc-b639-4495736a6d42")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 185.2600 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 	)
 	(label "CS"
 		(at 44.45 72.39 0)
@@ -10380,25 +10408,53 @@
 		)
 		(uuid "5e6f4ba9-ab3c-4fd6-9745-e9592bffb085")
 	)
-	(label "IN-OUT+2"
+	(global_label "IN-OUT-2"
+		(shape bidirectional)
 		(at 175.26 71.12 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify left)
 		)
 		(uuid "776ce24a-9ecc-418f-b84c-9d9bebc5cfcc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 185.2600 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 	)
-	(label "IN-OUT-2"
+	(global_label "IN-OUT+2"
+		(shape bidirectional)
 		(at 175.26 78.74 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify left)
 		)
 		(uuid "87ed02c7-aed0-4c19-b259-f24caa3d08f1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 185.2600 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 	)
 	(label "DIN"
 		(at 44.45 74.93 0)
@@ -10410,15 +10466,29 @@
 		)
 		(uuid "a12cfb81-f2c1-447b-9697-56b0ea76124c")
 	)
-	(label "IN-SENSE+"
+	(global_label "SENSE+"
+		(shape bidirectional)
 		(at 175.26 41.91 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify left)
 		)
 		(uuid "a561b0b4-4ea5-448d-a917-0cd22dc052fe")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 185.2600 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 	)
 	(label "DOUT"
 		(at 44.45 77.47 0)
@@ -10430,15 +10500,29 @@
 		)
 		(uuid "afbfa858-ade7-41e9-9d01-bcc9c4c3590b")
 	)
-	(label "IN-OUT+"
+	(global_label "IN-OUT+"
+		(shape bidirectional)
 		(at 175.26 99.06 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify left)
 		)
 		(uuid "bd60b637-726f-43c3-b887-74d3648b362f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 185.2600 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 	)
 	(label "SYNC"
 		(at 44.45 80.01 0)
@@ -10450,15 +10534,29 @@
 		)
 		(uuid "d7c0c4d2-162d-4cde-a1dd-788b0f9977d4")
 	)
-	(label "IN-OUT-"
+	(global_label "IN-OUT-"
+		(shape bidirectional)
 		(at 175.26 106.68 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify left)
 		)
 		(uuid "dc3422de-5851-426b-84c2-8210553260a2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 185.2600 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 	)
 	(label "SCLK"
 		(at 44.45 82.55 0)
