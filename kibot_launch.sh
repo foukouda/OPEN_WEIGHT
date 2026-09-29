@@ -132,7 +132,7 @@ fi
 
 # Check KiCad version and set group command accordingly
 kicad_version=$(kicad-cli --version)
-if [[ "$kicad_version" =~ ^9\.[0-9]+\.[0-9]+$ ]]; then
+if [[ "$kicad_version" =~ ^(9|10)\.[0-9]+\.[0-9]+$ ]]; then
     all_group="all_group_k9"
 else
     all_group="all_group"

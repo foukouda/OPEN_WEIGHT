@@ -14,3 +14,24 @@ kibot_*.kicad_pcb
 kibot_*.kicad_dru
 kibot_*.kicad_prl
 kibot_*.kicad_pro
+
+# Local history / editor & plugin caches
+.history/
+.history_trim/
+.spinrender/
+.*.spinrender-src*
+_archive/
+3DxService.log
+3DxWare/
+
+# Fabrication Toolkit plugin outputs (KiBot generates the official outputs)
+bom/
+plots/
+production/
+fabrication-toolkit-options.json
+
+# Heavy mechanical CAD binaries (use Git LFS if they must be versioned)
+Mechanical/*.stl
+Mechanical/*.SLDASM
+Mechanical/*.SLDPRT
+~$*

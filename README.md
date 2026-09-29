@@ -1,5 +1,5 @@
 <p align="center" width="100%">
-  <img alt="Logo" width="33%" src="Logos/dummy_logo.svg">
+  <img alt="Logo" width="33%" src="Logos/LOGO.png">
 </p>
 
 <h1 align="center">OPEN_WEIGHT – AD7190</h1>
@@ -22,20 +22,14 @@
   <a href="https://github.com/foukouda/OPEN_WEIGHT/releases">
     <img alt="Latest Release" src="https://img.shields.io/github/v/release/foukouda/OPEN_WEIGHT?include_prereleases&label=latest">
   </a>
-  <img alt="KiCad 9" src="https://img.shields.io/badge/KiCad-9-brightgreen">
+  <img alt="KiCad 10" src="https://img.shields.io/badge/KiCad-10-brightgreen">
   <img alt="Status" src="https://img.shields.io/badge/Status-In%20Development-orange">
 </p>
 
-<p align="center" width="100%">
-    <img alt="Project banner" src="Images/dummy_image.png">
-</p>
-
-***
-
 <p align="center">
-  <img alt="3D Top Angled" src="Images/Cellule_de_force_V2-angled_top.png" width="45%">
+  <img alt="3D Top Angled" src="Images/OPEN_WEIGHT-angled_top.png" width="45%">
 &nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="3D Bottom Angled" src="Images/Cellule_de_force_V2-angled_bottom.png" width="45%">
+  <img alt="3D Bottom Angled" src="Images/OPEN_WEIGHT-angled_bottom.png" width="45%">
 </p>
 
 ***
@@ -49,7 +43,7 @@ This board is designed around the **Analog Devices AD7190**, a high-resolution 2
 The board requires only a **3.3 V input** from the host system. An onboard TPS61086 boost converter steps this up to 6 V, which is then regulated down to a clean +5 V analog supply by an LT3042 ultralow-noise LDO. This two-stage architecture deliberately trades a small efficiency cost for a significantly cleaner AVDD rail, which directly reduces the measurement noise floor. No external 5 V supply is needed.
 
 The repository is structured as a full hardware project rather than a simple PCB dump. It includes:
-- KiCad 9 source files for schematic and PCB layout
+- KiCad 10 source files for schematic and PCB layout
 - manufacturing and assembly outputs
 - generated schematic and fabrication documentation
 - validation reports and test artifacts
@@ -79,7 +73,7 @@ In the broader bench roadmap, this board contributes to the measurement chain us
 - Provide a precise measurement front-end for load-cell based force sensing
 - Operate entirely from a 3.3 V host rail — no external analog supply required
 - Support thrust instrumentation in a modular test-bench architecture
-- Expose a clean and reusable KiCad 9 project structure
+- Expose a clean and reusable KiCad 10 project structure
 - Automate hardware deliverables with KiBot and CI
 - Make fabrication and assembly easier through fully generated outputs
 - Support future revisions, validation, and characterization work
@@ -129,7 +123,7 @@ Power chain: **+3.3 V (host) → TPS61086 → +6 V → LT3042 → +5VA → AD719
 | Project name | OPEN_WEIGHT |
 | Board name | AD7190 |
 | Parent project | OPEN THRUST LAB |
-| CAD tool | KiCad 9 |
+| CAD tool | KiCad 10 |
 | Automation tooling | KiBot + GitHub Actions |
 | Dimensions | 57.0 × 50.75 mm |
 | Mounting holes | 4× M3, connected to GND |
@@ -141,15 +135,15 @@ Power chain: **+3.3 V (host) → TPS61086 → +6 V → LT3042 → +5VA → AD719
 
 ## SCHEMATIC ARCHITECTURE
 
-The project is organized into six hierarchical KiCad sheets:
+The project is organized into five functional hierarchical sheets (under `Project Architecture`), plus the documentation sheets (Revision History, Block Diagram, Power - Sequencing):
 
-| Page | Section | Description |
+| Page | Sheet (file) | Description |
 | --- | --- | --- |
-| 4 | `AD7910_Weight_sensor` | AD7190 24-bit sigma-delta ADC front-end for Wheatstone bridge acquisition. Differential inputs on SENSE± and OUT± lines with RC input filtering. SPI interface (CS, DIN, DOUT, SCLK, SYNC). External 4.9152 MHz crystal. Dual-supply decoupling (+5VA analog / +3.3V digital). P-MOS drive gate for load cell excitation control. Test points on all critical analog and digital nodes. |
-| 5 | `LT3042_6V_5VA` | Low-noise 5 V analog supply for ADC front-end (AVDD). LT3042 ultralow-noise LDO (PSRR > 75 dB). Input: +6V from boost stage. Output: +5VA regulated via RSET = 50 kΩ (ISET = 100 µA). Solid tantalum capacitor on SET pin for noise suppression. Power-Good monitoring via PGFB divider. Test points: VIN, VOUT, SET, PGFB, PG. |
-| 6 | `TPS61086_3.3V_to_6V` | 3.3 V to 6 V synchronous boost converter supplying the LT3042 stage. TPS61086 switching at 1.2 MHz fixed frequency (PWM/PFM selectable via MODE pin). Integrated 2.5 A / 0.13 Ω power switch. Output voltage set via FB resistor divider. Input/output decoupling, soft-start, and loop compensation network. Test points: +3.3V_IN, +6V_OUT, FB, COMP. |
-| 7 | `Holes, Fiducials` | Mechanical references for PCB fabrication and assembly. Four GND-connected mounting holes (H1–H4, M3). Three fiducial markers on top copper (FID1–FID3) and three on bottom copper (FID4–FID6) for pick-and-place alignment. |
-| 8 | `Connecteur` | External interface connectors for load cell and host communication. Load cell 4-wire bridge connector (N-SENSE+, N-SENSE−, N-OUT+, N-OUT−). SPI host header (SS, DIN, DOUT, SCLK, SYNC, +3.3V, GND). PCB frame connector (WE-SMCJTHT) for chassis ground bonding. |
+| 4 | `AD7190_Weight_Sensor` (`AD7190 - Weight Sensor.kicad_sch`) | AD7190 24-bit sigma-delta ADC front-end for Wheatstone bridge acquisition. Differential inputs on SENSE± and OUT± lines with RC input filtering. SPI interface (CS, DIN, DOUT, SCLK, SYNC). External 4.9152 MHz crystal. Dual-supply decoupling (+5VA analog / +3.3V digital). P-MOS drive gate for load cell excitation control. Test points on all critical analog and digital nodes. |
+| 5 | `LT3042_6V_to_5VA` (`LT3042 - LDO 6V to 5VA.kicad_sch`) | Low-noise 5 V analog supply for ADC front-end (AVDD). LT3042 ultralow-noise LDO (PSRR > 75 dB). Input: +6V from boost stage. Output: +5VA regulated via RSET = 50 kΩ (ISET = 100 µA). Solid tantalum capacitor on SET pin for noise suppression. Power-Good monitoring via PGFB divider. Test points: VIN, VOUT, SET, PGFB, PG. |
+| 6 | `TPS61086_3.3V_to_6V` (`TPS61086 - Boost 3V3 to 6V.kicad_sch`) | 3.3 V to 6 V synchronous boost converter supplying the LT3042 stage. TPS61086 switching at 1.2 MHz fixed frequency (PWM/PFM selectable via MODE pin). Integrated 2.5 A / 0.13 Ω power switch. Output voltage set via FB resistor divider. Input/output decoupling, soft-start, and loop compensation network. Test points: +3.3V_IN, +6V_OUT, FB, COMP. |
+| 7 | `Holes, Fiducials` (`Holes - Fiducials.kicad_sch`) | Mechanical references for PCB fabrication and assembly. Four GND-connected mounting holes (H1–H4, M3). Three fiducial markers on top copper (FID1–FID3) and three on bottom copper (FID4–FID6) for pick-and-place alignment. |
+| 8 | `Connectors` (`Connectors.kicad_sch`) | External interface connectors for load cell and host communication. Load cell 4-wire bridge connector (N-SENSE+, N-SENSE−, N-OUT+, N-OUT−). SPI host header (SS, DIN, DOUT, SCLK, SYNC, +3.3V, GND). PCB frame connector (WE-SMCJTHT) for chassis ground bonding. |
 
 ***
 
@@ -269,7 +263,7 @@ Maps ADC output codes to physical units. Repeat any time the mechanical setup ch
 
 ### Prerequisites
 
-- **KiCad 9** (not backwards-compatible with KiCad 8 or earlier)
+- **KiCad 10** (files are saved in KiCad 10 format and cannot be opened with KiCad 9 or earlier)
 - **KiBot** for automated output generation
 - **Docker** recommended for reproducible local CI runs
 - Debian/Ubuntu or equivalent environment
@@ -281,7 +275,7 @@ Maps ADC output codes to physical units. Repeat any time the mechanical setup ch
 ./kibot_launch.sh
 
 # Specific variant
-./kibot_launch.sh --variant CHECKED
+./kibot_launch.sh -v CHECKED
 ```
 
 | Variant | Outputs | ERC/DRC | Typical use |
@@ -335,7 +329,7 @@ while (1) {
 
 | Content | Description |
 | --- | --- |
-| Schematic sources | KiCad hierarchical schematic — 8 sheets |
+| Schematic sources | KiCad hierarchical schematic — 10 sheets |
 | PCB layout | KiCad PCB with all production layers |
 | Manufacturing | Gerbers, drill tables, BoM, pick-and-place files |
 | Validation | ERC/DRC reports, test-point tables |
@@ -362,11 +356,6 @@ while (1) {
     ├─ kibot_yaml         # KiBot YAML configuration files
     ├─ KiRI               # KiRI PCB diff viewer files
     │
-    ├─ lib                # KiCad footprint and symbol libraries
-    │  ├─ 3d_models       # Component 3D models
-    │  ├─ lib_fp          # Footprint libraries
-    │  └─ lib_sym         # Symbol libraries
-    │
     ├─ Logos              # Project logos and branding assets
     │
     ├─ Manufacturing
@@ -375,6 +364,7 @@ while (1) {
     │     ├─ Drill Tables
     │     └─ Gerbers
     │
+    ├─ Mechanical         # Enclosure / support CAD (STEP; SolidWorks & STL kept local)
     ├─ Report             # ERC / DRC reports and validation outputs
     ├─ Schematic          # Exported schematic PDFs
     ├─ Templates          # Drawing sheets and title block templates
@@ -387,15 +377,27 @@ while (1) {
 
 ## DEVELOPMENT WORKFLOW
 
-This project uses a reproducible hardware workflow based on **KiCad 9**, **KiBot**, and **GitHub Actions**.
+This project uses a reproducible hardware workflow based on **KiCad 10**, **KiBot**, and **GitHub Actions**.
 
-The CI pipeline generates outputs automatically on every push to `dev`. On semantic version tags (e.g. `v1.0.0`), it packages a full release artifact.
+The CI pipeline (`.github/workflows/ci.yaml`) runs KiBot on every push to `dev` or `main` and commits the generated outputs back ("Update Outputs" commits). **Always `git pull` after the CI has run, before editing the project again**, otherwise the regenerated files (`.kicad_pro`, BoM, netlist, README…) will conflict.
+
+> ℹ️ `README.md` is **generated** by KiBot from `kibot_resources/templates/readme.txt`. Edit the template, not `README.md`, or your changes will be overwritten by the next CI run.
 
 **Branch convention:**
-- `dev` — main development branch, all work branches off here
+- `dev` — development branch, all work branches off here
 - Feature branches: `feat/description`
 - Fix branches: `fix/description`
-- Releases are tagged on `main` after merging from `dev`
+- `main` — only receives merges from `dev`; releases are tagged here
+
+**Project metadata** (project name, board name, company, designer, logo, repository URL) is defined once in `kibot_yaml/kibot_main.yaml` (`definitions:` section) and propagated to title blocks, documents and this README.
+
+**Release a new hardware revision:**
+
+1. On `dev`, fill the `[Unreleased]` section of [CHANGELOG.md](CHANGELOG.md) (Added / Changed / Fixed / Removed).
+2. Merge `dev` into `main`: `git checkout main && git pull && git merge dev && git push`
+3. Tag with a plain semantic version (**no `v` prefix**, the CI only matches `X.Y.Z`): `git tag 1.0.0 && git push origin 1.0.0`
+4. The CI builds the `RELEASED` variant, publishes a GitHub Release with fabrication files, and moves `[Unreleased]` to the new version in `CHANGELOG.md`.
+5. Re-sync `dev`: `git checkout main && git pull && git checkout dev && git merge main`
 
 ***
 
@@ -423,7 +425,7 @@ Contributions are welcome — hardware corrections, documentation improvements, 
 
 ### Requirements
 
-- **KiCad 9** — not backwards-compatible with earlier versions
+- **KiCad 10** — not backwards-compatible with earlier versions
 - Respect existing layer naming, reference designator conventions, and title block format
 - All hardware contributions must pass ERC and DRC under the `CHECKED` variant
 
@@ -432,7 +434,7 @@ Contributions are welcome — hardware corrections, documentation improvements, 
 1. Fork the repository
 2. Create a branch off `dev`: `feat/your-description` or `fix/your-description`
 3. Make your changes
-4. Run `./kibot_launch.sh --variant CHECKED` — resolve all ERC/DRC violations
+4. Run `./kibot_launch.sh -v CHECKED` — resolve all ERC/DRC violations
 5. Open a Pull Request against `dev` with a clear description of the change and its rationale
 
 ### Reporting issues

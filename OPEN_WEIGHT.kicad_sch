@@ -5,6 +5,7 @@
 	(uuid "f9e05184-c88b-4a88-ae9c-ab2bdb32be7c")
 	(paper "A3")
 	(title_block
+		(title "OPEN_WEIGHT - AD7190")
 		(date "2025-01-12")
 		(rev "${REVISION}")
 		(company "${COMPANY}")
@@ -8102,7 +8103,7 @@
 			)
 		)
 		(instances
-			(project "Cellule_de_force_V2"
+			(project "OPEN_WEIGHT"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c"
 					(reference "#SYM1")
 					(unit 1)
@@ -8152,7 +8153,7 @@
 			)
 		)
 		(instances
-			(project "Cellule_de_force_V2"
+			(project "OPEN_WEIGHT"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c"
 					(page "9")
 				)
@@ -8201,7 +8202,7 @@
 			)
 		)
 		(instances
-			(project "Cellule_de_force_V2"
+			(project "OPEN_WEIGHT"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c"
 					(page "10")
 				)
@@ -8250,7 +8251,7 @@
 			)
 		)
 		(instances
-			(project "Cellule_de_force_V2"
+			(project "OPEN_WEIGHT"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c"
 					(page "2")
 				)
@@ -8299,7 +8300,7 @@
 			)
 		)
 		(instances
-			(project "Cellule_de_force_V2"
+			(project "OPEN_WEIGHT"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c"
 					(page "3")
 				)

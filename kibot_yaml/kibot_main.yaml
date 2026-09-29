@@ -560,11 +560,11 @@ definitions:
   PROJECT_NAME: OPEN_WEIGHT
   BOARD_NAME: AD7190
 
-  COMPANY: OPEN_TRUST_LAB
+  COMPANY: OPEN THRUST LAB
   DESIGNER: SIEBERT DIMITRY
 
   LOGO: 'Logos/LOGO.png'
-  GIT_URL: 'https://github.com/nguyen-v/KDT_Hierarchical_KiBot'
+  GIT_URL: 'https://github.com/foukouda/OPEN_WEIGHT'
 
   # Preflight ==================================================================
 

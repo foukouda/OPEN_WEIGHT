@@ -487,7 +487,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Cellule_de_force_V2.kicad_pro",
+    "filename": "OPEN_WEIGHT.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -531,7 +531,7 @@
       "svg": "",
       "vrml": ""
     },
-    "page_layout_descr_file": ""
+    "page_layout_descr_file": "Templates/KDT_Template_PCB_GIT_A4.kicad_wks"
   },
   "schematic": {
     "annotate_start_num": 0,
@@ -654,7 +654,7 @@
       "version": 1
     },
     "net_format_name": "",
-    "page_layout_descr_file": "",
+    "page_layout_descr_file": "Templates/KDT_Template_GIT.kicad_wks",
     "plot_directory": "",
     "reuse_designators": true,
     "space_save_all_events": true,
@@ -668,8 +668,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "Cellule_de_force_V2.kicad_sch",
-        "name": "Cellule_de_force_V2",
+        "filename": "OPEN_WEIGHT.kicad_sch",
+        "name": "OPEN_WEIGHT",
         "uuid": "f9e05184-c88b-4a88-ae9c-ab2bdb32be7c"
       }
     ],
@@ -679,7 +679,7 @@
   "sheets": [
     [
       "f9e05184-c88b-4a88-ae9c-ab2bdb32be7c",
-      "Cellule_de_force_V2"
+      "OPEN_WEIGHT"
     ],
     [
       "82da9dbf-ba38-4d08-ba35-a220fa2963b1",
@@ -691,11 +691,11 @@
     ],
     [
       "f06537ee-772d-44d3-8c50-e0ba41038c9c",
-      "AD7910_Weight_sensor"
+      "AD7190_Weight_Sensor"
     ],
     [
       "e744f3ce-03a6-44a6-8792-1447ef232b9a",
-      "LT3042_6V_5VA"
+      "LT3042_6V_to_5VA"
     ],
     [
       "d6110ee2-516c-48c1-b80a-d0f1701ed49f",
@@ -707,7 +707,7 @@
     ],
     [
       "ddd4b387-4aa4-48c3-b079-ffb0beb645d3",
-      "Connecteur"
+      "Connectors"
     ],
     [
       "5fb05893-0da3-4f58-a52b-cb6d6f4cb80b",
