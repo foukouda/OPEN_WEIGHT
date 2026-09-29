@@ -36,6 +36,8 @@ preflight:
       text: '%V'
 
     # Changelog
+    # Revision History sheet: column 1 shows [Unreleased]. After tagging X.Y.Z, uncomment the
+    # matching block below and put ${RELEASE_TITLE_X.Y.Z} / ${RELEASE_BODY_X.Y.Z} in the next column.
     # - variable: '@RELEASE_TITLE_VAR@1.0.0'
     #   command: '@GET_TITLE_CMD@ 1.0.0'
     # - variable: '@RELEASE_BODY_VAR@1.0.0'

@@ -1,0 +1,498 @@
+(footprint "OSC_CSTCR4M91G53-R0"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0.675 -2.335 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "20a1927d-39cf-4a9b-92a3-a8e362f028f8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "CSTCR4M91G53-R0"
+		(at 9.565 2.135 0)
+		(layer "F.Fab")
+		(uuid "7914da28-8261-4e79-a3d7-4aa971f88317")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b82ef844-7f09-4bac-9b0e-77d79efd4cea")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "801cea11-6a27-4786-8792-0f17663d7bda")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MF" "Murata Electronics"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ba0b2300-3349-474e-96e7-1a719513722e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MAXIMUM_PACKAGE_HEIGHT" "1.2mm"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7c0d7837-849f-40c5-b226-d8be1772241f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Package" "SMD-3 Murata"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3d33308b-42a8-41c9-822d-63c1ccaa7969")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Price" "None"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0acf13cb-4170-438d-b393-f5d21e1e0a78")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Check_prices" "https://www.snapeda.com/parts/CSTCR4M91G53-R0/Murata+Electronics+North+America/view-part/?ref=eda"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d8650b29-fa01-4bac-adda-08e4e6fc0aae")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "STANDARD" "Manufacturer Recomendations"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "629e36d5-2c89-4653-aac3-4dc4d0ebc6f2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "PARTREV" "JGC42-8797"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "547473cb-0f50-44c7-98b4-1281b32d0ad4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "SnapEDA_Link" "https://www.snapeda.com/parts/CSTCR4M91G53-R0/Murata+Electronics+North+America/view-part/?ref=snap"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1ea9973b-2432-4043-9d8c-b18d7d879bb8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MP" "CSTCR4M91G53-R0"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e6bf2845-abab-4e6d-8051-c6de88f0d4a1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=50325&manufacturer=Murata Electronics&part_name=CSTCR4M91G53-R0&search_term=cstcr4m91g53-r0"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0b081e35-741e-4c26-b7f6-a2007ce67641")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description_1" "4.91 MHz Ceramic Resonator Built in Capacitor 15 pF ±0.2% 60 Ohms -20°C ~ 80°C Surface Mount"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a632d2ff-193b-4e56-a861-09c29bc682a9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Availability" "In Stock"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "aea27702-366a-4479-abc9-5d589dc18369")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MANUFACTURER" "Murata"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6a4d46a8-d1fe-48df-832f-822dead934e9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(sheetname "/Project Architecture/AD7190_Weight_Sensor/")
+	(sheetfile "AD7190 - Weight Sensor.kicad_sch")
+	(attr smd allow_soldermask_bridges)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_poly
+		(pts
+			(xy -1 1.4) (xy -1 0.7) (xy -1.2 0.7) (xy -1.2 -0.7) (xy -1 -0.7) (xy -1 -1.4) (xy -2 -1.4) (xy -2 -0.7)
+			(xy -1.8 -0.7) (xy -1.8 0.7) (xy -2 0.7) (xy -2 1.4)
+		)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "4552c69c-d504-4d12-b469-2fcbe85806a8")
+	)
+	(fp_poly
+		(pts
+			(xy 0.5 1.4) (xy 0.5 0.7) (xy 0.3 0.7) (xy 0.3 -0.7) (xy 0.5 -0.7) (xy 0.5 -1.4) (xy -0.5 -1.4) (xy -0.5 -0.7)
+			(xy -0.3 -0.7) (xy -0.3 0.7) (xy -0.5 0.7) (xy -0.5 1.4)
+		)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "7cb447f5-79fa-43ac-94d9-0a9d97b7c71c")
+	)
+	(fp_poly
+		(pts
+			(xy 2 1.4) (xy 2 0.7) (xy 1.8 0.7) (xy 1.8 -0.7) (xy 2 -0.7) (xy 2 -1.4) (xy 1 -1.4) (xy 1 -0.7)
+			(xy 1.2 -0.7) (xy 1.2 0.7) (xy 1 0.7) (xy 1 1.4)
+		)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "b5772787-c478-4ce7-b2a1-7dad5c9158a5")
+	)
+	(fp_line
+		(start -2.25 1)
+		(end -2.25 -1)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3c183194-bc13-4147-8cf5-26853bd61b2f")
+	)
+	(fp_line
+		(start 2.25 1)
+		(end 2.25 -1)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1d2ccc10-3ea3-469f-8c34-962136261600")
+	)
+	(fp_circle
+		(center -3.18 0.1)
+		(end -3.08 0.1)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "755d8e30-169f-4dab-ab63-15e23afdeab2")
+	)
+	(fp_poly
+		(pts
+			(xy -1.1 1.3) (xy -1.1 0.8) (xy -1.3 0.8) (xy -1.3 -0.8) (xy -1.1 -0.8) (xy -1.1 -1.3) (xy -1.9 -1.3)
+			(xy -1.9 -0.8) (xy -1.7 -0.8) (xy -1.7 0.8) (xy -1.9 0.8) (xy -1.9 1.3)
+		)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Paste")
+		(uuid "6cd142c3-9129-4450-809a-7af609821a8e")
+	)
+	(fp_poly
+		(pts
+			(xy 0.4 1.3) (xy 0.4 0.8) (xy 0.2 0.8) (xy 0.2 -0.8) (xy 0.4 -0.8) (xy 0.4 -1.3) (xy -0.4 -1.3) (xy -0.4 -0.8)
+			(xy -0.2 -0.8) (xy -0.2 0.8) (xy -0.4 0.8) (xy -0.4 1.3)
+		)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Paste")
+		(uuid "dc1b13ce-2220-4007-99d1-d594da4b0705")
+	)
+	(fp_poly
+		(pts
+			(xy 1.9 1.3) (xy 1.9 0.8) (xy 1.7 0.8) (xy 1.7 -0.8) (xy 1.9 -0.8) (xy 1.9 -1.3) (xy 1.1 -1.3) (xy 1.1 -0.8)
+			(xy 1.3 -0.8) (xy 1.3 0.8) (xy 1.1 0.8) (xy 1.1 1.3)
+		)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Paste")
+		(uuid "fec19dc8-6af0-4c40-9bb1-00c57e3f9833")
+	)
+	(fp_line
+		(start -2.5 -1.55)
+		(end 2.5 -1.55)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "9495b576-8839-433b-bdc3-604b1b2f445a")
+	)
+	(fp_line
+		(start -2.5 1.55)
+		(end -2.5 -1.55)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "3263d89b-71b3-4d7d-bcc8-02206ff6bd2c")
+	)
+	(fp_line
+		(start 2.5 -1.55)
+		(end 2.5 1.55)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a5dafe29-b40e-4417-95a1-5f1b383b0d99")
+	)
+	(fp_line
+		(start 2.5 1.55)
+		(end -2.5 1.55)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "181f7189-5f9f-440e-80d1-eb55bd0b651f")
+	)
+	(fp_line
+		(start -2.25 -1)
+		(end 2.25 -1)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "68ef80e9-ff95-4247-8450-ff6d056e2558")
+	)
+	(fp_line
+		(start -2.25 1)
+		(end -2.25 -1)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "51c9a4f7-8757-47fb-9505-8a7c09abf3a6")
+	)
+	(fp_line
+		(start 2.25 1)
+		(end -2.25 1)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c2e9cb74-cc30-45e4-95e0-54c6b0230ac2")
+	)
+	(fp_line
+		(start 2.25 1)
+		(end 2.25 -1)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "5ca45506-936c-4496-bb48-cc3fec4731a7")
+	)
+	(fp_circle
+		(center -3.18 0.1)
+		(end -3.08 0.1)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "3bf98a77-9e8e-4c2a-ab8f-de06eae20758")
+	)
+	(pad "1" smd custom
+		(at -1.5 0)
+		(size 0.1 0.1)
+		(layers "F.Cu")
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy 0.4 1.3) (xy 0.4 0.8) (xy 0.2 0.8) (xy 0.2 -0.8) (xy 0.4 -0.8) (xy 0.4 -1.3) (xy -0.4 -1.3)
+					(xy -0.4 -0.8) (xy -0.2 -0.8) (xy -0.2 0.8) (xy -0.4 0.8) (xy -0.4 1.3)
+				)
+				(width 0.01)
+				(fill yes)
+			)
+		)
+		(uuid "9c7c5a82-b4a0-43ff-bcf4-c61d2c1bf7c4")
+	)
+	(pad "2" smd custom
+		(at 0 0)
+		(size 0.1 0.1)
+		(layers "F.Cu")
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy 0.4 1.3) (xy 0.4 0.8) (xy 0.2 0.8) (xy 0.2 -0.8) (xy 0.4 -0.8) (xy 0.4 -1.3) (xy -0.4 -1.3)
+					(xy -0.4 -0.8) (xy -0.2 -0.8) (xy -0.2 0.8) (xy -0.4 0.8) (xy -0.4 1.3)
+				)
+				(width 0.01)
+				(fill yes)
+			)
+		)
+		(uuid "d64890b9-7e91-45e6-bee0-4fe09125abe3")
+	)
+	(pad "3" smd custom
+		(at 1.5 0)
+		(size 0.1 0.1)
+		(layers "F.Cu")
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy 0.4 1.3) (xy 0.4 0.8) (xy 0.2 0.8) (xy 0.2 -0.8) (xy 0.4 -0.8) (xy 0.4 -1.3) (xy -0.4 -1.3)
+					(xy -0.4 -0.8) (xy -0.2 -0.8) (xy -0.2 0.8) (xy -0.4 0.8) (xy -0.4 1.3)
+				)
+				(width 0.01)
+				(fill yes)
+			)
+		)
+		(uuid "10cdd735-e061-4f1b-b162-0c3c2fc62345")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/lib/3d_models/CSTCR4M91G53-R0.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)

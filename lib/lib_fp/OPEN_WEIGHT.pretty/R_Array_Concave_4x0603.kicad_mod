@@ -1,0 +1,233 @@
+(footprint "R_Array_Concave_4x0603"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Thick Film Chip Resistor Array, Wave soldering, Vishay CRA06P (see cra06p.pdf)")
+	(tags "resistor array")
+	(property "Reference" "REF**"
+		(at 0 -2.6 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "24a31f15-810a-4b73-a620-4148578376a8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "RP_100Ω"
+		(at 0 2.6 180)
+		(layer "F.Fab")
+		(uuid "336ad6d7-c07b-4292-9bf1-a135bcba66fb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "~"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "55277d54-1caa-4eef-9747-11e292e50f7c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "4 resistor network, parallel topology"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9881d9a5-406b-4212-a8d0-66af982ee98b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property ki_fp_filters "DIP* SOIC* R*Array*Concave* R*Array*Convex* MSOP*")
+	(sheetname "/Project Architecture/AD7190_Weight_Sensor/")
+	(sheetfile "AD7190 - Weight Sensor.kicad_sch")
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start 0.4 -1.72)
+		(end -0.4 -1.72)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c764756e-5ed9-424c-b0ce-a5dd999d6991")
+	)
+	(fp_line
+		(start 0.4 1.72)
+		(end -0.4 1.72)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "74b51e36-4e21-4f33-bb2d-d4d005b4237a")
+	)
+	(fp_line
+		(start -1.55 -1.88)
+		(end -1.55 1.87)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "8e632a46-9ab8-45bf-a834-eee00c854ef2")
+	)
+	(fp_line
+		(start -1.55 -1.88)
+		(end 1.55 -1.88)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "c2e226eb-23a4-41c1-899d-333f7d51064d")
+	)
+	(fp_line
+		(start 1.55 1.87)
+		(end -1.55 1.87)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "82f0de65-d2d3-4e54-a30a-284ebb3349eb")
+	)
+	(fp_line
+		(start 1.55 1.87)
+		(end 1.55 -1.88)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f06a28e6-0504-422d-822f-703163c4e586")
+	)
+	(fp_line
+		(start -0.8 -1.6)
+		(end 0.8 -1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b7911f99-548c-4a2d-984f-2d1bfcc2d800")
+	)
+	(fp_line
+		(start -0.8 1.6)
+		(end -0.8 -1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9a337c17-c91d-4de4-b9de-4a7d33ff2df3")
+	)
+	(fp_line
+		(start 0.8 -1.6)
+		(end 0.8 1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "81f95954-699f-49cf-9ff5-b1196c35cd90")
+	)
+	(fp_line
+		(start 0.8 1.6)
+		(end -0.8 1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2cf7cd70-e2ce-49af-ac87-e199696a59cb")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 90)
+		(layer "F.Fab")
+		(uuid "bafcc8d9-504c-4e42-9207-a0e6726cd08f")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.075)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.85 -1.2)
+		(size 0.9 0.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "dc8ade39-7af6-4163-8cab-6abed02b03bb")
+	)
+	(pad "2" smd rect
+		(at -0.85 -0.4)
+		(size 0.9 0.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "a9502971-b558-45b9-916d-cef4a04177c6")
+	)
+	(pad "3" smd rect
+		(at -0.85 0.4)
+		(size 0.9 0.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "3ac5ce6f-1ed3-4672-8191-e5c543614808")
+	)
+	(pad "4" smd rect
+		(at -0.85 1.2)
+		(size 0.9 0.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "54087673-d381-44ab-bca3-7125de643e89")
+	)
+	(pad "5" smd rect
+		(at 0.85 1.2)
+		(size 0.9 0.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "a0960ad1-7e0f-42fc-a28a-1cd76c5515f6")
+	)
+	(pad "6" smd rect
+		(at 0.85 0.4)
+		(size 0.9 0.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "4c2fa761-9956-495e-b220-1d9b39943633")
+	)
+	(pad "7" smd rect
+		(at 0.85 -0.4)
+		(size 0.9 0.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "38ac1253-26da-4a4e-9e17-4ba7ff9f9430")
+	)
+	(pad "8" smd rect
+		(at 0.85 -1.2)
+		(size 0.9 0.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "75370fee-f19d-431a-816d-67b71ad39568")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/lib/3d_models/R_Array_Concave_4x0603.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

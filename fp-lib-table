@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "OPEN_WEIGHT")(type "KiCad")(uri "${KIPRJMOD}/lib/lib_fp/OPEN_WEIGHT.pretty")(options "")(descr "OPEN_WEIGHT project footprints (3D models in lib/3d_models)"))
+)

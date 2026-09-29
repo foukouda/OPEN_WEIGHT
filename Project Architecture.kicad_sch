@@ -349,7 +349,7 @@
 		)
 		(uuid "11ef73c0-4959-40e8-98fb-4e8f1f31a498")
 	)
-	(wire
+	(polyline
 		(pts
 			(xy 185.42 161.29) (xy 166.37 161.29)
 		)
@@ -359,7 +359,7 @@
 		)
 		(uuid "1ac6a449-9b78-4137-972f-6d459cb5e1cc")
 	)
-	(wire
+	(polyline
 		(pts
 			(xy 166.37 132.08) (xy 166.37 161.29)
 		)
@@ -429,7 +429,7 @@
 		)
 		(uuid "c1d057ac-a252-4ab6-872b-14ee4b112d5f")
 	)
-	(wire
+	(polyline
 		(pts
 			(xy 222.25 161.29) (xy 265.43 161.29)
 		)
@@ -439,7 +439,7 @@
 		)
 		(uuid "c7757be5-73f2-4ffb-9b37-5a18edad625f")
 	)
-	(wire
+	(polyline
 		(pts
 			(xy 265.43 132.08) (xy 265.43 161.29)
 		)

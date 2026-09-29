@@ -1,126 +1,109 @@
 (version 1)
-#PCBWay Custom DRC for Kicad 8
+# JLCPCB custom DRC rules for KiCad 10
+# Target: JLCPCB standard 4-layer, 1 oz outer / 0.5 oz inner, FR-4 1.6 mm (JLC04161H-7628)
+# Source: https://jlcpcb.com/capabilities/pcb-capabilities
+# Values are JLCPCB minimums (no extra cost); keep margin where the layout allows it.
 
-# 6 layers, 2 oz outer and 1 oz inner. Optimized for lowest cost.
+# ----------------------------------- Track width and spacing -----------------------------------
 
-# ----------------------------------- Minimum trace width and spacing --------------------
+(rule "JLC outer layer track width / clearance"
+	(layer outer)
+	(condition "A.Type == 'track'")
+	(constraint track_width (min 0.1mm))
+	(constraint clearance (min 0.1mm)))
 
-# 2oz copper
-(rule "Minimum Trace Width and Spacing (outer layer)"
-(constraint track_width (min 0.2mm))
-(constraint clearance (min 0.2mm))
-(layer outer)
-(condition "A.Type == 'track'"))
+(rule "JLC inner layer track width / clearance"
+	(layer inner)
+	(condition "A.Type == 'track'")
+	(constraint track_width (min 0.09mm))
+	(constraint clearance (min 0.09mm)))
 
-(rule "Minimum Trace Width and Spacing (innner layer)"
-(constraint track_width (min 0.2mm))
-(constraint clearance (min 0.2mm))
-(layer inner)
-(condition "A.Type == 'track'"))
+# ----------------------------------- Holes -----------------------------------------------------
 
-# ------------------------------------------------------------------------------------------------------
+(rule "JLC drill range"
+	(constraint hole_size (min 0.15mm) (max 6.3mm)))
 
-# Drill/hole size - listed here to maintain order of rule application. Must not override rule set in Via hole/diameter size below.
-(rule "drill hole size (mechanical)"
-(constraint hole_size (min 0.15mm) (max 6.3mm)))
+(rule "JLC via size"
+	(condition "A.Type == 'Via'")
+	(constraint hole_size (min 0.15mm))
+	(constraint via_diameter (min 0.25mm))
+	(constraint annular_width (min 0.05mm)))
 
-# ----------------------------------- Via hole/diameter size -------------------------------------------
+(rule "JLC plated pad hole"
+	(condition "A.Type == 'Pad' && A.isPlated()")
+	(constraint hole_size (min 0.15mm))
+	(constraint annular_width (min 0.05mm)))
 
-(rule "Minimum Via Diameter and Hole Size"
-(constraint hole_size (min 0.25mm))
-(constraint via_diameter (min 0.55mm))
-(condition "A.Type == 'via'"))
+(rule "JLC NPTH min hole"
+	(condition "A.Type == 'Pad' && !A.isPlated()")
+	(constraint hole_size (min 0.5mm)))
 
+(rule "JLC plated slot min width"
+	(condition "A.isPlated() && A.Hole_Size_X != A.Hole_Size_Y")
+	(constraint hole_size (min 0.5mm)))
 
-# ----------------------------------- Drill/hole size --------------------------------------------------
+(rule "JLC non-plated slot min width"
+	(condition "!A.isPlated() && A.Hole_Size_X != A.Hole_Size_Y")
+	(constraint hole_size (min 1.0mm)))
 
-(rule "PTH Hole Size"
-(constraint hole_size (min 0.25mm) (max 6.35mm))
-(condition "A.Type != 'Via' && A.isPlated()"))
+# ----------------------------------- Clearances ------------------------------------------------
 
-(rule "Minimum Non-plated Hole Size"
-(constraint hole_size (min 0.5mm))
-(condition "A.Type == 'pad' && !A.isPlated()"))
+(rule "JLC hole to hole (different nets)"
+	(condition "A.Net != B.Net")
+	(constraint hole_to_hole (min 0.5mm)))
 
-(rule "Pad Size"
-(constraint hole_size (min 0.25mm))
-(constraint annular_width (min 0.15mm))
-(condition "A.Type == 'Pad' && A.isPlated()"))
+(rule "JLC hole to hole (same net)"
+	(condition "A.Net == B.Net")
+	(constraint hole_to_hole (min 0.25mm)))
 
-(rule "Minimum Castellated Hole Size"
-(constraint hole_size (min 0.6mm))
-(condition "A.Type == 'pad' && A.Fabrication_Property == 'Castellated pad'"))
+(rule "JLC via hole to track"
+	(condition "A.Type == 'Via' && B.Type == 'track'")
+	(constraint hole_clearance (min 0.2mm)))
 
-(rule "Min. Plated Slot Width"
-(constraint hole_size (min 0.5mm))
-(condition "(A.Hole_Size_X != A.Hole_Size_Y) && A.isPlated()"))
+(rule "JLC PTH hole to track"
+	(condition "A.isPlated() && A.Type != 'Via' && B.Type == 'track'")
+	(constraint hole_clearance (min 0.2mm)))
 
-(rule "Min. Non-Plated Slot Width"
-(constraint hole_size (min 0.8mm))
-(condition "(A.Hole_Size_X != A.Hole_Size_Y) && !A.isPlated()"))
+(rule "JLC NPTH hole to copper"
+	(condition "A.Pad_Type == 'NPTH, mechanical'")
+	(constraint hole_clearance (min 0.2mm)))
 
+(rule "JLC SMD pad to pad (different nets)"
+	(condition "A.Type == 'Pad' && B.Type == 'Pad' && A.Net != B.Net")
+	(constraint clearance (min 0.127mm)))
 
-# ----------------------------------- Minimum clearance ------------------------------------------------
+(rule "JLC copper to board edge"
+	(constraint edge_clearance (min 0.2mm)))
 
-(rule "hole to hole clearance (different nets)"
-(constraint hole_to_hole (min 0.5mm))
-(condition "A.Net != B.Net"))
+# Mounting holes H1-H4 use a GND pad that intentionally reaches the board edge
+# (chassis/ground contact through the M3 screw). JLC clips copper at the outline.
+(rule "Mounting hole pads may touch the board edge"
+	(condition "A.memberOfFootprint('H1') || A.memberOfFootprint('H2') || A.memberOfFootprint('H3') || A.memberOfFootprint('H4')")
+	(constraint edge_clearance (min 0mm)))
 
-(rule "via to track clearance"
-(constraint hole_clearance (min 0.254mm))
-(condition "A.Type == 'via' && B.Type == 'track'"))
+# ----------------------------------- Silkscreen ------------------------------------------------
 
-(rule "via to via clearance (same nets)"
-(constraint hole_to_hole (min 0.254mm))
-(condition "A.Type == 'via' && B.Type == A.Type && A.Net == B.Net"))
+(rule "JLC minimum silkscreen text"
+	(layer "?.Silkscreen")
+	(constraint text_thickness (min 0.15mm))
+	(constraint text_height (min 1.0mm)))
 
-(rule "pad to pad clearance (with hole, different nets)"
-(constraint hole_to_hole (min 0.5mm))
-(condition "A.Type == 'pad' && B.Type == A.Type && A.Net != B.Net"))
+(rule "JLC pad to silkscreen"
+	(layer outer)
+	(condition "A.Type == 'Pad' && (B.Type == 'Text' || B.Type == 'Graphic')")
+	(constraint silk_clearance (min 0.15mm)))
 
-(rule "pad to pad clearance (without hole, different nets)"
-(constraint clearance (min 0.2mm))
-(condition "A.Type == 'Pad' && B.Type == 'Pad'"))
+# ----------------------------------- Courtyard exceptions --------------------------------------
 
-(rule "NPTH to Track clearance"
-(constraint hole_clearance (min 0.254mm))
-(condition "A.Pad_Type == 'NPTH, mechanical' && B.Type == 'track'"))
+(rule "Test points may overlap other courtyards"
+	(condition "A.Reference == 'TP*'")
+	(constraint courtyard_clearance (min -1mm)))
 
-(rule "NPTH with copper around"
-(constraint hole_clearance (min 0.20mm))
-(condition "A.Pad_Type == 'NPTH, mechanical' && B.Type != 'track'"))
+(rule "Fiducials may overlap other courtyards"
+	(condition "A.Reference == 'FID*'")
+	(constraint courtyard_clearance (min -1mm)))
 
-(rule "PTH to Track clearance"
-(constraint hole_clearance (min 0.33mm))
-(condition "A.isPlated() && A.Type != 'Via' && B.Type == 'track'"))
-
-(rule "Pad to Track clearance"
-(constraint clearance (min 0.2mm))
-(condition "A.isPlated() && A.Type != 'Via' && B.Type == 'track'"))
-
-# ----------------------------------- Board Outlines (PICK ONE) -------------------------------------
-#Default Routed Edge Clearance
-(rule "Trace to Outline"
-(constraint edge_clearance (min 0.3mm))
-(condition "A.Type == 'track'"))
-
-# ----------------------------------- Silkscreen ----------------------------------------------------
-(rule "Minimum Text"
-(constraint text_thickness (min 0.15mm))
-(constraint text_height (min 0.8mm))
-(layer "?.Silkscreen"))
-
-(rule "Pad to Silkscreen"
-(constraint silk_clearance (min 0.15mm))
-(layer outer)
-(condition "A.Type == 'pad' && (B.Type == 'text' || B.Type == 'graphic')"))
-
-# ----------------------------------- Test Points Courtyard -----------------------------------------
-(rule "Test Point Courtyard Exclusion"
-(constraint courtyard_clearance (min -1mm))
-(condition "A.Reference =='TP*'"))
-
-# ----------------------------------- Fiducials Courtyard -------------------------------------------
-(rule "Test Point Courtyard Exclusion"
-(constraint courtyard_clearance (min -1mm))
-(condition "A.Reference =='FM*'"))
+# H5 is the Wurth WE-SHC shielding frame: it is designed to sit over the AD7190 front-end.
+(rule "Shielding frame covers the analog front-end"
+	(condition "A.Reference == 'H5' || B.Reference == 'H5'")
+	(constraint courtyard_clearance (min -30mm)))

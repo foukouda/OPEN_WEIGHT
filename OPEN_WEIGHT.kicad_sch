@@ -11,7 +11,7 @@
 		(company "${COMPANY}")
 	)
 	(lib_symbols
-		(symbol "Graphic:Logo_Open_Hardware_Large"
+		(symbol "OPEN_WEIGHT:Logo_Open_Hardware_Large"
 			(exclude_from_sim no)
 			(in_bom no)
 			(on_board no)
@@ -8025,7 +8025,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Graphic:Logo_Open_Hardware_Large")
+		(lib_id "OPEN_WEIGHT:Logo_Open_Hardware_Large")
 		(at 273.05 267.97 0)
 		(unit 1)
 		(body_style 1)

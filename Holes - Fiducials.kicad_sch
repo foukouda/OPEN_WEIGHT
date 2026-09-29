@@ -11,7 +11,7 @@
 		(company "${COMPANY}")
 	)
 	(lib_symbols
-		(symbol "Mechanical:Fiducial"
+		(symbol "OPEN_WEIGHT:Fiducial"
 			(exclude_from_sim no)
 			(in_bom no)
 			(on_board yes)
@@ -107,7 +107,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Mechanical:MountingHole_Pad"
+		(symbol "OPEN_WEIGHT:MountingHole_Pad"
 			(pin_numbers
 				(hide yes)
 			)
@@ -6733,14 +6733,14 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:Fiducial")
+		(lib_id "OPEN_WEIGHT:Fiducial")
 		(at 223.52 139.7 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
+		(on_board no)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0a3a16e3-4334-49f9-a05b-b5231312a789")
@@ -6809,7 +6809,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
+		(lib_id "OPEN_WEIGHT:MountingHole_Pad")
 		(at 185.42 139.7 0)
 		(unit 1)
 		(body_style 1)
@@ -6842,7 +6842,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+		(property "Footprint" "OPEN_WEIGHT:MountingHole_3.2mm_M3_Pad_Via"
 			(at 185.42 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -6966,7 +6966,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
+		(lib_id "OPEN_WEIGHT:MountingHole_Pad")
 		(at 170.18 139.7 0)
 		(unit 1)
 		(body_style 1)
@@ -6999,7 +6999,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+		(property "Footprint" "OPEN_WEIGHT:MountingHole_3.2mm_M3_Pad_Via"
 			(at 170.18 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -7045,14 +7045,14 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:Fiducial")
+		(lib_id "OPEN_WEIGHT:Fiducial")
 		(at 223.52 144.78 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
+		(on_board no)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "430791c2-b449-4fd1-bbb3-b745456fe603")
@@ -7121,7 +7121,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
+		(lib_id "OPEN_WEIGHT:MountingHole_Pad")
 		(at 175.26 139.7 0)
 		(unit 1)
 		(body_style 1)
@@ -7154,7 +7154,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+		(property "Footprint" "OPEN_WEIGHT:MountingHole_3.2mm_M3_Pad_Via"
 			(at 175.26 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -7200,14 +7200,14 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:Fiducial")
+		(lib_id "OPEN_WEIGHT:Fiducial")
 		(at 260.35 134.62 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
+		(on_board no)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "79d7d9e6-9865-4f00-b539-3637e6a4df12")
@@ -7276,14 +7276,14 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:Fiducial")
+		(lib_id "OPEN_WEIGHT:Fiducial")
 		(at 260.35 144.78 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
+		(on_board no)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "87ed9a7c-0d37-412a-823a-e1104d16a842")
@@ -7352,7 +7352,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
+		(lib_id "OPEN_WEIGHT:MountingHole_Pad")
 		(at 180.34 139.7 0)
 		(unit 1)
 		(body_style 1)
@@ -7385,7 +7385,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+		(property "Footprint" "OPEN_WEIGHT:MountingHole_3.2mm_M3_Pad_Via"
 			(at 180.34 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -7431,14 +7431,14 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:Fiducial")
+		(lib_id "OPEN_WEIGHT:Fiducial")
 		(at 260.35 139.7 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
+		(on_board no)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ba42e48a-b9fd-412a-a4dc-8c75479a3ef7")
@@ -7507,14 +7507,14 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:Fiducial")
+		(lib_id "OPEN_WEIGHT:Fiducial")
 		(at 223.52 134.62 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
+		(on_board no)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e425a324-9b39-448d-8620-80542b639241")

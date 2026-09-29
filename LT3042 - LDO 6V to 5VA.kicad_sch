@@ -11,7 +11,7 @@
 		(company "${COMPANY}")
 	)
 	(lib_symbols
-		(symbol "Connector:TestPoint"
+		(symbol "OPEN_WEIGHT:TestPoint"
 			(pin_numbers
 				(hide yes)
 			)
@@ -134,7 +134,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C"
+		(symbol "OPEN_WEIGHT:C"
 			(pin_numbers
 				(hide yes)
 			)
@@ -289,7 +289,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:LED"
+		(symbol "OPEN_WEIGHT:LED"
 			(pin_numbers
 				(hide yes)
 			)
@@ -490,7 +490,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R"
+		(symbol "OPEN_WEIGHT:R"
 			(pin_numbers
 				(hide yes)
 			)
@@ -630,7 +630,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:LT3042xMSE"
+		(symbol "OPEN_WEIGHT:LT3042xMSE"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -656,7 +656,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Package_SO:MSOP-10-1EP_3x3mm_P0.5mm_EP2.2x3.1mm_Mask1.83x1.89mm_ThermalVias"
+			(property "Footprint" "OPEN_WEIGHT:MSOP-10-1EP_3x3mm_P0.5mm_EP2.2x3.1mm_Mask1.83x1.89mm_ThermalVias"
 				(at 0 8.255 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -927,7 +927,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "TAJA225K016RNJ:TAJA225K016RNJ"
+		(symbol "OPEN_WEIGHT:TAJA225K016RNJ"
 			(pin_names
 				(hide yes)
 			)
@@ -958,7 +958,7 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "CAPPM3216X180N"
+			(property "Footprint" "OPEN_WEIGHT:CAPPM3216X180N"
 				(at 8.89 -96.19 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -10225,7 +10225,7 @@
 		(uuid "e1ef917c-ceab-4854-8bf2-87905016ab34")
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "OPEN_WEIGHT:TestPoint")
 		(at 340.36 129.54 270)
 		(unit 1)
 		(body_style 1)
@@ -10260,7 +10260,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "OPEN_WEIGHT:TestPoint_Pad_D1.5mm"
 			(at 340.36 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -10306,7 +10306,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Linear:LT3042xMSE")
+		(lib_id "OPEN_WEIGHT:LT3042xMSE")
 		(at 226.06 118.11 0)
 		(unit 1)
 		(body_style 1)
@@ -10337,7 +10337,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:MSOP-10-1EP_3x3mm_P0.5mm_EP2.2x3.1mm_Mask1.83x1.89mm_ThermalVias"
+		(property "Footprint" "OPEN_WEIGHT:MSOP-10-1EP_3x3mm_P0.5mm_EP2.2x3.1mm_Mask1.83x1.89mm_ThermalVias"
 			(at 226.06 109.855 0)
 			(hide yes)
 			(show_name no)
@@ -10413,14 +10413,14 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "OPEN_WEIGHT:TestPoint")
 		(at 340.36 123.19 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0d99bfcd-89b6-4139-a8af-a4f8c7e0a16c")
@@ -10448,7 +10448,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "OPEN_WEIGHT:TestPoint_Pad_D1.5mm"
 			(at 340.36 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -10494,7 +10494,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "OPEN_WEIGHT:R")
 		(at 247.65 119.38 180)
 		(unit 1)
 		(body_style 1)
@@ -10524,7 +10524,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "OPEN_WEIGHT:R_0603_1608Metric"
 			(at 249.428 119.38 90)
 			(hide yes)
 			(show_name no)
@@ -10729,7 +10729,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "OPEN_WEIGHT:TestPoint")
 		(at 340.36 148.59 270)
 		(unit 1)
 		(body_style 1)
@@ -10764,7 +10764,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "OPEN_WEIGHT:TestPoint_Pad_D1.5mm"
 			(at 340.36 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -10810,7 +10810,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "OPEN_WEIGHT:R")
 		(at 240.03 132.08 180)
 		(unit 1)
 		(body_style 1)
@@ -10840,7 +10840,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "OPEN_WEIGHT:R_0603_1608Metric"
 			(at 241.808 132.08 90)
 			(hide yes)
 			(show_name no)
@@ -10889,7 +10889,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "OPEN_WEIGHT:R")
 		(at 267.97 121.92 180)
 		(unit 1)
 		(body_style 1)
@@ -10919,7 +10919,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "OPEN_WEIGHT:R_0603_1608Metric"
 			(at 269.748 121.92 90)
 			(hide yes)
 			(show_name no)
@@ -10968,7 +10968,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "OPEN_WEIGHT:TestPoint")
 		(at 340.36 135.89 270)
 		(unit 1)
 		(body_style 1)
@@ -11003,7 +11003,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "OPEN_WEIGHT:TestPoint_Pad_D1.5mm"
 			(at 340.36 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -11049,7 +11049,7 @@
 		)
 	)
 	(symbol
-		(lib_id "TAJA225K016RNJ:TAJA225K016RNJ")
+		(lib_id "OPEN_WEIGHT:TAJA225K016RNJ")
 		(at 203.2 125.73 270)
 		(unit 1)
 		(body_style 1)
@@ -11081,7 +11081,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CAPPM3216X180N"
+		(property "Footprint" "OPEN_WEIGHT:CAPPM3216X180N"
 			(at 107.01 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -11216,7 +11216,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "OPEN_WEIGHT:TestPoint")
 		(at 340.36 142.24 270)
 		(unit 1)
 		(body_style 1)
@@ -11251,7 +11251,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "OPEN_WEIGHT:TestPoint_Pad_D1.5mm"
 			(at 340.36 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -11297,7 +11297,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "OPEN_WEIGHT:C")
 		(at 261.62 127 0)
 		(unit 1)
 		(body_style 1)
@@ -11329,7 +11329,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "OPEN_WEIGHT:C_0603_1608Metric"
 			(at 262.5852 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -11456,7 +11456,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
+		(lib_id "OPEN_WEIGHT:LED")
 		(at 267.97 132.08 90)
 		(unit 1)
 		(body_style 1)
@@ -11486,7 +11486,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "OPEN_WEIGHT:LED_0603_1608Metric"
 			(at 267.97 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -11702,7 +11702,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "OPEN_WEIGHT:R")
 		(at 212.09 132.08 180)
 		(unit 1)
 		(body_style 1)
@@ -11732,7 +11732,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "OPEN_WEIGHT:R_0603_1608Metric"
 			(at 213.868 132.08 90)
 			(hide yes)
 			(show_name no)
@@ -11859,7 +11859,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "OPEN_WEIGHT:C")
 		(at 255.27 127 0)
 		(unit 1)
 		(body_style 1)
@@ -11891,7 +11891,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "OPEN_WEIGHT:C_0603_1608Metric"
 			(at 256.2352 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -11940,7 +11940,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "OPEN_WEIGHT:C")
 		(at 190.5 127 0)
 		(unit 1)
 		(body_style 1)
@@ -11972,7 +11972,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "OPEN_WEIGHT:C_0603_1608Metric"
 			(at 191.4652 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -12021,7 +12021,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "OPEN_WEIGHT:R")
 		(at 247.65 127 180)
 		(unit 1)
 		(body_style 1)
@@ -12051,7 +12051,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "OPEN_WEIGHT:R_0603_1608Metric"
 			(at 249.428 127 90)
 			(hide yes)
 			(show_name no)

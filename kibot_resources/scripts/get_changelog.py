@@ -4,14 +4,15 @@ import sys
 
 def parse_changelog(file_path, version, title_only, extra_spaces, separators):
     try:
-        with open(file_path, 'r') as f:
+        with open(file_path, 'r', encoding='utf-8') as f:
             changelog = f.read()
     except FileNotFoundError:
         print(f"Error: File '{file_path}' not found.")
         sys.exit(1)
 
     # Regex to match the version block and stop at the next version or any line with square brackets
-    version_pattern = re.compile(rf"## \[{version}\] - (\d{{4}}-\d{{2}}-\d{{2}})\n(.*?)(?=## \[|\[Unreleased\]:|\[\d+\.\d+\.\d+\]:|$)", re.DOTALL)
+    # The date is optional so that "## [Unreleased]" (Keep a Changelog) also matches.
+    version_pattern = re.compile(rf"## \[{re.escape(version)}\](?: - (\d{{4}}-\d{{2}}-\d{{2}}))?\n(.*?)(?=## \[|\[Unreleased\]:|\[\d+\.\d+\.\d+\]:|$)", re.DOTALL)
     match = version_pattern.search(changelog)
 
     if not match:
@@ -21,7 +22,7 @@ def parse_changelog(file_path, version, title_only, extra_spaces, separators):
     date, content = match.groups()
 
     if title_only:
-        print(f"Version {version} - {date}")
+        print(f"Version {version} - {date}" if date else f"Version {version}")
     else:
 
         if separators is not None:

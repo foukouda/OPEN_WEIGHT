@@ -1,0 +1,368 @@
+(footprint "7447785004"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "7447785004-5")
+	(tags "Inductor")
+	(property "Reference" "REF**"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "f389084b-c8b0-480e-999f-72c138d7099a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "7447785004"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "1236746b-572b-4896-abcd-f4c98fc268c1")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.we-online.com/catalog/datasheet/7447785004.pdf"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d3f2060e-0846-4636-b4a7-2dccf1618577")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "WE-PD Robust SMT Shielded Power Inductor Size 6033; L = 4.7 H ; IR = 2.65 A; Isat = 2.5 A; RDC = 78 m"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ded7396a-50dc-4d08-bf35-4784361d14f1")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Height" "3.3"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "adb1d46b-df46-4b21-9fd7-ecb7d5442403")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Name" "Wurth Elektronik"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6d6eb603-2ac7-4b4f-8eb0-3e303cd47bc0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Part_Number" "7447785004"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7992b849-b297-4058-ab55-04fde5a168f0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Part Number" "710-7447785004"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4dbff6d0-8c31-47c6-a046-cd18f9172136")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/7447785004?qs=XJfXErqHgA64RDczb2mVzg%3D%3D"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "55ea4d36-ccaf-4c95-ab57-a3dd43f5ea0d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Arrow Part Number" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "aab431d2-e033-492e-9a82-6622545bb9eb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Arrow Price/Stock" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "553b38d0-ecab-43a1-ac72-cbe50ec34626")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(sheetname "/Project Architecture/TPS61086_3.3V_to_6V/")
+	(sheetfile "TPS61086 - Boost 3V3 to 6V.kicad_sch")
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -2.95 -3.1)
+		(end -1.4 -3.1)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "75305170-b5a6-4f7d-b283-9d9ce4c03331")
+	)
+	(fp_line
+		(start -2.95 3.1)
+		(end -2.95 -3.1)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b6de0cbc-9387-4c58-bdf1-876885111749")
+	)
+	(fp_line
+		(start -1.4 3.1)
+		(end -2.95 3.1)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3a576096-2a5f-4fcc-a816-8d81a923409c")
+	)
+	(fp_line
+		(start 0 -3.7)
+		(end 0 -3.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1d607a7d-e862-4004-8c66-3168efc6b6c1")
+	)
+	(fp_line
+		(start 0 -3.6)
+		(end 0 -3.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d3cf5177-75ec-4975-8045-fcf8b03103bd")
+	)
+	(fp_line
+		(start 1.4 -3.1)
+		(end 2.95 -3.1)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b5a0dd82-604d-42d9-a609-7e3ff6fe7750")
+	)
+	(fp_line
+		(start 2.95 -3.1)
+		(end 2.95 3.1)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d2435cf6-0c7a-49d2-8e8f-99ec9ff24be7")
+	)
+	(fp_line
+		(start 2.95 3.1)
+		(end 1.4 3.1)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ca902ee5-6952-480c-b0d0-dd21563d373a")
+	)
+	(fp_arc
+		(start 0 -3.7)
+		(mid 0.05 -3.65)
+		(end 0 -3.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "809a8174-fb73-4ad2-95d0-4a16ba5e790a")
+	)
+	(fp_arc
+		(start 0 -3.6)
+		(mid -0.05 -3.65)
+		(end 0 -3.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5bbc8c49-ba7f-46ae-b113-be114fcec992")
+	)
+	(fp_line
+		(start -3.95 -4.1)
+		(end 3.95 -4.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "c3c32e66-c97d-4077-a263-281f8f0167eb")
+	)
+	(fp_line
+		(start -3.95 4.1)
+		(end -3.95 -4.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "709cf52e-6a79-4236-98f1-3dd6b1f75adb")
+	)
+	(fp_line
+		(start 3.95 -4.1)
+		(end 3.95 4.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "7ad85a3d-b8c4-44b5-9212-37cc119ad0c9")
+	)
+	(fp_line
+		(start 3.95 4.1)
+		(end -3.95 4.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "9ff7e429-948b-404b-a499-062e536c171c")
+	)
+	(fp_line
+		(start -2.95 -3.1)
+		(end 2.95 -3.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "49eefc0e-8fab-4e94-9743-4efc07f940bf")
+	)
+	(fp_line
+		(start -2.95 3.1)
+		(end -2.95 -3.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b390fa4e-5308-475c-9077-aa79f527979a")
+	)
+	(fp_line
+		(start 2.95 -3.1)
+		(end 2.95 3.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e3383abb-e690-4b09-8f00-655b8c6bf209")
+	)
+	(fp_line
+		(start 2.95 3.1)
+		(end -2.95 3.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "74f8a269-2767-418f-aab1-42729d7da121")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(uuid "30cc481c-6842-42bd-bf69-76a6915efe8e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0 -2.175 90)
+		(size 1.85 1.9)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "1bf6491e-516e-4a72-b709-aec40b658402")
+	)
+	(pad "2" smd rect
+		(at 0 2.175 90)
+		(size 1.85 1.9)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "2069645d-806b-47be-9d5a-6bb3a5bf4a4e")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/lib/3d_models/7447785004.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -90)
+		)
+	)
+)

@@ -1,0 +1,296 @@
+(footprint "CAPPM3216X180N"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "CASE A")
+	(tags "Capacitor Polarised")
+	(property "Reference" "REF**"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "c3fa9514-093a-4c97-baa6-b25aaa68233d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "TAJA225K016RNJ"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "436d4f76-13b2-423d-8573-eb2585f4ebbf")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" "http://www.farnell.com/datasheets/1680476.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b6ab8cec-3137-47cf-aa8b-b5b3ec732fd2")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "TAJ SMT tant capacitor,Case A,16V,2.2uF AVX 2.2uF SMD Solid MnO2 Tantalum Electrolytic Capacitor, 16 V dc +/-10%, TAJ Series"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f8ef3de1-4040-424b-af70-017cd6ff2e7c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Height" "1.8"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a338d081-c00d-4094-bec8-ebad81cffa0c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Name" "Kyocera AVX"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d7bb9890-eb79-4fb2-925e-a90aae6a8350")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Part_Number" "TAJA225K016RNJ"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "94f441c7-99f7-434d-81fc-880690a036e0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Part Number" "581-TAJA225K016"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "31512c19-4322-4df2-8b10-f0633fe72aad")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/AVX/TAJA225K016RNJ?qs=QtLZGLLAmDbQo3XekLTU0g%3D%3D"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e882ecdf-5fba-4872-95e1-c77a617e19c2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Arrow Part Number" "TAJA225K016RNJ"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7cc0a6a7-b71f-4b93-9ca3-c6fc9084b288")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Arrow Price/Stock" "https://www.arrow.com/en/products/taja225k016rnj/avx?utm_currency=USD&region=europe"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2708aa7e-01c3-45a3-9831-e61f83f75d46")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(sheetname "/Project Architecture/LT3042_6V_to_5VA/")
+	(sheetfile "LT3042 - LDO 6V to 5VA.kicad_sch")
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.6 0.775)
+		(end 1.6 0.775)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "fef5599f-a65d-4fe0-88f2-dc6c9b8a32e0")
+	)
+	(fp_line
+		(start 1.6 -0.775)
+		(end -2.2 -0.775)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "98788f09-dc8f-413e-81d1-44e64e16d7b5")
+	)
+	(fp_line
+		(start -2.45 -1.1)
+		(end 2.45 -1.1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "282f0dea-6089-4bf5-b5b8-420b569a1c35")
+	)
+	(fp_line
+		(start -2.45 1.1)
+		(end -2.45 -1.1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "4cbf3bec-4ae8-4c9e-b8a7-e3d983c52bf7")
+	)
+	(fp_line
+		(start 2.45 -1.1)
+		(end 2.45 1.1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "05e30c30-2d14-4b92-816a-c4aa807d7130")
+	)
+	(fp_line
+		(start 2.45 1.1)
+		(end -2.45 1.1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "1c0d1099-2139-432e-85e9-5f159c49eae0")
+	)
+	(fp_line
+		(start -1.6 -0.775)
+		(end 1.6 -0.775)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "6cc44bd7-eda8-439c-9393-1d4f84121637")
+	)
+	(fp_line
+		(start -1.6 -0.125)
+		(end -0.95 -0.775)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "5aa889d7-f691-4559-87c0-9f30ff851de8")
+	)
+	(fp_line
+		(start -1.6 0.775)
+		(end -1.6 -0.775)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "15ba080d-b9e3-499c-b5c6-9bd4dc553b6d")
+	)
+	(fp_line
+		(start 1.6 -0.775)
+		(end 1.6 0.775)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "ca553956-4eaa-439d-b598-e041bb39dd74")
+	)
+	(fp_line
+		(start 1.6 0.775)
+		(end -1.6 0.775)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "fe91f096-df92-45f2-ae54-441e50b748c5")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "481f9816-613e-4ea2-add3-40547bd41233")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.35 0 90)
+		(size 1.3 1.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "170f7641-61c4-4d5b-a0b0-a24dd49c764c")
+	)
+	(pad "2" smd rect
+		(at 1.35 0 90)
+		(size 1.3 1.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "498725a9-2c00-43cc-b11e-7771403aca1b")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/lib/3d_models/TAJA225K016RNJ.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
