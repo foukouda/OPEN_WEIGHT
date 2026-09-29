@@ -1,3 +1,8 @@
+
+# 3D models are text STEP files but must never be line-ending converted
+*.step binary
+*.stp binary
+*.wrl binary
 *.csv filter=bom_csv
 *.html filter=bom_html
 *.gbr filter=gerber
@@ -5,8 +10,3 @@
 *.xml filter=xml
 *.kicad_pcb filter=kicad_pcb_f
 *.net filter=net_filter
-
-# 3D models are text STEP files but must never be line-ending converted
-*.step binary
-*.stp binary
-*.wrl binary

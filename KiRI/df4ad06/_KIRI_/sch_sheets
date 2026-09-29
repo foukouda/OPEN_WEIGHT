@@ -1,0 +1,10 @@
+OPEN_WEIGHT|OPEN_WEIGHT.kicad_sch||OPEN_WEIGHT|OPEN_WEIGHT
+Block Diagram|Block Diagram.kicad_sch||Block Diagram|OPEN_WEIGHT-Block Diagram
+Power - Sequencing|Power - Sequencing.kicad_sch||Power - Sequencing|OPEN_WEIGHT-Power - Sequencing
+Project Architecture|Project Architecture.kicad_sch||Project Architecture|OPEN_WEIGHT-Project Architecture
+AD7190 - Weight Sensor|AD7190 - Weight Sensor.kicad_sch||AD7190_Weight_Sensor|OPEN_WEIGHT-Project Architecture-AD7190_Weight_Sensor
+Connectors|Connectors.kicad_sch||Connectors|OPEN_WEIGHT-Project Architecture-Connectors
+Holes - Fiducials|Holes - Fiducials.kicad_sch||Holes, Fiducials|OPEN_WEIGHT-Project Architecture-Holes, Fiducials
+LT3042 - LDO 6V to 5VA|LT3042 - LDO 6V to 5VA.kicad_sch||LT3042_6V_to_5VA|OPEN_WEIGHT-Project Architecture-LT3042_6V_to_5VA
+TPS61086 - Boost 3V3 to 6V|TPS61086 - Boost 3V3 to 6V.kicad_sch||TPS61086_3.3V_to_6V|OPEN_WEIGHT-Project Architecture-TPS61086_3.3V_to_6V
+Revision History|Revision History.kicad_sch||Revision History|OPEN_WEIGHT-Revision History

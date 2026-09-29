@@ -1,100 +1,233 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
  <meta charset="UTF-8">
  <title>Bill of Materials</title>
+
+ <!-- Apply theme immediately to prevent flashing -->
+ <script>
+  (function() {
+    const theme = localStorage.getItem('kibot-theme') || 'auto';
+    if (theme === 'dark' || (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  })();
+ </script>
+
 <style>
- .cell-title { vertical-align: bottom; }
- .cell-info { vertical-align: top; padding: 1em;}
- .cell-extra-info { vertical-align: top; padding: 1em;}
- .cell-stats { vertical-align: top; padding: 1em;}
- .title { font-size:2.5em; font-weight: bold; }
- .subtitle { font-size:1.5em; font-weight: bold; }
- .h2 { font-size:1.5em; font-weight: bold; }
- .td-empty0 { text-align: center; background-color: #F57676;}
- .td-gen0 { text-align: center; background-color: #DCF5E4;}
- .td-kicad0 { text-align: center; background-color: #F5DCA9;}
- .td-user0 { text-align: center; background-color: #DCEFF5;}
- .td-empty1 { text-align: center; background-color: #FF8080;}
- .td-gen1 { text-align: center; background-color: #E6FFEE;}
- .td-kicad1 { text-align: center; background-color: #FFE6B3;}
- .td-user1 { text-align: center; background-color: #E6F9FF;}
- .td-nocolor { text-align: center; }
- .color-ref { margin: 25px 0; }
- .color-ref th { text-align: left }
- .color-ref td { padding: 5px 20px; }
- .head-table { margin-bottom: 2em; }
- .centered-checkmark { font-size: 30vw; text-align: center; color: green; }
- .tg-sort-header::-moz-selection{background:0 0}
- .tg-sort-header::selection{background:0 0}.tg-sort-header{cursor:pointer}
- .tg-sort-header:after{content:'';float:right;border-width:0 5px 5px;border-style:solid;
-                       border-color:#ffffff transparent;visibility:hidden;opacity:.6}
- .tg-sort-header:hover:after{visibility:visible}
- .tg-sort-asc:after,.tg-sort-asc:hover:after,.tg-sort-desc:after{visibility:visible;opacity:1}
- .tg-sort-desc:after{border-bottom:none;border-width:5px 5px 0}
+  /* Light colors */
+  :root {
+    --bg-color: #ffffff;
+    --text-color: #222222;
+    --link-color: #0e4e8e;
 
- .content-table {
-   border-collapse:
-   collapse;
-   margin-top: 5px;
-   margin-bottom: 4em;
-   font-size: 0.9em;
-   font-family: sans-serif;
-   min-width: 400px;
-   border-radius: 5px 5px 0 0;
-   overflow: hidden;
-   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
- }
- .content-table thead tr { background-color: #0e4e8e; color: #ffffff; text-align: left; }
- .content-table th, .content-table td { padding: 12px 15px; }
- .content-table tbody tr { border-bottom: 1px solid #dddddd; }
- .content-table tbody tr:nth-of-type(even) { background-color: #f3f3f3; }
- .content-table tbody tr:last-of-type { border-bottom: 2px solid #0e4e8e; }
- .content-table * tr:hover > td { background-color: @bgl@ !important }
+    /* Tables */
+    --table-header-bg: #0e4e8e; /* Theme style defined */
+    --table-header-text: #ffffff;
+    --table-row-even: #f3f3f3;
+    --table-row-hover: #3e7ebe; /* Theme style defined */
+    --table-border: #dddddd;
+    --table-shadow: rgba(0, 0, 0, 0.15);
+    --table-cl-border: black;
 
- .content-table {
-   border-collapse:
-   collapse;
-   margin-top: 5px;
-   margin-bottom: 4em;
-   font-size: 0.9em;
-   font-family: sans-serif;
-   min-width: 400px;
-   border-radius: 5px 5px 0 0;
-   overflow: hidden;
-   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
- }
- .content-table thead tr { background-color: @bg@; color: #ffffff; text-align: left; }
- .content-table th, .content-table td { padding: 12px 15px; }
- .content-table tbody tr { border-bottom: 1px solid #dddddd; }
- .content-table tbody tr:nth-of-type(even) { background-color: #f3f3f3; }
- .content-table tbody tr:last-of-type { border-bottom: 2px solid @bg@; }
- .content-table * tr:hover > td { background-color: #3e7ebe !important }
+    /* Status Colors */
+    --td-empty0: #F57676;
+    --td-gen0: #DCF5E4;
+    --td-kicad0: #F5DCA9;
+    --td-user0: #DCEFF5;
+    --td-empty1: #FF8080;
+    --td-gen1: #E6FFEE;
+    --td-kicad1: #FFE6B3;
+    --td-user1: #E6F9FF;
+    --td-error: #db1218;
+    --td-warning: #f2e30c;
+    --td-excluded: #C0C0C0;
+    --checkmark: green;
+
+    /* Toggle Button */
+    --btn-bg: #ffffff;
+    --btn-border: #e2e8f0;
+    --btn-hover: #f1f5f9;
+  }
+
+  /* Dark colors */
+  [data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #e2e8f0;
+    --link-color: #38bdf8;
+
+    /* Tables */
+    --table-header-bg: #09335e; /* Theme style defined */
+    --table-header-text: #f8fafc;
+    --table-row-even: #1e1e1e;
+    --table-row-hover: #114b8a; /* Theme style defined */
+    --table-border: #333333;
+    --table-shadow: rgba(0, 0, 0, 0.5);
+    --table-cl-border: #dddddd;
+
+    /* Status Colors (Darker adaptations) */
+    --td-empty0: #7f1d1d;
+    --td-gen0: #14532d;
+    --td-kicad0: #78350f;
+    --td-user0: #164e63;
+    --td-empty1: #991b1b;
+    --td-gen1: #166534;
+    --td-kicad1: #92400e;
+    --td-user1: #0891b2;
+    --td-error: #ef4444;
+    --td-warning: #ca8a04;
+    --td-excluded: #64748b;
+    --checkmark: #4ade80;
+
+    /* Toggle Button */
+    --btn-bg: #1e293b;
+    --btn-border: #334155;
+    --btn-hover: #475569;
+  }
+
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  a {
+    color: var(--link-color);
+  }
+
+  /* Theme Toggle Button */
+  .theme-toggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--btn-bg);
+    border: 1px solid var(--btn-border);
+    color: var(--text-color);
+    border-radius: 6px;
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px var(--table-shadow);
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+  }
+  .theme-toggle:hover {
+    background: var(--btn-hover);
+  }
+  .theme-toggle svg {
+    width: 20px;
+    height: 20px;
+    display: none; /* Handled by JS */
+  }
+
+  .cell-title { vertical-align: bottom; }
+  .cell-info { vertical-align: top; padding: 1em;}
+  .cell-extra-info { vertical-align: top; padding: 1em;}
+  .cell-stats { vertical-align: top; padding: 1em;}
+  .title h1 { font-size:2.5em; font-weight: bold; padding: 0px; margin: 0px; }
+  .h1 { font-size:1.5em; font-weight: bold; }
+  .subtitle { font-size:1.5em; font-weight: bold; }
+  .h2 { font-size:1.5em; font-weight: bold; }
+
+  .td-empty0 { text-align: center; background-color: var(--td-empty0); }
+  .td-gen0 { text-align: center; background-color: var(--td-gen0); }
+  .td-kicad0 { text-align: center; background-color: var(--td-kicad0); }
+  .td-user0 { text-align: center; background-color: var(--td-user0); }
+  .td-empty1 { text-align: center; background-color: var(--td-empty1); }
+  .td-gen1 { text-align: center; background-color: var(--td-gen1); }
+  .td-kicad1 { text-align: center; background-color: var(--td-kicad1); }
+  .td-user1 { text-align: center; background-color: var(--td-user1); }
+  .td-nocolor { text-align: center; }
+
+  .color-ref { margin: 25px 0; }
+  .color-ref th { text-align: left }
+  .color-ref td { padding: 5px 20px; }
+  .head-table { margin-bottom: 2em; }
+  .centered-checkmark { font-size: 30vw; text-align: center; color: var(--checkmark); }
+  /* Sort Header */
+  .tg-sort-header::-moz-selection{background:0 0}
+  .tg-sort-header::selection{background:0 0}.tg-sort-header{cursor:pointer}
+  .tg-sort-header:after{content:'';float:right;border-width:0 5px 5px;border-style:solid;
+                        border-color:#ffffff transparent;visibility:hidden;opacity:.6}
+  .tg-sort-header:hover:after{visibility:visible}
+  .tg-sort-asc:after,.tg-sort-asc:hover:after,.tg-sort-desc:after{visibility:visible;opacity:1}
+  .tg-sort-desc:after{border-bottom:none;border-width:5px 5px 0}
+
+  .content-table {
+    border-collapse: collapse;
+    margin-top: 5px;
+    margin-bottom: 4em;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px var(--table-shadow);
+  }
+  .content-table thead tr { background-color: var(--table-header-bg); color: var(--table-header-text); text-align: left; }
+  .content-table th, .content-table td { padding: 12px 15px; }
+  .content-table tbody tr { border-bottom: 1px solid var(--table-border); }
+  .content-table tbody tr:nth-of-type(even) { background-color: var(--table-row-even); }
+  .content-table tbody tr:last-of-type { border-bottom: 2px solid var(--table-header-bg); }
+  .content-table * tr:hover > td { background-color: var(--table-row-hover) !important; color: #ffffff; }
 </style>
 </head>
 <body>
+
+<!-- Theme Cycle Button -->
+<button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+  <!-- Sun (Light) -->
+  <svg id="icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+       stroke-linejoin="round">
+    <circle cx="12" cy="12" r="5"></circle>
+    <line x1="12" y1="1" x2="12" y2="3"></line>
+    <line x1="12" y1="21" x2="12" y2="23"></line>
+    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+    <line x1="1" y1="12" x2="3" y2="12"></line>
+    <line x1="21" y1="12" x2="23" y2="12"></line>
+    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+  </svg>
+  <!-- Moon (Dark) -->
+  <svg id="icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+       stroke-linejoin="round">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+  </svg>
+  <!-- Monitor (Auto) -->
+  <svg id="icon-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+       stroke-linejoin="round">
+    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+    <line x1="8" y1="21" x2="16" y2="21"></line>
+    <line x1="12" y1="17" x2="12" y2="21"></line>
+  </svg>
+</button>
+
 <table class="head-table">
 <tr>
  <td rowspan="2">
  </td>
  <td colspan="2" class="cell-title">
-  <div class="title">Bill of Materials</div>
+  <div class="title"><h1>Bill of Materials</h1></div>
  </td>
 </tr>
 <tr>
  <td class="cell-info">
-   <b>Schematic</b>: Cellule_de_force_V2<br>
+   <b>Schematic</b>: OPEN_WEIGHT<br>
    <b>Variant</b>: PRELIMINARY<br>
-   <b>Revision</b>: + (Unreleased)<br>
-   <b>Date</b>: 2025-01-12<br>
-   <b>KiCad Version</b>: 9.0.7+1<br>
+   <b>Revision</b>: (Unreleased)<br>
+   <b>Date</b>: 2026-09-29<br>
+   <b>KiCad Version</b>: 10.0.5-unknown-202607221313~667fa36054~ubuntu25.10.1<br>
  </td>
  <td class="cell-stats">
    <b>Component Groups</b>: 31<br>
-   <b>Component Count</b>: 55 (per PCB)<br>
+   <b>Component Count</b>: 61 (per PCB)<br>
 
-   <b>Fitted Components</b>: 55 (per PCB)<br>
+   <b>Fitted Components</b>: 61 (per PCB)<br>
    <b>Number of PCBs</b>: 1<br>
-   <b>Total Components</b>: 55 (for 1 PCBs)<br>
+   <b>Total Components</b>: 61 (for 1 PCBs)<br>
  </td>
 </tr>
 </table>
@@ -120,7 +253,7 @@
    <td class="td-gen0">2</td>
    <td class="td-kicad0"><div id="C25"></div><div id="C24"></div>C24 C25</td>
    <td class="td-kicad0">18pf</td>
-   <td class="td-empty0">~</td>
+   <td class="td-empty0"></td>
    <td class="td-kicad0">C_0603_1608Metric</td>
    <td class="td-user0">Unpolarized capacitor</td>
    <td class="td-empty0"></td>
@@ -132,7 +265,7 @@
    <td class="td-gen1">1</td>
    <td class="td-kicad1"><div id="C17"></div>C17</td>
    <td class="td-kicad1">2.2nF</td>
-   <td class="td-empty1">~</td>
+   <td class="td-empty1"></td>
    <td class="td-kicad1">C_0603_1608Metric</td>
    <td class="td-user1">Unpolarized capacitor</td>
    <td class="td-empty1"></td>
@@ -141,10 +274,10 @@
   </tr>
   <tr id="2">
    <td class="td-gen0">3</td>
-   <td class="td-gen0">4</td>
-   <td class="td-kicad0"><div id="C10"></div><div id="C9"></div><div id="C8"></div><div id="C7"></div>C7 C8 C9 C10</td>
+   <td class="td-gen0">6</td>
+   <td class="td-kicad0"><div id="C29"></div><div id="C27"></div><div id="C10"></div><div id="C9"></div><div id="C8"></div><div id="C7"></div>C7 C8 C9 C10 C27 C29</td>
    <td class="td-kicad0">0.01µF</td>
-   <td class="td-empty0">~</td>
+   <td class="td-empty0"></td>
    <td class="td-kicad0">C_0603_1608Metric</td>
    <td class="td-user0">Unpolarized capacitor</td>
    <td class="td-empty0"></td>
@@ -153,10 +286,10 @@
   </tr>
   <tr id="3">
    <td class="td-gen1">4</td>
-   <td class="td-gen1">8</td>
-   <td class="td-kicad1"><div id="C26"></div><div id="C23"></div><div id="C18"></div><div id="C11"></div><div id="C6"></div><div id="C5"></div><div id="C3"></div><div id="C1"></div>C1 C3 C5 C6 C11 C18 C23 C26</td>
+   <td class="td-gen1">9</td>
+   <td class="td-kicad1"><div id="C28"></div><div id="C26"></div><div id="C23"></div><div id="C18"></div><div id="C11"></div><div id="C6"></div><div id="C5"></div><div id="C3"></div><div id="C1"></div>C1 C3 C5 C6 C11 C18 C23 C26 C28</td>
    <td class="td-kicad1">0.1µF</td>
-   <td class="td-empty1">~</td>
+   <td class="td-empty1"></td>
    <td class="td-kicad1">C_0603_1608Metric</td>
    <td class="td-user1">Unpolarized capacitor</td>
    <td class="td-empty1"></td>
@@ -168,7 +301,7 @@
    <td class="td-gen0">1</td>
    <td class="td-kicad0"><div id="C22"></div>C22</td>
    <td class="td-kicad0">1µF</td>
-   <td class="td-empty0">~</td>
+   <td class="td-empty0"></td>
    <td class="td-kicad0">C_0603_1608Metric</td>
    <td class="td-user0">Unpolarized capacitor</td>
    <td class="td-empty0"></td>
@@ -180,7 +313,7 @@
    <td class="td-gen1">2</td>
    <td class="td-kicad1"><div id="C16"></div><div id="C13"></div>C13 C16</td>
    <td class="td-kicad1">4.7µF</td>
-   <td class="td-empty1">~</td>
+   <td class="td-empty1"></td>
    <td class="td-kicad1">C_0603_1608Metric</td>
    <td class="td-user1">Unpolarized capacitor</td>
    <td class="td-empty1"></td>
@@ -192,7 +325,7 @@
    <td class="td-gen0">7</td>
    <td class="td-kicad0"><div id="C21"></div><div id="C20"></div><div id="C19"></div><div id="C15"></div><div id="C12"></div><div id="C4"></div><div id="C2"></div>C2 C4 C12 C15 C19 C20 C21</td>
    <td class="td-kicad0">10µF</td>
-   <td class="td-empty0">~</td>
+   <td class="td-empty0"></td>
    <td class="td-kicad0">C_0603_1608Metric</td>
    <td class="td-user0">Unpolarized capacitor</td>
    <td class="td-empty0"></td>
@@ -216,7 +349,7 @@
    <td class="td-gen0">2</td>
    <td class="td-kicad0"><div id="D4"></div><div id="D1"></div>D1 D4</td>
    <td class="td-kicad0">LED</td>
-   <td class="td-empty0">~</td>
+   <td class="td-empty0"></td>
    <td class="td-kicad0">LED_0603_1608Metric</td>
    <td class="td-user0">Light emitting diode</td>
    <td class="td-empty0"></td>
@@ -240,7 +373,7 @@
    <td class="td-gen0">1</td>
    <td class="td-kicad0"><div id="D2"></div>D2</td>
    <td class="td-kicad0">RED</td>
-   <td class="td-empty0">~</td>
+   <td class="td-empty0"></td>
    <td class="td-kicad0">LED_0603_1608Metric</td>
    <td class="td-user0">Light emitting diode</td>
    <td class="td-empty0"></td>
@@ -273,12 +406,12 @@
   </tr>
   <tr id="13">
    <td class="td-gen1">14</td>
-   <td class="td-gen1">1</td>
-   <td class="td-kicad1"><div id="J3"></div>J3</td>
-   <td class="td-kicad1">691408720004B</td>
-   <td class="td-empty1"></td>
-   <td class="td-kicad1">691408720004B</td>
-   <td class="td-empty1"></td>
+   <td class="td-gen1">2</td>
+   <td class="td-kicad1"><div id="J4"></div><div id="J2"></div>J2 J4</td>
+   <td class="td-kicad1">21033213501</td>
+   <td class="td-kicad1"><a href="https://b2b.harting.com/files/download/PRD/PDF_DS/PDF_DS_21033213501_EN.pdf">https://b2b.harting.com/files/download/PRD/PDF_DS/PDF_DS_21033213501_EN.pdf</a></td>
+   <td class="td-kicad1">21033213501</td>
+   <td class="td-user1">M12 A-code 5pin male angled pcb mount, shielded, rear mount</td>
    <td class="td-empty1"></td>
    <td class="td-empty1"></td>
    <td class="td-empty1"></td>
@@ -288,7 +421,7 @@
    <td class="td-gen0">1</td>
    <td class="td-kicad0"><div id="J1"></div>J1</td>
    <td class="td-kicad0">Conn_01x07_Pin</td>
-   <td class="td-empty0">~</td>
+   <td class="td-empty0"></td>
    <td class="td-kicad0">JST_XH_B7B-XH-AM_1x07_P2.50mm_Vertical</td>
    <td class="td-user0">Generic connector, single row, 01x07, script generated</td>
    <td class="td-empty0"></td>
@@ -321,10 +454,10 @@
   </tr>
   <tr id="17">
    <td class="td-gen1">18</td>
-   <td class="td-gen1">5</td>
-   <td class="td-kicad1"><div id="R11"></div><div id="R6"></div><div id="R3"></div><div id="R2"></div><div id="R1"></div>R1 R2 R3 R6 R11</td>
+   <td class="td-gen1">7</td>
+   <td class="td-kicad1"><div id="R11"></div><div id="R6"></div><div id="R5"></div><div id="R4"></div><div id="R3"></div><div id="R2"></div><div id="R1"></div>R1 R2 R3 R4 R5 R6 R11</td>
    <td class="td-kicad1">100Ω</td>
-   <td class="td-empty1">~</td>
+   <td class="td-empty1"></td>
    <td class="td-kicad1">R_0603_1608Metric</td>
    <td class="td-user1">Resistor</td>
    <td class="td-empty1"></td>
@@ -336,7 +469,7 @@
    <td class="td-gen0">1</td>
    <td class="td-kicad0"><div id="R16"></div>R16</td>
    <td class="td-kicad0">620Ω</td>
-   <td class="td-empty0">~</td>
+   <td class="td-empty0"></td>
    <td class="td-kicad0">R_0603_1608Metric</td>
    <td class="td-user0">Resistor</td>
    <td class="td-empty0"></td>
@@ -348,7 +481,7 @@
    <td class="td-gen1">1</td>
    <td class="td-kicad1"><div id="R10"></div>R10</td>
    <td class="td-kicad1">1kΩ</td>
-   <td class="td-empty1">~</td>
+   <td class="td-empty1"></td>
    <td class="td-kicad1">R_0603_1608Metric</td>
    <td class="td-user1">Resistor</td>
    <td class="td-empty1"></td>
@@ -360,7 +493,7 @@
    <td class="td-gen0">1</td>
    <td class="td-kicad0"><div id="R15"></div>R15</td>
    <td class="td-kicad0">18kΩ</td>
-   <td class="td-empty0">~</td>
+   <td class="td-empty0"></td>
    <td class="td-kicad0">R_0603_1608Metric</td>
    <td class="td-user0">Resistor</td>
    <td class="td-empty0"></td>
@@ -372,7 +505,7 @@
    <td class="td-gen1">1</td>
    <td class="td-kicad1"><div id="R18"></div>R18</td>
    <td class="td-kicad1">37.4kΩ</td>
-   <td class="td-empty1">~</td>
+   <td class="td-empty1"></td>
    <td class="td-kicad1">R_0603_1608Metric</td>
    <td class="td-user1">Resistor</td>
    <td class="td-empty1"></td>
@@ -384,7 +517,7 @@
    <td class="td-gen0">2</td>
    <td class="td-kicad0"><div id="R13"></div><div id="R9"></div>R9 R13</td>
    <td class="td-kicad0">50kΩ</td>
-   <td class="td-empty0">~</td>
+   <td class="td-empty0"></td>
    <td class="td-kicad0">R_0603_1608Metric</td>
    <td class="td-user0">Resistor</td>
    <td class="td-empty0"></td>
@@ -396,7 +529,7 @@
    <td class="td-gen1">1</td>
    <td class="td-kicad1"><div id="R17"></div>R17</td>
    <td class="td-kicad1">69.8kΩ</td>
-   <td class="td-empty1">~</td>
+   <td class="td-empty1"></td>
    <td class="td-kicad1">R_0603_1608Metric</td>
    <td class="td-user1">Resistor</td>
    <td class="td-empty1"></td>
@@ -408,7 +541,7 @@
    <td class="td-gen0">1</td>
    <td class="td-kicad0"><div id="R8"></div>R8</td>
    <td class="td-kicad0">100kΩ</td>
-   <td class="td-empty0">~</td>
+   <td class="td-empty0"></td>
    <td class="td-kicad0">R_0603_1608Metric</td>
    <td class="td-user0">Resistor</td>
    <td class="td-empty0"></td>
@@ -420,7 +553,7 @@
    <td class="td-gen1">1</td>
    <td class="td-kicad1"><div id="R14"></div>R14</td>
    <td class="td-kicad1">200kΩ</td>
-   <td class="td-empty1">~</td>
+   <td class="td-empty1"></td>
    <td class="td-kicad1">R_0603_1608Metric</td>
    <td class="td-user1">Resistor</td>
    <td class="td-empty1"></td>
@@ -432,7 +565,7 @@
    <td class="td-gen0">1</td>
    <td class="td-kicad0"><div id="R12"></div>R12</td>
    <td class="td-kicad0">715kΩ</td>
-   <td class="td-empty0">~</td>
+   <td class="td-empty0"></td>
    <td class="td-kicad0">R_0603_1608Metric</td>
    <td class="td-user0">Resistor</td>
    <td class="td-empty0"></td>
@@ -444,7 +577,7 @@
    <td class="td-gen1">1</td>
    <td class="td-kicad1"><div id="RN1"></div>RN1</td>
    <td class="td-kicad1">RP_100Ω</td>
-   <td class="td-empty1">~</td>
+   <td class="td-empty1"></td>
    <td class="td-kicad1">R_Array_Concave_4x0603</td>
    <td class="td-user1">4 resistor network, parallel topology</td>
    <td class="td-empty1"></td>
@@ -496,7 +629,7 @@
 <tr><td class="td-user0">User Fields</td></tr>
 <tr><td class="td-empty0">Empty Fields</td></tr>
 </table>
-<script charset="utf-8">
+<script>
   var TGSort = window.TGSort || function(n) {
     "use strict";
     function r(n) { return n ? n.length : 0 }
@@ -610,4 +743,51 @@
     })
   }(document)
 </script>
+
+<!-- Interactive Theme Logic -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggleBtn = document.getElementById('theme-toggle');
+    const iconLight = document.getElementById('icon-light');
+    const iconDark = document.getElementById('icon-dark');
+    const iconAuto = document.getElementById('icon-auto');
+
+    function updateIcons(theme) {
+        iconLight.style.display = theme === 'light' ? 'block' : 'none';
+        iconDark.style.display = theme === 'dark' ? 'block' : 'none';
+        iconAuto.style.display = theme === 'auto' ? 'block' : 'none';
+    }
+
+    function applyTheme(theme) {
+        if (theme === 'dark' || (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+            document.documentElement.removeAttribute('data-theme');
+        }
+        updateIcons(theme);
+        toggleBtn.title = `Theme: ${theme.charAt(0).toUpperCase() + theme.slice(1)} (Click to change)`;
+    }
+
+    let currentTheme = localStorage.getItem('kibot-theme') || 'auto';
+    applyTheme(currentTheme);
+
+    // Cycle through themes on click
+    toggleBtn.addEventListener('click', () => {
+        if (currentTheme === 'auto') currentTheme = 'light';
+        else if (currentTheme === 'light') currentTheme = 'dark';
+        else currentTheme = 'auto';
+
+        localStorage.setItem('kibot-theme', currentTheme);
+        applyTheme(currentTheme);
+    });
+
+    // Listen for OS theme changes if in 'auto' mode
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+        if (currentTheme === 'auto') {
+            applyTheme('auto');
+        }
+    });
+  });
+</script>
+
 </body></html>
