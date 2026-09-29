@@ -1335,7 +1335,7 @@
 		)
 		(uuid "c7960137-7711-4ffe-94cf-8be0bcb30b2c")
 	)
-	(text "Comment"
+	(text "OPEN_WEIGHT - AD7190 24-bit load-cell front-end, part of OPEN THRUST LAB.\nSingle +3.3 V host supply, SPI interface, 2 x 4-wire bridge inputs."
 		(exclude_from_sim no)
 		(at 222.25 177.8 0)
 		(effects
@@ -1614,7 +1614,7 @@
 		)
 		(uuid "faea8a5f-3a8f-49cb-9832-569be941b06b")
 	)
-	(text_box "DESIGN NOTE:\nExample text for cautionary design notes."
+	(text_box "DESIGN NOTE:\nSPI mode 3,\nSCLK <= 5 MHz,\nRDY on DOUT."
 		(exclude_from_sim no)
 		(at 96.52 258.445 0)
 		(size 30.48 20.32)
@@ -1637,7 +1637,7 @@
 		)
 		(uuid "14407e09-ee6c-4b22-86d1-36d73a33e664")
 	)
-	(text_box "DESIGN NOTE:\nExample text for debug notes."
+	(text_box "DEBUG NOTE:\nTP on every rail.\nWait >= 600 ms (PG)\nbefore ADC init."
 		(exclude_from_sim no)
 		(at 61.595 258.445 0)
 		(size 30.48 20.32)
@@ -1660,7 +1660,7 @@
 		)
 		(uuid "1499d9a9-9f29-4929-8df7-74d84823ddfb")
 	)
-	(text_box "DESIGN NOTE:\nExample text for critical design notes."
+	(text_box "DESIGN NOTE:\nREFIN1 = bridge\nexcitation:\nratiometric."
 		(exclude_from_sim no)
 		(at 131.445 258.445 0)
 		(size 30.48 20.32)
@@ -1685,7 +1685,7 @@
 		)
 		(uuid "1c311692-d683-4cdf-ac31-77bcdd4c4b39")
 	)
-	(text_box "LAYOUT NOTE:\nExample text for critical layout guidelines."
+	(text_box "LAYOUT NOTE:\nAFE under the\nWE-SHC shield H5,\nboost SW node away."
 		(exclude_from_sim no)
 		(at 166.37 258.445 0)
 		(size 30.48 20.32)
@@ -1730,7 +1730,7 @@
 		)
 		(uuid "33c3f6da-ba9e-4d58-9257-d85394a72b7b")
 	)
-	(text_box "DESIGN NOTE:\nExample text for informational design notes."
+	(text_box "DESIGN NOTE:\n+3.3V host -> TPS61086\n6 V -> LT3042 +5VA\n(AVDD + excitation)"
 		(exclude_from_sim no)
 		(at 26.67 258.445 0)
 		(size 30.48 20.32)

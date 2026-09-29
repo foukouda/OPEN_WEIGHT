@@ -2017,7 +2017,7 @@
 		)
 		(uuid "ed78b7e7-9d87-4eba-bb13-ab88d26954ef")
 	)
-	(text "Flexible I/O worked examples"
+	(text "TI TPS61086 datasheet"
 		(exclude_from_sim no)
 		(at 265.43 254 0)
 		(effects
@@ -2046,7 +2046,7 @@
 		)
 		(uuid "ca73a951-c39c-4a3c-9e12-06e6bc2f3311")
 	)
-	(text "Flexible I/O source configuration"
+	(text "L1 7447785004, D3 PMEG2010AEH"
 		(exclude_from_sim no)
 		(at 265.43 256.54 0)
 		(effects
@@ -2108,7 +2108,7 @@
 		)
 		(uuid "524c500e-48b2-4d74-9c30-5c34bf6c2558")
 	)
-	(text_box "Block Description"
+	(text_box "Pin usage and layout example"
 		(exclude_from_sim no)
 		(at 46.99 228.6 0)
 		(size 86.36 9.525)
@@ -2132,7 +2132,7 @@
 		)
 		(uuid "67a85d80-fe45-4492-a23f-f4ed25b939a9")
 	)
-	(text_box "Block Description"
+	(text_box "Boost 3.3 V -> 6.04 V"
 		(exclude_from_sim no)
 		(at 142.24 193.675 0)
 		(size 167.64 9.525)
@@ -2156,7 +2156,7 @@
 		)
 		(uuid "96ca24d3-fb87-492b-b46b-2ff8e6f8597a")
 	)
-	(text_box "Block Description"
+	(text_box "Test points"
 		(exclude_from_sim no)
 		(at 318.77 228.6 0)
 		(size 53.34 9.525)

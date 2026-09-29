@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "kicad-mcp-pro": {
+      "command": "uvx",
+      "args": ["kicad-mcp-pro", "--transport", "stdio"],
+      "env": {
+        "KICAD_CLI": "C:/Program Files/KiCad/10.0/bin/kicad-cli.exe"
+      }
+    }
+  }
+}

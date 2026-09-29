@@ -385,7 +385,7 @@
 		)
 		(uuid "ed78b7e7-9d87-4eba-bb13-ab88d26954ef")
 	)
-	(text "Flexible I/O worked examples"
+	(text "4 x M3 (3.2 mm) plated holes to GND"
 		(exclude_from_sim no)
 		(at 265.43 254 0)
 		(effects
@@ -414,7 +414,7 @@
 		)
 		(uuid "ca73a951-c39c-4a3c-9e12-06e6bc2f3311")
 	)
-	(text "Flexible I/O source configuration"
+	(text "FID1-FID6 not fitted on this revision"
 		(exclude_from_sim no)
 		(at 265.43 256.54 0)
 		(effects
