@@ -773,7 +773,7 @@
     "SHEET_NAME_39": "......................................",
     "SHEET_NAME_40": "......................................",
     "RELEASE_TITLE_UNRELEASED": "Version Unreleased",
-    "RELEASE_BODY_UNRELEASED": "___________________________________\n\nAdded\n\n-   AD7190 24-bit load-cell front-end (4-wire Wheatstone bridge, SPI Mode 3)\n\n-   TPS61086 boost 3.3 V → 6 V and LT3042 ultralow-noise LDO 6 V → 5 VA analog supply\n\n-   Load-cell, SPI host and frame connectors; M3 mounting holes and fiducials\n\n-   Mechanical CAD (enclosure / support) in `Mechanical/`\n\n___________________________________\n\nChanged\n\n-   Project renamed from `Cellule_de_force_V2` to `OPEN_WEIGHT`; schematic sheets renamed after their function\n\n-   Project migrated to KiCad 10; CI now uses KiBot `v2_dk10` (variant `PRELIMINARY` on `dev` until ERC/DRC are clean)\n\n-   README is now generated from `kibot_resources/templates/readme.txt`\n\n___________________________________\n\nFixed\n\n-   Sheet name typo `AD7910` → `AD7190`\n\n-   Title blocks: real sheet titles, company name, template leftovers removed from PCB title block"
+    "RELEASE_BODY_UNRELEASED": "___________________________________\n\nAdded\n\n-   AD7190 front-end, 2 load-cell inputs\n\n-   +3.3V -> TPS61086 6 V -> LT3042 +5VA\n\n-   Self-contained libs and 3D models (lib/)\n\n-   JLCPCB 4-layer rules and stackup\n\n___________________________________\n\nChanged\n\n-   Renamed to OPEN_WEIGHT, KiCad 10\n\n___________________________________\n\nFixed\n\n-   Connectors not linked to ADC in schematic\n\n-   AD7190 solder-mask bridges"
   },
   "tuning_profiles": {
     "meta": {

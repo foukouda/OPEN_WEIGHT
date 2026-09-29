@@ -32,6 +32,11 @@
   <img alt="3D Bottom Angled" src="Images/OPEN_WEIGHT-angled_bottom.png" width="45%">
 </p>
 
+<p align="center">
+  <img alt="OPEN_WEIGHT 3D spin" src="Images/OPEN_WEIGHT-spin.gif" width="50%">
+  <br><sub>Full-resolution video: <a href="Images/OPEN_WEIGHT.mp4">Images/OPEN_WEIGHT.mp4</a> (rendered with SpinRender)</sub>
+</p>
+
 ***
 
 ## OVERVIEW
@@ -44,6 +49,7 @@ The board requires only a **3.3 V input** from the host system. An onboard TPS61
 
 The repository is structured as a full hardware project rather than a simple PCB dump. It includes:
 - KiCad 10 source files for schematic and PCB layout
+- **self-contained libraries**: every symbol, footprint and 3D model used on the board lives in `lib/`
 - manufacturing and assembly outputs
 - generated schematic and fabrication documentation
 - validation reports and test artifacts
@@ -92,12 +98,13 @@ In the broader bench roadmap, this board contributes to the measurement chain us
 | Digital supply (DVDD) | 3.3 V (from host) |
 | ADC | AD7190, 24-bit sigma-delta |
 | PGA gain range | 1 – 128 |
-| Voltage reference | Internal, 2.5 V |
+| Voltage reference | Ratiometric: REFIN1± = bridge excitation (EXC+/EXC−) — no separate reference IC |
 | Digital interface | SPI — Mode 3 (CPOL=1, CPHA=1), max 5 MHz |
 | Additional SPI signal | SYNC — filter reset / multi-device synchronization |
-| Crystal frequency | 4.9152 MHz (external) |
-| Load cell excitation control | Onboard P-MOS drive gate (active-low enable) |
-| Sensor type | 4-wire Wheatstone bridge |
+| Clock | 4.9152 MHz ceramic resonator (Y2) on MCLK1/MCLK2 |
+| Load cell excitation control | Q1 SI2303 P-MOS high-side switch, gate driven by AD7190 **P3** (GPOCON register); low side through **BPDSW** |
+| Sensor type | 2 × 4-wire Wheatstone bridge (AIN1/AIN2 and AIN3/AIN4) |
+| Full-scale input (gain 128) | ±VREF/128 = ±39 mV with 5 V excitation |
 
 ### Power budget
 
@@ -106,7 +113,7 @@ Power chain: **+3.3 V (host) → TPS61086 → +6 V → LT3042 → +5VA → AD719
 | Stage | Input rail | Typical current | Typical power |
 | --- | --- | --- | --- |
 | AD7190 analog (AVDD, gain=128, ODR=10 Hz) | +5VA | ~4 mA | ~20 mW |
-| Crystal + RC filters + misc analog | +5VA | ~1 mA | ~5 mW |
+| Resonator + RC filters + misc analog | +5VA | ~1 mA | ~5 mW |
 | Load cell excitation (4-wire bridge, ~350 Ω) | +5VA | ~14 mA | ~70 mW |
 | LT3042 quiescent | +6V | ~2 mA | ~12 mW |
 | **LT3042 total input load** | **+6V** | **~21 mA** | **~126 mW** |
@@ -127,7 +134,8 @@ Power chain: **+3.3 V (host) → TPS61086 → +6 V → LT3042 → +5VA → AD719
 | Automation tooling | KiBot + GitHub Actions |
 | Dimensions | 57.0 × 50.75 mm |
 | Mounting holes | 4× M3, connected to GND |
-| Fiducials | 3× top copper, 3× bottom copper |
+| Fiducials | Not fitted on this revision (FID1–FID6 excluded from board) |
+| Fabrication target | JLCPCB 4-layer, JLC04161H-7628, 1.6 mm (rules in `OPEN_WEIGHT.kicad_dru`) |
 | Repository status | In active development |
 | Hardware licence | CERN-OHL-P v2 |
 
@@ -139,11 +147,11 @@ The project is organized into five functional hierarchical sheets (under `Projec
 
 | Page | Sheet (file) | Description |
 | --- | --- | --- |
-| 4 | `AD7190_Weight_Sensor` (`AD7190 - Weight Sensor.kicad_sch`) | AD7190 24-bit sigma-delta ADC front-end for Wheatstone bridge acquisition. Differential inputs on SENSE± and OUT± lines with RC input filtering. SPI interface (CS, DIN, DOUT, SCLK, SYNC). External 4.9152 MHz crystal. Dual-supply decoupling (+5VA analog / +3.3V digital). P-MOS drive gate for load cell excitation control. Test points on all critical analog and digital nodes. |
-| 5 | `LT3042_6V_to_5VA` (`LT3042 - LDO 6V to 5VA.kicad_sch`) | Low-noise 5 V analog supply for ADC front-end (AVDD). LT3042 ultralow-noise LDO (PSRR > 75 dB). Input: +6V from boost stage. Output: +5VA regulated via RSET = 50 kΩ (ISET = 100 µA). Solid tantalum capacitor on SET pin for noise suppression. Power-Good monitoring via PGFB divider. Test points: VIN, VOUT, SET, PGFB, PG. |
-| 6 | `TPS61086_3.3V_to_6V` (`TPS61086 - Boost 3V3 to 6V.kicad_sch`) | 3.3 V to 6 V synchronous boost converter supplying the LT3042 stage. TPS61086 switching at 1.2 MHz fixed frequency (PWM/PFM selectable via MODE pin). Integrated 2.5 A / 0.13 Ω power switch. Output voltage set via FB resistor divider. Input/output decoupling, soft-start, and loop compensation network. Test points: +3.3V_IN, +6V_OUT, FB, COMP. |
-| 7 | `Holes, Fiducials` (`Holes - Fiducials.kicad_sch`) | Mechanical references for PCB fabrication and assembly. Four GND-connected mounting holes (H1–H4, M3). Three fiducial markers on top copper (FID1–FID3) and three on bottom copper (FID4–FID6) for pick-and-place alignment. |
-| 8 | `Connectors` (`Connectors.kicad_sch`) | External interface connectors for load cell and host communication. Load cell 4-wire bridge connector (N-SENSE+, N-SENSE−, N-OUT+, N-OUT−). SPI host header (SS, DIN, DOUT, SCLK, SYNC, +3.3V, GND). PCB frame connector (WE-SMCJTHT) for chassis ground bonding. |
+| 4 | `AD7190_Weight_Sensor` (`AD7190 - Weight Sensor.kicad_sch`) | AD7190 24-bit sigma-delta ADC front-end for Wheatstone bridge acquisition. Differential inputs on SENSE± and OUT± lines with RC input filtering. SPI interface (CS, DIN, DOUT, SCLK, SYNC). 4.9152 MHz ceramic resonator (Y2). Ratiometric reference REFIN1 = SENSE± (bridge excitation). Dual-supply decoupling (+5VA analog / +3.3V digital). Q1 P-MOS excitation switch driven by AD7190 P3. Test points on all critical analog and digital nodes. |
+| 5 | `LT3042_6V_to_5VA` (`LT3042 - LDO 6V to 5VA.kicad_sch`) | Low-noise 5 V analog supply for ADC front-end (AVDD). LT3042 ultralow-noise LDO (PSRR > 75 dB). Input: +6V from boost stage. Output: +5VA regulated via RSET = 50 kΩ (ISET = 100 µA). Solid tantalum capacitor on SET pin (C14 = 2.2 µF) for noise suppression — soft-start time constant RSET·CSET = 110 ms. Power-Good monitoring via PGFB divider. Test points: VIN, VOUT, SET, PGFB, PG. |
+| 6 | `TPS61086_3.3V_to_6V` (`TPS61086 - Boost 3V3 to 6V.kicad_sch`) | 3.3 V to 6.04 V boost converter (external Schottky D3) supplying the LT3042 stage. TPS61086 switching at 1.2 MHz fixed frequency (PWM/PFM selectable via MODE pin). Integrated 2.0 A / 0.13 Ω power switch. Output voltage set via FB divider R17/R15 (1.238 V × (1 + 69.8k/18k) = 6.04 V). Input/output decoupling, soft-start, and loop compensation network. Test points: +3.3V_IN, +6V_OUT, FB, COMP. |
+| 7 | `Holes, Fiducials` (`Holes - Fiducials.kicad_sch`) | Mechanical references for PCB fabrication and assembly. Four GND-connected mounting holes (H1–H4, M3). Fiducial symbols FID1–FID6 are kept in the schematic but excluded from the board on this revision. |
+| 8 | `Connectors` (`Connectors.kicad_sch`) | External interface connectors for load cell and host communication. Two 5-pin load-cell connectors J2/J4 (21033213501: OUT, OUT, EXC+, EXC−, GND). 7-pin JST-XH host header J1 (+3.3V, CS, DIN, DOUT/RDY, SYNC, SCLK, GND). WE-SHC shielding frame H5 over the analog front-end. |
 
 ***
 
@@ -151,52 +159,56 @@ The project is organized into five functional hierarchical sheets (under `Projec
 
 The board accepts any standard **4-wire Wheatstone bridge** load cell.
 
-### Bridge connector pinout
+### Load-cell connectors J2 / J4 (21033213501, 5 pins)
 
-| Pin | Signal | Description |
+| Pin | Net (J4 / J2) | Function |
 | --- | --- | --- |
-| 1 | EXC+ / N-OUT+ | Bridge excitation positive — driven from +5VA via P-MOS gate |
-| 2 | EXC− / N-OUT− | Bridge excitation negative — GND reference |
-| 3 | SIG+ / N-SENSE+ | Bridge signal positive — routed to AD7190 differential input |
-| 4 | SIG− / N-SENSE− | Bridge signal negative — routed to AD7190 differential input |
+| 1 | IN-OUT+ / IN-OUT+2 | Bridge signal output (through 100 Ω + RC filter) |
+| 2 | IN-OUT− / IN-OUT−2 | Bridge signal output (through 100 Ω + RC filter) |
+| 3 | SENSE+ | Excitation + (switched +5VA from Q1) and REFIN1(+) |
+| 4 | SENSE− | Excitation − (AD7190 BPDSW low-side switch) and REFIN1(−) |
+| 5 / shell | GND | Cable shield |
+
+J4 → AIN1/AIN2, J2 → AIN3/AIN4. Both channels measure **V(pin 2) − V(pin 1)**: if the load reads negative, swap the signal wires or invert the sign in firmware.
 
 > ⚠️ Load cell cable colors vary by manufacturer. Always verify EXC± and SIG± with a multimeter **before** powering the board.
 
-> ⚠️ The load cell excitation is switched by a **P-MOS drive gate** on Page 4. This gate must be asserted by the host (active-low) before any measurement. Do not enable excitation during internal calibration.
+> ⚠️ The excitation is switched by **Q1 (P-MOS)** whose gate is driven by the AD7190 **P3** pin. Enable it through the GPOCON register (GP32EN = 1, P3DAT = 0 → Q1 on). Do not enable excitation during internal calibration.
 
 ### Compatible load cell characteristics
 
 - Differential output: **0 – 20 mV/V** at rated excitation
 - Bridge resistance: **120 Ω to 1000 Ω** full bridge
-- With PGA gain 128 and AVDD = 5 V: full-scale differential input ≈ ±19.53 mV
+- Ratiometric measurement: with gain 128 and 5 V excitation, full-scale input = ±5 V / 128 = **±39 mV**
 
-### SPI host header pinout
+### Host header J1 (JST-XH B7B-XH-AM, 7 pins)
 
 | Pin | Signal | Direction | Notes |
 | --- | --- | --- | --- |
-| 1 | +3.3V | Power in | Host supply to board DVDD |
-| 2 | SS (CS̄) | Input | Active low — enables SPI communication |
-| 3 | DIN (MOSI) | Input | Serial data to AD7190 |
-| 4 | DOUT (MISO) | Output | Serial data from AD7190 |
-| 5 | SCLK | Input | SPI clock, max 5 MHz |
-| 6 | SYNC | Input | Active low — resets the digital filter and output shift register. Use to synchronize multiple AD7190 devices, or to force a clean filter restart after any configuration change. |
-| 7 | DRDȲ | Output | Active low — asserted when a conversion result is ready. Always poll before reading data. |
-| 8 | GND | — | Common ground |
+| 1 | +3.3V | Power in | Board supply (boost input + AD7190 DVDD) |
+| 2 | CS | Input | Active low (100 kΩ pull-up R8) |
+| 3 | DIN | Input | Serial data to AD7190 (100 Ω series, RN1) |
+| 4 | DOUT/RDY | Output | Serial data from AD7190; also goes low when a conversion is ready |
+| 5 | SYNC | Input | Active low — resets the digital filter; tie high if unused |
+| 6 | SCLK | Input | SPI clock, max 5 MHz |
+| 7 | GND | — | Common ground |
 
-> ⚠️ SPI Mode 3 only (CPOL=1, CPHA=1). Data is valid on the falling edge of SCLK.
+> ⚠️ SPI Mode 3 only (CPOL=1, CPHA=1). There is no separate DRDY pin: poll DOUT/RDY with CS low.
 
 ***
 
 ## STARTUP SEQUENCE
 
-After 3.3 V is applied, allow the following stages to complete before issuing any SPI command:
+After 3.3 V is applied, allow the following stages to complete before issuing any SPI command
+(see schematic page 9, *Power - Sequencing*; values computed from the schematic):
 
 | Stage | Duration | Indicator |
 | --- | --- | --- |
-| TPS61086 boost startup | ~1–3 ms | +6V_OUT reaches 6 V |
-| LT3042 LDO settling | ~1–2 ms after +6V stable | PG pin goes high |
-| Crystal stabilization | ~2–5 ms | — |
-| **Minimum safe delay** | **≥ 20 ms** from power-on | All rails stable |
+| TPS61086 boost soft-start (C18) | ~10 ms | +6V reaches 6.04 V (TP11) |
+| LT3042 +5VA rise (RSET 50 kΩ × CSET 2.2 µF = τ 110 ms) | PG after ~285 ms, 99 % after ~520 ms | PG (TP17) goes high at 4.59 V |
+| **Minimum safe delay** | **≥ 600 ms** from power-on | +5VA settled |
+
+> To start faster, reduce C14 (e.g. 0.47 µF → τ = 23.5 ms) at the cost of slightly higher low-frequency noise.
 
 After the delay, the recommended initialization sequence is:
 
@@ -206,7 +218,7 @@ After the delay, the recommended initialization sequence is:
 3. Write MODE register (filter, ODR)
 4. Run internal zero-scale calibration — wait for DRDȲ
 5. Run internal full-scale calibration — wait for DRDȲ
-6. Enable P-MOS drive gate (load cell excitation)
+6. Enable load cell excitation: GPOCON GP32EN=1, P3DAT=0 (Q1 on)
 7. Run system calibration with known reference weight
 8. Enter continuous conversion mode
 ```
@@ -248,14 +260,14 @@ Maps ADC output codes to physical units. Repeat any time the mechanical setup ch
 | Register | Field | Value | Reason |
 | --- | --- | --- | --- |
 | `CONF` | GAIN[2:0] | `0b111` (128×) | Maximizes resolution for low-sensitivity load cells |
-| `CONF` | REF_SEL | `0b0` | Internal 2.5 V reference — no external ref required |
+| `CONF` | REFSEL | `0b0` | REFIN1± = bridge excitation (ratiometric) |
 | `CONF` | CHOP | `1` | Reduces offset and drift |
 | `MODE` | SINC | `0b11` (SINC4) | Best 50/60 Hz rejection |
-| `MODE` | FS[9:0] | `0x00A` | ODR ≈ 10 Hz — rejects mains interference |
+| `MODE` | FS[9:0] | `0x1E0` (480) | fADC = 4.9152 MHz / (1024 × FS) ≈ 10 Hz without chop — rejects 50/60 Hz (with CHOP=1 the rate is lower, see datasheet) |
 
 > ⚠️ After any change to GAIN, ODR, or filter settings, the sigma-delta pipeline resets. Always re-run internal calibration before taking measurements.
 
-> ⚠️ At gain 128 with internal 2.5 V reference: full-scale input range = **±19.53 mV**. Verify your load cell sensitivity (mV/V) is compatible at your excitation voltage.
+> ⚠️ At gain 128 with the 5 V ratiometric reference: full-scale input range = **±39 mV**. A 2 mV/V load cell at 5 V gives 10 mV at full load.
 
 ***
 
@@ -264,6 +276,7 @@ Maps ADC output codes to physical units. Repeat any time the mechanical setup ch
 ### Prerequisites
 
 - **KiCad 10** (files are saved in KiCad 10 format and cannot be opened with KiCad 9 or earlier)
+- Nothing else: all symbols, footprints and 3D models are in `lib/` and referenced relative to the project (`KIPRJMOD`, project-local `sym-lib-table` / `fp-lib-table`)
 - **KiBot** for automated output generation
 - **Docker** recommended for reproducible local CI runs
 - Debian/Ubuntu or equivalent environment
@@ -288,14 +301,14 @@ Maps ADC output codes to physical units. Repeat any time the mechanical setup ch
 ### Use a manufactured board
 
 ```c
-// --- After ≥20 ms from 3.3V power-on ---
+// --- After >= 600 ms from 3.3V power-on (LT3042 soft-start, see page 9) ---
 
 // 1. Reset
 ad7190_reset();                            // 40× 0xFF on DIN
 
 // 2. Configure
 ad7190_write_reg(REG_CONF,
-    CONF_GAIN_128 | CONF_CHOP | CONF_REF_INT);
+    CONF_GAIN_128 | CONF_CHOP | CONF_REFSEL_REFIN1);
 ad7190_write_reg(REG_MODE,
     MODE_SINC4 | MODE_FS_10HZ);
 
@@ -306,7 +319,7 @@ ad7190_write_reg(REG_MODE, MODE_INT_FULL_CAL);
 while (drdy_is_high());
 
 // 4. Enable load cell excitation
-gpio_set(DRIVE_GATE_PIN, LOW);             // P-MOS: active low
+ad7190_write_reg(REG_GPOCON, GPOCON_GP32EN); // P3 = 0 -> Q1 on
 
 // 5. System calibration
 uint32_t raw_zero = ad7190_average(16);    // No load
@@ -355,6 +368,11 @@ while (1) {
     │
     ├─ kibot_yaml         # KiBot YAML configuration files
     ├─ KiRI               # KiRI PCB diff viewer files
+    │
+    ├─ lib                # Project libraries (self-contained)
+    │  ├─ lib_sym         # OPEN_WEIGHT.kicad_sym — every symbol used
+    │  ├─ lib_fp          # OPEN_WEIGHT.pretty — every footprint used
+    │  └─ 3d_models       # STEP models referenced by the footprints
     │
     ├─ Logos              # Project logos and branding assets
     │
@@ -407,14 +425,15 @@ The CI pipeline (`.github/workflows/ci.yaml`) runs KiBot on every push to `dev` 
 | --- | --- | --- |
 | Output stuck at 0 or inverted | EXC± wiring error | Verify bridge polarity with multimeter |
 | Output always at full-scale | SIG+ / SIG− swapped | Swap the two signal wires |
-| Very noisy SPI readings | SPI mode mismatch | Set host to Mode 3 (CPOL=1, CPHA=1) |
+| Garbage SPI readings | SPI mode mismatch | Set host to Mode 3 (CPOL=1, CPHA=1) |
 | Readings drift over time | No internal cal after power-on | Re-run zero-scale + full-scale internal calibration |
-| DRDȲ never goes low | Crystal not oscillating | Reflow 4.9152 MHz crystal; check load capacitors |
+| DOUT/RDY never goes low | Resonator not oscillating | Reflow Y2 (4.9152 MHz resonator) |
 | SPI reads 0xFF | CS̄ stuck high or SCLK too fast | Check CS̄ GPIO; reduce SCLK to ≤ 5 MHz |
 | 50/60 Hz interference | ODR too high or wrong filter | Use SINC4 + FS = 0x00A (10 Hz ODR) |
 | +5VA absent at power-on | TPS61086 not switching | Verify +3.3V_IN; check inductor L1 solder joints |
 | +5VA present but noisy | LT3042 SET pin cap issue | Reflow solid tantalum cap on SET pin (Page 5) |
-| No excitation on load cell | P-MOS drive gate inactive | Assert DRIVE_GATE control signal (active low) |
+| No excitation on load cell | Q1 off | Write GPOCON: GP32EN = 1, P3DAT = 0 |
+| First readings drift for ~0.5 s | +5VA still rising (τ = 110 ms) | Wait ≥ 600 ms after power-up before calibration |
 | Offset drifts after warmup | Thermal settling | Allow 5–10 min warmup; re-tare before measurements |
 
 ***
