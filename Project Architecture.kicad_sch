@@ -6,306 +6,11 @@
 	(paper "A3")
 	(title_block
 		(title "Project Architecture")
-		(date "2025-01-12")
+		(date "2026-09-29")
 		(rev "${REVISION}")
 		(company "${COMPANY}")
 	)
 	(lib_symbols)
-	(arc
-		(start 277.495 123.19)
-		(mid 277.8699 122.2949)
-		(end 278.765 121.92)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "13e3bc56-4a98-40ef-8c39-3b21620a792f")
-	)
-	(arc
-		(start 130.79 123.21)
-		(mid 131.6851 123.5849)
-		(end 132.06 124.48)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "19c30b2f-1391-4be0-8a5f-17a3226c0876")
-	)
-	(arc
-		(start 205.72 102.85)
-		(mid 204.8249 102.4751)
-		(end 204.45 101.58)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "32d6cf91-6373-4ea9-8e86-5eeae1771f68")
-	)
-	(arc
-		(start 214.61 102.85)
-		(mid 216.4061 103.5939)
-		(end 217.15 105.39)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "5a9116de-1b49-4c97-93e0-feb96ef1f6ab")
-	)
-	(arc
-		(start 132.06 121.94)
-		(mid 131.6851 122.8351)
-		(end 130.79 123.21)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "5b059745-d833-4f9d-9745-ec7a90904541")
-	)
-	(arc
-		(start 132.06 113.05)
-		(mid 132.8039 111.2539)
-		(end 134.6 110.51)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "62bb3cd5-23b6-4c8e-a8f2-a293aca5d83b")
-	)
-	(arc
-		(start 204.45 101.58)
-		(mid 204.0751 102.4751)
-		(end 203.18 102.85)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "6830cf07-76be-4df2-9c40-eec6a0ac464f")
-	)
-	(arc
-		(start 278.765 121.92)
-		(mid 277.8699 121.5451)
-		(end 277.495 120.65)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "787eda22-1bf9-4d1b-96b2-11995bb2af0f")
-	)
-	(arc
-		(start 274.955 106.68)
-		(mid 276.7452 107.4298)
-		(end 277.495 109.22)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "7c454724-851d-42c5-8823-df570c1fc5eb")
-	)
-	(arc
-		(start 134.6 135.91)
-		(mid 132.8098 135.1602)
-		(end 132.06 133.37)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "94ad6bc3-4505-4c4a-89fc-83d0c51dd562")
-	)
-	(arc
-		(start 191.75 105.39)
-		(mid 192.4998 103.5998)
-		(end 194.29 102.85)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "b3f34c04-123a-4105-9499-4cc1d0841b6b")
-	)
-	(arc
-		(start 277.495 134.62)
-		(mid 276.7511 136.4161)
-		(end 274.955 137.16)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "fda911f3-adb3-4abb-981f-a877a93c831b")
-	)
-	(text "Page 8"
-		(exclude_from_sim no)
-		(at 220.98 170.18 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(bold yes)
-				(color 100 70 50 1)
-			)
-			(justify right bottom)
-			(href "#8")
-		)
-		(uuid "1a19be72-905c-4256-b655-137336d5cb5f")
-	)
-	(text "Page 5"
-		(exclude_from_sim no)
-		(at 220.98 130.81 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(bold yes)
-				(color 100 70 50 1)
-			)
-			(justify right bottom)
-			(href "#5")
-		)
-		(uuid "b60ecde0-2a85-4071-a728-47148cd80779")
-	)
-	(text "Page 6"
-		(exclude_from_sim no)
-		(at 171.45 130.81 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(bold yes)
-				(color 100 70 50 1)
-			)
-			(justify right bottom)
-			(href "#6")
-		)
-		(uuid "c4ffa47c-7d20-4f9b-8b2e-cdd38fed0cf3")
-	)
-	(text "Page 7"
-		(exclude_from_sim no)
-		(at 342.9 228.6 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(bold yes)
-				(color 100 70 50 1)
-			)
-			(justify right bottom)
-			(href "#7")
-		)
-		(uuid "cfa68ec2-eb5d-4fe1-b988-e6d8ff6b1659")
-	)
-	(text "Page 4"
-		(exclude_from_sim no)
-		(at 271.78 130.81 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(bold yes)
-				(color 20 60 40 1)
-			)
-			(justify right bottom)
-			(href "#4")
-		)
-		(uuid "f04f874a-d252-4474-87f2-c34bbb094a4c")
-	)
-	(text_box "3.3 V to 6 V synchronous boost converter supplying the LT3042 LDO stage.\nTPS61086 switching at 1.2 MHz (fixed frequency, PWM/PFM selectable via MODE). Integrated 2.5 A / 0.13 Ω power switch. Output voltage set via FB resistor divider. Input/output decoupling, soft-start, and loop compensation network. Test points: +3.3V_IN, +6V_OUT, FB, COMP."
-		(exclude_from_sim no)
-		(at 73.66 113.01 0)
-		(size 57.15 12.72)
-		(margins 1.4287 1.4287 1.4287 1.4287)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.381)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "631cc992-1e6e-4a87-a84d-c4d64535fb2a")
-	)
-	(text_box "AD7190 24-bit sigma-delta ADC front-end for Wheatstone bridge acquisition.\nDifferential inputs on SENSE± and OUT± lines with RC input filtering. SPI interface (CS, DIN, DOUT, SCLK, SYNC). External 4.9152 MHz crystal clock. Dual-supply decoupling (+5VA analog / +3.3V digital). P-MOS drive gate for load cell excitation control. Test points on all critical analog and digital nodes."
-		(exclude_from_sim no)
-		(at 279.4 109.22 0)
-		(size 45.72 5.08)
-		(margins 1.4287 1.4287 1.4287 1.4287)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.381)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "971f0c48-6726-412d-badf-cee82cbffedd")
-	)
-	(text_box "Low-noise 5 V analog supply for ADC front-end (AVDD).\nLT3042 ultralow-noise LDO regulator (PSRR > 75 dB). Input: +6V from boost stage. Output: +5VA regulated via RSET = 50 kΩ (ISET = 100 µA). Solid tantalum capacitor on SET pin for noise suppression. Power-Good monitoring via PGFB divider. Test points: VIN, VOUT, SET, PGFB, PG."
-		(exclude_from_sim no)
-		(at 176.53 82.53 0)
-		(size 58.42 5.1)
-		(margins 1.4287 1.4287 1.4287 1.4287)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.381)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-			(justify top)
-		)
-		(uuid "97bb5e92-ab26-4907-9b80-08d49465fc86")
-	)
 	(text_box "[${#}] ${TITLE}"
 		(exclude_from_sim no)
 		(at 144.78 21.59 0)
@@ -329,125 +34,1031 @@
 		)
 		(uuid "f4789478-c68e-4cee-9edd-5d11b744f94d")
 	)
-	(polyline
-		(pts
-			(xy 194.31 102.87) (xy 203.2 102.87)
+	(text "Sheet hierarchy and signal flow. Click a block or its page number to open the sheet."
+		(exclude_from_sim no)
+		(at 210.82 49.53 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(italic yes)
+				(color 120 120 120 1)
+			)
+			(justify bottom)
 		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0b85ae34-9568-4e79-ac77-6fc6aae1f440")
+		(uuid "44ba40cb-e06c-4634-9304-ed7b1456b0c3")
 	)
-	(polyline
-		(pts
-			(xy 172.72 121.92) (xy 185.42 121.92)
+	(text "HOST INTERFACE"
+		(exclude_from_sim no)
+		(at 26.67 72.39 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.4 2.4)
+				(bold yes)
+				(color 74 155 203 1)
+			)
+			(justify left bottom)
 		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "11ef73c0-4959-40e8-98fb-4e8f1f31a498")
+		(uuid "96c111c9-0b5b-4d32-9032-28b333e72057")
 	)
-	(polyline
-		(pts
-			(xy 185.42 161.29) (xy 166.37 161.29)
+	(text "POWER CONVERSION"
+		(exclude_from_sim no)
+		(at 127 72.39 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.4 2.4)
+				(bold yes)
+				(color 176 64 102 1)
+			)
+			(justify left bottom)
 		)
+		(uuid "fdbaab75-f872-4f13-8c64-577bdc62925a")
+	)
+	(text "ANALOG FRONT-END"
+		(exclude_from_sim no)
+		(at 327.66 72.39 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.4 2.4)
+				(bold yes)
+				(color 21 128 61 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "88e6b9d7-b211-45b0-a608-33b7e1274c97")
+	)
+	(text "MECHANICAL"
+		(exclude_from_sim no)
+		(at 26.67 177.8 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.4 2.4)
+				(bold yes)
+				(color 120 120 120 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "54bee523-ad73-4fe4-a08f-7f20f92ee0b5")
+	)
+	(sheet
+		(at 26.67 81.28)
+		(size 66.04 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
 		(stroke
-			(width 0)
+			(width 0.3)
 			(type solid)
 		)
-		(uuid "1ac6a449-9b78-4137-972f-6d459cb5e1cc")
-	)
-	(polyline
-		(pts
-			(xy 166.37 132.08) (xy 166.37 161.29)
+		(fill
+			(color 74 155 203 0.18)
 		)
+		(uuid "ddd4b387-4aa4-48c3-b079-ffb0beb645d3")
+		(property "Sheetname" "Connectors"
+			(at 26.67 80.2509 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.905 1.905)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Connectors.kicad_sch"
+			(at 26.67 119.7746 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(face "Arial")
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "OPEN_WEIGHT"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e"
+					(page "8")
+				)
+			)
+		)
+	)
+	(text "Page 8"
+		(exclude_from_sim no)
+		(at 90.17 116.84 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.54 2.54)
+				(bold yes)
+				(color 100 70 50 1)
+			)
+			(justify right bottom)
+			(href "#8")
+		)
+		(uuid "1a19be72-905c-4256-b655-137336d5cb5f")
+	)
+	(text "J1  host header 7-pin: +3.3V, GND, SPI\nJ2 / J4  load cells 1 & 2\n      5-pin circular: OUT±, EXC±\nH5  WE-SHC shielding frame (AD7190)"
+		(exclude_from_sim no)
+		(at 29.21 85.09 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.9 1.9)
+				(color 40 40 40 1)
+			)
+			(justify left top)
+		)
+		(uuid "23a2c425-a293-460a-879c-1f88be4d0526")
+	)
+	(sheet
+		(at 127 81.28)
+		(size 66.04 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
 		(stroke
-			(width 0)
+			(width 0.3)
 			(type solid)
 		)
-		(uuid "1c421dc5-c2b6-4b0d-bbb4-a2f7fde61a54")
+		(fill
+			(color 176 64 102 0.18)
+		)
+		(uuid "d6110ee2-516c-48c1-b80a-d0f1701ed49f")
+		(property "Sheetname" "TPS61086_3.3V_to_6V"
+			(at 127 80.2509 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.905 1.905)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "TPS61086 - Boost 3V3 to 6V.kicad_sch"
+			(at 127 119.7746 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(face "Arial")
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "OPEN_WEIGHT"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e"
+					(page "6")
+				)
+			)
+		)
+	)
+	(text "Page 6"
+		(exclude_from_sim no)
+		(at 190.5 116.84 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.54 2.54)
+				(bold yes)
+				(color 100 70 50 1)
+			)
+			(justify right bottom)
+			(href "#6")
+		)
+		(uuid "c4ffa47c-7d20-4f9b-8b2e-cdd38fed0cf3")
+	)
+	(text "Boost converter  +3.3V -> +6V\nIC2 TPS61086, 1.2 MHz, soft-start\nL1 + Schottky D3, +3.3V LED D1\nTest points TP14-TP16"
+		(exclude_from_sim no)
+		(at 129.54 85.09 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.9 1.9)
+				(color 40 40 40 1)
+			)
+			(justify left top)
+		)
+		(uuid "c2367b68-cb26-49c1-afca-490a2772af5f")
+	)
+	(sheet
+		(at 227.33 81.28)
+		(size 66.04 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill
+			(color 176 64 102 0.18)
+		)
+		(uuid "e744f3ce-03a6-44a6-8792-1447ef232b9a")
+		(property "Sheetname" "LT3042_6V_to_5VA"
+			(at 227.33 80.2509 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.905 1.905)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "LT3042 - LDO 6V to 5VA.kicad_sch"
+			(at 227.33 119.7746 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(face "Arial")
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "OPEN_WEIGHT"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e"
+					(page "5")
+				)
+			)
+		)
+	)
+	(text "Page 5"
+		(exclude_from_sim no)
+		(at 290.83 116.84 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.54 2.54)
+				(bold yes)
+				(color 100 70 50 1)
+			)
+			(justify right bottom)
+			(href "#5")
+		)
+		(uuid "b60ecde0-2a85-4071-a728-47148cd80779")
+	)
+	(text "Ultralow-noise LDO  +6V -> +5VA\nU2 LT3042, SET = 100 µA x 50 kΩ\nTantalum C14 on SET, +5VA LED D4\nTest points TP10-TP13, TP17"
+		(exclude_from_sim no)
+		(at 229.87 85.09 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.9 1.9)
+				(color 40 40 40 1)
+			)
+			(justify left top)
+		)
+		(uuid "bc6e2f27-fb72-4b56-ae37-bedeba868afa")
+	)
+	(sheet
+		(at 327.66 81.28)
+		(size 66.04 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill
+			(color 21 128 61 0.18)
+		)
+		(uuid "f06537ee-772d-44d3-8c50-e0ba41038c9c")
+		(property "Sheetname" "AD7190_Weight_Sensor"
+			(at 327.66 80.2509 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.905 1.905)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "AD7190 - Weight Sensor.kicad_sch"
+			(at 327.66 119.7746 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(face "Arial")
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "OPEN_WEIGHT"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e"
+					(page "4")
+				)
+			)
+		)
+	)
+	(text "Page 4"
+		(exclude_from_sim no)
+		(at 391.16 116.84 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.54 2.54)
+				(bold yes)
+				(color 100 70 50 1)
+			)
+			(justify right bottom)
+			(href "#4")
+		)
+		(uuid "f04f874a-d252-4474-87f2-c34bbb094a4c")
+	)
+	(text "U1 AD7190  24-bit sigma-delta ADC\n2 differential ch., RC input filters\nRatiometric ref. REFIN1 = EXC±\nY2 4.9152 MHz, Q1 excitation switch\nTest points TP1-TP9, TP18"
+		(exclude_from_sim no)
+		(at 330.2 85.09 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.9 1.9)
+				(color 40 40 40 1)
+			)
+			(justify left top)
+		)
+		(uuid "46e87c90-ed7c-493f-932c-2ab3dfc512e5")
+	)
+	(sheet
+		(at 26.67 186.69)
+		(size 66.04 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill
+			(color 120 120 120 0.18)
+		)
+		(uuid "35ce4035-3b3b-4514-9c4f-75699da381c4")
+		(property "Sheetname" "Holes, Fiducials"
+			(at 26.67 185.6609 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.905 1.905)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Holes - Fiducials.kicad_sch"
+			(at 26.67 225.1846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(face "Arial")
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "OPEN_WEIGHT"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e"
+					(page "7")
+				)
+			)
+		)
+	)
+	(text "Page 7"
+		(exclude_from_sim no)
+		(at 90.17 222.25 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.54 2.54)
+				(bold yes)
+				(color 100 70 50 1)
+			)
+			(justify right bottom)
+			(href "#7")
+		)
+		(uuid "cfa68ec2-eb5d-4fe1-b988-e6d8ff6b1659")
+	)
+	(text "H1-H4  mounting holes\nFID1-FID6  fiducials\nNo electrical function"
+		(exclude_from_sim no)
+		(at 29.21 190.5 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.9 1.9)
+				(color 40 40 40 1)
+			)
+			(justify left top)
+		)
+		(uuid "baf557b3-1dad-4448-97cb-2074c52b94b2")
 	)
 	(polyline
 		(pts
-			(xy 277.495 120.65) (xy 277.495 109.22)
+			(xy 92.71 100.33) (xy 127 100.33)
 		)
 		(stroke
-			(width 0)
-			(type default)
+			(width 0.8)
+			(type solid)
+			(color 214 64 180 1)
 		)
-		(uuid "8b678fb1-fee7-4461-95f7-7f383f478fdc")
+		(fill
+			(type none)
+		)
+		(uuid "449292cc-792b-4e2c-a124-dfc59bf8a31b")
 	)
 	(polyline
 		(pts
-			(xy 132.08 121.92) (xy 132.08 113.03)
+			(xy 127 100.33) (xy 124.6 101.41) (xy 124.6 99.25) (xy 127 100.33)
 		)
 		(stroke
-			(width 0)
-			(type default)
+			(width 0.1)
+			(type solid)
+			(color 214 64 180 1)
 		)
-		(uuid "8c7de816-3d34-497f-b0c8-22f80559d2d8")
+		(fill
+			(type color)
+			(color 214 64 180 1)
+		)
+		(uuid "94f58712-4f6e-4d2a-a89c-b83dda7412bf")
+	)
+	(text "+3.3V"
+		(exclude_from_sim no)
+		(at 109.855 99.06 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(bold yes)
+				(color 214 64 180 1)
+			)
+			(justify bottom)
+		)
+		(uuid "0d737b49-19b5-4114-8e56-1c7cf0f2dd20")
 	)
 	(polyline
 		(pts
-			(xy 277.495 123.19) (xy 277.495 134.62)
+			(xy 193.04 100.33) (xy 227.33 100.33)
 		)
 		(stroke
-			(width 0)
-			(type default)
+			(width 0.8)
+			(type solid)
+			(color 214 64 180 1)
 		)
-		(uuid "903e49b2-1b5d-4317-a33b-adfda1594a88")
+		(fill
+			(type none)
+		)
+		(uuid "15e33a55-2330-49fc-8326-4ef5c44e7d1e")
 	)
 	(polyline
 		(pts
-			(xy 222.25 121.92) (xy 236.22 121.92)
+			(xy 227.33 100.33) (xy 224.93 101.41) (xy 224.93 99.25) (xy 227.33 100.33)
 		)
 		(stroke
-			(width 0)
-			(type default)
+			(width 0.1)
+			(type solid)
+			(color 214 64 180 1)
 		)
-		(uuid "94fd76c8-c682-43aa-9635-81f0fa885a1b")
+		(fill
+			(type color)
+			(color 214 64 180 1)
+		)
+		(uuid "032f9f10-06f5-4f4b-b5b9-5a418874d1b5")
+	)
+	(text "+6V"
+		(exclude_from_sim no)
+		(at 210.185 99.06 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(bold yes)
+				(color 214 64 180 1)
+			)
+			(justify bottom)
+		)
+		(uuid "adef5d8a-6692-4f4c-a293-2b69737437e0")
 	)
 	(polyline
 		(pts
-			(xy 132.08 133.35) (xy 132.08 124.46)
+			(xy 293.37 100.33) (xy 327.66 100.33)
 		)
 		(stroke
-			(width 0)
-			(type default)
+			(width 0.8)
+			(type solid)
+			(color 214 64 180 1)
 		)
-		(uuid "9543d363-0f36-4c41-97bc-b97723f48818")
+		(fill
+			(type none)
+		)
+		(uuid "bdcc2a42-319c-482c-a4a9-70a793deb959")
 	)
 	(polyline
 		(pts
-			(xy 205.74 102.87) (xy 214.63 102.87)
+			(xy 327.66 100.33) (xy 325.26 101.41) (xy 325.26 99.25) (xy 327.66 100.33)
 		)
 		(stroke
-			(width 0)
-			(type default)
+			(width 0.1)
+			(type solid)
+			(color 214 64 180 1)
 		)
-		(uuid "c1d057ac-a252-4ab6-872b-14ee4b112d5f")
+		(fill
+			(type color)
+			(color 214 64 180 1)
+		)
+		(uuid "3ee1691c-2063-44de-8955-04e78c08be22")
+	)
+	(text "+5VA"
+		(exclude_from_sim no)
+		(at 310.515 99.06 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(bold yes)
+				(color 214 64 180 1)
+			)
+			(justify bottom)
+		)
+		(uuid "8f746dee-031a-4f8c-8384-ae6a9bf1ac5e")
+	)
+	(text "AVDD +\nexcitation"
+		(exclude_from_sim no)
+		(at 310.515 102.235 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.3 1.3)
+				(color 120 120 120 1)
+			)
+			(justify top)
+		)
+		(uuid "d3e476cf-39e6-4ccd-8991-edafe029d9bf")
 	)
 	(polyline
 		(pts
-			(xy 222.25 161.29) (xy 265.43 161.29)
+			(xy 58.42 119.38) (xy 58.42 132.08) (xy 361.95 132.08) (xy 361.95 119.38)
 		)
 		(stroke
-			(width 0)
-			(type default)
+			(width 0.8)
+			(type solid)
+			(color 21 128 61 1)
 		)
-		(uuid "c7757be5-73f2-4ffb-9b37-5a18edad625f")
+		(fill
+			(type none)
+		)
+		(uuid "f203ff4d-3d8e-438c-b901-ad418272b0fe")
 	)
 	(polyline
 		(pts
-			(xy 265.43 132.08) (xy 265.43 161.29)
+			(xy 361.95 119.38) (xy 360.87 121.78) (xy 363.03 121.78) (xy 361.95 119.38)
 		)
 		(stroke
-			(width 0)
-			(type default)
+			(width 0.1)
+			(type solid)
+			(color 21 128 61 1)
 		)
-		(uuid "d747b3e0-72c6-400d-ae09-c78003d214fa")
+		(fill
+			(type color)
+			(color 21 128 61 1)
+		)
+		(uuid "ce8f858c-a982-41b1-949d-f7d61686ab32")
+	)
+	(text "Load cells 1 & 2:  OUT± -> AIN1-AIN4,  EXC± from +5VA via Q1 / BPDSW"
+		(exclude_from_sim no)
+		(at 210.82 130.81 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(bold yes)
+				(color 21 128 61 1)
+			)
+			(justify bottom)
+		)
+		(uuid "fd95ed3b-dca2-4829-9af3-10b8aa289e5b")
+	)
+	(polyline
+		(pts
+			(xy 45.72 119.38) (xy 45.72 144.78) (xy 374.65 144.78) (xy 374.65 119.38)
+		)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 40 90 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "71645a4f-75fe-4782-8231-f0e202a9cebf")
+	)
+	(polyline
+		(pts
+			(xy 374.65 119.38) (xy 373.57 121.78) (xy 375.73 121.78) (xy 374.65 119.38)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+			(color 40 90 200 1)
+		)
+		(fill
+			(type color)
+			(color 40 90 200 1)
+		)
+		(uuid "0c8cf25c-58e0-410a-a355-3f050a916039")
+	)
+	(polyline
+		(pts
+			(xy 45.72 119.38) (xy 44.64 121.78) (xy 46.8 121.78) (xy 45.72 119.38)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+			(color 40 90 200 1)
+		)
+		(fill
+			(type color)
+			(color 40 90 200 1)
+		)
+		(uuid "a04d5244-8da1-4746-9cc7-ad37d02275ce")
+	)
+	(text "SPI mode 3:  CS, SCLK, DIN, DOUT/RDY, SYNC"
+		(exclude_from_sim no)
+		(at 210.82 143.51 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(bold yes)
+				(color 40 90 200 1)
+			)
+			(justify bottom)
+		)
+		(uuid "50b9c4f5-ee9b-48da-8402-8d217fda2365")
+	)
+	(polyline
+		(pts
+			(xy 33.02 119.38) (xy 33.02 157.48) (xy 387.35 157.48) (xy 387.35 119.38)
+		)
+		(stroke
+			(width 0.6)
+			(type dash)
+			(color 214 64 180 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "71384891-7849-460b-a04c-f34b1f9afaf5")
+	)
+	(polyline
+		(pts
+			(xy 387.35 119.38) (xy 386.27 121.78) (xy 388.43 121.78) (xy 387.35 119.38)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+			(color 214 64 180 1)
+		)
+		(fill
+			(type color)
+			(color 214 64 180 1)
+		)
+		(uuid "1a3b2d56-c858-4050-8c94-999d04a5ea2e")
+	)
+	(text "+3.3V -> AD7190 DVDD"
+		(exclude_from_sim no)
+		(at 210.82 156.21 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(bold yes)
+				(color 214 64 180 1)
+			)
+			(justify bottom)
+		)
+		(uuid "19fc6200-e39a-4c06-9b3b-a32b1cf09909")
+	)
+	(text "LEGEND"
+		(exclude_from_sim no)
+		(at 129.54 177.8 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.4 2.4)
+				(bold yes)
+				(color 40 40 40 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "e39f9167-6a52-4e7c-b99c-33195b76e8e4")
+	)
+	(polyline
+		(pts
+			(xy 129.54 185.42) (xy 139.7 185.42)
+		)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 214 64 180 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "3baadced-817a-40ee-9a02-a3a7421824fd")
+	)
+	(text "Power rail"
+		(exclude_from_sim no)
+		(at 143.51 186.055 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(color 40 40 40 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "aa7654c2-c67b-4ece-ab10-6b596cc0f21e")
+	)
+	(polyline
+		(pts
+			(xy 129.54 190.5) (xy 139.7 190.5)
+		)
+		(stroke
+			(width 0.6)
+			(type dash)
+			(color 214 64 180 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "51576157-a8c6-48f8-94e6-dc71eba0a364")
+	)
+	(text "Secondary supply"
+		(exclude_from_sim no)
+		(at 143.51 191.135 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(color 40 40 40 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "8f09c7f1-e16c-4a46-8010-325f7b97ddc8")
+	)
+	(polyline
+		(pts
+			(xy 129.54 195.58) (xy 139.7 195.58)
+		)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 21 128 61 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "0f1cb3c8-8b40-48d5-bfde-173254daf11e")
+	)
+	(text "Analog signal"
+		(exclude_from_sim no)
+		(at 143.51 196.215 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(color 40 40 40 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "dcf1b7f4-8d40-4367-8051-26049d85df43")
+	)
+	(polyline
+		(pts
+			(xy 129.54 200.66) (xy 139.7 200.66)
+		)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 40 90 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "c6980275-31fc-4f7d-881e-e330ca0e3a37")
+	)
+	(text "Digital / SPI"
+		(exclude_from_sim no)
+		(at 143.51 201.295 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(color 40 40 40 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "05ca5a90-824e-4301-861a-3e92cc4a2cdd")
+	)
+	(text "DOCUMENT INDEX"
+		(exclude_from_sim no)
+		(at 205.74 177.8 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.4 2.4)
+				(bold yes)
+				(color 40 40 40 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "b1fa2959-4032-4199-97c8-6c8f479f48d9")
+	)
+	(text "[1]  Title Page"
+		(exclude_from_sim no)
+		(at 205.74 186.055 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(bold yes)
+				(color 100 70 50 1)
+			)
+			(justify left bottom)
+			(href "#1")
+		)
+		(uuid "1979863e-e89a-438f-aec5-203f07e8d384")
+	)
+	(text "[2]  Block Diagram"
+		(exclude_from_sim no)
+		(at 205.74 191.135 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(bold yes)
+				(color 100 70 50 1)
+			)
+			(justify left bottom)
+			(href "#2")
+		)
+		(uuid "7b61e65e-9892-4392-8676-6e9318e9a3a6")
+	)
+	(text "[3]  Project Architecture"
+		(exclude_from_sim no)
+		(at 205.74 196.215 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(bold yes)
+				(color 120 120 120 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "160d25cf-efbf-49ef-81c2-c320ea6765d7")
+	)
+	(text "[4]  AD7190 Weight Sensor"
+		(exclude_from_sim no)
+		(at 205.74 201.295 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(bold yes)
+				(color 100 70 50 1)
+			)
+			(justify left bottom)
+			(href "#4")
+		)
+		(uuid "e87b1764-14e3-4a09-8ae9-199bacabd6be")
+	)
+	(text "[5]  LT3042 LDO 6V -> 5VA"
+		(exclude_from_sim no)
+		(at 205.74 206.375 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(bold yes)
+				(color 100 70 50 1)
+			)
+			(justify left bottom)
+			(href "#5")
+		)
+		(uuid "2e8be7bf-a935-4263-b8a4-d92fbc41868c")
+	)
+	(text "[6]  TPS61086 Boost 3V3 -> 6V"
+		(exclude_from_sim no)
+		(at 269.24 186.055 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(bold yes)
+				(color 100 70 50 1)
+			)
+			(justify left bottom)
+			(href "#6")
+		)
+		(uuid "d9573ec0-7202-4bcc-a6d1-04d72778231f")
+	)
+	(text "[7]  Holes, Fiducials"
+		(exclude_from_sim no)
+		(at 269.24 191.135 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(bold yes)
+				(color 100 70 50 1)
+			)
+			(justify left bottom)
+			(href "#7")
+		)
+		(uuid "884bd5a8-93e9-496b-b731-2e277bbdcc8d")
+	)
+	(text "[8]  Connectors"
+		(exclude_from_sim no)
+		(at 269.24 196.215 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(bold yes)
+				(color 100 70 50 1)
+			)
+			(justify left bottom)
+			(href "#8")
+		)
+		(uuid "f6c8ba6e-b8b0-4d32-9833-6900cc00dffd")
+	)
+	(text "[9]  Power Sequencing"
+		(exclude_from_sim no)
+		(at 269.24 201.295 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(bold yes)
+				(color 100 70 50 1)
+			)
+			(justify left bottom)
+			(href "#9")
+		)
+		(uuid "fa2acaa1-666c-4b65-b27d-104b45db4729")
+	)
+	(text "[10]  Revision History"
+		(exclude_from_sim no)
+		(at 269.24 206.375 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(bold yes)
+				(color 100 70 50 1)
+			)
+			(justify left bottom)
+			(href "#10")
+		)
+		(uuid "7eaf40f5-ceca-41d1-911f-d49e4be66afa")
 	)
 	(image
 		(at 242.57 264.16)
@@ -6588,246 +7199,6 @@
 			"QRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAE"
 			"QRAE8WhDK/ESBEEQBEEQBEEQBPHQQAMZBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQ"
 			"BEEQBEEQBEEQBEEQBEEQBEEQBEEQBPGI8/8DQMweG4AQ8EsAAAAASUVORK5CYII="
-		)
-	)
-	(sheet
-		(at 307.34 209.55)
-		(size 36.83 20.32)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 255 200 0 0.502)
-		)
-		(uuid "35ce4035-3b3b-4514-9c4f-75699da381c4")
-		(property "Sheetname" "Holes, Fiducials"
-			(at 307.34 208.5209 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.905 1.905)
-					(bold yes)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Holes - Fiducials.kicad_sch"
-			(at 307.34 230.4546 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "Arial")
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "OPEN_WEIGHT"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e"
-					(page "7")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 135.89 111.76)
-		(size 36.83 20.32)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 157 191 255 1)
-		)
-		(uuid "d6110ee2-516c-48c1-b80a-d0f1701ed49f")
-		(property "Sheetname" "TPS61086_3.3V_to_6V"
-			(at 135.89 110.7309 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.905 1.905)
-					(bold yes)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "TPS61086 - Boost 3V3 to 6V.kicad_sch"
-			(at 135.89 132.6646 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "Arial")
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "OPEN_WEIGHT"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e"
-					(page "6")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 185.42 151.13)
-		(size 36.83 20.32)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 255 200 0 0.502)
-		)
-		(uuid "ddd4b387-4aa4-48c3-b079-ffb0beb645d3")
-		(property "Sheetname" "Connectors"
-			(at 185.42 150.1009 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.905 1.905)
-					(bold yes)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Connectors.kicad_sch"
-			(at 185.42 172.0346 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "Arial")
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "OPEN_WEIGHT"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e"
-					(page "8")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 185.42 111.76)
-		(size 36.83 20.32)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 157 191 255 1)
-		)
-		(uuid "e744f3ce-03a6-44a6-8792-1447ef232b9a")
-		(property "Sheetname" "LT3042_6V_to_5VA"
-			(at 185.42 110.7309 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.905 1.905)
-					(bold yes)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "LT3042 - LDO 6V to 5VA.kicad_sch"
-			(at 185.42 132.6646 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "Arial")
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "OPEN_WEIGHT"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e"
-					(page "5")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 236.22 111.76)
-		(size 36.83 20.32)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 128 255 128 0.5)
-		)
-		(uuid "f06537ee-772d-44d3-8c50-e0ba41038c9c")
-		(property "Sheetname" "AD7190_Weight_Sensor"
-			(at 236.22 110.7309 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.905 1.905)
-					(bold yes)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "AD7190 - Weight Sensor.kicad_sch"
-			(at 236.22 132.6646 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "Arial")
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "OPEN_WEIGHT"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e"
-					(page "4")
-				)
-			)
 		)
 	)
 )
