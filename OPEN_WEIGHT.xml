@@ -105,8 +105,8 @@ Fixed
 -   Connectors not linked to ADC in schematic
 
 -   AD7190 solder-mask bridges</textvar>
-    <textvar name="RELEASE_DATE">29-Sep-2026</textvar>
-    <textvar name="RELEASE_DATE_NUM">2026-09-29</textvar>
+    <textvar name="RELEASE_DATE">08-Oct-2026</textvar>
+    <textvar name="RELEASE_DATE_NUM">2026-10-08</textvar>
     <textvar name="RELEASE_TITLE_UNRELEASED">Version Unreleased</textvar>
     <textvar name="REVISION">+ (Unreleased)</textvar>
     <textvar name="SHEET_NAME_1">Cover Page</textvar>
