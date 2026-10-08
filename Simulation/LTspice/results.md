@@ -4,9 +4,15 @@
 
 | Measure | Result |
 | --- | --- |
-| `v6_final` | `AVG(V(+6V) )=6.03726508557 FROM 0.02 TO 0.025` |
-| `t6_90` | `V(+6V)=5.436  AT 0.00110710913041` |
-| `il_peak` | `MAX(I(L1))=1.12538778782 FROM 0 TO 0.025` |
+| `v6_final` | `AVG(V(+6V) )=6.03726749766 FROM 0.59 TO 0.6` |
+| `v6_max` | `MAX(V(+6V))=6.34647607803 FROM 0 TO 0.6` |
+| `t6_90` | `V(+6V)=5.436  AT 0.00110412875459` |
+| `il_peak` | `MAX(I(L1))=1.12559652328 FROM 0 TO 0.6` |
+| `t_pg` | `V(PG)=3  AT 0.004999197585` |
+| `v5_25m` | `V(+5VA) =4.64476823807 at 0.025` |
+| `t5_99` | `V(+5VA)=4.95  AT 0.240769169292` |
+| `t5_999` | `V(+5VA)=4.995  AT 0.494005835948` |
+| `v5_final` | `AVG(V(+5VA) )=4.99800421322 FROM 0.59 TO 0.6` |
 
 ## 02_LT3042_Startup
 
@@ -23,11 +29,11 @@
 
 | Measure | Result |
 | --- | --- |
-| `v6_avg` | `AVG(V(+6V) )=6.03726225368 FROM 0.003 TO 0.004` |
-| `v6_pp` | `PP(V(+6V) )=0.0352158546448 FROM 0.003 TO 0.004` |
-| `v5_avg` | `AVG(V(+5VA) )=4.99998639358 FROM 0.003 TO 0.004` |
-| `v5_pp` | `PP(V(+5VA) )=9.05990600586e-06 FROM 0.003 TO 0.004` |
-| `i3v3` | `AVG(I(V1) )=-0.0665540901043 FROM 0.003 TO 0.004` |
+| `v6_avg` | `AVG(V(+6V) )=6.03726228079 FROM 0.003 TO 0.004` |
+| `v6_pp` | `PP(V(+6V) )=0.0352160957043 FROM 0.003 TO 0.004` |
+| `v5_avg` | `AVG(V(+5VA) )=4.99998638518 FROM 0.003 TO 0.004` |
+| `v5_pp` | `PP(V(+5VA) )=8.85652523674e-06 FROM 0.003 TO 0.004` |
+| `i3v3` | `AVG(I(V1) )=-0.0665540100255 FROM 0.003 TO 0.004` |
 
 ## 04_LT3042_PSRR
 
@@ -44,4 +50,21 @@
 | `f3db_diff` | `mag(V(OUTPd,OUTNd))=0.7071 AT 2755.98303789` |
 | `f3db_cm` | `mag(V(OUTPc))=0.7071 AT 57875.6681931` |
 | `att_diff_1m2` | `mag(V(OUTPd,OUTNd)) =(-52.7779354439dB,0°) at 1200000` |
+
+## FFT of the steady-state rails (computed by run_simulations.py)
+
+Bridge powered: 03_Power_Ripple, 2 to 6 ms. Standby: last 10 ms of 01_Power_Chain_Startup.
+
+| Quantity | Result |
+| --- | --- |
+| +6V at 1.2 MHz, bridge powered | 194.2 µV rms |
+| +6V harmonics 2 / 3 / 4, bridge powered | 78.1 µV / 34.8 µV / 20.0 µV rms |
+| +6V 1 kHz - 1 MHz, bridge powered | 2.8 µV rms |
+| +5VA at 1.2 MHz, bridge powered | 5.3 nV rms |
+| +5VA 1 kHz - 1 MHz, bridge powered | 1.0 nV rms |
+| +6V -> +5VA rejection at 1.2 MHz | 91.2 dB |
+| Standby: switching cycles with a pulse | 46 % |
+| Standby: strongest +6V line below 1.2 MHz | 115.0 µV rms at 555.6 kHz |
+| Standby: +6V 1 kHz - 1 MHz | 231.3 µV rms |
+| Standby: +6V at 1.2 MHz | 85.1 µV rms |
 

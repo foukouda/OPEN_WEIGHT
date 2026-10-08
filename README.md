@@ -161,9 +161,9 @@ The analog power chain and the ADC input filter are simulated with **LTspice 26*
 
 | File | Analysis | What it checks |
 | --- | --- | --- |
-| `01_Power_Chain_Startup.asc` | `.tran` 25 ms, switching | +3.3V → TPS61086 → +6V → LT3042 → +5VA soft-start, inductor current |
+| `01_Power_Chain_Startup.asc` | `.tran` 600 ms, switching | +3.3V → TPS61086 → +6V → LT3042 → +5VA: boost soft-start, inductor current, +5VA settling to 5 V |
 | `02_LT3042_Startup.asc` | `.tran` 1 s | +5VA rise, Power-Good, load-cell excitation turn-on (Q1) |
-| `03_Power_Ripple.asc` | `.tran` 4 ms, switching | Boost ripple on +6V and what remains on +5VA, input current |
+| `03_Power_Ripple.asc` | `.tran` 6 ms, switching | Boost ripple on +6V and what remains on +5VA (waveform and FFT), input current |
 | `04_LT3042_PSRR.asc` | `.ac` 10 Hz – 10 MHz | LT3042 ripple rejection with the board's capacitors |
 | `05_AD7190_Input_Filter.asc` | `.ac` 10 Hz – 100 MHz | Differential / common-mode response of the AIN RC filter |
 
@@ -184,9 +184,13 @@ The analog power chain and the ADC input filter are simulated with **LTspice 26*
 | Peak inductor current at start-up | 1.13 A | below the 2.5 A Isat of L1 |
 | +6V ripple, 20 MHz bandwidth | 0.7 mV pp | discontinuous conduction at 1.2 MHz, I(L1) peak ≈ 170 mA; the raw trace shows 35 mV single-sample spikes on the switching edges |
 | +5VA ripple, 20 MHz bandwidth | < 1 µV pp | 9 µV pp raw, at the numerical resolution of the simulation |
+| +6V spectrum, bridge powered | 194 µV rms at 1.2 MHz | FFT of simulation 03: only the switching frequency and its harmonics (78 / 35 / 20 µV rms); 2.8 µV rms in total from 1 kHz to 1 MHz |
+| +5VA spectrum, bridge powered | 5.3 nV rms at 1.2 MHz | 91 dB below +6V, in line with the AC analysis below |
+| +6V spectrum in standby (Q1 off) | lines from ≈ 90 kHz, up to 115 µV rms | Power Save Mode: the boost only switches in 46 % of the cycles, which spreads the ripple below 1.2 MHz (231 µV rms from 1 kHz to 1 MHz) |
 | LT3042 PSRR at 1.2 MHz | 92 dB | ideal layout; real PSRR at MHz is limited by PCB coupling |
 | PG goes high | ≈ 5 ms | end of the LT3042 fast start-up (+5VA = 4.59 V) |
-| +5VA reaches 99 % / 99.9 % | 248 ms / 501 ms | then τ = RSET·CSET = 110 ms |
+| +5VA after 25 ms / 600 ms | 4.645 V / 4.998 V | complete switching chain (01); after the fast start-up +5VA only rises with τ = RSET·CSET = 110 ms, so a short simulation window shows it below 5 V |
+| +5VA reaches 99 % / 99.9 % | 241 ms / 494 ms | complete switching chain (01); 248 ms / 501 ms in 02, where the boost is a 12 ms ramp |
 | +5VA dip when Q1 turns on | 29 mV | 350 Ω bridge + SENSE± capacitors switched onto +5VA |
 | Bridge excitation V(SENSE+) − V(SENSE−) | 4.955 V | Q1 R<sub>DS(on)</sub> + BPDSW drop |
 | Input current from the host (+3.3V) | 66.5 mA | includes D1 (≈ 15 mA) and D4 (≈ 5 mA) LEDs |
@@ -204,6 +208,9 @@ The analog power chain and the ADC input filter are simulated with **LTspice 26*
   <img alt="Steady-state ripple" src="Images/Simulation/sim03_ripple.png" width="80%">
 </p>
 <p align="center">
+  <img alt="Spectrum of +6V and +5VA" src="Images/Simulation/sim03_spectrum.png" width="80%">
+</p>
+<p align="center">
   <img alt="LT3042 PSRR" src="Images/Simulation/sim04_psrr.png" width="80%">
 </p>
 <p align="center">
@@ -214,11 +221,12 @@ The analog power chain and the ADC input filter are simulated with **LTspice 26*
 
 ```bash
 cd Simulation/LTspice
-python run_simulations.py            # runs LTspice in batch mode, redraws Images/Simulation/*.png and results.md
-python run_simulations.py --no-run   # only redraw from the existing .raw files
+python run_simulations.py              # runs LTspice in batch mode, redraws Images/Simulation/*.png and results.md
+python run_simulations.py --only 03 04 # runs only these simulations, then redraws
+python run_simulations.py --no-run     # only redraw from the existing .raw files
 ```
 
-Or open any `.asc` in LTspice and press *Run*. Simulations 01 and 03 switch at 1.2 MHz and take a few minutes.
+Or open any `.asc` in LTspice and press *Run*. Simulation 03 switches at 1.2 MHz and takes about a minute. Simulation 01 covers 600 ms of 1.2 MHz switching: about 30 minutes and a 2.8 GB `.raw` file (set `.tran 0 25m` to look at the boost soft-start only, about 1 minute).
 
 > The simulations validate the design intent (regulation, sequencing, filtering). They do not replace bench measurements: layout parasitics, capacitor DC-bias derating and the real TPS61086 control loop will change the ripple figures.
 
