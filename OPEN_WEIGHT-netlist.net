@@ -1,7 +1,7 @@
 (export
 	(version "E")
 	(design
-		(source "/tmp/tmp-kibot-net_sch_print-40kcmhau/OPEN_WEIGHT.kicad_sch")
+		(source "/tmp/tmp-kibot-net_sch_print-ndjz_l0w/OPEN_WEIGHT.kicad_sch")
 		(date "Date")
 		(tool "Eeschema 10.0.5-unknown-202607221313~667fa36054~ubuntu25.10.1")
 		(textvar
@@ -25,9 +25,9 @@
 		(textvar
 			(name "RELEASE_BODY_UNRELEASED") "___________________________________\n\nAdded\n\n-   AD7190 front-end, 2 load-cell inputs\n\n-   +3.3V -> TPS61086 6 V -> LT3042 +5VA\n\n-   Self-contained libs and 3D models (lib/)\n\n-   JLCPCB 4-layer rules and stackup\n\n-   LTspice simulations (Simulation/LTspice)\n\n___________________________________\n\nChanged\n\n-   Renamed to OPEN_WEIGHT, KiCad 10\n\n___________________________________\n\nFixed\n\n-   Connectors not linked to ADC in schematic\n\n-   AD7190 solder-mask bridges")
 		(textvar
-			(name "RELEASE_DATE") "29-Sep-2026")
+			(name "RELEASE_DATE") "08-Oct-2026")
 		(textvar
-			(name "RELEASE_DATE_NUM") "2026-09-29")
+			(name "RELEASE_DATE_NUM") "2026-10-08")
 		(textvar
 			(name "RELEASE_TITLE_UNRELEASED") "Version Unreleased")
 		(textvar
