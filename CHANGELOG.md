@@ -13,6 +13,7 @@ Keep entries short: the `[Unreleased]` section is printed on the schematic Revis
 -   Self-contained libs and 3D models (lib/)
 -   JLCPCB 4-layer rules and stackup
 -   LTspice simulations (Simulation/LTspice)
+-   openEMS layout coupling (Simulation/openEMS)
 
 ### Changed
 
