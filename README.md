@@ -232,6 +232,72 @@ Or open any `.asc` in LTspice and press *Run*. Simulation 03 switches at 1.2 MHz
 
 ***
 
+## LAYOUT COUPLING (openEMS)
+
+The routed copper is simulated with the **openEMS 0.0.36** field solver (FDTD) in [`Simulation/openEMS/`](Simulation/openEMS), to find what the boost stage leaves on the AD7190 inputs through the layout itself. The four copper layers are taken from the KiCad board and one source of the boost stage is driven at a time:
+
+| Drive | Source | Result |
+| --- | --- | --- |
+| `sw` | Switch node voltage (IC2 pin 6) | Mutual capacitance to each analog net |
+| `loop` | Current of the commutation loop IC2 – D3 – C19/C20 | Mutual inductance to the connector tracks, the input filter and the ADC pins |
+| `input` | Current of the input loop C21/C22 – L1 – IC2 | Same |
+| `coil` | Current loop of the size of L1, at its place | Same, for the stray field of the inductor |
+
+Each drive is run on the bare board and with the WE-SHC shield H5 fitted with its cover (the frame alone only for the `sw` drive). `measurement_quality.py` then puts these couplings together with the waveforms of LTspice simulation 03 (V(SW) and I(L1), bridge powered) and with the input filter read from the board (R1/R2/R4/R5, C6/C8/C10, C27/C28/C29, a 350 Ω load cell on each connector). The result is the voltage left between the two pins of each ADC input.
+
+**Results**
+
+Worst case: the AD7190 samples its inputs at 307.2 kHz (MCLK / 16) and its digital filter does not reject what falls on a multiple of that rate. 4 × 307.2 kHz = 1.229 MHz is inside the tolerance of the TPS61086 oscillator, so nothing is credited to the digital filter. Away from such a coincidence the digital filter removes the switching frequency altogether.
+
+| Between the two pins of the input, at 1.2 MHz | Bare board | Shield H5 with its cover |
+| --- | --- | --- |
+| Channel 1 (J4), switch node voltage | 0.04 nV rms | 0.004 nV rms |
+| Channel 1 (J4), boost current loops | 3.7 nV rms | 15 nV rms |
+| Channel 2 (J2), switch node voltage | 0.2 nV rms | 0.06 nV rms |
+| Channel 2 (J2), boost current loops | 38 nV rms | 15 nV rms |
+| Reference input (REFIN1), all together | 95 nV rms | 29 nV rms |
+| For comparison: noise of the AD7190 itself (4.7 Hz, gain 128) | 8.5 nV rms | 8.5 nV rms |
+
+- Capacitive coupling from the switch node is negligible: 0.006 to 0.06 fF to each analog net on the bare board.
+- The path that counts is magnetic. The current loops of the boost stage induce a voltage in the small loop between the capacitor across each pair (C6, C28) and the ADC pins, behind the filter, and around the two capacitors to ground (C8/C10, C27/C29).
+- 15 nV is 1.5 ppm of what a 2 mV/V load cell gives at full load under 5 V, and less than twice the noise of the AD7190 itself.
+- On the bare board channel 1 (J4) is ten times less exposed than channel 2 (J2), which sits on the side of the boost stage.
+- With the cover both channels end up at the same level. What remains comes from the input loop; how it gets under the cover is not identified.
+- The reference input sees more, but the reading is a ratio to it: 95 nV on 5 V is 19 ppb.
+- L1 is a shielded inductor and its stray field is not published, so it is only bounded, all of its stored energy being taken as stray field: at most 0.9 µV (channel 1) and 2.7 µV (channel 2) on the bare board, 18 nV and 220 nV with the cover. The bound goes with the square root of the share of energy that really leaks. This is the reason to fit the cover.
+- Every harmonic up to 250 MHz taken together gives 140 nV (channel 1) and 730 nV (channel 2) on the bare board, 26 nV and 72 nV with the cover. This is a ceiling: the input stage of the AD7190 does not follow tens of MHz, and the LTspice switch commutates in no time.
+- A 0.15 mm mesh instead of 0.2 mm changes the commutation loop result by −5 % on channel 1 and +27 % on channel 2.
+
+The complete tables are in [`Simulation/openEMS/results.md`](Simulation/openEMS/results.md).
+
+<p align="center">
+  <img alt="Interference at the AD7190 inputs" src="Images/Simulation/openems_measurement_quality.png" width="90%">
+</p>
+<p align="center">
+  <img alt="Mutual capacitance to the switch node" src="Images/Simulation/openems_sw_coupling.png" width="90%">
+</p>
+<p align="center">
+  <img alt="Electric field of the switch node" src="Images/Simulation/openems_sw_efield.png" width="90%">
+  <br><sub>Field over time: <a href="Images/Simulation/openems_sw_efield.mp4">Images/Simulation/openems_sw_efield.mp4</a></sub>
+</p>
+
+**Re-run the simulation** (Windows, openEMS and its Python 3.11 environment installed in `C:\openEMS`):
+
+```bash
+cd Simulation/openEMS
+"C:\Program Files\KiCad\10.0\bin\python.exe" export_kicad_geometry.py   # copper of the board -> geometry.json
+C:\openEMS\venv\Scripts\python.exe sw_coupling.py --check               # mesh the board and verify the nets
+C:\openEMS\venv\Scripts\python.exe sw_coupling.py --case open           # the four drives on the bare board
+C:\openEMS\venv\Scripts\python.exe sw_coupling.py --case shield         # the same with the cover
+C:\openEMS\venv\Scripts\python.exe measurement_quality.py               # results.md and the figure
+```
+
+One run meshes 1.85 M cells and takes about 13 minutes on 8 cores. `measurement_quality.py` needs the `.raw` file of LTspice simulation 03.
+
+> Not modelled: the load cell and its cable, the connectors above the board, the package of the AD7190. Fitted parts are wires at the mid height of their body and the boost waveforms come from a behavioral model, so expect a factor 2 to 3 on these figures. A bench measurement of the ADC noise with the boost running and stopped remains the reference.
+
+***
+
 ## LOAD CELL CONNECTION
 
 The board accepts any standard **4-wire Wheatstone bridge** load cell.
@@ -430,7 +496,7 @@ while (1) {
 | Documentation sheets | Block diagram, architecture, power sequencing, revision history |
 | CI resources | GitHub Actions workflows, KiBot YAML configurations |
 | Computations | Design notes, filter and power budget calculations |
-| Simulation | LTspice simulations of the power chain and ADC input filter |
+| Simulation | LTspice simulations of the power chain and ADC input filter, openEMS simulation of the layout coupling |
 
 ***
 
@@ -467,7 +533,8 @@ while (1) {
     ├─ Report             # ERC / DRC reports and validation outputs
     ├─ Schematic          # Exported schematic PDFs
     ├─ Simulation
-    │  └─ LTspice         # LTspice schematics, TPS61086 behavioral model, run/plot script
+    │  ├─ LTspice         # LTspice schematics, TPS61086 behavioral model, run/plot script
+    │  └─ openEMS         # Field-solver model of the routed copper, coupling to the ADC inputs
     ├─ Templates          # Drawing sheets and title block templates
     ├─ Testing
     │  └─ Testpoints      # Test point tables and documentation
