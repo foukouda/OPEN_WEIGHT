@@ -74,8 +74,8 @@
 11)	REFER TO IMPEDANCE TABLE FOR IMPEDANCE CONTROL REQUIREMENTS.
 
 12)	CONFIRM SPACE WIDTHS AND SPACINGS.</textvar>
-    <textvar name="GIT_HASH_PCB">7392646</textvar>
-    <textvar name="GIT_HASH_SCH">b3867f9</textvar>
+    <textvar name="GIT_HASH_PCB">349b121</textvar>
+    <textvar name="GIT_HASH_SCH">349b121</textvar>
     <textvar name="GIT_URL">https://github.com/foukouda/OPEN_WEIGHT</textvar>
     <textvar name="PROJECT_NAME">OPEN_WEIGHT</textvar>
     <textvar name="RELEASE_BODY_UNRELEASED">___________________________________
@@ -107,8 +107,8 @@ Fixed
 -   Connectors not linked to ADC in schematic
 
 -   AD7190 solder-mask bridges</textvar>
-    <textvar name="RELEASE_DATE">09-Oct-2026</textvar>
-    <textvar name="RELEASE_DATE_NUM">2026-10-09</textvar>
+    <textvar name="RELEASE_DATE">15-Oct-2026</textvar>
+    <textvar name="RELEASE_DATE_NUM">2026-10-15</textvar>
     <textvar name="RELEASE_TITLE_UNRELEASED">Version Unreleased</textvar>
     <textvar name="REVISION">+ (Unreleased)</textvar>
     <textvar name="SHEET_NAME_1">Cover Page</textvar>
