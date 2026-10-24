@@ -121,7 +121,7 @@ Power chain: **+3.3 V (host) → TPS61086 → +6 V → LT3042 → +5VA → AD719
 | TPS61086 input (η ≈ 85–90 % at this load) | **+3.3V** | **~45–50 mA** | **~148–165 mW** |
 | **Board total estimated** | **+3.3V** | **~46–51 mA** | **~151–168 mW** |
 
-> **Note:** Load cell excitation current depends on bridge resistance. The estimate above assumes a 350 Ω full bridge at 5 V excitation (~14 mA). A 1000 Ω bridge draws ~5 mA instead, reducing total board consumption significantly. TPS61086 efficiency is estimated from the datasheet curve at Vin=3.3 V, Vout=6 V. Always measure at your specific operating point using the **+3.3V_IN** test point on Page 6.
+> **Note:** Load cell excitation current depends on bridge resistance. The estimate above assumes a 350 Ω full bridge at 5 V excitation (~14 mA). A 1000 Ω bridge draws ~5 mA instead, reducing total board consumption significantly. TPS61086 efficiency is estimated from the datasheet curve at Vin=3.3 V, Vout=6 V. Always measure at your specific operating point using the **+3.3V** test point TP4 on Page 4.
 
 ### Physical specifications
 
@@ -143,15 +143,14 @@ Power chain: **+3.3 V (host) → TPS61086 → +6 V → LT3042 → +5VA → AD719
 
 ## SCHEMATIC ARCHITECTURE
 
-The project is organized into five functional hierarchical sheets (under `Project Architecture`), plus the documentation sheets (Revision History, Block Diagram, Power - Sequencing):
+The project is organized into four functional hierarchical sheets (under `Project Architecture`), plus the documentation sheets (Revision History, Block Diagram, Power - Sequencing):
 
 | Page | Sheet (file) | Description |
 | --- | --- | --- |
 | 4 | `AD7190_Weight_Sensor` (`AD7190 - Weight Sensor.kicad_sch`) | AD7190 24-bit sigma-delta ADC front-end for Wheatstone bridge acquisition. Differential inputs on SENSE± and OUT± lines with RC input filtering. SPI interface (CS, DIN, DOUT, SCLK, SYNC). 4.9152 MHz ceramic resonator (Y2). Ratiometric reference REFIN1 = SENSE± (bridge excitation). Dual-supply decoupling (+5VA analog / +3.3V digital). Q1 P-MOS excitation switch driven by AD7190 P3. Test points on all critical analog and digital nodes. |
-| 5 | `LT3042_6V_to_5VA` (`LT3042 - LDO 6V to 5VA.kicad_sch`) | Low-noise 5 V analog supply for ADC front-end (AVDD). LT3042 ultralow-noise LDO (PSRR > 75 dB). Input: +6V from boost stage. Output: +5VA regulated via RSET = 50 kΩ (ISET = 100 µA). Solid tantalum capacitor on SET pin (C14 = 2.2 µF) for noise suppression — soft-start time constant RSET·CSET = 110 ms. Power-Good monitoring via PGFB divider. Test points: VIN, VOUT, SET, PGFB, PG. |
-| 6 | `TPS61086_3.3V_to_6V` (`TPS61086 - Boost 3V3 to 6V.kicad_sch`) | 3.3 V to 6.04 V boost converter (external Schottky D3) supplying the LT3042 stage. TPS61086 switching at 1.2 MHz fixed frequency (PWM/PFM selectable via MODE pin). Integrated 2.0 A / 0.13 Ω power switch. Output voltage set via FB divider R17/R15 (1.238 V × (1 + 69.8k/18k) = 6.04 V). Input/output decoupling, soft-start, and loop compensation network. Test points: +3.3V_IN, +6V_OUT, FB, COMP. |
-| 7 | `Holes, Fiducials` (`Holes - Fiducials.kicad_sch`) | Mechanical references for PCB fabrication and assembly. Four GND-connected mounting holes (H1–H4, M3). Fiducial symbols FID1–FID6 are kept in the schematic but excluded from the board on this revision. |
-| 8 | `Connectors` (`Connectors.kicad_sch`) | External interface connectors for load cell and host communication. Two 5-pin load-cell connectors J2/J4 (21033213501: OUT, OUT, EXC+, EXC−, GND). 7-pin JST-XH host header J1 (+3.3V, CS, DIN, DOUT/RDY, SYNC, SCLK, GND). WE-SHC shielding frame H5 over the analog front-end. |
+| 5 | `Power_Supply` (`Power Supply - Analog Rails.kicad_sch`) | Complete analog power chain, +3.3V (host) → +6V → +5VA. **Boost:** TPS61086 at 1.2 MHz (PWM/PFM via MODE, MODE = GND), integrated 2.0 A / 0.13 Ω switch, external Schottky D3, output set by the FB divider R17/R15 (1.238 V × (1 + 69.8k/18k) = 6.04 V), soft-start C18 and compensation R18/C17. **LDO:** LT3042 ultralow-noise LDO (PSRR > 75 dB) from +6V, +5VA set by RSET = 50 kΩ (ISET = 100 µA), solid tantalum C14 = 2.2 µF on SET for noise (soft-start τ = RSET·CSET = 110 ms), Power-Good via the PGFB divider. Test points: +6V (TP11), +5VA (TP10), SET, PGFB, PG, FB, SS, COMP. |
+| 6 | `Holes, Fiducials` (`Holes - Fiducials.kicad_sch`) | Mechanical references for PCB fabrication and assembly. Four GND-connected mounting holes (H1–H4, M3). Fiducial symbols FID1–FID6 are kept in the schematic but excluded from the board on this revision. |
+| 7 | `Connectors` (`Connectors.kicad_sch`) | External interface connectors for load cell and host communication. Two 5-pin load-cell connectors J2/J4 (21033213501: OUT, OUT, EXC+, EXC−, GND). 7-pin JST-XH host header J1 (+3.3V, CS, DIN, DOUT/RDY, SYNC, SCLK, GND). WE-SHC shielding frame H5 over the analog front-end. |
 
 ***
 
@@ -343,7 +342,7 @@ J4 → AIN1/AIN2, J2 → AIN3/AIN4. Both channels measure **V(pin 2) − V(pin 1
 ## STARTUP SEQUENCE
 
 After 3.3 V is applied, allow the following stages to complete before issuing any SPI command
-(see schematic page 9, *Power - Sequencing*; values from the [LTspice simulations](#simulation-ltspice)):
+(see schematic page 8, *Power - Sequencing*; values from the [LTspice simulations](#simulation-ltspice)):
 
 | Stage | Duration | Indicator |
 | --- | --- | --- |
@@ -447,7 +446,7 @@ Maps ADC output codes to physical units. Repeat any time the mechanical setup ch
 ### Use a manufactured board
 
 ```c
-// --- After >= 600 ms from 3.3V power-on (LT3042 soft-start, see page 9) ---
+// --- After >= 600 ms from 3.3V power-on (LT3042 soft-start, see page 8) ---
 
 // 1. Reset
 ad7190_reset();                            // 40× 0xFF on DIN

@@ -74,8 +74,8 @@
 11)	REFER TO IMPEDANCE TABLE FOR IMPEDANCE CONTROL REQUIREMENTS.
 
 12)	CONFIRM SPACE WIDTHS AND SPACINGS.</textvar>
-    <textvar name="GIT_HASH_PCB">349b121</textvar>
-    <textvar name="GIT_HASH_SCH">349b121</textvar>
+    <textvar name="GIT_HASH_PCB">ea7f156</textvar>
+    <textvar name="GIT_HASH_SCH">ea7f156</textvar>
     <textvar name="GIT_URL">https://github.com/foukouda/OPEN_WEIGHT</textvar>
     <textvar name="PROJECT_NAME">OPEN_WEIGHT</textvar>
     <textvar name="RELEASE_BODY_UNRELEASED">___________________________________
@@ -100,6 +100,12 @@ Changed
 
 -   Renamed to OPEN_WEIGHT, KiCad 10
 
+-   Schematic restyled like OPEN_PHASE: A3 sheets, note panels, logo in title block
+
+-   Boost and LDO sheets merged into Power Supply - Analog Rails (page 5)
+
+-   Bottom silkscreen: test point tags, J1 pinout, load-cell wiring panel
+
 ___________________________________
 
 Fixed
@@ -107,8 +113,8 @@ Fixed
 -   Connectors not linked to ADC in schematic
 
 -   AD7190 solder-mask bridges</textvar>
-    <textvar name="RELEASE_DATE">15-Oct-2026</textvar>
-    <textvar name="RELEASE_DATE_NUM">2026-10-15</textvar>
+    <textvar name="RELEASE_DATE">24-Oct-2026</textvar>
+    <textvar name="RELEASE_DATE_NUM">2026-10-24</textvar>
     <textvar name="RELEASE_TITLE_UNRELEASED">Version Unreleased</textvar>
     <textvar name="REVISION">+ (Unreleased)</textvar>
     <textvar name="SHEET_NAME_1">Cover Page</textvar>
@@ -224,13 +230,13 @@ Fixed
         <comment number="9" value=""/>
       </title_block>
     </sheet>
-    <sheet number="5" name="/Project Architecture/LT3042_6V_to_5VA/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/">
+    <sheet number="5" name="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/">
       <title_block>
-        <title>LT3042 - LDO 6V to 5V Analog</title>
+        <title>Power Supply - Analog Rails</title>
         <company>OPEN THRUST LAB</company>
         <rev>+ (Unreleased)</rev>
         <date>Date2</date>
-        <source>LT3042 - LDO 6V to 5VA.kicad_sch</source>
+        <source>Power Supply - Analog Rails.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
         <comment number="3" value=""/>
@@ -242,25 +248,7 @@ Fixed
         <comment number="9" value=""/>
       </title_block>
     </sheet>
-    <sheet number="6" name="/Project Architecture/TPS61086_3.3V_to_6V/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/">
-      <title_block>
-        <title>TPS61086 - Boost 3.3V to 6V</title>
-        <company>OPEN THRUST LAB</company>
-        <rev>+ (Unreleased)</rev>
-        <date>Date2</date>
-        <source>TPS61086 - Boost 3V3 to 6V.kicad_sch</source>
-        <comment number="1" value=""/>
-        <comment number="2" value=""/>
-        <comment number="3" value=""/>
-        <comment number="4" value=""/>
-        <comment number="5" value=""/>
-        <comment number="6" value=""/>
-        <comment number="7" value=""/>
-        <comment number="8" value=""/>
-        <comment number="9" value=""/>
-      </title_block>
-    </sheet>
-    <sheet number="7" name="/Project Architecture/Holes, Fiducials/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/35ce4035-3b3b-4514-9c4f-75699da381c4/">
+    <sheet number="6" name="/Project Architecture/Holes, Fiducials/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/35ce4035-3b3b-4514-9c4f-75699da381c4/">
       <title_block>
         <title>Holes, Fiducials</title>
         <company>OPEN THRUST LAB</company>
@@ -278,7 +266,7 @@ Fixed
         <comment number="9" value=""/>
       </title_block>
     </sheet>
-    <sheet number="8" name="/Project Architecture/Connectors/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/ddd4b387-4aa4-48c3-b079-ffb0beb645d3/">
+    <sheet number="7" name="/Project Architecture/Connectors/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/ddd4b387-4aa4-48c3-b079-ffb0beb645d3/">
       <title_block>
         <title>Connectors</title>
         <company>OPEN THRUST LAB</company>
@@ -296,7 +284,7 @@ Fixed
         <comment number="9" value=""/>
       </title_block>
     </sheet>
-    <sheet number="9" name="/Power - Sequencing/" tstamps="/5fb05893-0da3-4f58-a52b-cb6d6f4cb80b/">
+    <sheet number="8" name="/Power - Sequencing/" tstamps="/5fb05893-0da3-4f58-a52b-cb6d6f4cb80b/">
       <title_block>
         <title>Power - Sequencing</title>
         <company>OPEN THRUST LAB</company>
@@ -314,7 +302,7 @@ Fixed
         <comment number="9" value=""/>
       </title_block>
     </sheet>
-    <sheet number="10" name="/Revision History/" tstamps="/6e125bd6-2f99-4e5d-b3ea-4899f4540739/">
+    <sheet number="9" name="/Revision History/" tstamps="/6e125bd6-2f99-4e5d-b3ea-4899f4540739/">
       <title_block>
         <title>Revision History</title>
         <company>OPEN THRUST LAB</company>
@@ -1473,11 +1461,11 @@ Fixed
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_WEIGHT" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value="LT3042_6V_to_5VA"/>
-      <property name="Sheetfile" value="LT3042 - LDO 6V to 5VA.kicad_sch"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/Project Architecture/LT3042_6V_to_5VA/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
       <tstamps>c9160c94-c7b1-460e-98a4-34d3f27d1b7a</tstamps>
       <units>
         <unit name="A">
@@ -1513,9 +1501,9 @@ Fixed
       <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/AVX/TAJA225K016RNJ?qs=QtLZGLLAmDbQo3XekLTU0g%3D%3D"/>
       <property name="Arrow Part Number" value="TAJA225K016RNJ"/>
       <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/taja225k016rnj/avx?utm_currency=USD&amp;region=europe"/>
-      <property name="Sheetname" value="LT3042_6V_to_5VA"/>
-      <property name="Sheetfile" value="LT3042 - LDO 6V to 5VA.kicad_sch"/>
-      <sheetpath names="/Project Architecture/LT3042_6V_to_5VA/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
       <tstamps>77ec2b64-1f8d-4f86-baae-0a8859b883e9</tstamps>
       <units>
         <unit name="A">
@@ -1536,11 +1524,11 @@ Fixed
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_WEIGHT" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value="LT3042_6V_to_5VA"/>
-      <property name="Sheetfile" value="LT3042 - LDO 6V to 5VA.kicad_sch"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/Project Architecture/LT3042_6V_to_5VA/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
       <tstamps>8c785d71-aea6-4ae4-9877-a8519738fb74</tstamps>
       <units>
         <unit name="A">
@@ -1561,327 +1549,17 @@ Fixed
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_WEIGHT" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value="LT3042_6V_to_5VA"/>
-      <property name="Sheetfile" value="LT3042 - LDO 6V to 5VA.kicad_sch"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/Project Architecture/LT3042_6V_to_5VA/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
       <tstamps>e8bd403d-bcd2-4a7b-bfac-210314220082</tstamps>
       <units>
         <unit name="A">
           <pins>
             <pin num="1"/>
             <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="D4">
-      <value>LED</value>
-      <footprint>OPEN_WEIGHT:LED_0603_1608Metric</footprint>
-      <description>Light emitting diode</description>
-      <fields>
-        <field name="Sim.Pins">1=K 2=A</field>
-        <field name="Footprint">OPEN_WEIGHT:LED_0603_1608Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description">Light emitting diode</field>
-      </fields>
-      <libsource lib="OPEN_WEIGHT" part="LED" description="Light emitting diode"/>
-      <property name="Sim.Pins" value="1=K 2=A"/>
-      <property name="Sheetname" value="LT3042_6V_to_5VA"/>
-      <property name="Sheetfile" value="LT3042 - LDO 6V to 5VA.kicad_sch"/>
-      <property name="ki_keywords" value="LED diode"/>
-      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
-      <sheetpath names="/Project Architecture/LT3042_6V_to_5VA/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
-      <tstamps>9c8d38d2-1cec-4d6b-a9d7-0a01b7b4d300</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="R9">
-      <value>50kΩ</value>
-      <footprint>OPEN_WEIGHT:R_0603_1608Metric</footprint>
-      <description>Resistor</description>
-      <fields>
-        <field name="Footprint">OPEN_WEIGHT:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description">Resistor</field>
-      </fields>
-      <libsource lib="OPEN_WEIGHT" part="R" description="Resistor"/>
-      <property name="Sheetname" value="LT3042_6V_to_5VA"/>
-      <property name="Sheetfile" value="LT3042 - LDO 6V to 5VA.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Project Architecture/LT3042_6V_to_5VA/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
-      <tstamps>c606dd2b-2ecb-4a3b-adb5-46a35ee51687</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="R12">
-      <value>715kΩ</value>
-      <footprint>OPEN_WEIGHT:R_0603_1608Metric</footprint>
-      <description>Resistor</description>
-      <fields>
-        <field name="Footprint">OPEN_WEIGHT:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description">Resistor</field>
-      </fields>
-      <libsource lib="OPEN_WEIGHT" part="R" description="Resistor"/>
-      <property name="Sheetname" value="LT3042_6V_to_5VA"/>
-      <property name="Sheetfile" value="LT3042 - LDO 6V to 5VA.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Project Architecture/LT3042_6V_to_5VA/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
-      <tstamps>1879edeb-a9d1-4a6d-a2e5-7f0f3b09d18e</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="R13">
-      <value>50kΩ</value>
-      <footprint>OPEN_WEIGHT:R_0603_1608Metric</footprint>
-      <description>Resistor</description>
-      <fields>
-        <field name="Footprint">OPEN_WEIGHT:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description">Resistor</field>
-      </fields>
-      <libsource lib="OPEN_WEIGHT" part="R" description="Resistor"/>
-      <property name="Sheetname" value="LT3042_6V_to_5VA"/>
-      <property name="Sheetfile" value="LT3042 - LDO 6V to 5VA.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Project Architecture/LT3042_6V_to_5VA/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
-      <tstamps>fc283080-4bd1-4dcb-8ada-348cec3ef7f3</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="R14">
-      <value>200kΩ</value>
-      <footprint>OPEN_WEIGHT:R_0603_1608Metric</footprint>
-      <description>Resistor</description>
-      <fields>
-        <field name="Footprint">OPEN_WEIGHT:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description">Resistor</field>
-      </fields>
-      <libsource lib="OPEN_WEIGHT" part="R" description="Resistor"/>
-      <property name="Sheetname" value="LT3042_6V_to_5VA"/>
-      <property name="Sheetfile" value="LT3042 - LDO 6V to 5VA.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Project Architecture/LT3042_6V_to_5VA/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
-      <tstamps>6883179e-3973-4124-a377-6d83d4940e87</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="R16">
-      <value>620Ω</value>
-      <footprint>OPEN_WEIGHT:R_0603_1608Metric</footprint>
-      <description>Resistor</description>
-      <fields>
-        <field name="Footprint">OPEN_WEIGHT:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description">Resistor</field>
-      </fields>
-      <libsource lib="OPEN_WEIGHT" part="R" description="Resistor"/>
-      <property name="Sheetname" value="LT3042_6V_to_5VA"/>
-      <property name="Sheetfile" value="LT3042 - LDO 6V to 5VA.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Project Architecture/LT3042_6V_to_5VA/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
-      <tstamps>69998ad1-1f2a-4d8b-b905-f87f2e2cfe89</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP10">
-      <value>TestPoint</value>
-      <footprint>OPEN_WEIGHT:TestPoint_Pad_D1.5mm</footprint>
-      <description>test point</description>
-      <fields>
-        <field name="Footprint">OPEN_WEIGHT:TestPoint_Pad_D1.5mm</field>
-        <field name="Datasheet"/>
-        <field name="Description">test point</field>
-      </fields>
-      <libsource lib="OPEN_WEIGHT" part="TestPoint" description="test point"/>
-      <property name="Sheetname" value="LT3042_6V_to_5VA"/>
-      <property name="Sheetfile" value="LT3042 - LDO 6V to 5VA.kicad_sch"/>
-      <property name="exclude_from_bom"/>
-      <property name="exclude_from_board"/>
-      <property name="exclude_from_pos_files"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/Project Architecture/LT3042_6V_to_5VA/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
-      <tstamps>0d99bfcd-89b6-4139-a8af-a4f8c7e0a16c</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP11">
-      <value>TestPoint</value>
-      <footprint>OPEN_WEIGHT:TestPoint_Pad_D1.5mm</footprint>
-      <description>test point</description>
-      <fields>
-        <field name="Footprint">OPEN_WEIGHT:TestPoint_Pad_D1.5mm</field>
-        <field name="Datasheet"/>
-        <field name="Description">test point</field>
-      </fields>
-      <libsource lib="OPEN_WEIGHT" part="TestPoint" description="test point"/>
-      <property name="Sheetname" value="LT3042_6V_to_5VA"/>
-      <property name="Sheetfile" value="LT3042 - LDO 6V to 5VA.kicad_sch"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/Project Architecture/LT3042_6V_to_5VA/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
-      <tstamps>0c0c2d22-54ce-4890-9a5d-1807a650667d</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP12">
-      <value>TestPoint</value>
-      <footprint>OPEN_WEIGHT:TestPoint_Pad_D1.5mm</footprint>
-      <description>test point</description>
-      <fields>
-        <field name="Footprint">OPEN_WEIGHT:TestPoint_Pad_D1.5mm</field>
-        <field name="Datasheet"/>
-        <field name="Description">test point</field>
-      </fields>
-      <libsource lib="OPEN_WEIGHT" part="TestPoint" description="test point"/>
-      <property name="Sheetname" value="LT3042_6V_to_5VA"/>
-      <property name="Sheetfile" value="LT3042 - LDO 6V to 5VA.kicad_sch"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/Project Architecture/LT3042_6V_to_5VA/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
-      <tstamps>71bc232b-d4d8-49d9-9a06-76a62dfb80e9</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP13">
-      <value>TestPoint</value>
-      <footprint>OPEN_WEIGHT:TestPoint_Pad_D1.5mm</footprint>
-      <description>test point</description>
-      <fields>
-        <field name="Footprint">OPEN_WEIGHT:TestPoint_Pad_D1.5mm</field>
-        <field name="Datasheet"/>
-        <field name="Description">test point</field>
-      </fields>
-      <libsource lib="OPEN_WEIGHT" part="TestPoint" description="test point"/>
-      <property name="Sheetname" value="LT3042_6V_to_5VA"/>
-      <property name="Sheetfile" value="LT3042 - LDO 6V to 5VA.kicad_sch"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/Project Architecture/LT3042_6V_to_5VA/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
-      <tstamps>8682bb93-5eaa-4625-a1f0-6559b4b82445</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="TP17">
-      <value>TestPoint</value>
-      <footprint>OPEN_WEIGHT:TestPoint_Pad_D1.5mm</footprint>
-      <description>test point</description>
-      <fields>
-        <field name="Footprint">OPEN_WEIGHT:TestPoint_Pad_D1.5mm</field>
-        <field name="Datasheet"/>
-        <field name="Description">test point</field>
-      </fields>
-      <libsource lib="OPEN_WEIGHT" part="TestPoint" description="test point"/>
-      <property name="Sheetname" value="LT3042_6V_to_5VA"/>
-      <property name="Sheetfile" value="LT3042 - LDO 6V to 5VA.kicad_sch"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/Project Architecture/LT3042_6V_to_5VA/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
-      <tstamps>32bbe92f-125d-4bb9-99ae-8a75a4cf04b1</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="U2">
-      <value>LT3042IMSE</value>
-      <footprint>OPEN_WEIGHT:MSOP-10-1EP_3x3mm_P0.5mm_EP2.2x3.1mm_Mask1.83x1.89mm_ThermalVias</footprint>
-      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/3042fb.pdf</datasheet>
-      <description>200mA, Adjustable, Ultralow Noise, Ultrahigh PSRR RF Linear Regulator, MSOP-10</description>
-      <fields>
-        <field name="Footprint">OPEN_WEIGHT:MSOP-10-1EP_3x3mm_P0.5mm_EP2.2x3.1mm_Mask1.83x1.89mm_ThermalVias</field>
-        <field name="Datasheet">https://www.analog.com/media/en/technical-documentation/data-sheets/3042fb.pdf</field>
-        <field name="Description">200mA, Adjustable, Ultralow Noise, Ultrahigh PSRR RF Linear Regulator, MSOP-10</field>
-      </fields>
-      <libsource lib="OPEN_WEIGHT" part="LT3042xMSE" description="200mA, Adjustable, Ultralow Noise, Ultrahigh PSRR RF Linear Regulator, MSOP-10"/>
-      <property name="Sheetname" value="LT3042_6V_to_5VA"/>
-      <property name="Sheetfile" value="LT3042 - LDO 6V to 5VA.kicad_sch"/>
-      <property name="ki_keywords" value="linear voltage regulator low-noise"/>
-      <property name="ki_fp_filters" value="MSOP*1EP*3x3mm*P0.5mm*"/>
-      <sheetpath names="/Project Architecture/LT3042_6V_to_5VA/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
-      <tstamps>0d0f29bc-b028-4c63-a610-9f8989515cd8</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-            <pin num="3"/>
-            <pin num="5"/>
-            <pin num="7"/>
-            <pin num="8"/>
-            <pin num="11"/>
-            <pin num="10"/>
-            <pin num="9"/>
-            <pin num="6"/>
-            <pin num="4"/>
           </pins>
         </unit>
       </units>
@@ -1896,11 +1574,11 @@ Fixed
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_WEIGHT" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value="TPS61086_3.3V_to_6V"/>
-      <property name="Sheetfile" value="TPS61086 - Boost 3V3 to 6V.kicad_sch"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/Project Architecture/TPS61086_3.3V_to_6V/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
       <tstamps>052c9f36-7705-4729-9b62-02a78d6f2be5</tstamps>
       <units>
         <unit name="A">
@@ -1921,11 +1599,11 @@ Fixed
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_WEIGHT" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value="TPS61086_3.3V_to_6V"/>
-      <property name="Sheetfile" value="TPS61086 - Boost 3V3 to 6V.kicad_sch"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/Project Architecture/TPS61086_3.3V_to_6V/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
       <tstamps>9f7116dd-d618-4b8e-a7de-e83b39b7170a</tstamps>
       <units>
         <unit name="A">
@@ -1946,11 +1624,11 @@ Fixed
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_WEIGHT" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value="TPS61086_3.3V_to_6V"/>
-      <property name="Sheetfile" value="TPS61086 - Boost 3V3 to 6V.kicad_sch"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/Project Architecture/TPS61086_3.3V_to_6V/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
       <tstamps>01acee88-eff3-4d6c-8f3c-bfdde3ee53f4</tstamps>
       <units>
         <unit name="A">
@@ -1971,11 +1649,11 @@ Fixed
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_WEIGHT" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value="TPS61086_3.3V_to_6V"/>
-      <property name="Sheetfile" value="TPS61086 - Boost 3V3 to 6V.kicad_sch"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/Project Architecture/TPS61086_3.3V_to_6V/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
       <tstamps>24ab0092-800a-4562-b092-f34d671bd92c</tstamps>
       <units>
         <unit name="A">
@@ -1996,11 +1674,11 @@ Fixed
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_WEIGHT" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value="TPS61086_3.3V_to_6V"/>
-      <property name="Sheetfile" value="TPS61086 - Boost 3V3 to 6V.kicad_sch"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/Project Architecture/TPS61086_3.3V_to_6V/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
       <tstamps>48a528d8-e73f-4111-a98f-27dd5eddfa82</tstamps>
       <units>
         <unit name="A">
@@ -2021,11 +1699,11 @@ Fixed
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_WEIGHT" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value="TPS61086_3.3V_to_6V"/>
-      <property name="Sheetfile" value="TPS61086 - Boost 3V3 to 6V.kicad_sch"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/Project Architecture/TPS61086_3.3V_to_6V/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
       <tstamps>c52ddfae-12d0-40a3-bca2-16843282ad18</tstamps>
       <units>
         <unit name="A">
@@ -2048,11 +1726,11 @@ Fixed
       </fields>
       <libsource lib="OPEN_WEIGHT" part="LED" description="Light emitting diode"/>
       <property name="Sim.Pins" value="1=K 2=A"/>
-      <property name="Sheetname" value="TPS61086_3.3V_to_6V"/>
-      <property name="Sheetfile" value="TPS61086 - Boost 3V3 to 6V.kicad_sch"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
       <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
-      <sheetpath names="/Project Architecture/TPS61086_3.3V_to_6V/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
       <tstamps>8577a8d2-2ba7-4131-ac62-360357cc8340</tstamps>
       <units>
         <unit name="A">
@@ -2074,12 +1752,39 @@ Fixed
         <field name="Description">20V, 1A very low Vf MEGA Schottky barrier rectifier, SOD-123F</field>
       </fields>
       <libsource lib="OPEN_WEIGHT" part="PMEG2010AEH" description="20V, 1A very low Vf MEGA Schottky barrier rectifier, SOD-123F"/>
-      <property name="Sheetname" value="TPS61086_3.3V_to_6V"/>
-      <property name="Sheetfile" value="TPS61086 - Boost 3V3 to 6V.kicad_sch"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="forward voltage diode"/>
       <property name="ki_fp_filters" value="D*SOD?123F*"/>
-      <sheetpath names="/Project Architecture/TPS61086_3.3V_to_6V/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
       <tstamps>08b52c98-40e2-4756-93f0-010d214e8b9f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D4">
+      <value>LED</value>
+      <footprint>OPEN_WEIGHT:LED_0603_1608Metric</footprint>
+      <description>Light emitting diode</description>
+      <fields>
+        <field name="Sim.Pins">1=K 2=A</field>
+        <field name="Footprint">OPEN_WEIGHT:LED_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Light emitting diode</field>
+      </fields>
+      <libsource lib="OPEN_WEIGHT" part="LED" description="Light emitting diode"/>
+      <property name="Sim.Pins" value="1=K 2=A"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
+      <tstamps>9c8d38d2-1cec-4d6b-a9d7-0a01b7b4d300</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -2114,9 +1819,9 @@ Fixed
       <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS61086DRCR?qs=6805eV47HhZDU1cIiHcRxg%3D%3D"/>
       <property name="Arrow Part Number" value="TPS61086DRCR"/>
       <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/tps61086drcr/texas-instruments?region=nac"/>
-      <property name="Sheetname" value="TPS61086_3.3V_to_6V"/>
-      <property name="Sheetfile" value="TPS61086 - Boost 3V3 to 6V.kicad_sch"/>
-      <sheetpath names="/Project Architecture/TPS61086_3.3V_to_6V/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
       <tstamps>410c2d56-2d10-4b3d-b9e5-8b2ed13c1e69</tstamps>
       <units>
         <unit name="A">
@@ -2165,9 +1870,9 @@ Fixed
       <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/7447785004?qs=XJfXErqHgA64RDczb2mVzg%3D%3D"/>
       <property name="Arrow Part Number" value=""/>
       <property name="Arrow Price/Stock" value=""/>
-      <property name="Sheetname" value="TPS61086_3.3V_to_6V"/>
-      <property name="Sheetfile" value="TPS61086 - Boost 3V3 to 6V.kicad_sch"/>
-      <sheetpath names="/Project Architecture/TPS61086_3.3V_to_6V/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
       <tstamps>517dbfe2-8c3c-4798-bb0e-49dc49a3daec</tstamps>
       <units>
         <unit name="A">
@@ -2188,12 +1893,112 @@ Fixed
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_WEIGHT" part="R" description="Resistor"/>
-      <property name="Sheetname" value="TPS61086_3.3V_to_6V"/>
-      <property name="Sheetfile" value="TPS61086 - Boost 3V3 to 6V.kicad_sch"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Project Architecture/TPS61086_3.3V_to_6V/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
       <tstamps>62e6ee74-9999-444a-8b4f-735f49d774fa</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R9">
+      <value>50kΩ</value>
+      <footprint>OPEN_WEIGHT:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_WEIGHT:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_WEIGHT" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
+      <tstamps>c606dd2b-2ecb-4a3b-adb5-46a35ee51687</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R12">
+      <value>715kΩ</value>
+      <footprint>OPEN_WEIGHT:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_WEIGHT:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_WEIGHT" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
+      <tstamps>1879edeb-a9d1-4a6d-a2e5-7f0f3b09d18e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R13">
+      <value>50kΩ</value>
+      <footprint>OPEN_WEIGHT:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_WEIGHT:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_WEIGHT" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
+      <tstamps>fc283080-4bd1-4dcb-8ada-348cec3ef7f3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R14">
+      <value>200kΩ</value>
+      <footprint>OPEN_WEIGHT:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_WEIGHT:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_WEIGHT" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
+      <tstamps>6883179e-3973-4124-a377-6d83d4940e87</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -2213,12 +2018,37 @@ Fixed
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_WEIGHT" part="R" description="Resistor"/>
-      <property name="Sheetname" value="TPS61086_3.3V_to_6V"/>
-      <property name="Sheetfile" value="TPS61086 - Boost 3V3 to 6V.kicad_sch"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Project Architecture/TPS61086_3.3V_to_6V/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
       <tstamps>99f42ed9-7a5e-4e33-ac8d-e98dfbc0e1bc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R16">
+      <value>620Ω</value>
+      <footprint>OPEN_WEIGHT:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_WEIGHT:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_WEIGHT" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
+      <tstamps>69998ad1-1f2a-4d8b-b905-f87f2e2cfe89</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -2238,11 +2068,11 @@ Fixed
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_WEIGHT" part="R" description="Resistor"/>
-      <property name="Sheetname" value="TPS61086_3.3V_to_6V"/>
-      <property name="Sheetfile" value="TPS61086 - Boost 3V3 to 6V.kicad_sch"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Project Architecture/TPS61086_3.3V_to_6V/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
       <tstamps>ee7a97e3-a489-423f-a37d-66fad1d1b7a4</tstamps>
       <units>
         <unit name="A">
@@ -2263,17 +2093,116 @@ Fixed
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_WEIGHT" part="R" description="Resistor"/>
-      <property name="Sheetname" value="TPS61086_3.3V_to_6V"/>
-      <property name="Sheetfile" value="TPS61086 - Boost 3V3 to 6V.kicad_sch"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Project Architecture/TPS61086_3.3V_to_6V/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
       <tstamps>4b1e22fa-7cc4-4966-ab75-7e4031be5eab</tstamps>
       <units>
         <unit name="A">
           <pins>
             <pin num="1"/>
             <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP10">
+      <value>TestPoint</value>
+      <footprint>OPEN_WEIGHT:TestPoint_Pad_D1.5mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="Footprint">OPEN_WEIGHT:TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="OPEN_WEIGHT" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_board"/>
+      <property name="exclude_from_pos_files"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
+      <tstamps>0d99bfcd-89b6-4139-a8af-a4f8c7e0a16c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP11">
+      <value>TestPoint</value>
+      <footprint>OPEN_WEIGHT:TestPoint_Pad_D1.5mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="Footprint">OPEN_WEIGHT:TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="OPEN_WEIGHT" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
+      <tstamps>0c0c2d22-54ce-4890-9a5d-1807a650667d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP12">
+      <value>TestPoint</value>
+      <footprint>OPEN_WEIGHT:TestPoint_Pad_D1.5mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="Footprint">OPEN_WEIGHT:TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="OPEN_WEIGHT" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
+      <tstamps>71bc232b-d4d8-49d9-9a06-76a62dfb80e9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP13">
+      <value>TestPoint</value>
+      <footprint>OPEN_WEIGHT:TestPoint_Pad_D1.5mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="Footprint">OPEN_WEIGHT:TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="OPEN_WEIGHT" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
+      <tstamps>8682bb93-5eaa-4625-a1f0-6559b4b82445</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
           </pins>
         </unit>
       </units>
@@ -2288,11 +2217,11 @@ Fixed
         <field name="Description">test point</field>
       </fields>
       <libsource lib="OPEN_WEIGHT" part="TestPoint" description="test point"/>
-      <property name="Sheetname" value="TPS61086_3.3V_to_6V"/>
-      <property name="Sheetfile" value="TPS61086 - Boost 3V3 to 6V.kicad_sch"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="test point tp"/>
       <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/Project Architecture/TPS61086_3.3V_to_6V/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
       <tstamps>3e97fc48-bb8c-4f47-83dc-7c8080eb1a2a</tstamps>
       <units>
         <unit name="A">
@@ -2312,11 +2241,11 @@ Fixed
         <field name="Description">test point</field>
       </fields>
       <libsource lib="OPEN_WEIGHT" part="TestPoint" description="test point"/>
-      <property name="Sheetname" value="TPS61086_3.3V_to_6V"/>
-      <property name="Sheetfile" value="TPS61086 - Boost 3V3 to 6V.kicad_sch"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="test point tp"/>
       <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/Project Architecture/TPS61086_3.3V_to_6V/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
       <tstamps>286f1e24-cde5-40c5-ae84-fe2fb3a510bd</tstamps>
       <units>
         <unit name="A">
@@ -2336,16 +2265,75 @@ Fixed
         <field name="Description">test point</field>
       </fields>
       <libsource lib="OPEN_WEIGHT" part="TestPoint" description="test point"/>
-      <property name="Sheetname" value="TPS61086_3.3V_to_6V"/>
-      <property name="Sheetfile" value="TPS61086 - Boost 3V3 to 6V.kicad_sch"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="test point tp"/>
       <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/Project Architecture/TPS61086_3.3V_to_6V/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
       <tstamps>baded6e9-80ca-485a-bada-b86e25b7e9d9</tstamps>
       <units>
         <unit name="A">
           <pins>
             <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP17">
+      <value>TestPoint</value>
+      <footprint>OPEN_WEIGHT:TestPoint_Pad_D1.5mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="Footprint">OPEN_WEIGHT:TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="OPEN_WEIGHT" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
+      <tstamps>32bbe92f-125d-4bb9-99ae-8a75a4cf04b1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U2">
+      <value>LT3042IMSE</value>
+      <footprint>OPEN_WEIGHT:MSOP-10-1EP_3x3mm_P0.5mm_EP2.2x3.1mm_Mask1.83x1.89mm_ThermalVias</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/3042fb.pdf</datasheet>
+      <description>200mA, Adjustable, Ultralow Noise, Ultrahigh PSRR RF Linear Regulator, MSOP-10</description>
+      <fields>
+        <field name="Footprint">OPEN_WEIGHT:MSOP-10-1EP_3x3mm_P0.5mm_EP2.2x3.1mm_Mask1.83x1.89mm_ThermalVias</field>
+        <field name="Datasheet">https://www.analog.com/media/en/technical-documentation/data-sheets/3042fb.pdf</field>
+        <field name="Description">200mA, Adjustable, Ultralow Noise, Ultrahigh PSRR RF Linear Regulator, MSOP-10</field>
+      </fields>
+      <libsource lib="OPEN_WEIGHT" part="LT3042xMSE" description="200mA, Adjustable, Ultralow Noise, Ultrahigh PSRR RF Linear Regulator, MSOP-10"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="ki_keywords" value="linear voltage regulator low-noise"/>
+      <property name="ki_fp_filters" value="MSOP*1EP*3x3mm*P0.5mm*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/d6110ee2-516c-48c1-b80a-d0f1701ed49f/"/>
+      <tstamps>0d0f29bc-b028-4c63-a610-9f8989515cd8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="5"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="11"/>
+            <pin num="10"/>
+            <pin num="9"/>
+            <pin num="6"/>
+            <pin num="4"/>
           </pins>
         </unit>
       </units>
@@ -3244,35 +3232,35 @@ Fixed
       <node ref="U2" pin="2" pinfunction="IN_2" pintype="passive"/>
       <node ref="U2" pin="3" pinfunction="EN/UV_3" pintype="input"/>
     </net>
-    <net code="4" name="/Project Architecture/LT3042_6V_to_5VA/PG" class="Default">
-      <node ref="R14" pin="2" pintype="passive"/>
-      <node ref="TP17" pin="1" pinfunction="1_1" pintype="passive"/>
-      <node ref="U2" pin="4" pinfunction="PG_4" pintype="open_collector"/>
-    </net>
-    <net code="5" name="/Project Architecture/LT3042_6V_to_5VA/PGFB" class="Default">
-      <node ref="R12" pin="1" pintype="passive"/>
-      <node ref="R13" pin="2" pintype="passive"/>
-      <node ref="TP13" pin="1" pinfunction="1_1" pintype="passive"/>
-      <node ref="U2" pin="6" pinfunction="PGFB_6" pintype="input"/>
-    </net>
-    <net code="6" name="/Project Architecture/LT3042_6V_to_5VA/SET" class="Default">
-      <node ref="C14" pin="1" pinfunction="+_1" pintype="passive"/>
-      <node ref="R9" pin="2" pintype="passive"/>
-      <node ref="TP12" pin="1" pinfunction="1_1" pintype="passive"/>
-      <node ref="U2" pin="7" pinfunction="SET_7" pintype="passive"/>
-    </net>
-    <net code="7" name="/Project Architecture/TPS61086_3.3V_to_6V/COMP" class="Default">
+    <net code="4" name="/Project Architecture/Power_Supply/COMP" class="Default">
       <node ref="IC2" pin="1" pinfunction="COMP_1" pintype="passive"/>
       <node ref="R18" pin="2" pintype="passive"/>
       <node ref="TP16" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="8" name="/Project Architecture/TPS61086_3.3V_to_6V/FB" class="Default">
+    <net code="5" name="/Project Architecture/Power_Supply/FB" class="Default">
       <node ref="IC2" pin="2" pinfunction="FB_2" pintype="passive"/>
       <node ref="R15" pin="2" pintype="passive"/>
       <node ref="R17" pin="1" pintype="passive"/>
       <node ref="TP14" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="9" name="/Project Architecture/TPS61086_3.3V_to_6V/SS" class="Default">
+    <net code="6" name="/Project Architecture/Power_Supply/PG" class="Default">
+      <node ref="R14" pin="2" pintype="passive"/>
+      <node ref="TP17" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="4" pinfunction="PG_4" pintype="open_collector"/>
+    </net>
+    <net code="7" name="/Project Architecture/Power_Supply/PGFB" class="Default">
+      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="TP13" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="6" pinfunction="PGFB_6" pintype="input"/>
+    </net>
+    <net code="8" name="/Project Architecture/Power_Supply/SET" class="Default">
+      <node ref="C14" pin="1" pinfunction="+_1" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="TP12" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="7" pinfunction="SET_7" pintype="passive"/>
+    </net>
+    <net code="9" name="/Project Architecture/Power_Supply/SS" class="Default">
       <node ref="C18" pin="1" pintype="passive"/>
       <node ref="IC2" pin="10" pinfunction="SS_10" pintype="passive"/>
       <node ref="TP15" pin="1" pinfunction="1_1" pintype="passive"/>

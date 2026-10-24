@@ -344,11 +344,11 @@ X157800000Y-95800000D03*
 %TO.N,Net-(U1-P2)*%
 X148650000Y-102300000D03*
 X165263750Y-103080000D03*
-%TO.N,/Project Architecture/TPS61086_3.3V_to_6V/COMP*%
+%TO.N,/Project Architecture/Power_Supply/COMP*%
 X133475000Y-95825000D03*
-%TO.N,/Project Architecture/TPS61086_3.3V_to_6V/FB*%
+%TO.N,/Project Architecture/Power_Supply/FB*%
 X131075000Y-91950000D03*
-%TO.N,/Project Architecture/TPS61086_3.3V_to_6V/SS*%
+%TO.N,/Project Architecture/Power_Supply/SS*%
 X131955000Y-99000000D03*
 D20*
 %TO.N,MCLK1*%
@@ -390,11 +390,11 @@ D20*
 X152800000Y-90900000D03*
 %TO.N,+6V*%
 X127100000Y-91700000D03*
-%TO.N,/Project Architecture/LT3042_6V_to_5VA/PGFB*%
+%TO.N,/Project Architecture/Power_Supply/PGFB*%
 X135500000Y-84700000D03*
-%TO.N,/Project Architecture/LT3042_6V_to_5VA/PG*%
+%TO.N,/Project Architecture/Power_Supply/PG*%
 X132400000Y-89400000D03*
-%TO.N,/Project Architecture/LT3042_6V_to_5VA/SET*%
+%TO.N,/Project Architecture/Power_Supply/SET*%
 X131200000Y-83100000D03*
 %TD*%
 %TA.AperFunction,Conductor*%
