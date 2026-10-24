@@ -1,4 +1,4 @@
-_local_|2026-10-15|root|Local changes not committed|False|True
+_local_|2026-10-24|root|Local changes not committed|False|True
+ea7f156|2026-10-24|foukouda|Restyle the schematic like OPEN_PHASE, merge the power sheets, rework the bottom silkscreen|True|True
 349b121|2026-10-15|foukouda|Replace the project logo with the INGÉNIERIE FRANCE badge|True|True
 df4ad06|2026-09-29|foukouda|Make schematic graphics parseable by KiBot (CI fix)|True|False
-b3867f9|2026-09-29|foukouda|Redesign Project Architecture sheet, update dates, refresh netlists|True|False

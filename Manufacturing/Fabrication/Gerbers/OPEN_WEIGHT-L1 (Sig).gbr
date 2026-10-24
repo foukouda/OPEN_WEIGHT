@@ -203,10 +203,10 @@ X144155000Y-83215000D03*
 %TD*%
 D14*
 %TO.P,IC2,1,COMP*%
-%TO.N,/Project Architecture/TPS61086_3.3V_to_6V/COMP*%
+%TO.N,/Project Architecture/Power_Supply/COMP*%
 X130975000Y-96200000D03*
 %TO.P,IC2,2,FB*%
-%TO.N,/Project Architecture/TPS61086_3.3V_to_6V/FB*%
+%TO.N,/Project Architecture/Power_Supply/FB*%
 X130475000Y-96200000D03*
 %TO.P,IC2,3,EN*%
 %TO.N,+3.3V*%
@@ -228,7 +228,7 @@ X129975000Y-99000000D03*
 %TO.N,GND*%
 X130475000Y-99000000D03*
 %TO.P,IC2,10,SS*%
-%TO.N,/Project Architecture/TPS61086_3.3V_to_6V/SS*%
+%TO.N,/Project Architecture/Power_Supply/SS*%
 X130975000Y-99000000D03*
 D15*
 %TO.P,IC2,11,EP*%
@@ -383,7 +383,7 @@ X145100000Y-95075000D03*
 %TD*%
 D12*
 %TO.P,R17,1*%
-%TO.N,/Project Architecture/TPS61086_3.3V_to_6V/FB*%
+%TO.N,/Project Architecture/Power_Supply/FB*%
 X130475000Y-92630000D03*
 %TO.P,R17,2*%
 %TO.N,+6V*%
@@ -409,7 +409,7 @@ D23*
 %TO.N,GND*%
 X132450000Y-86313847D03*
 %TO.P,R13,2*%
-%TO.N,/Project Architecture/LT3042_6V_to_5VA/PGFB*%
+%TO.N,/Project Architecture/Power_Supply/PGFB*%
 X132450000Y-84663847D03*
 %TD*%
 D24*
@@ -501,7 +501,7 @@ D29*
 %TO.N,+6V*%
 X128775000Y-91100000D03*
 %TO.P,R14,2*%
-%TO.N,/Project Architecture/LT3042_6V_to_5VA/PG*%
+%TO.N,/Project Architecture/Power_Supply/PG*%
 X130425000Y-91100000D03*
 %TD*%
 D30*
@@ -517,7 +517,7 @@ D12*
 %TO.N,GND*%
 X133675000Y-83238847D03*
 %TO.P,R9,2*%
-%TO.N,/Project Architecture/LT3042_6V_to_5VA/SET*%
+%TO.N,/Project Architecture/Power_Supply/SET*%
 X132025000Y-83238847D03*
 %TD*%
 D18*
@@ -548,7 +548,7 @@ D29*
 %TO.N,GND*%
 X128825000Y-94100000D03*
 %TO.P,R15,2*%
-%TO.N,/Project Architecture/TPS61086_3.3V_to_6V/FB*%
+%TO.N,/Project Architecture/Power_Supply/FB*%
 X130475000Y-94100000D03*
 %TD*%
 D20*
@@ -631,7 +631,7 @@ X143975000Y-104800000D03*
 %TD*%
 D10*
 %TO.P,R12,1*%
-%TO.N,/Project Architecture/LT3042_6V_to_5VA/PGFB*%
+%TO.N,/Project Architecture/Power_Supply/PGFB*%
 X133950000Y-84663847D03*
 %TO.P,R12,2*%
 %TO.N,+5VA*%
@@ -655,7 +655,7 @@ X126075000Y-99450000D03*
 %TD*%
 D17*
 %TO.P,C18,1*%
-%TO.N,/Project Architecture/TPS61086_3.3V_to_6V/SS*%
+%TO.N,/Project Architecture/Power_Supply/SS*%
 X133450000Y-99000000D03*
 %TO.P,C18,2*%
 %TO.N,GND*%
@@ -785,7 +785,7 @@ X157050000Y-94500000D03*
 %TD*%
 D35*
 %TO.P,C14,1,+*%
-%TO.N,/Project Architecture/LT3042_6V_to_5VA/SET*%
+%TO.N,/Project Architecture/Power_Supply/SET*%
 X130200000Y-82988847D03*
 %TO.P,C14,2,-*%
 %TO.N,GND*%
@@ -800,16 +800,16 @@ X129400000Y-89388847D03*
 %TO.P,U2,3,EN/UV*%
 X129900000Y-89388847D03*
 %TO.P,U2,4,PG*%
-%TO.N,/Project Architecture/LT3042_6V_to_5VA/PG*%
+%TO.N,/Project Architecture/Power_Supply/PG*%
 X130400000Y-89388847D03*
 %TO.P,U2,5,ILIM*%
 %TO.N,GND*%
 X130900000Y-89388847D03*
 %TO.P,U2,6,PGFB*%
-%TO.N,/Project Architecture/LT3042_6V_to_5VA/PGFB*%
+%TO.N,/Project Architecture/Power_Supply/PGFB*%
 X130900000Y-85088847D03*
 %TO.P,U2,7,SET*%
-%TO.N,/Project Architecture/LT3042_6V_to_5VA/SET*%
+%TO.N,/Project Architecture/Power_Supply/SET*%
 X130400000Y-85088847D03*
 %TO.P,U2,8,GND*%
 %TO.N,GND*%
@@ -853,7 +853,7 @@ D10*
 %TO.N,Net-(C17-Pad1)*%
 X133475000Y-94175000D03*
 %TO.P,R18,2*%
-%TO.N,/Project Architecture/TPS61086_3.3V_to_6V/COMP*%
+%TO.N,/Project Architecture/Power_Supply/COMP*%
 X133475000Y-95825000D03*
 %TD*%
 D30*
@@ -1066,11 +1066,11 @@ X157800000Y-95800000D03*
 %TO.N,Net-(U1-P2)*%
 X148650000Y-102300000D03*
 X165263750Y-103080000D03*
-%TO.N,/Project Architecture/TPS61086_3.3V_to_6V/COMP*%
+%TO.N,/Project Architecture/Power_Supply/COMP*%
 X133475000Y-95825000D03*
-%TO.N,/Project Architecture/TPS61086_3.3V_to_6V/FB*%
+%TO.N,/Project Architecture/Power_Supply/FB*%
 X131075000Y-91950000D03*
-%TO.N,/Project Architecture/TPS61086_3.3V_to_6V/SS*%
+%TO.N,/Project Architecture/Power_Supply/SS*%
 X131955000Y-99000000D03*
 D41*
 %TO.N,MCLK1*%
@@ -1112,11 +1112,11 @@ D41*
 X152800000Y-90900000D03*
 %TO.N,+6V*%
 X127100000Y-91700000D03*
-%TO.N,/Project Architecture/LT3042_6V_to_5VA/PGFB*%
+%TO.N,/Project Architecture/Power_Supply/PGFB*%
 X135500000Y-84700000D03*
-%TO.N,/Project Architecture/LT3042_6V_to_5VA/PG*%
+%TO.N,/Project Architecture/Power_Supply/PG*%
 X132400000Y-89400000D03*
-%TO.N,/Project Architecture/LT3042_6V_to_5VA/SET*%
+%TO.N,/Project Architecture/Power_Supply/SET*%
 X131200000Y-83100000D03*
 %TD*%
 %TO.N,IN-OUT+2*%
@@ -1637,7 +1637,7 @@ G75*
 G03*
 X144074987Y-83351568I96600J-96600D01*
 G01*
-%TO.N,/Project Architecture/TPS61086_3.3V_to_6V/COMP*%
+%TO.N,/Project Architecture/Power_Supply/COMP*%
 X132834834Y-96200000D02*
 X130975000Y-96200000D01*
 X133287500Y-96012500D02*
@@ -1647,12 +1647,12 @@ G75*
 G03*
 X133287490Y-96012490I-34J640200D01*
 G01*
-%TO.N,/Project Architecture/TPS61086_3.3V_to_6V/FB*%
+%TO.N,/Project Architecture/Power_Supply/FB*%
 X130475000Y-92550000D02*
 X130475000Y-96200000D01*
 X130475000Y-92550000D02*
 X131075000Y-91950000D01*
-%TO.N,/Project Architecture/TPS61086_3.3V_to_6V/SS*%
+%TO.N,/Project Architecture/Power_Supply/SS*%
 D48*
 X131955000Y-99000000D02*
 X130975000Y-99000000D01*
@@ -2461,7 +2461,7 @@ G75*
 G02*
 X146550728Y-95526320I10J-1206400D01*
 G01*
-%TO.N,/Project Architecture/LT3042_6V_to_5VA/PGFB*%
+%TO.N,/Project Architecture/Power_Supply/PGFB*%
 D42*
 X133924435Y-84663847D02*
 X132450000Y-84663847D01*
@@ -2582,7 +2582,7 @@ G01*
 D43*
 X162888750Y-104580000D02*
 X161501250Y-104580000D01*
-%TO.N,/Project Architecture/LT3042_6V_to_5VA/PG*%
+%TO.N,/Project Architecture/Power_Supply/PG*%
 D42*
 X130812500Y-91100000D02*
 X130442677Y-91100000D01*
@@ -2885,7 +2885,7 @@ G37*
 %TD.AperFunction*%
 %TD*%
 %TA.AperFunction,Conductor*%
-%TO.N,/Project Architecture/LT3042_6V_to_5VA/SET*%
+%TO.N,/Project Architecture/Power_Supply/SET*%
 G36*
 X132343106Y-82693870D02*
 G01*

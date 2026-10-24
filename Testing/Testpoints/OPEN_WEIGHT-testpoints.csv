@@ -10,10 +10,10 @@ TP8,,,-64.0000,106.0000,top,SMT,TestPoint,TestPoint_Pad_D1.5mm
 TP9,,,-64.0000,106.0000,top,SMT,TestPoint,TestPoint_Pad_D1.5mm
 TP10,,,-64.0000,106.0000,top,SMT,TestPoint,TestPoint_Pad_D1.5mm
 TP11,+6V,Default,63.1000,14.3000,bottom,SMT,TestPoint,TestPoint_Pad_D1.5mm
-TP12,/Project Architecture/LT3042_6V_to_5VA/SET,Default,67.2000,22.9000,bottom,SMT,TestPoint,TestPoint_Pad_D1.5mm
-TP13,/Project Architecture/LT3042_6V_to_5VA/PGFB,Default,71.5000,21.3000,bottom,SMT,TestPoint,TestPoint_Pad_D1.5mm
-TP14,/Project Architecture/TPS61086_3.3V_to_6V/FB,Default,69.6000,13.7000,bottom,SMT,TestPoint,TestPoint_Pad_D1.5mm
-TP15,/Project Architecture/TPS61086_3.3V_to_6V/SS,Default,67.9000,7.0000,bottom,SMT,TestPoint,TestPoint_Pad_D1.5mm
-TP16,/Project Architecture/TPS61086_3.3V_to_6V/COMP,Default,69.5000,10.2000,bottom,SMT,TestPoint,TestPoint_Pad_D1.5mm
-TP17,/Project Architecture/LT3042_6V_to_5VA/PG,Default,68.4000,16.6000,bottom,SMT,TestPoint,TestPoint_Pad_D1.5mm
+TP12,/Project Architecture/Power_Supply/SET,Default,67.2000,22.9000,bottom,SMT,TestPoint,TestPoint_Pad_D1.5mm
+TP13,/Project Architecture/Power_Supply/PGFB,Default,71.5000,21.3000,bottom,SMT,TestPoint,TestPoint_Pad_D1.5mm
+TP14,/Project Architecture/Power_Supply/FB,Default,69.6000,13.7000,bottom,SMT,TestPoint,TestPoint_Pad_D1.5mm
+TP15,/Project Architecture/Power_Supply/SS,Default,67.9000,7.0000,bottom,SMT,TestPoint,TestPoint_Pad_D1.5mm
+TP16,/Project Architecture/Power_Supply/COMP,Default,69.5000,10.2000,bottom,SMT,TestPoint,TestPoint_Pad_D1.5mm
+TP17,/Project Architecture/Power_Supply/PG,Default,68.4000,16.6000,bottom,SMT,TestPoint,TestPoint_Pad_D1.5mm
 TP18,P3,Default,88.8000,15.1000,bottom,SMT,TestPoint,TestPoint_Pad_D1.5mm
