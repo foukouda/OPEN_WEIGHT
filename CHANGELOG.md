@@ -18,6 +18,9 @@ Keep entries short: the `[Unreleased]` section is printed on the schematic Revis
 ### Changed
 
 -   Renamed to OPEN_WEIGHT, KiCad 10
+-   Schematic restyled like OPEN_PHASE: A3 sheets, note panels, logo in title block
+-   Boost and LDO sheets merged into Power Supply - Analog Rails (page 5)
+-   Bottom silkscreen: test point tags, J1 pinout, load-cell wiring panel
 
 ### Fixed
 

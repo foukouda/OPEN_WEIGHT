@@ -515,7 +515,12 @@
     "meta": {
       "version": 5
     },
-    "net_colors": null,
+    "net_colors": {
+      "+3.3V": "rgb(255, 220, 0)",
+      "+5VA": "rgb(230, 50, 50)",
+      "+6V": "rgb(255, 140, 0)",
+      "GND": "rgb(60, 120, 230)"
+    },
     "netclass_assignments": null,
     "netclass_patterns": []
   },
@@ -694,12 +699,8 @@
       "AD7190_Weight_Sensor"
     ],
     [
-      "e744f3ce-03a6-44a6-8792-1447ef232b9a",
-      "LT3042_6V_to_5VA"
-    ],
-    [
       "d6110ee2-516c-48c1-b80a-d0f1701ed49f",
-      "TPS61086_3.3V_to_6V"
+      "Power_Supply"
     ],
     [
       "35ce4035-3b3b-4514-9c4f-75699da381c4",
@@ -734,7 +735,7 @@
     "RELEASE_TITLE_UNRELEASED": "Version Unreleased",
     "REVISION": "+ (Unreleased)",
     "SHEET_NAME_1": "Cover Page",
-    "SHEET_NAME_10": "Revision History",
+    "SHEET_NAME_10": "......................................",
     "SHEET_NAME_11": "......................................",
     "SHEET_NAME_12": "......................................",
     "SHEET_NAME_13": "......................................",
@@ -768,11 +769,11 @@
     "SHEET_NAME_39": "......................................",
     "SHEET_NAME_4": "AD7190_Weight_Sensor",
     "SHEET_NAME_40": "......................................",
-    "SHEET_NAME_5": "LT3042_6V_to_5VA",
-    "SHEET_NAME_6": "TPS61086_3.3V_to_6V",
-    "SHEET_NAME_7": "Holes, Fiducials",
-    "SHEET_NAME_8": "Connectors",
-    "SHEET_NAME_9": "Power - Sequencing",
+    "SHEET_NAME_5": "Power_Supply",
+    "SHEET_NAME_6": "Holes, Fiducials",
+    "SHEET_NAME_7": "Connectors",
+    "SHEET_NAME_8": "Power - Sequencing",
+    "SHEET_NAME_9": "Revision History",
     "VARIANT": "PRELIMINARY"
   },
   "tuning_profiles": {
