@@ -1,7 +1,7 @@
 (export
 	(version "E")
 	(design
-		(source "/tmp/tmp-kibot-net_sch_print-05ltpieh/OPEN_WEIGHT.kicad_sch")
+		(source "/tmp/tmp-kibot-net_sch_print-rpryv7ko/OPEN_WEIGHT.kicad_sch")
 		(date "Date")
 		(tool "Eeschema 10.0.5-unknown-202607221313~667fa36054~ubuntu25.10.1")
 		(textvar
@@ -15,9 +15,9 @@
 		(textvar
 			(name "FABRICATION_NOTES") "FABRICATION NOTES (UNLESS OTHERWISE SPECIFIED)\n\n1)	FABRICATE PER IPC-6012A CLASS 2.\n\n2)	OUTLINE DEFINED IN SEPARATE GERBER FILE WITH\n	\"Edge_Cuts.GBR\" SUFFIX.\n\n	DIMENSIONS OF CIRCUMSIZED RECTANGLE SHOWN ON THIS\n	DRAWING FOR REFERENCE ONLY.\n\n3)	SEE SEPARATE DRILL FILES WITH \".DRL\" SUFFIX \n	FOR HOLE LOCATIONS.\n\n	SELECTED HOLE LOCATIONS SHOWN ON THIS DRAWING \n	FOR REFERENCE ONLY.\n\n4)	SURFACE FINISH: IMMERSION GOLD\n\n5)	SOLDERMASK ON BOTH SIDES OF THE BOARD SHALL \n	BE LPI, COLOR BLACK.\n\n6)	SILK SCREEN LEGEND TO BE APPLIED PER LAYER \n	STACKUP USING YELLOW NON-CONDUCTIVE EPOXY INK.\n\n7)	ALL VIAS ARE TENTED ON BOTH SIDES UNLESS \n	SOLDERMASK OPENED IN GERBER.\n\n8)	VENDOR SHOULD FOLLOW ROHS COMPLIANT PROCESS \n	AND Pb FREE FOR MANUFACTURING\n\n9)	PCB MATERIAL REQUIREMENTS:\n\n	A.	FLAMMABILITY RATING MUST MEET OR EXCEED \n		UL94V-0 REQUIREMENTS.\n	B.	Tg 170 C OR EQUIVALENT.\n	C.	EQUIVALENT MATERIAL SHALL BE RoHS COMPLIANT, \n		HALOGEN FREE AND APPROVED BY OPEN THRUST LAB.\n\n10)	DESIGN GEOMETRY MINIMUM FEATURE SIZES:\n\n	BOARD SIZE				54.000 × 48.000 mm\n	BOARD THICKNESS		1.660 mm\n	TRACE WIDTH			0.200 mm\n	TRACE TO TRACE		0.200 mm\n	MIN. HOLE (PTH)			0.200 mm\n	MIN. HOLE (NPTH)		1.200 mm\n	ANNULAR RING			0.150 mm\n	COPPER TO HOLE		0.200 mm\n	COPPER TO EDGE		0.200 mm\n	HOLE TO HOLE			0.250 mm\n\n11)	REFER TO IMPEDANCE TABLE FOR IMPEDANCE CONTROL REQUIREMENTS.\n\n12)	CONFIRM SPACE WIDTHS AND SPACINGS.")
 		(textvar
-			(name "GIT_HASH_PCB") "7392646")
+			(name "GIT_HASH_PCB") "349b121")
 		(textvar
-			(name "GIT_HASH_SCH") "b3867f9")
+			(name "GIT_HASH_SCH") "349b121")
 		(textvar
 			(name "GIT_URL") "https://github.com/foukouda/OPEN_WEIGHT")
 		(textvar
@@ -25,9 +25,9 @@
 		(textvar
 			(name "RELEASE_BODY_UNRELEASED") "___________________________________\n\nAdded\n\n-   AD7190 front-end, 2 load-cell inputs\n\n-   +3.3V -> TPS61086 6 V -> LT3042 +5VA\n\n-   Self-contained libs and 3D models (lib/)\n\n-   JLCPCB 4-layer rules and stackup\n\n-   LTspice simulations (Simulation/LTspice)\n\n-   openEMS layout coupling (Simulation/openEMS)\n\n___________________________________\n\nChanged\n\n-   Renamed to OPEN_WEIGHT, KiCad 10\n\n___________________________________\n\nFixed\n\n-   Connectors not linked to ADC in schematic\n\n-   AD7190 solder-mask bridges")
 		(textvar
-			(name "RELEASE_DATE") "09-Oct-2026")
+			(name "RELEASE_DATE") "15-Oct-2026")
 		(textvar
-			(name "RELEASE_DATE_NUM") "2026-10-09")
+			(name "RELEASE_DATE_NUM") "2026-10-15")
 		(textvar
 			(name "RELEASE_TITLE_UNRELEASED") "Version Unreleased")
 		(textvar
