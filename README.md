@@ -34,7 +34,7 @@
 
 <p align="center">
   <img alt="OPEN_WEIGHT 3D spin" src="Images/OPEN_WEIGHT-spin.gif" width="50%">
-  <br><sub>Full-resolution video: <a href="Images/OPEN_WEIGHT.mp4">Images/OPEN_WEIGHT.mp4</a> (rendered with SpinRender)</sub>
+  <br><sub>Full-resolution video: <a href="Images/OPEN_WEIGHT.mp4">Images/OPEN_WEIGHT.mp4</a> (KiCad raytracing, <code>kicad-cli pcb render</code>)</sub>
 </p>
 
 ***
