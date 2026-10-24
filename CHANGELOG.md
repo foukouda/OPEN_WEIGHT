@@ -21,6 +21,7 @@ Keep entries short: the `[Unreleased]` section is printed on the schematic Revis
 -   Schematic restyled like OPEN_PHASE: A3 sheets, note panels, logo in title block
 -   Boost and LDO sheets merged into Power Supply - Analog Rails (page 5)
 -   Bottom silkscreen: test point tags, J1 pinout, load-cell wiring panel
+-   3D animation re-rendered with kicad-cli, OPEN_PHASE style
 
 ### Fixed
 
