@@ -106,6 +106,8 @@ Changed
 
 -   Bottom silkscreen: test point tags, J1 pinout, load-cell wiring panel
 
+-   3D animation re-rendered with kicad-cli, OPEN_PHASE style
+
 ___________________________________
 
 Fixed
@@ -118,7 +120,7 @@ Fixed
     <textvar name="RELEASE_TITLE_UNRELEASED">Version Unreleased</textvar>
     <textvar name="REVISION">+ (Unreleased)</textvar>
     <textvar name="SHEET_NAME_1">Cover Page</textvar>
-    <textvar name="SHEET_NAME_10">Revision History</textvar>
+    <textvar name="SHEET_NAME_10">......................................</textvar>
     <textvar name="SHEET_NAME_11">......................................</textvar>
     <textvar name="SHEET_NAME_12">......................................</textvar>
     <textvar name="SHEET_NAME_13">......................................</textvar>
@@ -152,11 +154,11 @@ Fixed
     <textvar name="SHEET_NAME_39">......................................</textvar>
     <textvar name="SHEET_NAME_4">AD7190_Weight_Sensor</textvar>
     <textvar name="SHEET_NAME_40">......................................</textvar>
-    <textvar name="SHEET_NAME_5">LT3042_6V_to_5VA</textvar>
-    <textvar name="SHEET_NAME_6">TPS61086_3.3V_to_6V</textvar>
-    <textvar name="SHEET_NAME_7">Holes, Fiducials</textvar>
-    <textvar name="SHEET_NAME_8">Connectors</textvar>
-    <textvar name="SHEET_NAME_9">Power - Sequencing</textvar>
+    <textvar name="SHEET_NAME_5">Power_Supply</textvar>
+    <textvar name="SHEET_NAME_6">Holes, Fiducials</textvar>
+    <textvar name="SHEET_NAME_7">Connectors</textvar>
+    <textvar name="SHEET_NAME_8">Power - Sequencing</textvar>
+    <textvar name="SHEET_NAME_9">Revision History</textvar>
     <textvar name="VARIANT">PRELIMINARY</textvar>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
